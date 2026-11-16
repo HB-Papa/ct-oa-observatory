@@ -135,6 +135,13 @@ def split_status(st, fee):
 rows = []
 excluded_A = collections.Counter()
 excluded_trinity = collections.Counter()
+excluded_abstract = collections.Counter()
+# Meeting-abstract scope rule (Chris, 2026-11-16), restated here from the
+# decision text rather than imported, so the check stays independent.
+ABSTRACT_DOI = re.compile(
+    r"10\.1212/wnl\..*_supplement|10\.1096/fasebj\..*_supplement|10\.1200/jco\..*_suppl"
+    r"|10\.1161/[a-z]+\.[0-9]+\.suppl_|10\.1182/blood-20[0-9]{2}-[0-9]{5,6}$"
+    r"|10\.1182/blood\.v[0-9]+\.2[23]\.[0-9]+\.[0-9]+$|10\.1254/jpssuppl\.|10\.1556/jba\.[0-9]+\.[0-9]+\.suppl", re.I)
 out_of_scope = collections.Counter()
 for w, r in works.items():
     y = r.get("publication_year")
@@ -144,6 +151,9 @@ for w, r in works.items():
     src = ((r.get("primary_location") or {}).get("source")) or {}
     if src.get("type") == "repository" and not r.get("doi"):
         excluded_A[y] += 1
+        continue
+    if r.get("doi") and ABSTRACT_DOI.search(r["doi"]):
+        excluded_abstract[y] += 1
         continue
     apc = (r.get("apc_list") or {}).get("value_usd")
     insts, corr = work_insts(r), corr_insts(r)
@@ -182,6 +192,7 @@ out = {"meta": dict(list_records=len(list_recs) + list_dupes, list_unique=len(li
 # 1
 out["per_year"] = {y: sum(1 for x in rows if x["year"] == y) for y in range(2015, 2027)}
 out["excluded_A"] = {"total": sum(excluded_A.values()), **{str(k): v for k, v in sorted(excluded_A.items())}}
+out["excluded_meeting_abstracts"] = {"total": sum(excluded_abstract.values()), **{str(k): v for k, v in sorted(excluded_abstract.items())}}
 out["excluded_trinity_correction"] = dict(sorted(excluded_trinity.items()))
 # 2,3,4
 out["works"] = {}

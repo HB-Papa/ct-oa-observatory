@@ -134,7 +134,7 @@ def main():
             f"- DOIs appearing on more than one work ID: {dup:,}.",
             f"- `apc_paid` filled: {paid[0]:,} works, equal to `apc_list` in {paid[1]:,}. "
             "OpenAlex gives no provenance for `apc_paid`, so it is not treated as an actual payment.", ""]
-    # 6. Exclusions applied (rule A)
+    # 6. Exclusions applied (rule A, meeting abstracts, affiliation corrections)
     excl = con.execute("""SELECT wi.institution_key, COUNT(*) excluded
         FROM works w JOIN work_institutions wi USING (work_id) WHERE NOT wi.in_scope
         GROUP BY 1 ORDER BY 2 DESC""").df()
@@ -144,6 +144,10 @@ def main():
     out += ["## 6. Exclusions applied", "",
             "Rule A (approved 2026-11-16): works whose primary location is a repository and that have no DOI "
             "are excluded from every metric. They stay in the tables with `in_scope = false`.", "",
+            "Meeting abstracts (approved 2026-11-16): conference abstracts printed in journal supplements "
+            "(Neurology, The FASEB Journal, Journal of Clinical Oncology, AHA journals, Blood and a few others), "
+            "matched by DOI pattern (`MEETING_ABSTRACT_DOI_PATTERNS` in s04), are excluded. OpenAlex types them "
+            "as articles. Abstracts without a recognisable DOI pattern are not caught.", "",
             "Affiliation corrections (see `AFFILIATION_CORRECTIONS` in s04): institution credits OpenAlex "
             "assigned in error are flagged `affiliation_corrected` and left out of metrics. A work whose only "
             "Connecticut credit was corrected is excluded.", "",

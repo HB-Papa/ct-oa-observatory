@@ -13,18 +13,18 @@
   "in_scope_no_inst_sample": []
  },
  "per_year": {
-  "2015": 13065,
-  "2016": 13535,
-  "2017": 13884,
-  "2018": 14181,
-  "2019": 14989,
-  "2020": 17337,
-  "2021": 17486,
-  "2022": 17112,
-  "2023": 17047,
-  "2024": 18180,
-  "2025": 19382,
-  "2026": 17520
+  "2015": 12860,
+  "2016": 13349,
+  "2017": 13711,
+  "2018": 14047,
+  "2019": 14875,
+  "2020": 17216,
+  "2021": 17436,
+  "2022": 16923,
+  "2023": 17041,
+  "2024": 18163,
+  "2025": 19298,
+  "2026": 17415
  },
  "excluded_A": {
   "total": 1827,
@@ -41,6 +41,21 @@
   "2025": 93,
   "2026": 409
  },
+ "excluded_meeting_abstracts": {
+  "total": 1384,
+  "2015": 205,
+  "2016": 186,
+  "2017": 173,
+  "2018": 134,
+  "2019": 114,
+  "2020": 121,
+  "2021": 50,
+  "2022": 189,
+  "2023": 6,
+  "2024": 17,
+  "2025": 84,
+  "2026": 105
+ },
  "excluded_trinity_correction": {
   "2015": 1,
   "2016": 1,
@@ -52,65 +67,65 @@
   "2026": 2
  },
  "works": {
-  "statewide": 176198,
-  "statewide_no_yale": 62580,
-  "yale": 116949,
-  "uconn": 45618,
-  "wesleyan": 2729,
-  "trinity": 848,
+  "statewide": 174919,
+  "statewide_no_yale": 62143,
+  "yale": 116084,
+  "uconn": 45277,
+  "wesleyan": 2714,
+  "trinity": 846,
   "conncoll": 685,
-  "quinnipiac": 2483,
-  "fairfield": 1773,
+  "quinnipiac": 2440,
+  "fairfield": 1751,
   "sacredheart": 1347,
-  "hartford": 1205,
-  "newhaven": 1886,
+  "hartford": 1204,
+  "newhaven": 1884,
   "scsu": 1659,
   "ccsu": 1394,
   "wcsu": 422,
   "ecsu": 576,
   "uscga": 195,
   "bridgeport": 754,
-  "usj": 541
+  "usj": 520
  },
  "oa": {
   "statewide": {
    "diamond": 1609,
-   "oa_fee_unconfirmed": 8349,
-   "gold": 34739,
+   "oa_fee_unconfirmed": 8344,
+   "gold": 34738,
    "hybrid": 17112,
-   "bronze": 25211,
-   "green": 30699,
-   "closed": 58479,
+   "bronze": 25171,
+   "green": 30683,
+   "closed": 57262,
    "_other": 0
   },
   "statewide_no_yale": {
    "diamond": 373,
-   "oa_fee_unconfirmed": 4066,
-   "gold": 11082,
+   "oa_fee_unconfirmed": 4064,
+   "gold": 11081,
    "hybrid": 5076,
-   "bronze": 7720,
-   "green": 8731,
-   "closed": 25532,
+   "bronze": 7701,
+   "green": 8727,
+   "closed": 25121,
    "_other": 0
   },
   "yale": {
    "diamond": 1258,
-   "oa_fee_unconfirmed": 4374,
-   "gold": 24402,
+   "oa_fee_unconfirmed": 4371,
+   "gold": 24401,
    "hybrid": 12341,
-   "bronze": 17963,
-   "green": 22662,
-   "closed": 33949,
+   "bronze": 17940,
+   "green": 22648,
+   "closed": 33125,
    "_other": 0
   },
   "uconn": {
    "diamond": 203,
-   "oa_fee_unconfirmed": 2309,
-   "gold": 8641,
+   "oa_fee_unconfirmed": 2307,
+   "gold": 8640,
    "hybrid": 3675,
-   "bronze": 5882,
-   "green": 6877,
-   "closed": 18031,
+   "bronze": 5873,
+   "green": 6874,
+   "closed": 17705,
    "_other": 0
   },
   "wesleyan": {
@@ -120,7 +135,7 @@
    "hybrid": 297,
    "bronze": 475,
    "green": 486,
-   "closed": 873,
+   "closed": 858,
    "_other": 0
   },
   "trinity": {
@@ -130,7 +145,7 @@
    "hybrid": 65,
    "bronze": 81,
    "green": 153,
-   "closed": 340,
+   "closed": 338,
    "_other": 0
   },
   "conncoll": {
@@ -148,9 +163,9 @@
    "oa_fee_unconfirmed": 172,
    "gold": 425,
    "hybrid": 174,
-   "bronze": 256,
-   "green": 217,
-   "closed": 1237,
+   "bronze": 244,
+   "green": 216,
+   "closed": 1207,
    "_other": 0
   },
   "fairfield": {
@@ -160,7 +175,7 @@
    "hybrid": 175,
    "bronze": 174,
    "green": 186,
-   "closed": 826,
+   "closed": 804,
    "_other": 0
   },
   "sacredheart": {
@@ -180,7 +195,7 @@
    "hybrid": 71,
    "bronze": 110,
    "green": 131,
-   "closed": 614,
+   "closed": 613,
    "_other": 0
   },
   "newhaven": {
@@ -190,7 +205,7 @@
    "hybrid": 228,
    "bronze": 198,
    "green": 146,
-   "closed": 718,
+   "closed": 716,
    "_other": 0
   },
   "scsu": {
@@ -260,40 +275,40 @@
    "hybrid": 30,
    "bronze": 44,
    "green": 55,
-   "closed": 268,
+   "closed": 247,
    "_other": 0
   }
  },
  "free_share": {
   "statewide": {
-   "free": 117719,
-   "n": 176198,
-   "share": 0.668106334918671
+   "free": 117657,
+   "n": 174919,
+   "share": 0.672637049148463
   },
   "statewide_no_yale": {
-   "free": 37048,
-   "n": 62580,
-   "share": 0.5920102269095557
+   "free": 37022,
+   "n": 62143,
+   "share": 0.595754952287466
   },
   "yale": {
-   "free": 83000,
-   "n": 116949,
-   "share": 0.7097110706376284
+   "free": 82959,
+   "n": 116084,
+   "share": 0.7146462906171394
   },
   "uconn": {
-   "free": 27587,
-   "n": 45618,
-   "share": 0.6047393572712526
+   "free": 27572,
+   "n": 45277,
+   "share": 0.6089626079466396
   },
   "wesleyan": {
    "free": 1856,
-   "n": 2729,
-   "share": 0.6801026016855991
+   "n": 2714,
+   "share": 0.683861459100958
   },
   "trinity": {
    "free": 508,
-   "n": 848,
-   "share": 0.5990566037735849
+   "n": 846,
+   "share": 0.6004728132387707
   },
   "conncoll": {
    "free": 362,
@@ -301,14 +316,14 @@
    "share": 0.5284671532846715
   },
   "quinnipiac": {
-   "free": 1246,
-   "n": 2483,
-   "share": 0.5018123238018526
+   "free": 1233,
+   "n": 2440,
+   "share": 0.5053278688524591
   },
   "fairfield": {
    "free": 947,
-   "n": 1773,
-   "share": 0.5341229554427523
+   "n": 1751,
+   "share": 0.5408338092518561
   },
   "sacredheart": {
    "free": 596,
@@ -317,13 +332,13 @@
   },
   "hartford": {
    "free": 591,
-   "n": 1205,
-   "share": 0.4904564315352697
+   "n": 1204,
+   "share": 0.4908637873754153
   },
   "newhaven": {
    "free": 1168,
-   "n": 1886,
-   "share": 0.6193001060445387
+   "n": 1884,
+   "share": 0.6199575371549894
   },
   "scsu": {
    "free": 903,
@@ -357,16 +372,16 @@
   },
   "usj": {
    "free": 273,
-   "n": 541,
-   "share": 0.5046210720887245
+   "n": 520,
+   "share": 0.525
   }
  },
  "apc": {
   "statewide": {
    "upper": {
-    "works": 51851,
-    "priced": 45634,
-    "usd": 145372638
+    "works": 51850,
+    "priced": 45633,
+    "usd": 145371722
    },
    "corresponding": {
     "works": 22358,
@@ -376,9 +391,9 @@
   },
   "statewide_no_yale": {
    "upper": {
-    "works": 16158,
-    "priced": 14120,
-    "usd": 40476775
+    "works": 16157,
+    "priced": 14119,
+    "usd": 40475859
    },
    "corresponding": {
     "works": 7230,
@@ -388,9 +403,9 @@
   },
   "yale": {
    "upper": {
-    "works": 36743,
-    "priced": 32453,
-    "usd": 108033775
+    "works": 36742,
+    "priced": 32452,
+    "usd": 108032859
    },
    "corresponding": {
     "works": 15237,
@@ -400,9 +415,9 @@
   },
   "uconn": {
    "upper": {
-    "works": 12316,
-    "priced": 11050,
-    "usd": 32362827
+    "works": 12315,
+    "priced": 11049,
+    "usd": 32361911
    },
    "corresponding": {
     "works": 5534,
@@ -593,34 +608,34 @@
  },
  "corr_coverage": {
   "statewide": {
-   "n": 176198,
-   "with": 144352,
-   "share": 0.8192601505124917
+   "n": 174919,
+   "with": 144004,
+   "share": 0.8232610522584739
   },
   "statewide_no_yale": {
-   "n": 62580,
-   "with": 51319,
-   "share": 0.820054330457015
+   "n": 62143,
+   "with": 51174,
+   "share": 0.8234877620970986
   },
   "yale": {
-   "n": 116949,
-   "with": 95695,
-   "share": 0.8182626615020222
+   "n": 116084,
+   "with": 95491,
+   "share": 0.8226025981186038
   },
   "uconn": {
-   "n": 45618,
-   "with": 37773,
-   "share": 0.8280284098382218
+   "n": 45277,
+   "with": 37678,
+   "share": 0.8321664421229322
   },
   "wesleyan": {
-   "n": 2729,
-   "with": 2215,
-   "share": 0.8116526200073287
+   "n": 2714,
+   "with": 2203,
+   "share": 0.81171702284451
   },
   "trinity": {
-   "n": 848,
-   "with": 743,
-   "share": 0.8761792452830188
+   "n": 846,
+   "with": 742,
+   "share": 0.8770685579196218
   },
   "conncoll": {
    "n": 685,
@@ -628,14 +643,14 @@
    "share": 0.8934306569343066
   },
   "quinnipiac": {
-   "n": 2483,
-   "with": 1976,
-   "share": 0.7958115183246073
+   "n": 2440,
+   "with": 1963,
+   "share": 0.8045081967213115
   },
   "fairfield": {
-   "n": 1773,
-   "with": 1331,
-   "share": 0.7507050197405527
+   "n": 1751,
+   "with": 1315,
+   "share": 0.7509994288977727
   },
   "sacredheart": {
    "n": 1347,
@@ -643,14 +658,14 @@
    "share": 0.7928730512249443
   },
   "hartford": {
-   "n": 1205,
+   "n": 1204,
    "with": 957,
-   "share": 0.7941908713692946
+   "share": 0.7948504983388704
   },
   "newhaven": {
-   "n": 1886,
-   "with": 1446,
-   "share": 0.7667020148462355
+   "n": 1884,
+   "with": 1445,
+   "share": 0.7669851380042463
   },
   "scsu": {
    "n": 1659,
@@ -683,16 +698,16 @@
    "share": 0.7904509283819628
   },
   "usj": {
-   "n": 541,
-   "with": 425,
-   "share": 0.7855822550831792
+   "n": 520,
+   "with": 417,
+   "share": 0.801923076923077
   }
  },
  "publishers_top": [
   {
    "publisher": "Elsevier BV",
-   "works": 42381,
-   "closed": 15939
+   "works": 42095,
+   "closed": 15667
   },
   {
    "publisher": "Springer Nature",
@@ -701,13 +716,13 @@
   },
   {
    "publisher": "Wiley",
-   "works": 16454,
-   "closed": 6082
+   "works": 16046,
+   "closed": 5675
   },
   {
    "publisher": "Wolters Kluwer",
-   "works": 10092,
-   "closed": 5773
+   "works": 9512,
+   "closed": 5235
   },
   {
    "publisher": "Informa",

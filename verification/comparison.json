@@ -2,85 +2,85 @@
  "1_per_year": [
   {
    "key": "2015",
-   "mine": 13065,
-   "published": 13065,
+   "mine": 12860,
+   "published": 12860,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2016",
-   "mine": 13535,
-   "published": 13535,
+   "mine": 13349,
+   "published": 13349,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2017",
-   "mine": 13884,
-   "published": 13884,
+   "mine": 13711,
+   "published": 13711,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2018",
-   "mine": 14181,
-   "published": 14181,
+   "mine": 14047,
+   "published": 14047,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2019",
-   "mine": 14989,
-   "published": 14989,
+   "mine": 14875,
+   "published": 14875,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2020",
-   "mine": 17337,
-   "published": 17337,
+   "mine": 17216,
+   "published": 17216,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2021",
-   "mine": 17486,
-   "published": 17486,
+   "mine": 17436,
+   "published": 17436,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2022",
-   "mine": 17112,
-   "published": 17112,
+   "mine": 16923,
+   "published": 16923,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2023",
-   "mine": 17047,
-   "published": 17047,
+   "mine": 17041,
+   "published": 17041,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2024",
-   "mine": 18180,
-   "published": 18180,
+   "mine": 18163,
+   "published": 18163,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2025",
-   "mine": 19382,
-   "published": 19382,
+   "mine": 19298,
+   "published": 19298,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2026",
-   "mine": 17520,
-   "published": 17520,
+   "mine": 17415,
+   "published": 17415,
    "diff": 0,
    "ok": true
   }
@@ -88,85 +88,85 @@
  "1_per_year_oa_file": [
   {
    "key": "2015",
-   "mine": 13065,
-   "published": 13065,
+   "mine": 12860,
+   "published": 12860,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2016",
-   "mine": 13535,
-   "published": 13535,
+   "mine": 13349,
+   "published": 13349,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2017",
-   "mine": 13884,
-   "published": 13884,
+   "mine": 13711,
+   "published": 13711,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2018",
-   "mine": 14181,
-   "published": 14181,
+   "mine": 14047,
+   "published": 14047,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2019",
-   "mine": 14989,
-   "published": 14989,
+   "mine": 14875,
+   "published": 14875,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2020",
-   "mine": 17337,
-   "published": 17337,
+   "mine": 17216,
+   "published": 17216,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2021",
-   "mine": 17486,
-   "published": 17486,
+   "mine": 17436,
+   "published": 17436,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2022",
-   "mine": 17112,
-   "published": 17112,
+   "mine": 16923,
+   "published": 16923,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2023",
-   "mine": 17047,
-   "published": 17047,
+   "mine": 17041,
+   "published": 17041,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2024",
-   "mine": 18180,
-   "published": 18180,
+   "mine": 18163,
+   "published": 18163,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2025",
-   "mine": 19382,
-   "published": 19382,
+   "mine": 19298,
+   "published": 19298,
    "diff": 0,
    "ok": true
   },
   {
    "key": "2026",
-   "mine": 17520,
-   "published": 17520,
+   "mine": 17415,
+   "published": 17415,
    "diff": 0,
    "ok": true
   }
@@ -174,43 +174,43 @@
  "2_works": [
   {
    "key": "statewide",
-   "mine": 176198,
-   "published": 176198,
+   "mine": 174919,
+   "published": 174919,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale",
-   "mine": 62580,
-   "published": 62580,
+   "mine": 62143,
+   "published": 62143,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale",
-   "mine": 116949,
-   "published": 116949,
+   "mine": 116084,
+   "published": 116084,
    "diff": 0,
    "ok": true
   },
   {
    "key": "uconn",
-   "mine": 45618,
-   "published": 45618,
+   "mine": 45277,
+   "published": 45277,
    "diff": 0,
    "ok": true
   },
   {
    "key": "wesleyan",
-   "mine": 2729,
-   "published": 2729,
+   "mine": 2714,
+   "published": 2714,
    "diff": 0,
    "ok": true
   },
   {
    "key": "trinity",
-   "mine": 848,
-   "published": 848,
+   "mine": 846,
+   "published": 846,
    "diff": 0,
    "ok": true
   },
@@ -223,15 +223,15 @@
   },
   {
    "key": "quinnipiac",
-   "mine": 2483,
-   "published": 2483,
+   "mine": 2440,
+   "published": 2440,
    "diff": 0,
    "ok": true
   },
   {
    "key": "fairfield",
-   "mine": 1773,
-   "published": 1773,
+   "mine": 1751,
+   "published": 1751,
    "diff": 0,
    "ok": true
   },
@@ -244,15 +244,15 @@
   },
   {
    "key": "hartford",
-   "mine": 1205,
-   "published": 1205,
+   "mine": 1204,
+   "published": 1204,
    "diff": 0,
    "ok": true
   },
   {
    "key": "newhaven",
-   "mine": 1886,
-   "published": 1886,
+   "mine": 1884,
+   "published": 1884,
    "diff": 0,
    "ok": true
   },
@@ -300,8 +300,8 @@
   },
   {
    "key": "usj",
-   "mine": 541,
-   "published": 541,
+   "mine": 520,
+   "published": 520,
    "diff": 0,
    "ok": true
   }
@@ -309,29 +309,29 @@
  "4_free_count": [
   {
    "key": "statewide",
-   "mine": 117719,
-   "published": 117719,
+   "mine": 117657,
+   "published": 117657,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale",
-   "mine": 37048,
-   "published": 37048,
+   "mine": 37022,
+   "published": 37022,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale",
-   "mine": 83000,
-   "published": 83000,
+   "mine": 82959,
+   "published": 82959,
    "diff": 0,
    "ok": true
   },
   {
    "key": "uconn",
-   "mine": 27587,
-   "published": 27587,
+   "mine": 27572,
+   "published": 27572,
    "diff": 0,
    "ok": true
   },
@@ -358,8 +358,8 @@
   },
   {
    "key": "quinnipiac",
-   "mine": 1246,
-   "published": 1246,
+   "mine": 1233,
+   "published": 1233,
    "diff": 0,
    "ok": true
   },
@@ -444,43 +444,43 @@
  "4_free_share": [
   {
    "key": "statewide",
-   "mine": 0.668106334918671,
-   "published": 0.668106334918671,
+   "mine": 0.672637049148463,
+   "published": 0.672637049148463,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "statewide_no_yale",
-   "mine": 0.5920102269095557,
-   "published": 0.5920102269095557,
+   "mine": 0.595754952287466,
+   "published": 0.595754952287466,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "yale",
-   "mine": 0.7097110706376284,
-   "published": 0.7097110706376284,
+   "mine": 0.7146462906171394,
+   "published": 0.7146462906171394,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "uconn",
-   "mine": 0.6047393572712526,
-   "published": 0.6047393572712526,
+   "mine": 0.6089626079466396,
+   "published": 0.6089626079466396,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "wesleyan",
-   "mine": 0.6801026016855991,
-   "published": 0.6801026016855991,
+   "mine": 0.683861459100958,
+   "published": 0.683861459100958,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "trinity",
-   "mine": 0.5990566037735849,
-   "published": 0.5990566037735849,
+   "mine": 0.6004728132387707,
+   "published": 0.6004728132387707,
    "diff": 0.0,
    "ok": true
   },
@@ -493,15 +493,15 @@
   },
   {
    "key": "quinnipiac",
-   "mine": 0.5018123238018526,
-   "published": 0.5018123238018526,
+   "mine": 0.5053278688524591,
+   "published": 0.5053278688524591,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "fairfield",
-   "mine": 0.5341229554427523,
-   "published": 0.5341229554427523,
+   "mine": 0.5408338092518561,
+   "published": 0.5408338092518561,
    "diff": 0.0,
    "ok": true
   },
@@ -514,15 +514,15 @@
   },
   {
    "key": "hartford",
-   "mine": 0.4904564315352697,
-   "published": 0.4904564315352697,
+   "mine": 0.4908637873754153,
+   "published": 0.4908637873754153,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "newhaven",
-   "mine": 0.6193001060445387,
-   "published": 0.6193001060445387,
+   "mine": 0.6199575371549894,
+   "published": 0.6199575371549894,
    "diff": 0.0,
    "ok": true
   },
@@ -570,8 +570,8 @@
   },
   {
    "key": "usj",
-   "mine": 0.5046210720887245,
-   "published": 0.5046210720887245,
+   "mine": 0.525,
+   "published": 0.525,
    "diff": 0.0,
    "ok": true
   }
@@ -586,15 +586,15 @@
   },
   {
    "key": "statewide/oa_fee_unconfirmed",
-   "mine": 8349,
-   "published": 8349,
+   "mine": 8344,
+   "published": 8344,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide/gold",
-   "mine": 34739,
-   "published": 34739,
+   "mine": 34738,
+   "published": 34738,
    "diff": 0,
    "ok": true
   },
@@ -607,22 +607,22 @@
   },
   {
    "key": "statewide/bronze",
-   "mine": 25211,
-   "published": 25211,
+   "mine": 25171,
+   "published": 25171,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide/green",
-   "mine": 30699,
-   "published": 30699,
+   "mine": 30683,
+   "published": 30683,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide/closed",
-   "mine": 58479,
-   "published": 58479,
+   "mine": 57262,
+   "published": 57262,
    "diff": 0,
    "ok": true
   },
@@ -635,15 +635,15 @@
   },
   {
    "key": "statewide_no_yale/oa_fee_unconfirmed",
-   "mine": 4066,
-   "published": 4066,
+   "mine": 4064,
+   "published": 4064,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale/gold",
-   "mine": 11082,
-   "published": 11082,
+   "mine": 11081,
+   "published": 11081,
    "diff": 0,
    "ok": true
   },
@@ -656,22 +656,22 @@
   },
   {
    "key": "statewide_no_yale/bronze",
-   "mine": 7720,
-   "published": 7720,
+   "mine": 7701,
+   "published": 7701,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale/green",
-   "mine": 8731,
-   "published": 8731,
+   "mine": 8727,
+   "published": 8727,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale/closed",
-   "mine": 25532,
-   "published": 25532,
+   "mine": 25121,
+   "published": 25121,
    "diff": 0,
    "ok": true
   },
@@ -733,15 +733,15 @@
   },
   {
    "key": "yale/oa_fee_unconfirmed",
-   "mine": 4374,
-   "published": 4374,
+   "mine": 4371,
+   "published": 4371,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale/gold",
-   "mine": 24402,
-   "published": 24402,
+   "mine": 24401,
+   "published": 24401,
    "diff": 0,
    "ok": true
   },
@@ -754,22 +754,22 @@
   },
   {
    "key": "yale/bronze",
-   "mine": 17963,
-   "published": 17963,
+   "mine": 17940,
+   "published": 17940,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale/green",
-   "mine": 22662,
-   "published": 22662,
+   "mine": 22648,
+   "published": 22648,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale/closed",
-   "mine": 33949,
-   "published": 33949,
+   "mine": 33125,
+   "published": 33125,
    "diff": 0,
    "ok": true
   },
@@ -817,8 +817,8 @@
   },
   {
    "key": "trinity/closed",
-   "mine": 340,
-   "published": 340,
+   "mine": 338,
+   "published": 338,
    "diff": 0,
    "ok": true
   }
@@ -826,8 +826,8 @@
  "5_apc_works": [
   {
    "key": "statewide/upper",
-   "mine": 51851,
-   "published": 51851,
+   "mine": 51850,
+   "published": 51850,
    "diff": 0,
    "ok": true
   },
@@ -840,8 +840,8 @@
   },
   {
    "key": "statewide_no_yale/upper",
-   "mine": 16158,
-   "published": 16158,
+   "mine": 16157,
+   "published": 16157,
    "diff": 0,
    "ok": true
   },
@@ -854,8 +854,8 @@
   },
   {
    "key": "yale/upper",
-   "mine": 36743,
-   "published": 36743,
+   "mine": 36742,
+   "published": 36742,
    "diff": 0,
    "ok": true
   },
@@ -868,8 +868,8 @@
   },
   {
    "key": "uconn/upper",
-   "mine": 12316,
-   "published": 12316,
+   "mine": 12315,
+   "published": 12315,
    "diff": 0,
    "ok": true
   },
@@ -912,8 +912,8 @@
  "5_apc_priced": [
   {
    "key": "statewide/upper",
-   "mine": 45634,
-   "published": 45634,
+   "mine": 45633,
+   "published": 45633,
    "diff": 0,
    "ok": true
   },
@@ -926,8 +926,8 @@
   },
   {
    "key": "statewide_no_yale/upper",
-   "mine": 14120,
-   "published": 14120,
+   "mine": 14119,
+   "published": 14119,
    "diff": 0,
    "ok": true
   },
@@ -940,8 +940,8 @@
   },
   {
    "key": "yale/upper",
-   "mine": 32453,
-   "published": 32453,
+   "mine": 32452,
+   "published": 32452,
    "diff": 0,
    "ok": true
   },
@@ -954,8 +954,8 @@
   },
   {
    "key": "uconn/upper",
-   "mine": 11050,
-   "published": 11050,
+   "mine": 11049,
+   "published": 11049,
    "diff": 0,
    "ok": true
   },
@@ -998,8 +998,8 @@
  "5_apc_usd": [
   {
    "key": "statewide/upper",
-   "mine": 145372638,
-   "published": 145372638.0,
+   "mine": 145371722,
+   "published": 145371722.0,
    "diff": 0.0,
    "ok": true
   },
@@ -1012,8 +1012,8 @@
   },
   {
    "key": "statewide_no_yale/upper",
-   "mine": 40476775,
-   "published": 40476775.0,
+   "mine": 40475859,
+   "published": 40475859.0,
    "diff": 0.0,
    "ok": true
   },
@@ -1026,8 +1026,8 @@
   },
   {
    "key": "yale/upper",
-   "mine": 108033775,
-   "published": 108033775.0,
+   "mine": 108032859,
+   "published": 108032859.0,
    "diff": 0.0,
    "ok": true
   },
@@ -1040,8 +1040,8 @@
   },
   {
    "key": "uconn/upper",
-   "mine": 32362827,
-   "published": 32362827.0,
+   "mine": 32361911,
+   "published": 32361911.0,
    "diff": 0.0,
    "ok": true
   },
@@ -1084,43 +1084,43 @@
  "6_corr_with": [
   {
    "key": "statewide",
-   "mine": 144352,
-   "published": 144352,
+   "mine": 144004,
+   "published": 144004,
    "diff": 0,
    "ok": true
   },
   {
    "key": "statewide_no_yale",
-   "mine": 51319,
-   "published": 51319,
+   "mine": 51174,
+   "published": 51174,
    "diff": 0,
    "ok": true
   },
   {
    "key": "yale",
-   "mine": 95695,
-   "published": 95695,
+   "mine": 95491,
+   "published": 95491,
    "diff": 0,
    "ok": true
   },
   {
    "key": "uconn",
-   "mine": 37773,
-   "published": 37773,
+   "mine": 37678,
+   "published": 37678,
    "diff": 0,
    "ok": true
   },
   {
    "key": "wesleyan",
-   "mine": 2215,
-   "published": 2215,
+   "mine": 2203,
+   "published": 2203,
    "diff": 0,
    "ok": true
   },
   {
    "key": "trinity",
-   "mine": 743,
-   "published": 743,
+   "mine": 742,
+   "published": 742,
    "diff": 0,
    "ok": true
   },
@@ -1133,15 +1133,15 @@
   },
   {
    "key": "quinnipiac",
-   "mine": 1976,
-   "published": 1976,
+   "mine": 1963,
+   "published": 1963,
    "diff": 0,
    "ok": true
   },
   {
    "key": "fairfield",
-   "mine": 1331,
-   "published": 1331,
+   "mine": 1315,
+   "published": 1315,
    "diff": 0,
    "ok": true
   },
@@ -1161,8 +1161,8 @@
   },
   {
    "key": "newhaven",
-   "mine": 1446,
-   "published": 1446,
+   "mine": 1445,
+   "published": 1445,
    "diff": 0,
    "ok": true
   },
@@ -1210,8 +1210,8 @@
   },
   {
    "key": "usj",
-   "mine": 425,
-   "published": 425,
+   "mine": 417,
+   "published": 417,
    "diff": 0,
    "ok": true
   }
@@ -1219,43 +1219,43 @@
  "6_corr_share": [
   {
    "key": "statewide",
-   "mine": 0.8192601505124917,
-   "published": 0.8192601505124917,
+   "mine": 0.8232610522584739,
+   "published": 0.8232610522584739,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "statewide_no_yale",
-   "mine": 0.820054330457015,
-   "published": 0.820054330457015,
+   "mine": 0.8234877620970986,
+   "published": 0.8234877620970986,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "yale",
-   "mine": 0.8182626615020222,
-   "published": 0.8182626615020222,
+   "mine": 0.8226025981186038,
+   "published": 0.8226025981186038,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "uconn",
-   "mine": 0.8280284098382218,
-   "published": 0.8280284098382218,
+   "mine": 0.8321664421229322,
+   "published": 0.8321664421229322,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "wesleyan",
-   "mine": 0.8116526200073287,
-   "published": 0.8116526200073287,
+   "mine": 0.81171702284451,
+   "published": 0.81171702284451,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "trinity",
-   "mine": 0.8761792452830188,
-   "published": 0.8761792452830188,
+   "mine": 0.8770685579196218,
+   "published": 0.8770685579196218,
    "diff": 0.0,
    "ok": true
   },
@@ -1268,15 +1268,15 @@
   },
   {
    "key": "quinnipiac",
-   "mine": 0.7958115183246073,
-   "published": 0.7958115183246073,
+   "mine": 0.8045081967213115,
+   "published": 0.8045081967213115,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "fairfield",
-   "mine": 0.7507050197405527,
-   "published": 0.7507050197405527,
+   "mine": 0.7509994288977727,
+   "published": 0.7509994288977727,
    "diff": 0.0,
    "ok": true
   },
@@ -1289,15 +1289,15 @@
   },
   {
    "key": "hartford",
-   "mine": 0.7941908713692946,
-   "published": 0.7941908713692946,
+   "mine": 0.7948504983388704,
+   "published": 0.7948504983388704,
    "diff": 0.0,
    "ok": true
   },
   {
    "key": "newhaven",
-   "mine": 0.7667020148462355,
-   "published": 0.7667020148462355,
+   "mine": 0.7669851380042463,
+   "published": 0.7669851380042463,
    "diff": 0.0,
    "ok": true
   },
@@ -1345,8 +1345,8 @@
   },
   {
    "key": "usj",
-   "mine": 0.7855822550831792,
-   "published": 0.7855822550831792,
+   "mine": 0.801923076923077,
+   "published": 0.801923076923077,
    "diff": 0.0,
    "ok": true
   }
@@ -1361,15 +1361,15 @@
   },
   {
    "key": "rank1 works",
-   "mine": 42381,
-   "published": 42381,
+   "mine": 42095,
+   "published": 42095,
    "diff": 0,
    "ok": true
   },
   {
    "key": "rank1 closed",
-   "mine": 15939,
-   "published": 15939,
+   "mine": 15667,
+   "published": 15667,
    "diff": 0,
    "ok": true
   },
@@ -1403,15 +1403,15 @@
   },
   {
    "key": "rank3 works",
-   "mine": 16454,
-   "published": 16454,
+   "mine": 16046,
+   "published": 16046,
    "diff": 0,
    "ok": true
   },
   {
    "key": "rank3 closed",
-   "mine": 6082,
-   "published": 6082,
+   "mine": 5675,
+   "published": 5675,
    "diff": 0,
    "ok": true
   },
@@ -1424,15 +1424,15 @@
   },
   {
    "key": "rank4 works",
-   "mine": 10092,
-   "published": 10092,
+   "mine": 9512,
+   "published": 9512,
    "diff": 0,
    "ok": true
   },
   {
    "key": "rank4 closed",
-   "mine": 5773,
-   "published": 5773,
+   "mine": 5235,
+   "published": 5235,
    "diff": 0,
    "ok": true
   },

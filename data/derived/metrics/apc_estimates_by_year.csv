@@ -122,7 +122,7 @@ scsu,Southern Connecticut State University,2026,incomplete,43,32,100570.0,11,upp
 statewide,Connecticut (all 17 institutions),2015,complete,2053,1712,5414142.0,341,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2016,complete,2293,1964,6300588.0,329,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2017,complete,2569,2269,7210536.0,300,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2018,complete,3010,2575,8548754.0,435,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2018,complete,3009,2574,8547838.0,435,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2019,complete,3426,3043,8086211.0,383,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2020,complete,4552,4075,11264810.0,477,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2021,complete,5441,4865,13627442.0,576,upper_bound_all_authors
@@ -134,7 +134,7 @@ statewide,Connecticut (all 17 institutions),2026,incomplete,7950,6974,25626004.0
 statewide_no_yale,Connecticut without Yale,2015,complete,700,592,1672091.0,108,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2016,complete,742,621,1778761.0,121,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2017,complete,844,731,2121560.0,113,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2018,complete,997,827,2448504.0,170,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2018,complete,996,826,2447588.0,170,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2019,complete,1134,1019,2490903.0,115,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2020,complete,1421,1301,3205931.0,120,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2021,complete,1708,1527,3804100.0,181,upper_bound_all_authors
@@ -158,7 +158,7 @@ trinity,Trinity College,2026,incomplete,14,11,33977.0,3,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2015,complete,554,498,1411338.0,56,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2016,complete,583,507,1467494.0,76,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2017,complete,662,586,1735989.0,76,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2018,complete,758,659,1997563.0,99,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2018,complete,757,658,1996647.0,99,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2019,complete,904,822,2057896.0,82,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2020,complete,1164,1073,2722961.0,91,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2021,complete,1314,1198,3046196.0,116,upper_bound_all_authors
@@ -217,7 +217,7 @@ wesleyan,Wesleyan University,2026,incomplete,146,126,427196.0,20,upper_bound_all
 yale,Yale University,2015,complete,1387,1148,3829090.0,239,upper_bound_all_authors
 yale,Yale University,2016,complete,1593,1372,4619436.0,221,upper_bound_all_authors
 yale,Yale University,2017,complete,1775,1583,5222832.0,192,upper_bound_all_authors
-yale,Yale University,2018,complete,2075,1799,6264658.0,276,upper_bound_all_authors
+yale,Yale University,2018,complete,2074,1798,6263742.0,276,upper_bound_all_authors
 yale,Yale University,2019,complete,2370,2093,5806140.0,277,upper_bound_all_authors
 yale,Yale University,2020,complete,3205,2841,8271477.0,364,upper_bound_all_authors
 yale,Yale University,2021,complete,3825,3422,10083979.0,403,upper_bound_all_authors

@@ -16,7 +16,8 @@ funded articles only. They say little about whether any author may deposit.
 
 A Connecticut article is a "repository candidate" if it is closed or bronze,
 has no free copy anywhere except the publisher's own page (no free preprint
-either), is not a meeting abstract, and its journal shows deposit evidence.
+either), and its journal shows deposit evidence. Meeting abstracts are out of
+scope for the whole project (s04).
 This is a proxy, not a policy check, and is labeled that way everywhere.
 
 Cost: one OpenAlex group_by request per 100 journals (about 103 credits).
@@ -44,17 +45,11 @@ FUNDER_REPOSITORIES = ["S2764455111", "S4306400806"]  # PubMed Central, Europe P
 W = f"'{DERIVED / 'works.parquet'}'"
 WI = f"'{DERIVED / 'work_institutions.parquet'}'"
 WL = f"'{DERIVED / 'work_locations.parquet'}'"
-# Meeting abstracts printed in journal supplements are typed "article" in
-# OpenAlex. Nobody deposits them, so they are left out of the candidate list.
-# Caught by DOI pattern ("suppl" DOIs, and Blood's ASH abstract DOIs); this is
-# a lower bound, since abstracts without such a DOI are not caught.
-MEETING_ABSTRACT = ("(lower(coalesce(w.doi,'')) like '%suppl%' "
-                    r"or regexp_matches(lower(coalesce(w.doi,'')), '10\.1182/blood-20[0-9]{2}-[0-9]{5,6}$'))")
 # Candidate: closed or bronze, no free copy anywhere except the publisher's own
 # page (so no free preprint, accepted or published copy in any repository,
-# including copies OpenAlex files under a journal by mistake), and not a
-# meeting abstract.
-CANDIDATE = (f"w.oa_category in ('closed','bronze') and not {MEETING_ABSTRACT} "
+# including copies OpenAlex files under a journal by mistake). Meeting
+# abstracts are already out of scope (s04).
+CANDIDATE = ("w.oa_category in ('closed','bronze') "
              f"and w.work_id not in (select work_id from {WL} where is_oa and not is_primary)")
 
 
@@ -113,9 +108,6 @@ def main() -> None:
             count(distinct w.work_id)
             {base} and w.publication_year between {LO} and {HI} {where_entity}""").fetchone()
         return {"entity": key, "articles": r[6], "closed": r[0], "bronze": r[1],
-                "meeting_abstracts_excluded": con.execute(f"""select count(distinct w.work_id) {base}
-                    and w.publication_year between {LO} and {HI} {where_entity}
-                    and w.oa_category in ('closed','bronze') and {MEETING_ABSTRACT}""").fetchone()[0],
                 "closed_candidates": r[2], "bronze_candidates": r[3],
                 "candidates": r[2] + r[3], "candidates_share_of_articles": round((r[2] + r[3]) / r[6], 4),
                 "candidates_if_threshold_1": r[4], "candidates_if_threshold_10": r[5]}

@@ -87,6 +87,24 @@ def test_rule_a_keeps_repository_record_with_doi_and_journal_without_doi():
     assert flatten(work(doi=None), "s")[0]["in_scope"] is True  # journal article, no DOI
 
 
+def test_meeting_abstracts_excluded_by_doi_pattern():
+    from pipeline.s04_build_tables import is_meeting_abstract
+    for d in ["https://doi.org/10.1212/wnl.86.16_supplement.p5.123",
+              "https://doi.org/10.1096/fasebj.2018.32.1_supplement.796.15",
+              "https://doi.org/10.1200/jco.2025.43.5_suppl.559",
+              "https://doi.org/10.1161/circ.150.suppl_1.4136704",
+              "https://doi.org/10.1182/blood-2022-169754",
+              "https://doi.org/10.1182/blood.v126.23.87.87"]:
+        assert is_meeting_abstract(d), d
+    for d in ["https://doi.org/10.1182/blood-2016-09-692954",       # regular Blood article
+              "https://doi.org/10.5670/oceanog.2021.supplement.02-31",  # real article in a supplement issue
+              "https://doi.org/10.18001/trs.3.2(suppl1).6", None]:
+        assert not is_meeting_abstract(d), d
+    row, wi, _ = flatten(work(doi="https://doi.org/10.1200/jco.2019.37.15_suppl.e123",
+                              authorships=[{"institutions": [inst("I4498119")]}]), "s")
+    assert row["exclude_reason"] == "meeting_abstract" and row["in_scope"] is False and wi[0]["in_scope"] is False
+
+
 def test_trinity_washington_college_credit_is_corrected():
     # Author at Washington College (Maryland) matched by OpenAlex to Trinity.
     a = {"institutions": [inst("I56722557")], "raw_affiliation_strings": ["Washington College, USA"]}

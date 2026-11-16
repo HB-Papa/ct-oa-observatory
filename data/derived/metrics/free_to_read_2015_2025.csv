@@ -3,18 +3,18 @@ bridgeport,University of Bridgeport,754,589,0.7811671087533156
 ccsu,Central Connecticut State University,1394,663,0.47560975609756095
 conncoll,Connecticut College,685,362,0.5284671532846715
 ecsu,Eastern Connecticut State University,576,293,0.5086805555555556
-fairfield,Fairfield University,1773,947,0.5341229554427523
-hartford,University of Hartford,1205,591,0.4904564315352697
-newhaven,University of New Haven,1886,1168,0.6193001060445387
-quinnipiac,Quinnipiac University,2483,1246,0.5018123238018526
+fairfield,Fairfield University,1751,947,0.5408338092518561
+hartford,University of Hartford,1204,591,0.4908637873754153
+newhaven,University of New Haven,1884,1168,0.6199575371549894
+quinnipiac,Quinnipiac University,2440,1233,0.5053278688524591
 sacredheart,Sacred Heart University,1347,596,0.4424647364513734
 scsu,Southern Connecticut State University,1659,903,0.5443037974683544
-statewide,Connecticut (all 17 institutions),176198,117719,0.668106334918671
-statewide_no_yale,Connecticut without Yale,62580,37048,0.5920102269095557
-trinity,Trinity College,848,508,0.5990566037735849
-uconn,University of Connecticut (incl. UConn Health),45618,27587,0.6047393572712526
+statewide,Connecticut (all 17 institutions),174919,117657,0.672637049148463
+statewide_no_yale,Connecticut without Yale,62143,37022,0.595754952287466
+trinity,Trinity College,846,508,0.6004728132387707
+uconn,University of Connecticut (incl. UConn Health),45277,27572,0.6089626079466396
 uscga,United States Coast Guard Academy,195,117,0.6
-usj,University of Saint Joseph,541,273,0.5046210720887245
+usj,University of Saint Joseph,520,273,0.525
 wcsu,Western Connecticut State University,422,220,0.5213270142180095
-wesleyan,Wesleyan University,2729,1856,0.6801026016855991
-yale,Yale University,116949,83000,0.7097110706376284
+wesleyan,Wesleyan University,2714,1856,0.683861459100958
+yale,Yale University,116084,82959,0.7146462906171394

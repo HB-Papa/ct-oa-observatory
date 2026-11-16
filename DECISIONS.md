@@ -110,7 +110,7 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Effect:** Statewide 2015–2025, diamond goes from 5.7% to 0.9%, with 4.7% fee not confirmed. Free-to-read share is unchanged (66.81%).
 
 ## 2026-11-16 — Trend explanation corrected
-- The 2023–2025 dip in free-to-read share is driven by **bronze** falling (15.9% to 8.1%), not green. Green is flat. Any site text must say this and call it a likely timing effect, to be retested with the next snapshot.
+- The 2023–2025 dip in free-to-read share is driven by **bronze** falling (15.9% to 8.1%; 7.9% after meeting abstracts were dropped), not green. Green is flat. Any site text must say this and call it a likely timing effect, to be retested with the next snapshot.
 
 ## 2026-11-16 — Site design: "research report" (replaces the Open Sun look)
 - **Choice:** White page, Source Serif 4 headlines, Public Sans text and data, one reading column (44rem) with numbered figures ("Figure 1"), a dark red accent (#9b1c31 light, #f29aa8 dark), a statement headline built from the data ("Two-thirds of Connecticut's research is free to read"), and a "Key findings" box. Light and dark mode both supported.
@@ -152,10 +152,10 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **OpenAIRE** is the main independent check. Queried without a token, 50 DOIs per request (11 requests, under the 60/hour anonymous limit), so no account was needed.
 - **CORE:** not run yet. Chris emailed CORE on 2026-11-16 to confirm the licence. If there is no reply by the end of phase 7, CORE is skipped and the Methods page says why.
 
-## 2026-11-16 — DOAJ results are reported separately, not applied (pending Chris)
+## 2026-11-16 — DOAJ results are reported separately, not applied (Chris confirmed)
 - **Choice:** DOAJ's answer for the 8,349 "fee not confirmed" works is published as its own table (`crosschecks/doaj_fee_unconfirmed.csv`). The site's category figures stay OpenAlex-only for now.
 - **Alternatives:** move works DOAJ confirms as fee-free into "diamond" and works DOAJ lists with a fee into "gold" on the site.
-- **Why:** CLAUDE.md says never blend validation-source numbers into OpenAlex figures. Applying DOAJ would do exactly that. It is Chris's call whether this enrichment is worth an exception (it would be labeled).
+- **Why:** CLAUDE.md says never blend validation-source numbers into OpenAlex figures. Applying DOAJ would do exactly that. Chris chose to keep them separate (2026-11-16). The Methods page will report DOAJ's answer as a cross-check.
 - **Rule used:** DOAJ shows a journal's current policy, so a work only gets a DOAJ answer if it was published in or after the journal's open access start year (`oa_start`).
 
 ## 2026-11-16 — OpenAPC compared in euros, against today's list price
@@ -171,4 +171,11 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Cost:** one OpenAlex `group_by` request per 100 journals, 101 requests for 10,045 journals.
 - **Candidate list:** `data/derived/downloads/repository_candidates.csv`, no author names, not shown on the site, as the brief requires.
 - **Tightened after the cross-check agent's report:** a candidate must have no free copy anywhere except the publisher's page (the first version only excluded accepted or published repository copies, so 2,676 bronze works with free preprints slipped in), and meeting abstracts in journal supplements are left out by DOI pattern (`suppl` DOIs and Blood's ASH abstract DOIs). Statewide candidates: 43,581 (24.7% of 2015–2025 articles); 25,612 at threshold 10, 55,728 at threshold 1.
-- **Not changed (Chris to decide):** meeting abstracts stay in the main OA figures for now. Dropping them would remove about 1,000 closed works statewide (a lower bound) and is a scope change.
+- **Superseded the same day:** Chris chose to drop meeting abstracts from the whole project (next entry), so the green proxy now relies on the project-wide rule.
+
+## 2026-11-16 — Meeting abstracts dropped from all figures
+- **Choice:** conference abstracts printed in journal supplements are out of scope (`exclude_reason = meeting_abstract`), matched by DOI pattern for the journals that publish them in bulk: Neurology, The FASEB Journal, Journal of Clinical Oncology, AHA journals (Circulation, Stroke, Hypertension, Circulation Research), Blood (ASH abstracts), Japanese Pharmacological Society proceedings, and one Journal of Behavioral Addictions abstract book. Patterns are in `MEETING_ABSTRACT_DOI_PATTERNS` in `pipeline/s04_build_tables.py`.
+- **Alternatives:** keep them (OpenAlex types them as articles); match any DOI containing "suppl". The broad match was tested and rejected: it also caught real articles printed in supplement issues (Oceanography, Tobacco Regulatory Science, Plant Archives) and a preface.
+- **Why:** Chris's call after the cross-check agent found them. They are not research articles, almost all are closed, and nobody deposits them, so they inflated the closed counts and the green candidate list.
+- **Effect:** 1,384 works excluded (2015–2026), 1,279 of them in 2015–2025. Statewide free to read 66.8% to 67.3%; without Yale 59.2% to 59.6%. Largest change at the University of Saint Joseph (50.5% to 52.5%, 21 abstracts). Both site headlines still hold. The independent recompute (`verification/recompute.py`, with the rule restated separately) passes on all 12 groups. Lower bound: abstracts without one of these DOI patterns are still counted.
+- **Phase 3 records** (`docs/verification-phase3.md`) keep the figures as they were at the time.

@@ -94,12 +94,12 @@ Reported `oa_category` (diamond split by confirmed $0 fee), in-scope works:
 
 | oa_category        |   works |   pct |
 |:-------------------|--------:|------:|
-| closed             |   58479 |  33.2 |
-| gold               |   34739 |  19.7 |
-| green              |   30699 |  17.4 |
-| bronze             |   25211 |  14.3 |
-| hybrid             |   17112 |   9.7 |
-| oa_fee_unconfirmed |    8349 |   4.7 |
+| closed             |   57262 |  32.7 |
+| gold               |   34738 |  19.9 |
+| green              |   30683 |  17.5 |
+| bronze             |   25171 |  14.4 |
+| hybrid             |   17112 |   9.8 |
+| oa_fee_unconfirmed |    8344 |   4.8 |
 | diamond            |    1609 |   0.9 |
 
 ## 4. Repository records typed as articles
@@ -158,8 +158,8 @@ Top repository sources:
 | OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information) |      62 |            24 |
 | Europe PMC (PubMed Central)                                                         |      61 |            48 |
 | OpenCommons - UConn (University of Connecticut)                                     |      58 |            58 |
-| DOAJ (DOAJ: Directory of Open Access Journals)                                      |      52 |            31 |
 | Digital Commons - New Heaven (University of New Haven)                              |      52 |            52 |
+| DOAJ (DOAJ: Directory of Open Access Journals)                                      |      52 |            31 |
 | eYLS (Yale Law School)                                                              |      45 |            45 |
 | eScholarship (California Digital Library)                                           |      44 |            22 |
 | Figshare                                                                            |      35 |             1 |
@@ -177,6 +177,8 @@ Top repository sources:
 
 Rule A (approved 2026-11-16): works whose primary location is a repository and that have no DOI are excluded from every metric. They stay in the tables with `in_scope = false`.
 
+Meeting abstracts (approved 2026-11-16): conference abstracts printed in journal supplements (Neurology, The FASEB Journal, Journal of Clinical Oncology, AHA journals, Blood and a few others), matched by DOI pattern (`MEETING_ABSTRACT_DOI_PATTERNS` in s04), are excluded. OpenAlex types them as articles. Abstracts without a recognisable DOI pattern are not caught.
+
 Affiliation corrections (see `AFFILIATION_CORRECTIONS` in s04): institution credits OpenAlex assigned in error are flagged `affiliation_corrected` and left out of metrics. A work whose only Connecticut credit was corrected is excluded.
 
 | institution_key   |   corrected_credits |
@@ -187,25 +189,26 @@ Affiliation corrections (see `AFFILIATION_CORRECTIONS` in s04): institution cred
 |:-----------------------------------------|--------:|
 | repository_record_no_doi                 |    1827 |
 | affiliation_correction_no_ct_institution |      16 |
+| meeting_abstract                         |    1384 |
 
-Excluded: **1,843** works. Counted in metrics: **193,718** works. The list is in `data/derived/quality/excluded_works.csv`.
+Excluded: **3,227** works. Counted in metrics: **192,334** works. The list is in `data/derived/quality/excluded_works.csv`.
 
 | institution_key   |   excluded |
 |:------------------|-----------:|
-| yale              |        915 |
-| uconn             |        413 |
+| yale              |       1853 |
+| uconn             |        782 |
 | conncoll          |        297 |
-| newhaven          |         56 |
-| fairfield         |         40 |
-| wesleyan          |         32 |
-| quinnipiac        |         25 |
+| quinnipiac        |         70 |
+| fairfield         |         62 |
+| newhaven          |         60 |
+| wesleyan          |         47 |
+| usj               |         25 |
 | ccsu              |         23 |
-| trinity           |         20 |
-| hartford          |         15 |
+| trinity           |         22 |
+| hartford          |         16 |
 | bridgeport        |         12 |
 | scsu              |          9 |
 | sacredheart       |          6 |
 | uscga             |          5 |
-| usj               |          4 |
 | wcsu              |          3 |
 | ecsu              |          2 |

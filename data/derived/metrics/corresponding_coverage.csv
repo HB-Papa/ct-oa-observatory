@@ -7,33 +7,33 @@ conncoll,Connecticut College,complete,685,612,0.8934306569343066
 conncoll,Connecticut College,incomplete,40,33,0.825
 ecsu,Eastern Connecticut State University,complete,576,464,0.8055555555555556
 ecsu,Eastern Connecticut State University,incomplete,48,34,0.7083333333333334
-fairfield,Fairfield University,complete,1773,1331,0.7507050197405527
+fairfield,Fairfield University,complete,1751,1315,0.7509994288977727
 fairfield,Fairfield University,incomplete,159,120,0.7547169811320755
-hartford,University of Hartford,complete,1205,957,0.7941908713692946
+hartford,University of Hartford,complete,1204,957,0.7948504983388704
 hartford,University of Hartford,incomplete,106,79,0.7452830188679245
-newhaven,University of New Haven,complete,1886,1446,0.7667020148462355
-newhaven,University of New Haven,incomplete,303,221,0.7293729372937293
-quinnipiac,Quinnipiac University,complete,2483,1976,0.7958115183246073
-quinnipiac,Quinnipiac University,incomplete,282,203,0.7198581560283688
+newhaven,University of New Haven,complete,1884,1445,0.7669851380042463
+newhaven,University of New Haven,incomplete,301,221,0.7342192691029901
+quinnipiac,Quinnipiac University,complete,2440,1963,0.8045081967213115
+quinnipiac,Quinnipiac University,incomplete,280,203,0.725
 sacredheart,Sacred Heart University,complete,1347,1068,0.7928730512249443
 sacredheart,Sacred Heart University,incomplete,152,104,0.6842105263157895
 scsu,Southern Connecticut State University,complete,1659,1241,0.7480409885473177
 scsu,Southern Connecticut State University,incomplete,134,98,0.7313432835820896
-statewide,Connecticut (all 17 institutions),complete,176198,144352,0.8192601505124917
-statewide,Connecticut (all 17 institutions),incomplete,17520,13281,0.7580479452054795
-statewide_no_yale,Connecticut without Yale,complete,62580,51319,0.820054330457015
-statewide_no_yale,Connecticut without Yale,incomplete,5916,4515,0.763184584178499
-trinity,Trinity College,complete,848,743,0.8761792452830188
+statewide,Connecticut (all 17 institutions),complete,174919,144004,0.8232610522584739
+statewide,Connecticut (all 17 institutions),incomplete,17415,13277,0.7623887453344818
+statewide_no_yale,Connecticut without Yale,complete,62143,51174,0.8234877620970986
+statewide_no_yale,Connecticut without Yale,incomplete,5884,4515,0.7673351461590755
+trinity,Trinity College,complete,846,742,0.8770685579196218
 trinity,Trinity College,incomplete,48,39,0.8125
-uconn,University of Connecticut (incl. UConn Health),complete,45618,37773,0.8280284098382218
-uconn,University of Connecticut (incl. UConn Health),incomplete,4209,3242,0.7702542171537182
+uconn,University of Connecticut (incl. UConn Health),complete,45277,37678,0.8321664421229322
+uconn,University of Connecticut (incl. UConn Health),incomplete,4181,3242,0.7754125807223152
 uscga,United States Coast Guard Academy,complete,195,153,0.7846153846153846
 uscga,United States Coast Guard Academy,incomplete,18,16,0.8888888888888888
-usj,University of Saint Joseph,complete,541,425,0.7855822550831792
+usj,University of Saint Joseph,complete,520,417,0.801923076923077
 usj,University of Saint Joseph,incomplete,42,37,0.8809523809523809
 wcsu,Western Connecticut State University,complete,422,339,0.8033175355450237
 wcsu,Western Connecticut State University,incomplete,36,34,0.9444444444444444
-wesleyan,Wesleyan University,complete,2729,2215,0.8116526200073287
+wesleyan,Wesleyan University,complete,2714,2203,0.81171702284451
 wesleyan,Wesleyan University,incomplete,281,206,0.7330960854092526
-yale,Yale University,complete,116949,95695,0.8182626615020222
-yale,Yale University,incomplete,11975,9049,0.7556576200417536
+yale,Yale University,complete,116084,95491,0.8226025981186038
+yale,Yale University,incomplete,11902,9045,0.7599563098638884

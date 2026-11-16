@@ -27,6 +27,7 @@ Phase 6: cross-checks and enrichment (in progress)
 - 2026-11-16: Cross-check agent report in docs/crosschecks.md (OpenAIRE agrees on free to read for 88.0% of 407 answered; Unpaywall 501/501; DOAJ flag 99.8%). Green proxy candidate rule tightened after its findings (preprints, meeting abstracts).
 - 2026-11-16: Phase 6 pipeline steps s07 to s12 (sample, Unpaywall, OpenAIRE, DOAJ, OpenAPC, green proxy) plus `pipeline/sources.py`. 207 OpenAlex credits. 28 pytest tests pass. Cross-check tables in data/derived/crosschecks/ with per-file licenses; green opportunity metric; repository candidate CSV in data/derived/downloads/.
 
+- 2026-11-16: Chris decided: meeting abstracts dropped from all figures (1,384 works, DOI patterns in s04); DOAJ fee answers kept separate. Tables, metrics and green proxy rebuilt; statewide free to read 67.3% (was 66.8%). Independent recompute PASS on all 12 groups. 29 pytest tests pass. Site rebuilt; headlines unchanged.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -40,11 +41,10 @@ Phase 6: cross-checks and enrichment (in progress)
 
 ## Next
 - Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
-- Phase 6 approval from Chris, with two decisions: apply DOAJ fee answers (labeled) or keep separate; drop meeting abstracts from main figures or not.
+- Phase 6 approval from Chris.
 - Phase 7: full site (17 profiles, Compare, Methods, downloads, About, Changelog), accessibility audit, remove noindex.
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.
-- DOAJ answers for the 8,349 "fee not confirmed" works: 2,706 no fee, 858 fee, 83 no APC but other charges, 103 published before the journal's OA start, 4,599 not in DOAJ. Apply to site figures (labeled) or keep separate? Chris to decide.
 - OpenAlex misses free copies in Connecticut Digital Commons and EliScholar repositories (up to 553 closed works) and Journal of Financial Crises (143 works). Methods page limitation; possibly worth reporting to OpenAlex.
 - CORE: awaiting reply to Chris's email (sent 2026-11-16). Skip with a note if no reply by end of phase 7.

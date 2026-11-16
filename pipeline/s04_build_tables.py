@@ -72,7 +72,32 @@ def exclude_reason(primary_is_repository: bool, doi) -> str | None:
     flagged, so the exclusion can be counted and reported."""
     if primary_is_repository and not doi:
         return "repository_record_no_doi"
+    if is_meeting_abstract(doi):
+        return "meeting_abstract"
     return None
+
+
+# Meeting abstracts (approved by Chris 2026-11-16). Conference abstracts printed
+# in journal supplements are typed "article" (sometimes "review") in OpenAlex.
+# They are short, almost never open, and not research articles, so they are not
+# counted. Matched by DOI pattern for the journals that publish them in bulk.
+# A broad "suppl" match was rejected: it also catches real articles in
+# supplement issues (e.g. Oceanography, Tobacco Regulatory Science).
+MEETING_ABSTRACT_DOI_PATTERNS = [
+    r"10\.1212/wnl\..*_supplement",                    # Neurology (AAN annual meeting)
+    r"10\.1096/fasebj\..*_supplement",                 # The FASEB Journal (Experimental Biology)
+    r"10\.1200/jco\..*_suppl",                         # Journal of Clinical Oncology (ASCO)
+    r"10\.1161/[a-z]+\.[0-9]+\.suppl_",                # AHA journals: Circulation, Stroke, Hypertension, Circ Res
+    r"10\.1182/blood-20[0-9]{2}-[0-9]{5,6}$",          # Blood, ASH abstracts 2019 on (articles have a month: blood-2016-09-...)
+    r"10\.1182/blood\.v[0-9]+\.2[23]\.[0-9]+\.[0-9]+$",  # Blood, ASH abstract issues 2015-2016
+    r"10\.1254/jpssuppl\.",                            # Japanese Pharmacological Society meeting proceedings
+    r"10\.1556/jba\.[0-9]+\.[0-9]+\.suppl",            # Journal of Behavioral Addictions conference abstract book
+]
+_MEETING_ABSTRACT_RE = re.compile("|".join(MEETING_ABSTRACT_DOI_PATTERNS), re.I)
+
+
+def is_meeting_abstract(doi) -> bool:
+    return bool(doi) and bool(_MEETING_ABSTRACT_RE.search(doi))
 
 
 def flatten(w: dict, snap: str):
