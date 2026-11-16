@@ -1,0 +1,181 @@
+rows: (510,)
+
+### OpenAlex oa_status counts
+
+| oa_status   |   n |
+|:------------|----:|
+| closed      | 223 |
+| gold        |  82 |
+| diamond     |  61 |
+| bronze      |  57 |
+| green       |  46 |
+| hybrid      |  41 |
+
+### oa_category counts
+
+| oa_category        |   n |
+|:-------------------|----:|
+| closed             | 223 |
+| gold               |  82 |
+| oa_fee_unconfirmed |  58 |
+| bronze             |  57 |
+| green              |  46 |
+| hybrid             |  41 |
+| diamond            |   3 |
+
+### Unpaywall found
+
+| u_found   |   n |
+|:----------|----:|
+| true      | 501 |
+| false     |   9 |
+
+### OpenAlex oa_status vs Unpaywall oa_status (pivot)
+
+| oa_status   |   (not found) |   bronze |   closed |   gold |   green |   hybrid |
+|:------------|--------------:|---------:|---------:|-------:|--------:|---------:|
+| bronze      |             0 |       57 |        0 |      0 |       0 |        0 |
+| closed      |             0 |        0 |      223 |      0 |       0 |        0 |
+| diamond     |             4 |        0 |        0 |     57 |       0 |        0 |
+| gold        |             0 |        0 |        0 |     82 |       0 |        0 |
+| green       |             4 |        0 |        0 |      0 |      42 |        0 |
+| hybrid      |             1 |        0 |        0 |      0 |       0 |       40 |
+
+### Unpaywall exact agreement (diamond counted as gold)
+
+|   found |   agree |
+|--------:|--------:|
+|     501 |     501 |
+
+### OpenAIRE found / access label
+
+| o_found   | access     |   n |
+|:----------|:-----------|----:|
+| false     | (blank)    |   6 |
+| true      | (blank)    |  97 |
+| true      | CLOSED     | 141 |
+| true      | OPEN       | 265 |
+| true      | RESTRICTED |   1 |
+
+### Free to read: OpenAlex vs OpenAIRE access
+
+| oa        |   (blank) |   (not found) |   CLOSED |   OPEN |   RESTRICTED |
+|:----------|----------:|--------------:|---------:|-------:|-------------:|
+| OA closed |        83 |             1 |      116 |     23 |            0 |
+| OA free   |        14 |             5 |       25 |    242 |            1 |
+
+### Free-to-read agreement where OpenAIRE gives OPEN/CLOSED/RESTRICTED/EMBARGO
+
+|   compared |   agree |   pct |   oa_closed_oaire_open |   oa_free_oaire_not_open |
+|-----------:|--------:|------:|-----------------------:|-------------------------:|
+|        407 |     358 |    88 |                     23 |                       26 |
+
+### Free to read by OpenAlex status vs OpenAIRE
+
+| oa_status   |   (blank) |   (not found) |   CLOSED |   OPEN |   RESTRICTED |
+|:------------|----------:|--------------:|---------:|-------:|-------------:|
+| bronze      |         5 |             0 |       15 |     37 |            0 |
+| closed      |        83 |             1 |      116 |     23 |            0 |
+| diamond     |         3 |             1 |        0 |     57 |            0 |
+| gold        |         0 |             0 |        0 |     82 |            0 |
+| green       |         3 |             3 |        7 |     32 |            1 |
+| hybrid      |         3 |             1 |        3 |     34 |            0 |
+
+### Free-to-read agreement per institution (labelled OpenAIRE answers only)
+
+| institution_key   |   compared |   agree |   pct |   OA closed / OAIRE open |   OA free / OAIRE not open |   not found or blank |   oa_free_pct |   oaire_open_pct |
+|:------------------|-----------:|--------:|------:|-------------------------:|---------------------------:|---------------------:|--------------:|-----------------:|
+| bridgeport        |         25 |      25 | 100   |                        0 |                          0 |                    5 |            76 |               76 |
+| ccsu              |         23 |      21 |  91.3 |                        2 |                          0 |                    7 |            43 |               52 |
+| conncoll          |         23 |      21 |  91.3 |                        0 |                          2 |                    7 |            61 |               52 |
+| ecsu              |         21 |      19 |  90.5 |                        0 |                          2 |                    9 |            67 |               57 |
+| fairfield         |         22 |      19 |  86.4 |                        3 |                          0 |                    8 |            64 |               77 |
+| hartford          |         23 |      19 |  82.6 |                        1 |                          3 |                    7 |            70 |               61 |
+| newhaven          |         27 |      20 |  74.1 |                        3 |                          4 |                    3 |            67 |               63 |
+| quinnipiac        |         24 |      23 |  95.8 |                        0 |                          1 |                    6 |            58 |               54 |
+| sacredheart       |         23 |      20 |  87   |                        2 |                          1 |                    7 |            61 |               65 |
+| scsu              |         27 |      24 |  88.9 |                        1 |                          2 |                    3 |            63 |               59 |
+| trinity           |         23 |      19 |  82.6 |                        4 |                          0 |                    7 |            52 |               70 |
+| uconn             |         24 |      20 |  83.3 |                        2 |                          2 |                    6 |            71 |               71 |
+| uscga             |         22 |      19 |  86.4 |                        0 |                          3 |                    8 |            82 |               68 |
+| usj               |         22 |      21 |  95.5 |                        1 |                          0 |                    8 |            59 |               64 |
+| wcsu              |         21 |      19 |  90.5 |                        2 |                          0 |                    9 |            62 |               71 |
+| wesleyan          |         27 |      25 |  92.6 |                        0 |                          2 |                    3 |            78 |               70 |
+| yale              |         30 |      24 |  80   |                        2 |                          4 |                    0 |            80 |               73 |
+
+### Free-to-read by year band
+
+| band      |   compared |   pct_agree |   oa_closed_oaire_open |   oa_free_oaire_not_open |
+|:----------|-----------:|------------:|-----------------------:|-------------------------:|
+| 2015-2019 |        200 |        88.5 |                     16 |                        7 |
+| 2020-2022 |        127 |        89   |                      4 |                       10 |
+| 2023-2025 |         80 |        85   |                      3 |                        9 |
+
+### Publisher OA color: OpenAlex status vs OpenAIRE color
+
+| oa_status   |   (none) |   (not found) |   bronze |   gold |   hybrid |
+|:------------|---------:|--------------:|---------:|-------:|---------:|
+| bronze      |       22 |             0 |       19 |      8 |        8 |
+| closed      |      200 |             1 |       13 |      4 |        5 |
+| diamond     |        7 |             1 |        0 |     51 |        2 |
+| gold        |        0 |             0 |        0 |     81 |        1 |
+| green       |       17 |             3 |       21 |      3 |        2 |
+| hybrid      |        7 |             1 |        0 |     15 |       18 |
+
+### Color agreement (found in OpenAIRE; OpenAlex publisher color = gold/diamond->gold, hybrid, bronze, else none)
+
+|   compared |   agree |   pct |   both_colored |   both_colored_agree |
+|-----------:|--------:|------:|---------------:|---------------------:|
+|        504 |     386 |  76.6 |            203 |                  169 |
+
+### Repository copy: OpenAlex OA repository location vs OpenAIRE isGreen
+
+| oa              |   (not found) |   isGreen false |   isGreen true |
+|:----------------|--------------:|----------------:|---------------:|
+| OA repo copy    |             5 |              73 |            114 |
+| no OA repo copy |             1 |             313 |              4 |
+
+### Repo agreement (found)
+
+|   compared |   agree |   pct |
+|-----------:|--------:|------:|
+|        504 |     427 |  84.7 |
+
+### Repo copy restricted to non-PMC repositories vs isGreen
+
+| oa                 |   isGreen false |   isGreen true |
+|:-------------------|----------------:|---------------:|
+| OA non-PMC repo    |              45 |             96 |
+| no OA non-PMC repo |             341 |             22 |
+
+### OpenAlex green status vs OpenAIRE isGreen
+
+| oa_status   |   (not found) |   isGreen false |   isGreen true |
+|:------------|--------------:|----------------:|---------------:|
+| bronze      |             0 |              41 |             16 |
+| closed      |             1 |             221 |              1 |
+| diamond     |             1 |              46 |             14 |
+| gold        |             0 |              23 |             59 |
+| green       |             3 |              28 |             15 |
+| hybrid      |             1 |              27 |             13 |
+
+### Diamond: OpenAlex diamond/oa_category vs OpenAIRE in diamond journal
+
+| oa_category        |   (nf) |   false |   true |
+|:-------------------|-------:|--------:|-------:|
+| gold               |      0 |      82 |      0 |
+| hybrid             |      1 |      40 |      0 |
+| oa_fee_unconfirmed |      1 |      56 |      1 |
+| green              |      3 |      43 |      0 |
+| bronze             |      0 |      57 |      0 |
+| diamond            |      0 |       3 |      0 |
+| closed             |      1 |     222 |      0 |
+
+### Disagreement groups
+
+| grp                        |   n |
+|:---------------------------|----:|
+| A_oa_closed_oaire_open     |  23 |
+| B_oa_free_oaire_closed     |  26 |
+| C_oa_green_oaire_not_green |  20 |
+| D_oa_free_oaire_blank      |  11 |

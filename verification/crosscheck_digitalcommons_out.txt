@@ -1,0 +1,56 @@
+
+### Digital Commons-style repository locations (non-primary) on in-scope works: free or not, by host
+
+| host                           |   locations |   free |   pct_free |
+|:-------------------------------|------------:|-------:|-----------:|
+| elischolar.library.yale.edu    |         560 |      0 |        0   |
+| scholarworks.bridgeport.edu    |         233 |      2 |        0.9 |
+| digitalcommons.fairfield.edu   |         216 |     73 |       33.8 |
+| digitalcommons.newhaven.edu    |         201 |    101 |       50.2 |
+| digitalrepository.trincoll.edu |         164 |     38 |       23.2 |
+| digitalcommons.lib.uconn.edu   |         139 |      6 |        4.3 |
+| digitalcommons.conncoll.edu    |          35 |     14 |       40   |
+| wesscholar.wesleyan.edu        |          23 |      0 |        0   |
+| opencommons.uconn.edu          |           6 |      0 |        0   |
+| digitalcommons.sacredheart.edu |           3 |      0 |        0   |
+| repository.wcsu.edu            |           1 |      0 |        0   |
+
+### Same, all Digital Commons-style hosts together, by publication year band
+
+| band      |   locations |   free |   pct_free |
+|:----------|------------:|-------:|-----------:|
+| 2015-2019 |        1516 |    713 |       47   |
+| 2020-2022 |        1034 |    537 |       51.9 |
+| 2023-2025 |        1199 |    458 |       38.2 |
+
+### In-scope CLOSED works (2015-2025) whose only repository evidence includes a not-free Digital Commons/EliScholar location
+
+|   works |
+|--------:|
+|     553 |
+
+### Of those, by Connecticut repository host
+
+| host                         |   closed_works |
+|:-----------------------------|---------------:|
+| elischolar.library.yale.edu  |            130 |
+| digitalcommons.fairfield.edu |             88 |
+| digitalcommons.newhaven.edu  |             73 |
+| digitalcommons.mtu.edu       |             34 |
+| digitalcommons.lib.uconn.edu |             33 |
+| digitalcommons.lsu.edu       |             31 |
+| digitalcommons.unl.edu       |             21 |
+| digitalcommons.usf.edu       |             16 |
+| digitalcommons.usu.edu       |             16 |
+| digitalcommons.conncoll.edu  |             11 |
+| digitalcommons.unf.edu       |             11 |
+| digitalcommons.chapman.edu   |              9 |
+
+### Journal of Financial Crises (Yale, EliScholar) in-scope 2015-2025 by OA status
+
+| oa_status   |   n |
+|:------------|----:|
+| green       | 116 |
+| closed      | 143 |
+| bronze      | 162 |
+| hybrid      |   9 |

@@ -1,0 +1,634 @@
+{
+ "openalex": {
+  "W2183917196": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Polyhedron",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1016/j.poly.2015.11.027"
+    },
+    {
+     "source": "DigitalCommons - Fairfield (Fairfield University)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://digitalcommons.fairfield.edu/chemistry-facultypubs/42"
+    }
+   ]
+  },
+  "W2442085864": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Applied Economics",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1080/00036846.2016.1184376"
+    },
+    {
+     "source": "Digital Commons - New Heaven (University of New Haven)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://digitalcommons.newhaven.edu/economics-facpubs/9"
+    },
+    {
+     "source": "RePEc: Research Papers in Economics",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "http://hdl.handle.net/10.1080/00036846.2016.1184376"
+    }
+   ]
+  },
+  "W2998909943": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Journal of Community Health Nursing",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1080/07370016.2020.1693095"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/31905301"
+    },
+    {
+     "source": "DigitalCommons - Fairfield (Fairfield University)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://digitalcommons.fairfield.edu/nursing-facultypubs/235"
+    }
+   ]
+  },
+  "W2733628627": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Journal of Critical Thought and Praxis",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.31274/jctp-180810-73"
+    },
+    {
+     "source": "Iowa State University Digital Repository (Iowa State University)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://lib.dr.iastate.edu/jctp/vol6/iss2/3"
+    }
+   ]
+  },
+  "W2763826390": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "International Journal of Mechanisms and Robotic Systems",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1504/ijmrs.2017.087371"
+    },
+    {
+     "source": "International Journal of Mechanisms and Robotic Systems",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1504/ijmrs.2017.10008273"
+    }
+   ]
+  },
+  "W2952739627": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "The Gerontologist",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1093/geront/gnz083"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/31201744"
+    }
+   ]
+  },
+  "W4388484113": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "International Affairs",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1093/ia/iiad249"
+    }
+   ]
+  },
+  "W3095231685": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Blood",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1182/blood-2020-134718"
+    }
+   ]
+  },
+  "W3174498221": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "The FASEB Journal",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1096/fasebj.2018.32.1_supplement.563.4"
+    }
+   ]
+  },
+  "W2900793605": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "The Extractive Industries and Society",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1016/j.exis.2018.10.007"
+    }
+   ]
+  },
+  "W2944866439": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "IET Communications",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1049/iet-com.2018.5849"
+    }
+   ]
+  },
+  "W4286715683": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Geocarto International",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1080/10106049.2022.2105407"
+    },
+    {
+     "source": "Digital Commons - Michigan Tech (Michigan Technological University)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://digitalcommons.mtu.edu/michigantech-p/16354"
+    }
+   ]
+  },
+  "W2395577023": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Physical Therapy",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.2522/ptj.20150453"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/27231273"
+    }
+   ]
+  },
+  "W4404196319": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Substance Use & Misuse",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1080/10826084.2024.2422951"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/39511713"
+    }
+   ]
+  },
+  "W4386481910": {
+   "oa_status": "bronze",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/geb.13747",
+   "locations": [
+    {
+     "source": "Global Ecology and Biogeography",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/geb.13747",
+     "landing": "https://doi.org/10.1111/geb.13747"
+    }
+   ]
+  },
+  "W4283324890": {
+   "oa_status": "bronze",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.14242",
+   "locations": [
+    {
+     "source": "Journal of Applied Ecology",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.14242",
+     "landing": "https://doi.org/10.1111/1365-2664.14242"
+    }
+   ]
+  },
+  "W3016286018": {
+   "oa_status": "bronze",
+   "oa_url": "https://doi.org/10.1016/j.tcs.2020.03.024",
+   "locations": [
+    {
+     "source": "Theoretical Computer Science",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1016/j.tcs.2020.03.024"
+    }
+   ]
+  },
+  "W2802843565": {
+   "oa_status": "bronze",
+   "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S0889974616304546",
+   "locations": [
+    {
+     "source": "Journal of Fluids and Structures",
+     "is_oa": true,
+     "version": "acceptedVersion",
+     "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S0889974616304546",
+     "landing": "https://doi.org/10.1016/j.jfluidstructs.2018.02.005"
+    },
+    {
+     "source": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://www.osti.gov/biblio/1582718"
+    }
+   ]
+  },
+  "W4200118937": {
+   "oa_status": "green",
+   "oa_url": "https://doi.org/10.2139/ssrn.3452275",
+   "locations": [
+    {
+     "source": "Review of Accounting and Finance",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1108/raf-10-2020-0295"
+    },
+    {
+     "source": "SSRN Electronic Journal",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.2139/ssrn.3452275"
+    },
+    {
+     "source": "RePEc: Research Papers in Economics",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://www.emerald.com/insight/content/doi/10.1108/RAF-10-2020-0295.html?utm_source=repec&utm_medium=feed&utm_campaign=repec"
+    },
+    {
+     "source": "RePEc: Research Papers in Economics",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://www.emerald.com/insight/content/doi/10.1108/RAF-10-2020-0295/full/html?utm_source=repec&utm_medium=feed&utm_campaign=repec"
+    }
+   ]
+  },
+  "W7204186396": {
+   "oa_status": "hybrid",
+   "oa_url": "https://doi.org/10.59236/emro.v3i7a1315",
+   "locations": [
+    {
+     "source": "Educational Media Reviews Online",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.59236/emro.v3i7a1315"
+    }
+   ]
+  },
+  "W4296619485": {
+   "oa_status": "green",
+   "oa_url": "https://philpapers.org/archive/ANGCTP.pdf",
+   "locations": [
+    {
+     "source": "Dao",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1007/s11712-022-09854-8"
+    },
+    {
+     "source": "PhilPapers (PhilPapers Foundation)",
+     "is_oa": true,
+     "version": "submittedVersion",
+     "pdf_url": "https://philpapers.org/archive/ANGCTP.pdf",
+     "landing": "https://philpapers.org/rec/ANGCTP"
+    },
+    {
+     "source": "PhilPapers (PhilPapers Foundation)",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://philarchive.org/rec/ANGCTP"
+    }
+   ]
+  },
+  "W3217125567": {
+   "oa_status": "bronze",
+   "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/02662426211020608",
+   "locations": [
+    {
+     "source": "International Small Business Journal Researching Entrepreneurship",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/02662426211020608",
+     "landing": "https://doi.org/10.1177/02662426211020608"
+    }
+   ]
+  },
+  "W2954967843": {
+   "oa_status": "closed",
+   "oa_url": null,
+   "locations": [
+    {
+     "source": "Journal of Financial Crises",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.17132/2693-3179.1011"
+    },
+    {
+     "source": "RePEc: Research Papers in Economics",
+     "is_oa": false,
+     "version": "submittedVersion",
+     "pdf_url": null,
+     "landing": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1011&context=journal-of-financial-crises"
+    },
+    {
+     "source": "Journal of Financial Crises",
+     "is_oa": false,
+     "version": null,
+     "pdf_url": null,
+     "landing": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1011&context=journal-of-financial-crises"
+    }
+   ]
+  },
+  "W2576203379": {
+   "oa_status": "green",
+   "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5293115/",
+   "locations": [
+    {
+     "source": "Proceedings of the National Academy of Sciences",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.1073/pnas.1613422114"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/28096373"
+    },
+    {
+     "source": "PubMed Central",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5293115/"
+    }
+   ]
+  },
+  "W2529055067": {
+   "oa_status": "green",
+   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5319714",
+   "locations": [
+    {
+     "source": "Diabetes",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://doi.org/10.2337/db16-0414"
+    },
+    {
+     "source": "Europe PMC (PubMed Central)",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://www.ncbi.nlm.nih.gov/pmc/articles/5319714"
+    },
+    {
+     "source": "PubMed",
+     "is_oa": false,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pubmed.ncbi.nlm.nih.gov/27702833"
+    },
+    {
+     "source": "PubMed Central",
+     "is_oa": true,
+     "version": "publishedVersion",
+     "pdf_url": null,
+     "landing": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5319714/"
+    }
+   ]
+  }
+ },
+ "pages": {
+  "W2183917196 Fairfield DC": {
+   "status": 200,
+   "final_url": "https://digitalcommons.fairfield.edu/chemistry-facultypubs/42/",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 39575,
+   "free_phrases": [
+    "viewcontent.cgi",
+    "citation_pdf_url",
+    "download"
+   ],
+   "paywall_phrases": [
+    "subscribe"
+   ]
+  },
+  "W2442085864 New Haven DC": {
+   "status": 200,
+   "final_url": "https://digitalcommons.newhaven.edu/economics-facpubs/9/",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 36390,
+   "free_phrases": [
+    "viewcontent.cgi",
+    "citation_pdf_url",
+    "download"
+   ],
+   "paywall_phrases": [
+    "subscribe"
+   ]
+  },
+  "W2998909943 Fairfield DC": {
+   "status": 200,
+   "final_url": "https://digitalcommons.fairfield.edu/nursing-facultypubs/235/",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 36175,
+   "free_phrases": [
+    "viewcontent.cgi",
+    "citation_pdf_url",
+    "download"
+   ],
+   "paywall_phrases": [
+    "subscribe"
+   ]
+  },
+  "W2733628627 JCTP DOI": {
+   "status": 200,
+   "final_url": "https://www.iastatedigitalpress.com/jctp/article/id/551/",
+   "content_type": "text/html; charset=utf-8",
+   "bytes": 4402,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W2954967843 J Financial Crises DOI": {
+   "status": 200,
+   "final_url": "https://elischolar.library.yale.edu/journal-of-financial-crises/vol1/iss1/1/",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 35583,
+   "free_phrases": [
+    "viewcontent.cgi",
+    "citation_pdf_url",
+    "download"
+   ],
+   "paywall_phrases": [
+    "subscribe"
+   ]
+  },
+  "W3095231685 Blood abstract DOI": {
+   "status": 403,
+   "final_url": "https://ashpublications.org/blood/article/136/Supplement%201/45/470976/The-STIMULUS-Program-Clinical-Trials-Evaluating",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 5839,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W2900793605 Unpaywall-era PDF": {
+   "status": 200,
+   "final_url": "https://pau.go.ug/uploads/NATIONAL_LOCAL_CONTENT_POLICY_FOR_PETROLEUM_IN_UGANDA.pdf",
+   "content_type": "text/html; charset=utf-8",
+   "bytes": 350911,
+   "free_phrases": [],
+   "paywall_phrases": [
+    "subscribe"
+   ]
+  },
+  "W2952739627 Gerontologist DOI": {
+   "status": 403,
+   "final_url": "https://academic.oup.com/gerontologist/article/60/7/e491/5519348",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 5598,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W4388484113 Int Affairs DOI": {
+   "status": 403,
+   "final_url": "https://academic.oup.com/ia/article/99/6/2502/7337083",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 5544,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W2763826390 Inderscience DOI": {
+   "status": 200,
+   "final_url": "https://www.inderscience.com/filter.php?id=87371",
+   "content_type": "text/html",
+   "bytes": 960,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W2802843565 Elsevier AAM": {
+   "status": 403,
+   "final_url": "https://www.sciencedirect.com/science/article/am/pii/S0889974616304546",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 832981,
+   "free_phrases": [
+    "open access"
+   ],
+   "paywall_phrases": []
+  },
+  "W7204186396 EMRO DOI": {
+   "error": "ConnectionError"
+  },
+  "W2576203379 PNAS DOI": {
+   "status": 403,
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.1613422114",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 5590,
+   "free_phrases": [],
+   "paywall_phrases": []
+  },
+  "W3217125567 SAGE DOI": {
+   "status": 403,
+   "final_url": "https://journals.sagepub.com/doi/10.1177/02662426211020608",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 5636,
+   "free_phrases": [],
+   "paywall_phrases": []
+  }
+ }
+}

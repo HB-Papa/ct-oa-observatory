@@ -1,0 +1,105 @@
+
+### Rows, distinct works, categories
+
+| oa_category        |   rows_ |   works |
+|:-------------------|--------:|--------:|
+| gold               |     561 |     561 |
+| hybrid             |     230 |     230 |
+| diamond            |      47 |      47 |
+| oa_fee_unconfirmed |       8 |       8 |
+| green              |       6 |       6 |
+| bronze             |       4 |       4 |
+| closed             |       2 |       2 |
+
+### Works matched by more than one OpenAPC row
+
+|   count_star() |
+|---------------:|
+|              0 |
+
+### Euro value range
+
+|    mn |   med |      mx |   zero_or_less |
+|------:|------:|--------:|---------------:|
+| 87.85 |  2298 | 10898.6 |              0 |
+
+### DOI match check: matched DOI equals OpenAlex DOI (lowercased, prefix removed)
+
+|   rows_ |   same |   same_year |   period_within_1y |
+|--------:|-------:|------------:|-------------------:|
+|     858 |    858 |         858 |                852 |
+
+### 10 random rows
+
+| work_id     | doi                            |   yr | cat     | journal                          |   period |   eur_paid | hyb   | openapc_institution                                 |   list_eur |
+|:------------|:-------------------------------|-----:|:--------|:---------------------------------|---------:|-----------:|:------|:----------------------------------------------------|-----------:|
+| W2895837914 | 10.1038/s41598-018-33571-z     | 2018 | gold    | Scientific Reports               |     2018 |    1589.63 | False | Cardiff University                                  |       2390 |
+| W4220805984 | 10.1111/mcn.13344              | 2022 | gold    | Maternal and Child Nutrition     |     2022 |    3051.49 | False | Bill & Melinda Gates Foundation                     |       3630 |
+| W4382724135 | 10.3389/fnut.2023.1048532      | 2023 | gold    | Frontiers in Nutrition           |     2023 |    3016.69 | False | Bill & Melinda Gates Foundation                     |        nan |
+| W2621219158 | 10.1016/j.physletb.2017.11.043 | 2017 | diamond | Physics Letters B                |     2018 |     168.57 | False | RWTH Aachen                                         |        nan |
+| W2781829400 | 10.1523/jneurosci.2793-17.2017 | 2018 | hybrid  | Journal of Neuroscience          |     2018 |    1611.36 | True  | CNRS - Centre national de la recherche scientifique |        nan |
+| W4313280749 | 10.1371/journal.pntd.0010615   | 2022 | gold    | PLoS neglected tropical diseases |     2023 |    2343.23 | False | Bill & Melinda Gates Foundation                     |        nan |
+| W3046602690 | 10.1093/cid/ciaa367            | 2020 | hybrid  | Clinical Infectious Diseases     |     2020 |    3434.77 | True  | Bill & Melinda Gates Foundation                     |        nan |
+| W4401609514 | 10.1038/s41467-024-50808-w     | 2024 | gold    | Nature Communications            |     2024 |    6263.59 | False | Swiss National Science Foundation (SNSF)            |       5890 |
+| W4328049650 | 10.1111/gcb.16689              | 2023 | hybrid  | Global Change Biology            |     2023 |     298.79 | True  | Stockholm University                                |       3870 |
+| W2952988927 | 10.1016/j.biopsych.2018.05.020 | 2018 | hybrid  | Biological Psychiatry            |     2018 |    3516.53 | True  | University of Oxford                                |       5130 |
+
+### Extreme ratios (paid / list < 0.3 or > 1.5)
+
+| work_id     | journal                                                   |   publication_year | oa_category   |   openapc_period |   openapc_euro |   openalex_list_eur_today |   ratio | openapc_institution                                                  |
+|:------------|:----------------------------------------------------------|-------------------:|:--------------|-----------------:|---------------:|--------------------------:|--------:|:---------------------------------------------------------------------|
+| W4328049650 | Global Change Biology                                     |               2023 | hybrid        |             2023 |         298.79 |                      3870 |    0.08 | Stockholm University                                                 |
+| W2993612487 | Tropical Medicine & International Health                  |               2019 | hybrid        |             2020 |         233.88 |                      2870 |    0.08 | Bill & Melinda Gates Foundation                                      |
+| W2955071411 | Nature Medicine                                           |               2019 | hybrid        |             2019 |        1403.34 |                     10690 |    0.13 | Bill & Melinda Gates Foundation                                      |
+| W4392602136 | Journal of Physics B Atomic Molecular and Optical Physics |               2024 | hybrid        |             2024 |         591    |                      2765 |    0.21 | CNRS - Centre national de la recherche scientifique                  |
+| W2161961658 | Review of Economic Dynamics                               |               2015 | hybrid        |             2015 |         680.59 |                      3110 |    0.22 | UCL                                                                  |
+| W3118415022 | Nature                                                    |               2020 | hybrid        |             2020 |        2623.04 |                     10690 |    0.25 | Bill & Melinda Gates Foundation                                      |
+| W2794148892 | Industrial Marketing Management                           |               2018 | hybrid        |             2018 |        1006.34 |                      3730 |    0.27 | University of Huddersfield                                           |
+| W4281899891 | BMC Bioinformatics                                        |               2022 | gold          |             2022 |         687.53 |                      2490 |    0.28 | Université Clermont Auvergne                                         |
+| W2745690890 | Cancer Medicine                                           |               2017 | gold          |             2017 |        1056.08 |                      3560 |    0.3  | UCL                                                                  |
+| W2605860189 | Atmospheric chemistry and physics                         |               2017 | gold          |             2017 |        2430    |                      1600 |    1.52 | CEA - Commissariat à l'énergie atomique et aux énergies alternatives |
+| W2801834154 | Atmospheric chemistry and physics                         |               2018 | gold          |             2019 |        2444.67 |                      1600 |    1.53 | University of Exeter                                                 |
+| W4306986507 | The Cryosphere                                            |               2024 | gold          |             2024 |        2565.64 |                      1460 |    1.76 | Erlangen Nuernberg U                                                 |
+
+### Category vs OpenAPC is_hybrid
+
+| oa_category        | openapc_is_hybrid   |   n |
+|:-------------------|:--------------------|----:|
+| bronze             | True                |   4 |
+| closed             | True                |   2 |
+| diamond            | False               |  47 |
+| gold               | False               | 556 |
+| gold               | True                |   5 |
+| green              | False               |   1 |
+| green              | True                |   5 |
+| hybrid             | False               |   9 |
+| hybrid             | True                | 221 |
+| oa_fee_unconfirmed | False               |   8 |
+
+### No-author-fee works with an OpenAPC payment: journals and payers
+
+| journal                                               | openapc_institution                         |   works |   med_eur |
+|:------------------------------------------------------|:--------------------------------------------|--------:|----------:|
+| Journal of High Energy Physics                        | RWTH Aachen                                 |      24 |       169 |
+| The European Physical Journal C                       | RWTH Aachen                                 |      11 |       169 |
+| Physics Letters B                                     | RWTH Aachen                                 |      10 |       169 |
+| Mitochondrial DNA Part B                              | TiHo Hannover                               |       2 |       196 |
+| Obstetrics and Gynecology Research                    | Bill & Melinda Gates Foundation             |       2 |      1877 |
+| Oncotarget                                            | University of Cambridge                     |       1 |      3131 |
+| BMJ Public Health                                     | Swedish University of Agricultural Sciences |       1 |      3332 |
+| International Journal of Health Policy and Management | Bill & Melinda Gates Foundation             |       1 |       693 |
+| Physics Letters B                                     | TU Muenchen                                 |       1 |      1170 |
+| The Open Public Health Journal                        | Goettingen U                                |       1 |      1046 |
+| Journal of High Energy Physics                        | University of Glasgow                       |       1 |      3437 |
+
+### Diamond / fee-not-confirmed works with an OpenAPC payment, split SCOAP3 physics vs other
+
+| oa_category        | grp            |   works |   eur |   med |
+|:-------------------|:---------------|--------:|------:|------:|
+| diamond            | SCOAP3 journal |      47 | 12192 |   169 |
+| oa_fee_unconfirmed | other          |       8 | 12348 |  1458 |
+
+### Diamond works with an OpenAPC payment outside SCOAP3 journals
+
+| work_id   | journal   | publication_year   | openapc_euro   | openapc_institution   |
+|-----------|-----------|--------------------|----------------|-----------------------|

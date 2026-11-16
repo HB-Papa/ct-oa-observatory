@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 5: deployment (live at https://ct-oa-observatory.vercel.app, awaiting Chris's approval)
+Phase 6: cross-checks and enrichment (in progress)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -23,6 +23,9 @@ Phase 5: deployment (live at https://ct-oa-observatory.vercel.app, awaiting Chri
 - 2026-11-16: Phase 4 approved (Open Sun mention removed from the site).
 - 2026-11-16: Phase 5: public repo https://github.com/HB-Papa/ct-oa-observatory pushed (MIT code, CC0 data; parquet, researcher-email samples and pitch kept local). site/vercel.json with no-script CSP and noindex header.
 - 2026-11-16: Deployed: https://ct-oa-observatory.vercel.app (CLI deploy; headers, no cookies, no scripts, no external requests checked live).
+- 2026-11-16: Phase 5 approved. Chris emailed CORE about licence terms and gave an Unpaywall contact email (in .env only; scrubbed from logs and cache names).
+- 2026-11-16: Cross-check agent report in docs/crosschecks.md (OpenAIRE agrees on free to read for 88.0% of 407 answered; Unpaywall 501/501; DOAJ flag 99.8%). Green proxy candidate rule tightened after its findings (preprints, meeting abstracts).
+- 2026-11-16: Phase 6 pipeline steps s07 to s12 (sample, Unpaywall, OpenAIRE, DOAJ, OpenAPC, green proxy) plus `pipeline/sources.py`. 207 OpenAlex credits. 28 pytest tests pass. Cross-check tables in data/derived/crosschecks/ with per-file licenses; green opportunity metric; repository candidate CSV in data/derived/downloads/.
 
 ## Environment (2026-11-15)
 | Tool | Status |
@@ -37,10 +40,11 @@ Phase 5: deployment (live at https://ct-oa-observatory.vercel.app, awaiting Chri
 
 ## Next
 - Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
-- Phase 6: cross-checks (Unpaywall, OpenAIRE, CORE, DOAJ, OpenAPC) and deposit policies / green proxy.
+- Phase 6 approval from Chris, with two decisions: apply DOAJ fee answers (labeled) or keep separate; drop meeting abstracts from main figures or not.
+- Phase 7: full site (17 profiles, Compare, Methods, downloads, About, Changelog), accessibility audit, remove noindex.
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.
-- Phase 6: use DOAJ data to move works out of "oa_fee_unconfirmed" (8,349 statewide, 2015–2025) into diamond or gold where DOAJ confirms the fee.
-- Green OA opportunity moved to phase 6 (needs journal-level queries).
-- CORE: Chris's reading is the individual free licence; revisit before phase 6.
+- DOAJ answers for the 8,349 "fee not confirmed" works: 2,706 no fee, 858 fee, 83 no APC but other charges, 103 published before the journal's OA start, 4,599 not in DOAJ. Apply to site figures (labeled) or keep separate? Chris to decide.
+- OpenAlex misses free copies in Connecticut Digital Commons and EliScholar repositories (up to 553 closed works) and Journal of Financial Crises (143 works). Methods page limitation; possibly worth reporting to OpenAlex.
+- CORE: awaiting reply to Chris's email (sent 2026-11-16). Skip with a note if no reply by end of phase 7.

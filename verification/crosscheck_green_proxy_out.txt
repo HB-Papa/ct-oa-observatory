@@ -1,0 +1,141 @@
+
+### Candidates (distinct works, 2015-2025) by category
+
+| oa_category   |     n |
+|:--------------|------:|
+| bronze        |  8530 |
+| closed        | 38926 |
+
+### Closed works (all in scope) that still have any free location (should be 0)
+
+|   n |
+|----:|
+|   0 |
+
+### Candidates with a free non-primary location, by kind
+
+| oa_category   | kind                                                   |   works |
+|:--------------|:-------------------------------------------------------|--------:|
+| bronze        | repository, submittedVersion                           |    2604 |
+| bronze        | repository, no version                                 |    1619 |
+| bronze        | journal typed, submittedVersion                        |      79 |
+| bronze        | no source (e.g. preprint server DOI), submittedVersion |      61 |
+| bronze        | journal typed, acceptedVersion                         |      20 |
+| bronze        | journal typed, publishedVersion                        |       7 |
+| bronze        | no source (e.g. preprint server DOI), publishedVersion |       6 |
+| bronze        | conference typed, publishedVersion                     |       1 |
+
+### Candidates with ANY free non-primary location (distinct works)
+
+|   works |
+|--------:|
+|    2676 |
+
+### Top repositories hosting free submitted-version copies of candidates
+
+| source_name                                                                         |   works |
+|:------------------------------------------------------------------------------------|--------:|
+| arXiv (Cornell University)                                                          |    1550 |
+| OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information) |     402 |
+| HAL                                                                                 |     210 |
+| eScholarship (California Digital Library)                                           |     136 |
+| Data Archiving and Networked Services (DANS)                                        |     130 |
+| DSpace@MIT (Massachusetts Institute of Technology)                                  |     114 |
+| SSRN Electronic Journal                                                             |     110 |
+| Figshare                                                                            |      62 |
+
+### 'Journal of Media Literacy Education' locations: where do they point?
+
+| target                          | is_primary   |   works |
+|:--------------------------------|:-------------|--------:|
+| other URI Digital Commons paper | False        |     237 |
+| other URI Digital Commons paper | True         |       2 |
+| elsewhere                       | True         |       1 |
+| JMLE article itself             | False        |       1 |
+
+### Non-primary free locations typed as 'journal' whose source differs from the primary source (all in-scope works)
+
+| source_name                                                     |   works |
+|:----------------------------------------------------------------|--------:|
+| ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)                |    1087 |
+| Työväentutkimus Vuosikirja                                      |     958 |
+| Socio-Environmental Systems Modeling                            |     276 |
+| Civil War Book Review                                           |     267 |
+| Journal of Media Literacy Education                             |     237 |
+| The Medicine Forum                                              |     170 |
+| Journal of International Crisis and Risk Communication Research |      75 |
+| Australasian Journal of Paramedicine                            |      50 |
+| ZooKeys                                                         |      40 |
+| Leibniz international proceedings in informatics                |      26 |
+
+### Flagged journals with most Connecticut candidates
+
+| journal                                                          | publisher                      |   evidence_articles |   ct_candidates |
+|:-----------------------------------------------------------------|:-------------------------------|--------------------:|----------------:|
+| Neurology                                                        | Wolters Kluwer                 |                  31 |             782 |
+| Journal of the American Academy of Dermatology                   | Elsevier BV                    |                   6 |             752 |
+| Biological Psychiatry                                            | Elsevier BV                    |                  11 |             544 |
+| The Astrophysical Journal                                        | Institute of Physics           |                  17 |             527 |
+| The FASEB Journal                                                | Wiley                          |                  17 |             516 |
+| International Journal of Radiation Oncology*Biology*Physics      | Elsevier BV                    |                  14 |             490 |
+| Journal of the American Academy of Child & Adolescent Psychiatry | Elsevier BV                    |                  10 |             395 |
+| Blood                                                            | Elsevier BV                    |                  24 |             338 |
+| The American Journal of Gastroenterology                         | Wolters Kluwer                 |                  24 |             335 |
+| American Journal of Obstetrics and Gynecology                    | Elsevier BV                    |                  10 |             288 |
+| Journal of Investigative Dermatology                             | Elsevier BV                    |                   3 |             278 |
+| Drug and Alcohol Dependence                                      | Elsevier BV                    |                  23 |             231 |
+| PEDIATRICS                                                       | American Academy of Pediatrics |                  17 |             204 |
+| American Journal of Geriatric Psychiatry                         | Elsevier BV                    |                   6 |             202 |
+| Environmental Science & Technology                               | American Chemical Society      |                  80 |             199 |
+
+### Largest not-flagged journals by Connecticut closed+bronze works
+
+| journal                                                     | publisher                      |   evidence_articles |   ct_closed_or_bronze |
+|:------------------------------------------------------------|:-------------------------------|--------------------:|----------------------:|
+| Biophysical Journal                                         | Elsevier BV                    |                   0 |                   660 |
+| Journal of the American College of Cardiology               | Elsevier BV                    |                   1 |                   616 |
+| Fertility and Sterility                                     | Elsevier BV                    |                   1 |                   505 |
+| Annals of Oncology                                          | Elsevier BV                    |                   0 |                   348 |
+| Journal of Financial Crises                                 | Yale University                |                   0 |                   305 |
+| Journal of Vascular Surgery                                 | Elsevier BV                    |                   0 |                   278 |
+| Journal of General Internal Medicine                        | Springer Nature                |                   0 |                   270 |
+| Proceedings of the National Academy of Sciences             | National Academy of Sciences   |                   0 |                   233 |
+| Cell                                                        | Elsevier BV                    |                   0 |                   198 |
+| Journal of the American Society of Nephrology               | American Society of Nephrology |                   2 |                   196 |
+| Clinics in Dermatology                                      | Elsevier BV                    |                   1 |                   185 |
+| Journal of Thoracic Oncology                                | Elsevier BV                    |                   0 |                   184 |
+| Journal of Cardiac Failure                                  | Elsevier BV                    |                   1 |                   169 |
+| The Astronomical Journal                                    | Institute of Physics           |                   2 |                   162 |
+| International Journal of High Speed Electronics and Systems | World Scientific               |                   0 |                   161 |
+
+### Flag rate by publisher (journals with any CT closed/bronze work; top publishers)
+
+| publisher                                         |   journals |   flagged |   pct |
+|:--------------------------------------------------|-----------:|----------:|------:|
+| Elsevier BV                                       |       1664 |      1162 |    70 |
+| Informa                                           |       1332 |       548 |    41 |
+| Springer Nature                                   |       1226 |       601 |    49 |
+| Wiley                                             |       1026 |       563 |    55 |
+| SAGE Publishing                                   |        717 |       306 |    43 |
+| nan                                               |        660 |        22 |     3 |
+| University of Oxford                              |        302 |       180 |    60 |
+| Wolters Kluwer                                    |        285 |       129 |    45 |
+| University of Cambridge                           |        234 |       100 |    43 |
+| De Gruyter                                        |        217 |        54 |    25 |
+| Emerald Publishing Limited                        |        164 |       101 |    62 |
+| Institute of Electrical and Electronics Engineers |        152 |       134 |    88 |
+
+### Where the most common mis-typed 'journal' locations point (host of landing page)
+
+| source_name                                      | host                   | version          |   works |
+|:-------------------------------------------------|:-----------------------|:-----------------|--------:|
+| Työväentutkimus Vuosikirja                       | hdl.handle.net         | submittedVersion |     928 |
+| ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam) | eprints.gla.ac.uk      | acceptedVersion  |     797 |
+| ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam) | eprints.gla.ac.uk      | submittedVersion |     292 |
+| Journal of Media Literacy Education              | digitalcommons.uri.edu | submittedVersion |     237 |
+| Civil War Book Review                            | repository.lsu.edu     | submittedVersion |     234 |
+| The Medicine Forum                               | jdc.jefferson.edu      | submittedVersion |     170 |
+| Socio-Environmental Systems Modeling             | research.wur.nl        | acceptedVersion  |     136 |
+| Socio-Environmental Systems Modeling             | research.wur.nl        | submittedVersion |     135 |
+| Civil War Book Review                            | digitalcommons.lsu.edu | submittedVersion |     127 |
+| Työväentutkimus Vuosikirja                       | arxiv.org              | submittedVersion |      19 |

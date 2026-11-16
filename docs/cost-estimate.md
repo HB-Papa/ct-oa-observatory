@@ -34,3 +34,6 @@ That fits inside one day's free allowance with room for reruns. The monthly refr
 
 ## Update after phase 1 (2026-11-15)
 Real counts replace the placeholders. Statewide, deduplicated, articles and reviews: 177,841 for 2015–2025 plus 17,955 for 2026, about 196,000 works. At 100 per page that is about **1,960 credits** for the full-record harvest, plus about 600 for the `group_by` counts, about **2,600 credits ($0.26)** in total. That fits inside one free day (10,000 credits). Phase 1 itself used 69 credits. The cost header `X-RateLimit-Credits-Used` is now logged on every call, so actual spend is recorded, not estimated.
+
+## Phase 6 (2026-11-16)
+Estimate before running: about 100 credits for the green proxy (10,045 journals, 100 per `group_by` request) and about 100 for journal ISSN and price lookups. Actual, from the query log: **207 credits ($0.02)**. Green proxy 101, OpenAPC price lookups 68, DOAJ ISSN lookups 34, filter tests 4. Unpaywall (510 lookups), OpenAIRE (11 requests), DOAJ (84 requests) and the OpenAPC file download are free and do not use OpenAlex credits.

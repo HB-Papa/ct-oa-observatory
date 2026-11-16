@@ -1,0 +1,34 @@
+QE 200 23733
+  - Format Cover Note Econometrica Transfers Replication Policy Experimental Submissions Supplemental Material Fees Decision Process Other Instructions 1.
+  - Submission fees are waived for transfers from Econometrica; all other fees associated with publication apply.
+  - Payment details: use of tokens or real money, exchange rates, show-up fees, average earnings, lotteries, or grades.
+  - FEES To submit a paper to Quantitative Economics , you must be a member of the Econometric Society.
+  - If you are not currently a member, please go to the Econometric Society's membership page and purchase a membership at http://www.econometricsociety.org/users/register A submission fee of US$100 for regular members and US$50 for student members applies to all new submissions .
+  - Submission fees must be paid by credit card at the time of submission.
+  - Individuals residing in countries classified as low-income by the World Bank are exempt from the submission fee.
+  - To be charged the student rate or to be granted the exemption for low-income countries, all coauthors of the paper must meet the relevant criteria for a discount or exemption to be granted.
+  - Papers rejected without review will not be refunded their submission fee.
+  - A publication fee is currently set at 100% of the cost of production per page ($24 per page at the present time) for original papers submitted on or after January 1, 2026.
+  - The following discounts also apply: Papers by authors who are students at the time of acceptance will be charged 50% of the cost of production per page rather than the full 100%.
+  - Authors of accepted papers residing in countries classified as either low-income or lower-middle income by the World Bank may request a discount or exemption from the publication fee.
+  - Authors of accepted papers who do not have a grant or research account that might cover the publication fee may request a discount or exemption.
+  - Page fees apply only to typeset material.
+  - Since supplemental appendices are not typeset, they are not included in the page count for computing the fee.
+  - The publication fee will be collected after final proofs but before publication and invoiced at the then-prevailing rate.
+  - Copyright: Quantitative Economics is an Open Access journal which means that all content is freely available without charge to the user or his/her institution.
+TE 200 13906
+  - Submission requirements To submit a paper, you must be a member of the Econometric Society and pay a submission fee.
+  - Submission and Publication Fees A submission fee of US$100 for regular members and US$50 for student members applies to all new submissions.
+  - The submission fee must be paid by credit card at the time of submission.
+  - Submission fees are non-refundable, including for papers rejected without review.
+  - Individuals residing in countries classified as low-income by the World Bank are exempt from submission fees.
+  - To be charged the student rate or to be granted the exemption for low-income countries, all coauthors of the paper must meet the relevant criteria for a discount or exemption to be granted.
+  - For all original papers submitted on or after January 1, 2026, publication page fees will be set at 100% of the cost of production per page, $24 per page at the present time (01/2026).
+  - Page fees apply only to typeset material.
+  - Since supplemental appendices are not typeset, they are not included in the page count for computing the fee.
+  - The publication fee will be collected after final proofs but before publication and invoiced at the then-prevailing rate.
+  - The following discounts also apply: Papers by authors who are students at the time of acceptance will be charged 50% of the cost of production per page rather than the full 100%.
+  - Authors of accepted papers residing in countries classified as either low-income or lower-middle income by the World Bank may request a discount or exemption from the publication fee.
+  - Authors of accepted papers who do not have a grant or research account that might cover the publication fee may request a discount or exemption.
+  - If you opt for a transfer, the journal waives the submission fee and the Theoretical Economics editor sees the referee reports and cover letter; with the permission of the referees, the Theoretical Economics editor also sees the identity of the referees and their cover letters.
+  - You should not feel obliged to implement all the suggestions made by the Econometrica referees, but should adopt suggestions that you think make the paper better for Theoretical Economics.

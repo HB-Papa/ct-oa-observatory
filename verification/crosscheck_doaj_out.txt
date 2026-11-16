@@ -1,0 +1,166 @@
+
+### (i) fee-not-confirmed works by DOAJ answer (statewide)
+
+| doaj_answer                    |   works |   pct |
+|:-------------------------------|--------:|------:|
+| not_in_doaj                    |    4599 |  55.1 |
+| doaj_no_fee                    |    2706 |  32.4 |
+| doaj_charges_fee               |     858 |  10.3 |
+| published_before_doaj_oa_start |     103 |   1.2 |
+| doaj_no_apc_but_other_charges  |      83 |   1   |
+
+### (i) fee-not-confirmed works: is the journal in DOAJ, by OpenAlex is_in_doaj
+
+| source_is_in_doaj   | in_doaj   |   works |
+|:--------------------|:----------|--------:|
+| False               | False     |    4587 |
+| False               | True      |       2 |
+| True                | False     |      12 |
+| True                | True      |    3748 |
+
+### (i) not-in-DOAJ fee-not-confirmed works: top journals
+
+| source_name                                      |   works |
+|:-------------------------------------------------|--------:|
+| Cureus                                           |     549 |
+| Oncotarget                                       |     149 |
+| Journal of Athletic Training                     |     110 |
+| Archives of Pathology & Laboratory Medicine      |      85 |
+| Journal of Clinical and Translational Hepatology |      70 |
+| The AMA Journal of Ethic                         |      40 |
+| Medical Research Archives                        |      39 |
+| Microbiology Resource Announcements              |      38 |
+| Proceedings of the ACM on Programming Languages  |      34 |
+| MMWR Morbidity and Mortality Weekly Report       |      34 |
+
+### (i) fee-charging DOAJ journals among fee-not-confirmed works: top journals
+
+| source_name                                           | doaj_max_apc_usd   | doaj_max_apc_other   |   works |
+|:------------------------------------------------------|:-------------------|:---------------------|--------:|
+| Kidney360                                             | 1800               | nan                  |     107 |
+| Chemical Science                                      | <NA>               | 2850 GBP             |      65 |
+| ACG Case Reports Journal                              | 500                | nan                  |      51 |
+| Journal of Thoracic Disease                           | 1900               | nan                  |      47 |
+| Imaging Neuroscience                                  | 1600               | nan                  |      26 |
+| Journal of Spine Surgery                              | 1650               | nan                  |      23 |
+| Christian Journal for Global Health                   | 700                | nan                  |      15 |
+| Annals of Internal Medicine Clinical Cases            | 990                | nan                  |      14 |
+| BIO-PROTOCOL                                          | 1200               | nan                  |      14 |
+| International Journal of Health Policy and Management | 1500               | nan                  |      12 |
+
+### (ii) diamond (fee confirmed $0) works by what DOAJ says about the journal
+
+| doaj             |   works |
+|:-----------------|--------:|
+| DOAJ no fee      |    1414 |
+| DOAJ lists a fee |     126 |
+| not in DOAJ      |      69 |
+
+### (ii) diamond works in journals DOAJ lists with a fee, by journal
+
+| source_name                                                    | doaj_max_apc_usd   | doaj_max_apc_other   | doaj_has_other_charges   |   doaj_oa_start |   y0 |   y1 |   works |
+|:---------------------------------------------------------------|:-------------------|:---------------------|:-------------------------|----------------:|-----:|-----:|--------:|
+| Theoretical Economics                                          | 840                | nan                  | True                     |            2006 | 2015 | 2025 |      19 |
+| Quantitative Economics                                         | 1000               | nan                  | True                     |            2010 | 2015 | 2025 |      19 |
+| Precision Radiation Oncology                                   | 2500               | 2080 GBP|2400 EUR    | False                    |            2017 | 2021 | 2025 |      13 |
+| International Journal of Nursing Sciences                      | 1200               | nan                  | False                    |            2014 | 2015 | 2023 |      11 |
+| Discover Public Health                                         | 2490               | 2090 EUR|1790 GBP    | False                    |            2024 | 2024 | 2025 |       7 |
+| Current Zoology                                                | 1300               | nan                  | False                    |            2009 | 2015 | 2022 |       7 |
+| Quantitative Biology                                           | 1100               | 910 GBP|1050 EUR     | False                    |            2022 | 2017 | 2025 |       7 |
+| BJPsych International                                          | 3655               | 2610 GBP             | False                    |            2015 | 2021 | 2025 |       6 |
+| Liver Research                                                 | 800                | nan                  | False                    |            2017 | 2017 | 2018 |       5 |
+| World Journal of Otorhinolaryngology - Head and Neck Surgery   | 2650               | 2298 EUR|1949 GBP    | False                    |            2015 | 2015 | 2025 |       4 |
+| Life Medicine                                                  | 2750               | nan                  | False                    |            2022 | 2022 | 2024 |       3 |
+| mLife                                                          | 2500               | 2080 GBP|2400 EUR    | False                    |            2022 | 2022 | 2025 |       3 |
+| Perspectives on Medical Education                              | <NA>               | 1068 GBP             | False                    |            2012 | 2020 | 2020 |       2 |
+| Future Journal of Pharmaceutical Sciences                      | 2190               | 1890 EUR|1590 GBP    | False                    |            2019 | 2024 | 2025 |       2 |
+| Journal of Future Foods                                        | 1200               | 1050 EUR|8000 CNY    | False                    |            2021 | 2023 | 2025 |       2 |
+| MedComm – Future Medicine                                      | 2600               | 2254 EUR|1912 GBP    | False                    |            2022 | 2025 | 2025 |       2 |
+| International Journal of Transportation Science and Technology | 1000               | nan                  | False                    |            2012 | 2020 | 2024 |       2 |
+| Precision Chemistry                                            | 3500               | nan                  | False                    |            2023 | 2025 | 2025 |       2 |
+| Knee Surgery and Related Research                              | 2990               | 2490 EUR|2190 GBP    | False                    |            2011 | 2025 | 2025 |       1 |
+| Journal of Bioresources and Bioproducts                        | 1000               | nan                  | False                    |            2016 | 2024 | 2024 |       1 |
+| BJPsych Bulletin                                               | 3655               | 2610 GBP             | False                    |            2015 | 2015 | 2015 |       1 |
+| Global Health Journal                                          | 980                | nan                  | False                    |            2017 | 2017 | 2017 |       1 |
+| Chronic Diseases and Translational Medicine                    | 2650               | 2298 EUR|1949 GBP    | False                    |            2015 | 2018 | 2018 |       1 |
+| Open Information Science                                       | <NA>               | 500 EUR              | False                    |            2017 | 2021 | 2021 |       1 |
+| Fundamental Research                                           | 980                | nan                  | False                    |            2021 | 2022 | 2022 |       1 |
+| Brain‐X                                                        | 2750               | 2290 GBP|2640 EUR    | False                    |            2023 | 2024 | 2024 |       1 |
+| Friction                                                       | <NA>               | 1600 EUR             | False                    |            2013 | 2025 | 2025 |       1 |
+| Risk sciences.                                                 | 500                | nan                  | False                    |            2025 | 2025 | 2025 |       1 |
+
+### (iii) OpenAlex is_in_doaj vs DOAJ lookup, all journals checked
+
+| openalex_is_in_doaj   | in_doaj   |   journals |
+|:----------------------|:----------|-----------:|
+| False                 | False     |       1710 |
+| True                  | False     |          5 |
+| True                  | True      |       1615 |
+
+### (iii) journals OpenAlex says are in DOAJ but our ISSN lookup did not find
+
+| source_id   | journal                                                                                                             |
+|:------------|:--------------------------------------------------------------------------------------------------------------------|
+| S2737262685 | European Review of Latin American and Caribbean Studies | Revista Europea de Estudios Latinoamericanos y del Caribe |
+| S2738806978 | Frontiers of Agricultural Science and Engineering                                                                   |
+| S2765046404 | The Southwest Respiratory and Critical Care Chronicles                                                              |
+| S4210216338 | Business Ethics and Leadership                                                                                      |
+| S5407048776 | Journal of Advanced Computing Systems                                                                               |
+
+### (iv) top journals in DOAJ: OpenAlex apc_usd vs DOAJ max USD
+
+top journals: 84, in DOAJ: 45, both prices: 34, equal: 10, DOAJ higher: 18, DOAJ lower: 6, median diff %: 3.4
+| journal                                           |   ct_articles_2015_2025 |   openalex_apc_usd |   doaj_max_apc_usd | doaj_max_apc_other   |   diff_usd |   diff_pct |
+|:--------------------------------------------------|------------------------:|-------------------:|-------------------:|:---------------------|-----------:|-----------:|
+| PLoS ONE                                          |                    1468 |               2382 |               2477 | nan                  |         95 |        4   |
+| Nature Communications                             |                    1405 |               6990 |               7350 | 6150 EUR|5490 GBP    |        360 |        5.2 |
+| Scientific Reports                                |                    1234 |               2690 |               2850 | 2490 EUR|2290 GBP    |        160 |        5.9 |
+| The Astrophysical Journal                         |                    1087 |               4499 |               3162 | 2356 GBP|2727 EUR    |      -1337 |      -29.7 |
+| JAMA Network Open                                 |                     733 |               3000 |               3000 | nan                  |          0 |        0   |
+| Journal of High Energy Physics                    |                     604 |                  0 |                nan | nan                  |        nan |      nan   |
+| Monthly Notices of the Royal Astronomical Society |                     566 |               3046 |                nan | 2310 GBP             |        nan |      nan   |
+| The European Physical Journal C                   |                     397 |                  0 |                nan | nan                  |        nan |      nan   |
+| eLife                                             |                     392 |               2500 |               3750 | nan                  |       1250 |       50   |
+| Science Advances                                  |                     365 |               4500 |               5450 | nan                  |        950 |       21.1 |
+| Cell Reports                                      |                     340 |               5620 |               5790 | nan                  |        170 |        3   |
+| Open Forum Infectious Diseases                    |                     313 |               4053 |               3859 | nan                  |       -194 |       -4.8 |
+| Journal of the American Heart Association         |                     305 |               3810 |               3180 | 2370 GBP|3090 EUR    |       -630 |      -16.5 |
+| The Astronomical Journal                          |                     290 |               4499 |               3162 | 2356 GBP|2727 EUR    |      -1337 |      -29.7 |
+| Journal of Biological Chemistry                   |                     287 |               3430 |               3430 | nan                  |          0 |        0   |
+| Innovation in Aging                               |                     280 |               3977 |               3615 | nan                  |       -362 |       -9.1 |
+| The Astrophysical Journal Letters                 |                     279 |               2400 |               2978 | 2219 GBP|2568 EUR    |        578 |       24.1 |
+| BMJ Open                                          |                     261 |               1839 |                nan | 2390 GBP             |        nan |      nan   |
+| Frontiers in Immunology                           |                     228 |               3801 |                nan | 3150 CHF             |        nan |      nan   |
+| Frontiers in Psychology                           |                     228 |               3801 |                nan | 3150 CHF             |        nan |      nan   |
+| Journal of Vision                                 |                     217 |               1850 |               1850 | nan                  |          0 |        0   |
+| Frontiers in Psychiatry                           |                     203 |               3801 |                nan | 3150 CHF             |        nan |      nan   |
+| Investigative Ophthalmology & Visual Science      |                     197 |               1850 |               1850 | nan                  |          0 |        0   |
+| Physics Letters B                                 |                     193 |                  0 |                nan | nan                  |        nan |      nan   |
+| Current Developments in Nutrition                 |                     192 |               5000 |               5000 | nan                  |          0 |        0   |
+
+Not in DOAJ but OpenAlex says the journal is OA (top journals):
+| journal                                                           |   ct_articles_2015_2025 | openalex_is_in_doaj   |   openalex_apc_usd |
+|:------------------------------------------------------------------|------------------------:|:----------------------|-------------------:|
+| Cureus                                                            |                     549 | False                 |                nan |
+| International Journal of Molecular Sciences                       |                     264 | False                 |               3499 |
+| International Journal of Environmental Research and Public Health |                     262 | False                 |               3016 |
+| Nutrients                                                         |                     199 | False                 |               3499 |
+| Journal of Clinical Medicine                                      |                     193 | False                 |               3137 |
+| Cancers                                                           |                     184 | False                 |               3499 |
+| Oncotarget                                                        |                     149 | False                 |                nan |
+
+Current Zoology: apc={"has_apc": true, "max": [{"price": 1300, "currency": "USD"}], "url": "https://academic.oup.com/cz/pages/General_Instructions"} other_charges={"has_other_charges": false} waiver={"has_waiver": false} last_updated=2026-09-17 publisher=Oxford University Press society=Institute of Zoology, Chinese Academy of Sciences; China Zoological Society
+
+International Journal of Nursing Sciences: apc={"has_apc": true, "max": [{"price": 1200, "currency": "USD"}], "url": "https://www.sciencedirect.com/science/journal/23520132/publish/open-access-options"} other_charges={"has_other_charges": false} waiver={"has_waiver": false} last_updated=2026-09-17 publisher=Elsevier society=Chinese Nursing Association
+
+BJPsych Bulletin: apc={"has_apc": true, "max": [{"price": 3655, "currency": "USD"}, {"price": 2610, "currency": "GBP"}], "url": "https://www.cambridge.org/core/journals/bjpsych-bulletin/information/author-instructions/fees-and-pricing"} other_charges={"has_other_charges": false} waiver={"has_waiver": true, "url": "https://www.cambridge.org/core/journals/bjpsych-bulletin/information/journal-policies/open-access-options"} last_updated=2026-09-17 publisher=Cambridge University Press society=Royal College of Psychiatrists
+
+Quantitative Economics: apc={"has_apc": true, "max": [{"price": 1000, "currency": "USD"}], "url": "https://www.econometricsociety.org/publications/quantitative-economics/submissions/instructions-for-submitting-articles"} other_charges={"has_other_charges": true, "url": "https://www.econometricsociety.org/publications/quantitative-economics/submissions/instructions-for-submitting-articles"} waiver={"has_waiver": true, "url": "https://www.econometricsociety.org/publications/quantitative-economics/submissions/instructions-for-submitting-articles"} last_updated=2026-09-17 publisher=Econometric Society society=None
+
+Theoretical Economics: apc={"has_apc": true, "max": [{"price": 840, "currency": "USD"}], "url": "https://www.econometricsociety.org/publications/theoretical-economics/submission-guidelines"} other_charges={"has_other_charges": true, "url": "https://www.econometricsociety.org/publications/theoretical-economics/submission-guidelines"} waiver={"has_waiver": true, "url": "https://www.econometricsociety.org/publications/theoretical-economics/submission-guidelines"} last_updated=2026-09-17 publisher=Econometric Society society=None
+
+### (ii) same, counting only works published in or after the journal's DOAJ open access start year
+
+|   works |
+|--------:|
+|     121 |

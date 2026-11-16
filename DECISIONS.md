@@ -144,3 +144,31 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Live:** https://ct-oa-observatory.vercel.app (Vercel project ct-oa-observatory, team hb-papa, root directory `site/`, Node 24, `ASTRO_TELEMETRY_DISABLED=1` for production and preview).
 - **How:** deployed from this computer with `vercel deploy --prod`. Linking the GitHub repo for automatic deploys failed because Vercel's GitHub app does not yet have access to this repository (a GitHub account setting only Chris can change). `.vercelignore` keeps `.env`, `.env.local`, the venv, Parquet tables, the researcher-email file and the pitch out of any upload; the upload matched the public repo (84 files, 4 MB).
 - **Checked live:** both pages return 200; CSP, no-referrer, nosniff, permissions policy and `X-Robots-Tag: noindex` present; no cookies; zero scripts; fonts load under the CSP; 0 requests to other servers.
+
+## 2026-11-16 — Phase 6 cross-check design
+- **Sample:** 510 articles with a DOI, 30 per institution, spread over 2015–2025, drawn by a fixed hash (`pipeline/s07_crosscheck_sample.py`) so reruns pick the same works. Equal per institution, not proportional, so small colleges are represented. Overall rates are unweighted sample rates and are labeled that way.
+- **Alternatives:** a simple random sample of 500 (would be about 60% Yale, with almost nothing from the small colleges); stratifying by institution × year with equal cells (too few works in some cells).
+- **Unpaywall** is used as a consistency check only. It now runs on the OpenAlex database, so agreement with it is expected and does not count as independent confirmation. The contact email is in `.env` only and replaced with EMAIL_REMOVED in the query log and cache file names (`pipeline/sources.py`).
+- **OpenAIRE** is the main independent check. Queried without a token, 50 DOIs per request (11 requests, under the 60/hour anonymous limit), so no account was needed.
+- **CORE:** not run yet. Chris emailed CORE on 2026-11-16 to confirm the licence. If there is no reply by the end of phase 7, CORE is skipped and the Methods page says why.
+
+## 2026-11-16 — DOAJ results are reported separately, not applied (pending Chris)
+- **Choice:** DOAJ's answer for the 8,349 "fee not confirmed" works is published as its own table (`crosschecks/doaj_fee_unconfirmed.csv`). The site's category figures stay OpenAlex-only for now.
+- **Alternatives:** move works DOAJ confirms as fee-free into "diamond" and works DOAJ lists with a fee into "gold" on the site.
+- **Why:** CLAUDE.md says never blend validation-source numbers into OpenAlex figures. Applying DOAJ would do exactly that. It is Chris's call whether this enrichment is worth an exception (it would be labeled).
+- **Rule used:** DOAJ shows a journal's current policy, so a work only gets a DOAJ answer if it was published in or after the journal's open access start year (`oa_start`).
+
+## 2026-11-16 — OpenAPC compared in euros, against today's list price
+- **Choice:** compare fees paid (OpenAPC, euros incl. VAT) with the journal's euro list price in OpenAlex. Two views: the same Connecticut articles where a co-author's institution reported the payment, and the same journals (median paid per journal, at least 5 payments since 2015).
+- **Alternatives:** convert euros to dollars at historical exchange rates (adds a second source and an assumption).
+- **Why:** comparing in one currency needs no conversion. Because list prices are today's prices, the gap includes price rises over time, which is what the Methods page needs to show ("older years may be overstated").
+- **License:** the per-article match table is an adapted OpenAPC database, so it is published under ODbL in its own folder. Summary figures carry the ODbL attribution line.
+- **Library-funded journals:** 55 works with no author fee (mostly SCOAP3 high-energy physics journals) have an OpenAPC payment because a library reports its consortium share per article. They stay in "no author fee"; the Methods page explains it.
+
+## 2026-11-16 — Green OA proxy definition
+- **Choice:** a journal "shows deposit evidence" if at least 3 of its articles (2015–2025, worldwide) are green with an accepted manuscript as the best free copy, in a repository other than PubMed Central or Europe PMC. A Connecticut article is a repository candidate if it is closed or bronze, has no free repository copy, and its journal shows deposit evidence.
+- **Alternatives:** count PubMed Central deposits (rejected: most follow funder mandates such as NIH's, which publishers accept only for funded articles); a threshold of 1 (a single deposit can be a mistake or a special case) or 10 (misses smaller journals). Results for 1 and 10 are kept in the metric file as a sensitivity check.
+- **Cost:** one OpenAlex `group_by` request per 100 journals, 101 requests for 10,045 journals.
+- **Candidate list:** `data/derived/downloads/repository_candidates.csv`, no author names, not shown on the site, as the brief requires.
+- **Tightened after the cross-check agent's report:** a candidate must have no free copy anywhere except the publisher's page (the first version only excluded accepted or published repository copies, so 2,676 bronze works with free preprints slipped in), and meeting abstracts in journal supplements are left out by DOI pattern (`suppl` DOIs and Blood's ASH abstract DOIs). Statewide candidates: 43,581 (24.7% of 2015–2025 articles); 25,612 at threshold 10, 55,728 at threshold 1.
+- **Not changed (Chris to decide):** meeting abstracts stay in the main OA figures for now. Dropping them would remove about 1,000 closed works statewide (a lower bound) and is a scope change.

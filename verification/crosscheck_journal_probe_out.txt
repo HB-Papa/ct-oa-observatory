@@ -1,0 +1,69 @@
+
+### Journal of Financial Crises: OA status and source flags
+
+| oa_status   | source_is_oa   | source_is_in_doaj   |   n |   y0 |   y1 |
+|:------------|:---------------|:--------------------|----:|-----:|-----:|
+| green       | False          | False               | 116 | 2015 | 2025 |
+| hybrid      | False          | False               |   9 | 2021 | 2024 |
+| bronze      | False          | False               | 162 | 2019 | 2025 |
+| closed      | False          | False               | 143 | 2019 | 2025 |
+
+### Journal of Financial Crises: sample landing pages
+
+| work_id     | doi                                     | landing_page_url                        | is_oa   |
+|:------------|:----------------------------------------|:----------------------------------------|:--------|
+| W1572302446 | https://doi.org/10.17132/2693-3179.1003 | https://doi.org/10.17132/2693-3179.1003 | True    |
+| W2258323478 | https://doi.org/10.17132/2693-3179.1064 | https://doi.org/10.17132/2693-3179.1064 | True    |
+| W2300581849 | https://doi.org/10.17132/2693-3179.1065 | https://doi.org/10.17132/2693-3179.1065 | False   |
+| W2949587520 | https://doi.org/10.17132/2693-3179.1009 | https://doi.org/10.17132/2693-3179.1009 | True    |
+
+### International Journal of High Speed Electronics and Systems: OA status and source flags
+
+| oa_status   | source_is_oa   | source_is_in_doaj   |   n |   y0 |   y1 |
+|:------------|:---------------|:--------------------|----:|-----:|-----:|
+| green       | False          | False               |   2 | 2024 | 2025 |
+| closed      | False          | False               | 161 | 2015 | 2025 |
+
+### International Journal of High Speed Electronics and Systems: sample landing pages
+
+| work_id     | doi                                       | landing_page_url                          | is_oa   |
+|:------------|:------------------------------------------|:------------------------------------------|:--------|
+| W1761040729 | https://doi.org/10.1142/s0129156415200098 | https://doi.org/10.1142/s0129156415200098 | False   |
+| W1774160731 | https://doi.org/10.1142/s0129156415200116 | https://doi.org/10.1142/s0129156415200116 | False   |
+| W2123655019 | https://doi.org/10.1142/s0129156415500111 | https://doi.org/10.1142/s0129156415500111 | False   |
+| W2184620973 | https://doi.org/10.1142/s0129156415200074 | https://doi.org/10.1142/s0129156415200074 | False   |
+
+### FASEB Journal closed/bronze 2015-2025: meeting-abstract supplements vs other
+
+| kind                          |   n |
+|:------------------------------|----:|
+| other                         | 116 |
+| supplement (meeting abstract) | 407 |
+
+### Blood closed/bronze 2015-2025 by DOI pattern (blood-YYYY-NNNNNN = ASH meeting abstract)
+
+| kind                     | oa_category   |   n |
+|:-------------------------|:--------------|----:|
+| meeting abstract pattern | bronze        |   4 |
+| meeting abstract pattern | closed        | 177 |
+| other                    | bronze        |  44 |
+| other                    | closed        | 152 |
+
+### Green proxy candidates (2015-2025) with meeting-abstract supplement DOIs
+
+| source_name                  |    n |
+|:-----------------------------|-----:|
+| nan                          | 1018 |
+| Neurology                    |  460 |
+| The FASEB Journal            |  407 |
+| Journal of Clinical Oncology |   75 |
+| Blood                        |   37 |
+| Circulation                  |   35 |
+| Stroke                       |    2 |
+| Hypertension                 |    2 |
+
+### Closed works 2015-2025 with supplement DOIs (statewide, distinct)
+
+|   count_star() |
+|---------------:|
+|            984 |

@@ -1,0 +1,35 @@
+{
+ "jfc_page_mentions": {
+  "citation_pdf_url": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1011&amp;context=journal-of-financial-crises",
+  "license_cc": false,
+  "open access phrase": false
+ },
+ "W2183917196": {
+  "status": 403,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 5815,
+  "starts_pdf": false,
+  "final_url": "https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1041&context=chemistry-facultypubs"
+ },
+ "W2442085864": {
+  "status": 403,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 5802,
+  "starts_pdf": false,
+  "final_url": "https://digitalcommons.newhaven.edu/cgi/viewcontent.cgi?article=1008&context=economics-facpubs"
+ },
+ "W2998909943": {
+  "status": 403,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 5809,
+  "starts_pdf": false,
+  "final_url": "https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1241&context=nursing-facultypubs"
+ },
+ "W2954967843": {
+  "status": 403,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 5866,
+  "starts_pdf": false,
+  "final_url": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1011&amp;context=journal-of-financial-crises"
+ }
+}

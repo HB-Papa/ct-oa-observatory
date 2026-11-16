@@ -1,0 +1,85 @@
+source_id,journal,openalex_is_in_doaj,openalex_is_oa,openalex_apc_usd,in_doaj,doaj_has_apc,doaj_max_apc_usd,doaj_max_apc_other,doaj_has_other_charges,doaj_oa_start,doaj_added,groups,ct_articles_2015_2025
+S202381698,PLoS ONE,True,True,2382,True,True,2477,,False,2006,2007-03-30,top50_all|top50_oa,1468
+S64187185,Nature Communications,True,True,6990,True,True,7350,6150 EUR|5490 GBP,False,2015,2016-01-11,top50_all|top50_oa,1405
+S125754415,Proceedings of the National Academy of Sciences,False,False,,False,,,,,,,top50_all,1259
+S196734849,Scientific Reports,True,True,2690,True,True,2850,2490 EUR|2290 GBP,False,2011,2011-11-04,top50_all|top50_oa,1234
+S1980519,The Astrophysical Journal,True,True,4499,True,True,3162,2356 GBP|2727 EUR,True,2022,2022-05-05,top50_all|top50_oa,1087
+S79704628,Neurology,False,False,,False,,,,,,,top50_all,933
+S58727509,Journal of the American Academy of Dermatology,False,False,4200,False,,,,,,,top50_all,854
+S205482884,Biological Psychiatry,False,False,5489,False,,,,,,,top50_all,759
+S4210217848,JAMA Network Open,True,True,3000,True,True,3000,,False,2018,2019-04-09,top50_all|top50_oa,733
+S60865174,Journal of the American College of Cardiology,False,False,7166,False,,,,,,,top50_all,727
+S98085912,Biophysical Journal,False,False,3000,False,,,,,,,top50_all,679
+S24807848,Physical Review Letters,False,False,3750,False,,,,,,,top50_all,639
+S187585107,Journal of High Energy Physics,True,True,0,True,False,,,False,2014,2016-12-07,diamond|top50_all|top50_oa,604
+S25293849,The FASEB Journal,False,False,3740,False,,,,,,,top50_all,596
+S137773608,Nature,False,False,12690,False,,,,,,,fee_unconfirmed|top50_all,590
+S195663288,Monthly Notices of the Royal Astronomical Society,True,True,3046,True,True,,2310 GBP,True,2024,2024-07-11,top50_all,566
+S2738950867,Cureus,False,True,,False,,,,,,,fee_unconfirmed|top50_all|top50_oa,549
+S110533041,International Journal of Radiation Oncology*Biology*Physics,False,False,4130,False,,,,,,,top50_all,536
+S45445671,Fertility and Sterility,False,False,4220,False,,,,,,,top50_all,522
+S109998069,Drug and Alcohol Dependence,False,False,4380,False,,,,,,,top50_all,481
+S4210238307,Physical review. D/Physical review. D.,False,False,,False,,,,,,,top50_all,470
+S60711021,Journal of the American Academy of Child & Adolescent Psychiatry,False,False,3710,False,,,,,,,top50_all,464
+S200071133,Blood,False,False,5500,False,,,,,,,top50_all,456
+S7407056561,Journal of Financial Crises,False,False,,False,,,,,,,top50_all,430
+S41454044,Annals of Oncology,False,False,5080,False,,,,,,,top50_all,407
+S94052278,The European Physical Journal C,True,True,0,True,False,,,False,2014,2017-01-16,diamond|top50_all|top50_oa,397
+S1336409049,eLife,True,True,2500,True,True,3750,,False,2013,2013-05-17,top50_all|top50_oa,392
+S66441642,The American Journal of Gastroenterology,False,False,4390,False,,,,,,,top50_all,377
+S3880285,Science,False,False,,False,,,,,,,top50_all,373
+S172573765,JAMA,False,False,,False,,,,,,,top50_all,365
+S2737427234,Science Advances,True,True,4500,True,True,5450,,True,2015,2015-05-21,top50_all|top50_oa,365
+S108427512,Alzheimer s & Dementia,False,False,4200,False,,,,,,,top50_all,364
+S122347013,American Journal of Obstetrics and Gynecology,False,False,5410,False,,,,,,,top50_all,355
+S116608325,Journal of General Internal Medicine,False,False,5290,False,,,,,,,top50_all,352
+S4210168441,Physical Review C,False,False,,False,,,,,,,top50_all,342
+S111155417,Journal of the American Chemical Society,False,False,4500,False,,,,,,,top50_all,341
+S169236886,Cell Reports,True,True,5620,True,True,5790,,False,2012,2015-10-30,top50_all|top50_oa,340
+S28607811,Journal of Investigative Dermatology,False,False,3800,False,,,,,,,top50_all,336
+S204183829,Journal of the American Geriatrics Society,False,False,4760,False,,,,,,,top50_all,314
+S2735126445,Open Forum Infectious Diseases,True,True,4053,True,True,3859,,False,2014,2014-11-20,top50_all|top50_oa,313
+S77494981,PEDIATRICS,False,False,,False,,,,,,,top50_all,306
+S2489920150,Journal of the American Heart Association,True,True,3810,True,True,3180,2370 GBP|3090 EUR,False,2012,2012-08-23,top50_all|top50_oa,305
+S115693375,Journal of the American Society of Nephrology,False,False,,False,,,,,,,top50_all,303
+S13479253,Environmental Science & Technology,False,False,4500,False,,,,,,,top50_all,303
+S65364685,JAMA Internal Medicine,False,False,,False,,,,,,,top50_all,293
+S100695177,The Astronomical Journal,True,True,4499,True,True,3162,2356 GBP|2727 EUR,True,2022,2022-05-05,top50_all|top50_oa,290
+S104135014,Journal of Vascular Surgery,False,False,4010,False,,,,,,,top50_all,287
+S140251998,Journal of Biological Chemistry,True,True,3430,True,True,3430,,False,2021,2021-02-15,top50_all,287
+S2735557189,Innovation in Aging,True,True,3977,True,True,3615,,False,2017,2019-03-05,top50_all|top50_oa,280
+S4210175824,The Astrophysical Journal Letters,True,True,2400,True,True,2978,2219 GBP|2568 EUR,True,2022,2022-05-12,top50_all|top50_oa,279
+S10623703,International Journal of Molecular Sciences,False,True,3499,False,,,,,,,top50_oa,264
+S15239247,International Journal of Environmental Research and Public Health,False,True,3016,False,,,,,,,top50_oa,262
+S79054089,BMJ Open,True,True,1839,True,True,,2390 GBP,False,2011,2011-03-29,top50_oa,261
+S2595292759,Frontiers in Immunology,True,True,3801,True,True,,3150 CHF,False,2010,2011-04-28,top50_oa,228
+S9692511,Frontiers in Psychology,True,True,3801,True,True,,3150 CHF,False,2010,2010-11-23,top50_oa,228
+S137468011,Journal of Vision,True,True,1850,True,True,1850,,False,2016,2003-04-09,top50_oa,217
+S92766711,Frontiers in Psychiatry,True,True,3801,True,True,,3150 CHF,False,2009,2010-11-22,top50_oa,203
+S110785341,Nutrients,False,True,3499,False,,,,,,,top50_oa,199
+S76304953,Investigative Ophthalmology & Visual Science,True,True,1850,True,True,1850,,False,2016,2020-03-05,top50_oa,197
+S173952182,Physics Letters B,True,True,0,True,False,,,False,2014,2015-02-24,diamond|top50_oa,193
+S2737969411,Journal of Clinical Medicine,False,True,3137,False,,,,,,,top50_oa,193
+S4210219560,Current Developments in Nutrition,True,True,5000,True,True,5000,,False,2017,2018-07-23,top50_oa,192
+S200437886,BMC Public Health,True,True,3290,True,True,3450,3150 EUR|2690 GBP,False,2001,2003-04-03,top50_oa,189
+S168415115,Cancers,False,True,3499,False,,,,,,,top50_oa,184
+S2764964142,JCI Insight,True,True,4100,True,True,5000,,False,2020,2020-10-29,top50_oa,182
+S134668137,Nucleic Acids Research,True,True,3992,True,True,4192,,False,2005,2002-10-06,top50_oa,179
+S2764486142,JAAD Case Reports,True,True,750,True,True,850,,False,2015,2016-09-13,top50_oa,167
+S2485537415,IEEE Access,True,True,2075,True,True,2160,,False,2013,2014-11-24,top50_oa,161
+S2898358376,iScience,True,True,3240,True,True,3240,,False,2018,2019-01-23,top50_oa,153
+S2755168269,Orthopaedic Journal of Sports Medicine,True,True,1500,True,True,1500,,False,2013,2013-10-28,top50_oa,150
+S126644158,Oncotarget,False,True,,False,,,,,,,fee_unconfirmed|top50_oa,149
+S86033158,PLoS Computational Biology,True,True,3043,True,True,3165,,False,2005,2005-01-11,top50_oa,147
+S163345920,Translational Psychiatry,True,True,5290,True,True,5490,4190 EUR|3590 GBP,False,2011,2012-06-11,top50_oa,140
+S139338987,Environmental Research Letters,True,True,3045,True,True,3230,2350 GBP|2785 EUR,False,2006,2007-10-15,top50_oa,139
+S2484704948,Frontiers in Microbiology,True,True,3801,True,True,,3150 CHF,False,2010,2011-01-25,top50_oa,137
+S2754803477,Journal for ImmunoTherapy of Cancer,True,True,2490,True,True,,2390 GBP,False,2013,2013-09-23,top50_oa,135
+S2482021738,Ecology and Evolution,True,True,2570,True,True,2700,2210 EUR|1960 GBP,False,2011,2012-02-23,top50_oa,134
+S2595931848,Frontiers in Public Health,True,True,3801,True,True,,3150 CHF,False,2013,2013-05-30,top50_oa,134
+S4210201176,mBio,True,True,3900,True,True,3900,,True,2010,2010-06-23,top50_oa,133
+S46544255,PLoS neglected tropical diseases,True,True,2670,True,True,2670,,False,2007,2008-04-22,top50_oa,133
+S2754281505,Plastic & Reconstructive Surgery Global Open,True,True,2195,True,True,2195,,False,2013,2015-01-16,top50_oa,131
+S2764683450,Blood Advances,True,True,3800,True,True,4000,,True,2016,2024-07-05,top50_oa,130
+S4210225776,Communications Biology,True,True,4190,True,True,4390,3650 EUR|3250 GBP,False,2018,2018-05-01,top50_oa,117
+S2735747656,Journal of the Endocrine Society,True,True,3255,True,True,3100,,False,2017,2017-10-12,top50_oa,114

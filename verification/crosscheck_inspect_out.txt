@@ -1,0 +1,861 @@
+
+==== A_oa_closed_oaire_open W2183917196 doi:10.1016/j.poly.2015.11.027 year 2015 inst fairfield
+  OpenAlex: closed | journal ('Polyhedron', 'Elsevier BV', None, 'article')
+    loc ('Polyhedron', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.poly.2015.11.027')
+    loc ('DigitalCommons - Fairfield (Fairfield University)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.fairfield.edu/chemistry-facultypubs/42')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::d61f7d9871443fc274d60f8a31775bcd best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-08-01 from=['Bielefeld Academic Search Engine (BASE)', 'UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Polyhedron | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.poly.2015.11.027
+    inst Article | Polyhedron | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1041&context=chemistry-facultypubs
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.poly.2015.11.027
+    inst Article | Fairfield University: DigitalCommons@Fairfield | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.1016/j.poly.2015.11.027
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.poly.2015.11.027
+
+==== A_oa_closed_oaire_open W2279012091 doi:10.1080/01603477.2015.1134260 year 2015 inst trinity
+  OpenAlex: closed | journal ('Journal of Post Keynesian Economics', 'Informa', None, 'article')
+    loc ('Journal of Post Keynesian Economics', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/01603477.2015.1134260')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'http://hdl.handle.net/10.1080/01603477.2015.1134260')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::4f42db0cfe69f7b658596a079e2897ed best=OPEN color=bronze isGreen=False embargoEnd=None date=2015-01-01 from=['UnpayWall', 'Crossref', 'Research Papers in Economics', 'Microsoft Academic Graph']
+    inst Article | Journal of Post Keynesian Economics | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/01603477.2015.1134260
+    inst Article | Journal of Post Keynesian Economics | access=OPEN oaRoute=green | lic=None | from=UnpayWall | http://www.economicpolicyresearch.org/econ/2015/NSSR_WP_192015.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.2139/ssrn.2653131
+    inst Article | Unknown Repository | access=OPEN oaRoute=green | lic=None | from=UnpayWall | http://www.economicpolicyresearch.org/econ/2015/NSSR_WP_192015.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/01603477.2015.1134260
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.2139/ssrn.2653131
+    inst Preprint | Research Papers in Economics | access=None oaRoute=None | lic=None | from=Research Papers in Economics | http://www.economicpolicyresearch.org/econ/2015/NSSR_WP_192015.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/01603477.2015.1134260
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.2139/ssrn.2653131
+
+==== A_oa_closed_oaire_open W2395577023 doi:10.2522/ptj.20150453 year 2016 inst sacredheart
+  OpenAlex: closed | journal ('Physical Therapy', 'University of Oxford', None, 'article')
+    loc ('Physical Therapy', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.2522/ptj.20150453')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/27231273')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::b7388e7f4610ab5bcabf62102c3f3548 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-11-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Physical Therapy | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.2522/ptj.20150453
+    inst Article | Physical Therapy | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://academic.oup.com/ptj/article-pdf/96/11/1832/31675681/ptj1832.pdf
+    inst Article | Physical Therapy | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/27231273
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.2522/ptj.20150453
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.2522/ptj.20150453
+
+==== A_oa_closed_oaire_open W2442085864 doi:10.1080/00036846.2016.1184376 year 2016 inst newhaven
+  OpenAlex: closed | journal ('Applied Economics', 'Informa', None, 'article')
+    loc ('Applied Economics', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/00036846.2016.1184376')
+    loc ('Digital Commons - New Heaven (University of New Haven)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.newhaven.edu/economics-facpubs/9')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'http://hdl.handle.net/10.1080/00036846.2016.1184376')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::eef67993a948a62504dcf35a7d3d5711 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-06-17 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Applied Economics | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/00036846.2016.1184376
+    inst Article | Applied Economics | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://digitalcommons.newhaven.edu/cgi/viewcontent.cgi?article=1008&context=economics-facpubs
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/00036846.2016.1184376
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/00036846.2016.1184376
+
+==== A_oa_closed_oaire_open W2617673766 doi:10.1093/arclin/acx049 year 2017 inst ccsu
+  OpenAlex: closed | journal ('Archives of Clinical Neuropsychology', 'University of Oxford', None, 'article')
+    loc ('Archives of Clinical Neuropsychology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/arclin/acx049')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/28535289')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::4bc3d465e67aee45f8ec36b70132a6d4 best=OPEN color=bronze isGreen=False embargoEnd=None date=2017-05-23 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Archives of Clinical Neuropsychology | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1093/arclin/acx049
+    inst Article | Archives of Clinical Neuropsychology | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://academic.oup.com/acn/article-pdf/33/1/47/23572573/acx049.pdf
+    inst Article | Archives of Clinical Neuropsychology | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/28535289
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/arclin/acx049
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/arclin/acx049
+
+==== A_oa_closed_oaire_open W2733628627 doi:10.31274/jctp-180810-73 year 2017 inst scsu
+  OpenAlex: closed | journal ('Journal of Critical Thought and Praxis', 'Iowa State University', None, 'article')
+    loc ('Journal of Critical Thought and Praxis', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.31274/jctp-180810-73')
+    loc ('Iowa State University Digital Repository (Iowa State University)', 'repository', 'submittedVersion', False, None, 'https://lib.dr.iastate.edu/jctp/vol6/iss2/3')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::0b7e9a39c6c02eabc6c40bcb8c89babc best=OPEN color=gold isGreen=False embargoEnd=None date=2017-01-01 from=['Bielefeld Academic Search Engine (BASE)', 'UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Journal of Critical Thought and Praxis | access=OPEN oaRoute=gold | lic=None | from=Crossref | https://doi.org/10.31274/jctp-180810-73
+    inst Article | Journal of Critical Thought and Praxis | access=OPEN oaRoute=gold | lic=None | from=UnpayWall | https://dr.lib.iastate.edu/bitstreams/7b34ecec-793f-4900-883c-a0ec353f96b9/download
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.31274/jctp-180810-73
+    inst Article | Digital Repository @ Iowa State University | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.31274/jctp-180810-73
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.31274/jctp-180810-73
+
+==== A_oa_closed_oaire_open W2763826390 doi:10.1504/ijmrs.2017.087371 year 2017 inst ccsu
+  OpenAlex: closed | journal ('International Journal of Mechanisms and Robotic Systems', 'Inderscience Publishers', None, 'article')
+    loc ('International Journal of Mechanisms and Robotic Systems', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1504/ijmrs.2017.087371')
+    loc ('International Journal of Mechanisms and Robotic Systems', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1504/ijmrs.2017.10008273')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::1690eae6f0e2831b580be5cc79869596 best=OPEN color=gold isGreen=False embargoEnd=None date=2017-01-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | International Journal of Mechanisms and Robotic Systems | access=OPEN oaRoute=gold | lic=None | from=Crossref | https://doi.org/10.1504/ijmrs.2017.087371
+    inst Article | International Journal of Mechanisms and Robotic Systems | access=OPEN oaRoute=gold | lic=None | from=Crossref | https://doi.org/10.1504/ijmrs.2017.10008273
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1504/ijmrs.2017.10008273
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1504/ijmrs.2017.10008273
+
+==== A_oa_closed_oaire_open W2790155477 doi:10.1519/jpt.0000000000000179 year 2018 inst hartford
+  OpenAlex: closed | journal ('Journal of Geriatric Physical Therapy', 'Wolters Kluwer', None, 'article')
+    loc ('Journal of Geriatric Physical Therapy', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1519/jpt.0000000000000179')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/29461340')
+    loc ('Touro Scholar (Touro College)', 'repository', 'submittedVersion', False, None, 'https://touroscholar.touro.edu/faculty_pubs/147')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::6b0d0eb2e5021800928db26e85208ca5 best=OPEN color=bronze isGreen=False embargoEnd=None date=2019-10-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Geriatric Physical Therapy | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1519/jpt.0000000000000179
+    inst Article | Journal of Geriatric Physical Therapy | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://journals.lww.com/jgpt/Fulltext/2019/10000/Attitudes_About_Cognitive_Screening__A_Survey_of.13.aspx
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/29461340
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1519/jpt.0000000000000179
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1519/jpt.0000000000000179
+
+==== A_oa_closed_oaire_open W2808486158 doi:10.1007/s11356-018-2493-1 year 2018 inst newhaven
+  OpenAlex: closed | journal ('Environmental Science and Pollution Research', 'Springer Nature', None, 'article')
+    loc ('Environmental Science and Pollution Research', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1007/s11356-018-2493-1')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/29909531')
+    loc ('Digital Commons - New Heaven (University of New Haven)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.newhaven.edu/civilengineering-facpubs/41')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::56ec3bf8eb17540412b5d0f0acec52b1 best=OPEN color=bronze isGreen=False embargoEnd=None date=2018-06-16 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Environmental Science and Pollution Research | access=CLOSED oaRoute=None | lic=http://www.springer.com/tdm | from=Crossref | https://doi.org/10.1007/s11356-018-2493-1
+    inst Article | Environmental Science and Pollution Research | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://digitalcommons.newhaven.edu/cgi/viewcontent.cgi?article=1040&context=civilengineering-facpubs
+    inst Article | Environmental Science and Pollution Research | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/29909531
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s11356-018-2493-1
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s11356-018-2493-1
+
+==== A_oa_closed_oaire_open W2900793605 doi:10.1016/j.exis.2018.10.007 year 2018 inst newhaven
+  OpenAlex: closed | journal ('The Extractive Industries and Society', 'Elsevier BV', None, 'article')
+    loc ('The Extractive Industries and Society', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.exis.2018.10.007')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::dd427ca2a7dac0f2dec27e7677c05231 best=OPEN color=bronze isGreen=False embargoEnd=None date=2019-04-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | The Extractive Industries and Society | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.exis.2018.10.007
+    inst Article | The Extractive Industries and Society | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | http://pau.go.ug/uploads/NATIONAL_LOCAL_CONTENT_POLICY_FOR_PETROLEUM_IN_UGANDA.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.exis.2018.10.007
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.exis.2018.10.007
+
+==== A_oa_closed_oaire_open W2921674250 doi:10.1093/ajhp/zxz017 year 2019 inst usj
+  OpenAlex: closed | journal ('American Journal of Health-System Pharmacy', 'University of Oxford', None, 'review')
+    loc ('American Journal of Health-System Pharmacy', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/ajhp/zxz017')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/30851043')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::56920f54036a27bb1e9d0b5b1a33f522 best=OPEN color=hybrid isGreen=False embargoEnd=None date=2019-03-09 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | American Journal of Health-System Pharmacy | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/ajhp/zxz017
+    inst Article | American Journal of Health-System Pharmacy | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/30851043
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/ajhp/zxz017
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/ajhp/zxz017
+
+==== A_oa_closed_oaire_open W2944866439 doi:10.1049/iet-com.2018.5849 year 2019 inst trinity
+  OpenAlex: closed | journal ('IET Communications', 'Institution of Engineering and Technology', None, 'article')
+    loc ('IET Communications', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1049/iet-com.2018.5849')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::223e1a3a174ed8f7c05258f39d1a0ce1 best=OPEN color=gold isGreen=False embargoEnd=None date=2019-06-01 from=['Crossref', 'Microsoft Academic Graph', 'DBLP']
+    inst Article | IET Communications | access=OPEN oaRoute=gold | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1049/iet-com.2018.5849
+    inst Article | DBLP | access=None oaRoute=None | lic=None | from=DBLP | https://doi.org/10.1049/iet-com.2018.5849
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1049/iet-com.2018.5849
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1049/iet-com.2018.5849
+
+==== A_oa_closed_oaire_open W2952739627 doi:10.1093/geront/gnz083 year 2019 inst yale
+  OpenAlex: closed | journal ('The Gerontologist', 'University of Oxford', None, 'article')
+    loc ('The Gerontologist', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/geront/gnz083')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/31201744')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::3927e5b06b6b8b414a1aa52a9b53c979 best=OPEN color=hybrid isGreen=False embargoEnd=None date=2019-06-15 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | The Gerontologist | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/geront/gnz083
+    inst Article | The Gerontologist | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/31201744
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/geront/gnz083
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/geront/gnz083
+
+==== A_oa_closed_oaire_open W2981125588 doi:10.1111/jgs.16205 year 2019 inst uconn
+  OpenAlex: closed | journal ('Journal of the American Geriatrics Society', 'Wiley', None, 'review')
+    loc ('Journal of the American Geriatrics Society', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1111/jgs.16205')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/31613000')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::dbf3e42a406295e43db5bcb459398f13 best=OPEN color=bronze isGreen=False embargoEnd=None date=2019-10-15 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of the American Geriatrics Society | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/jgs.16205
+    inst Article | Journal of the American Geriatrics Society | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://agsjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jgs.16205
+    inst Article | Journal of the American Geriatrics Society | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/31613000
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jgs.16205
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jgs.16205
+
+==== A_oa_closed_oaire_open W2998909943 doi:10.1080/07370016.2020.1693095 year 2020 inst fairfield
+  OpenAlex: closed | journal ('Journal of Community Health Nursing', 'Informa', None, 'article')
+    loc ('Journal of Community Health Nursing', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/07370016.2020.1693095')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/31905301')
+    loc ('DigitalCommons - Fairfield (Fairfield University)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.fairfield.edu/nursing-facultypubs/235')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::0619c8f6cb6d2f4d75398bad4678e99b best=OPEN color=bronze isGreen=False embargoEnd=None date=2020-01-02 from=['Bielefeld Academic Search Engine (BASE)', 'UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Community Health Nursing | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/07370016.2020.1693095
+    inst Article | Journal of Community Health Nursing | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1241&context=nursing-facultypubs
+    inst Article | Journal of Community Health Nursing | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/31905301
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/07370016.2020.1693095
+    inst Article | Fairfield University: DigitalCommons@Fairfield | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.1080/07370016.2020.1693095
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/07370016.2020.1693095
+
+==== A_oa_closed_oaire_open W3095231685 doi:10.1182/blood-2020-134718 year 2020 inst yale
+  OpenAlex: closed | journal ('Blood', 'Elsevier BV', None, 'article')
+    loc ('Blood', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1182/blood-2020-134718')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::3098f78d7ab365c505f72200fc6fa06f best=OPEN color=bronze isGreen=False embargoEnd=None date=2020-11-05 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Blood | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1182/blood-2020-134718
+    inst Article | Blood | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://doi.org/10.1182/blood-2020-134718
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1182/blood-2020-134718
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1182/blood-2020-134718
+
+==== A_oa_closed_oaire_open W3107486796 doi:10.1093/jme/tjaa230 year 2020 inst wcsu
+  OpenAlex: closed | journal ('Journal of Medical Entomology', 'University of Oxford', None, 'article')
+    loc ('Journal of Medical Entomology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/jme/tjaa230')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/33225365')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::444684815ccf4508647ba1bb388688ea best=OPEN color=hybrid isGreen=False embargoEnd=None date=2020-10-26 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Medical Entomology | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/jme/tjaa230
+    inst Article | Journal of Medical Entomology | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/33225365
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/jme/tjaa230
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/jme/tjaa230
+
+==== A_oa_closed_oaire_open W3169525796 doi:10.1111/jam.13295 year 2016 inst sacredheart
+  OpenAlex: closed | journal ('Journal of Applied Microbiology', 'University of Oxford', None, 'article')
+    loc ('Journal of Applied Microbiology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1111/jam.13295')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/27626760')
+    loc ('OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)', 'repository', 'submittedVersion', False, None, 'https://www.osti.gov/biblio/1401476')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::e37c7735116b13a6844ad429fdbbf5ba best=OPEN color=bronze isGreen=False embargoEnd=None date=2017-02-27 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Applied Microbiology | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/jam.13295
+    inst Article | Journal of Applied Microbiology | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://sfamjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jam.13295
+    inst Article | Journal of Applied Microbiology | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/27626760
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jam.13295
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jam.13295
+
+==== A_oa_closed_oaire_open W3174498221 doi:10.1096/fasebj.2018.32.1_supplement.563.4 year 2018 inst uconn
+  OpenAlex: closed | journal ('The FASEB Journal', 'Wiley', None, 'article')
+    loc ('The FASEB Journal', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1096/fasebj.2018.32.1_supplement.563.4')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::f76e767995a62e1e1392699f1c3f9841 best=OPEN color=bronze isGreen=False embargoEnd=None date=2018-04-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | The FASEB Journal | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1096/fasebj.2018.32.1_supplement.563.4
+    inst Article | The FASEB Journal | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://doi.org/10.1096/fasebj.2018.32.1_supplement.563.4
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1096/fasebj.2018.32.1_supplement.563.4
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1096/fasebj.2018.32.1_supplement.563.4
+
+==== A_oa_closed_oaire_open W4286715683 doi:10.1080/10106049.2022.2105407 year 2022 inst trinity
+  OpenAlex: closed | journal ('Geocarto International', 'Informa', None, 'article')
+    loc ('Geocarto International', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/10106049.2022.2105407')
+    loc ('Digital Commons - Michigan Tech (Michigan Technological University)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.mtu.edu/michigantech-p/16354')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_________::3e7170d0fcb2c7d6e23e075958906b42 best=OPEN color=gold isGreen=False embargoEnd=None date=2022-08-02 from=['Crossref']
+    inst Article | Geocarto International | access=OPEN oaRoute=gold | lic=None | from=Crossref | https://doi.org/10.1080/10106049.2022.2105407
+
+==== A_oa_closed_oaire_open W4388484113 doi:10.1093/ia/iiad249 year 2023 inst fairfield
+  OpenAlex: closed | journal ('International Affairs', 'University of Oxford', None, 'article')
+    loc ('International Affairs', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/ia/iiad249')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_________::5bdaacacef828ab1814670bc47d5e404 best=OPEN color=hybrid isGreen=False embargoEnd=None date=2023-11-06 from=['Crossref']
+    inst Article | International Affairs | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/ia/iiad249
+
+==== A_oa_closed_oaire_open W4404196319 doi:10.1080/10826084.2024.2422951 year 2024 inst trinity
+  OpenAlex: closed | journal ('Substance Use & Misuse', 'Informa', None, 'article')
+    loc ('Substance Use & Misuse', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/10826084.2024.2422951')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/39511713')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_dedup___::91a608dbd8aab6a52b21d4fc28a62c00 best=OPEN color=None isGreen=True embargoEnd=None date=2024-11-07 from=['Datacite', 'Crossref', 'Europe PubMed Central']
+    inst Article | Substance Use & Misuse | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/10826084.2024.2422951
+    inst Other literature type | figshare | access=OPEN oaRoute=None | lic=CC BY | from=Datacite | https://dx.doi.org/10.6084/m9.figshare.27634899
+    inst Other literature type | figshare | access=OPEN oaRoute=None | lic=CC BY | from=Datacite | https://dx.doi.org/10.6084/m9.figshare.27634899.v1
+    inst Article | Substance Use & Misuse | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/39511713
+
+==== A_oa_closed_oaire_open W4405355316 doi:10.1093/jahist/jaae202 year 2024 inst wcsu
+  OpenAlex: closed | journal ('Journal of American History', 'University of Oxford', None, 'article')
+    loc ('Journal of American History', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/jahist/jaae202')
+  Unpaywall: closed best=None None None
+  OpenAIRE record doi_________::92002cbc6bd6a7c2f8210ad9f4df0dc9 best=OPEN color=hybrid isGreen=False embargoEnd=None date=2024-12-01 from=['Crossref']
+    inst Article | Journal of American History | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/jahist/jaae202
+
+==== B_oa_free_oaire_closed W1737870980 doi:10.1016/j.csr.2015.06.003 year 2015 inst uscga
+  OpenAlex: green | journal ('Continental Shelf Research', 'Elsevier BV', None, 'article')
+    loc ('Continental Shelf Research', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.csr.2015.06.003')
+    loc ('Journal of Media Literacy Education', 'journal', 'submittedVersion', True, 'cc-by', 'https://digitalcommons.uri.edu/gsofacpubs/1620')
+  Unpaywall: green best=repository submittedVersion https://digitalcommons.uri.edu/gsofacpubs/1620
+  OpenAIRE record doi_dedup___::53ca1b546a1e8d1c37834aa4b3759b10 best=CLOSED color=None isGreen=False embargoEnd=None date=2015-08-01 from=['Bielefeld Academic Search Engine (BASE)', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Continental Shelf Research | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.csr.2015.06.003
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.csr.2015.06.003
+    inst Article | University of Rhode Island: DigitalCommons@URI | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.1016/j.csr.2015.06.003
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.csr.2015.06.003
+
+==== B_oa_free_oaire_closed W2616888546 doi:10.1016/j.nuclphysa.2017.05.077 year 2017 inst yale
+  OpenAlex: bronze | journal ('Nuclear Physics A', 'Elsevier BV', None, 'article')
+    loc ('Nuclear Physics A', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.nuclphysa.2017.05.077')
+    loc ('Kölner Universitäts PublikationsServer (Universität zu Köln)', 'repository', 'publishedVersion', False, None, 'https://kups.ub.uni-koeln.de/22130/')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S0375947417302026
+  OpenAIRE record doi_dedup___::e1f2a08fe6c23b147acc9f49cf0677fe best=CLOSED color=None isGreen=False embargoEnd=None date=2017-09-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | Nuclear Physics A | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.nuclphysa.2017.05.077
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.nuclphysa.2017.05.077
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.nuclphysa.2017.05.077
+
+==== B_oa_free_oaire_closed W2802843565 doi:10.1016/j.jfluidstructs.2018.02.005 year 2018 inst uscga
+  OpenAlex: bronze | journal ('Journal of Fluids and Structures', 'Elsevier BV', None, 'article')
+    loc ('Journal of Fluids and Structures', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.jfluidstructs.2018.02.005')
+    loc ('OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)', 'repository', 'submittedVersion', False, None, 'https://www.osti.gov/biblio/1582718')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S0889974616304546
+  OpenAIRE record doi_dedup___::12355f3f6d0640eee8dcdfd2e0491887 best=CLOSED color=None isGreen=False embargoEnd=None date=2018-07-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | Journal of Fluids and Structures | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.jfluidstructs.2018.02.005
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.jfluidstructs.2018.02.005
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.jfluidstructs.2018.02.005
+
+==== B_oa_free_oaire_closed W2915221485 doi:10.1016/j.bbr.2019.02.035 year 2019 inst scsu
+  OpenAlex: green | journal ('Behavioural Brain Research', 'Elsevier BV', None, 'article')
+    loc ('Behavioural Brain Research', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.bbr.2019.02.035')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/30797854')
+    loc ('Conicet', 'repository', 'submittedVersion', True, 'cc-by-nc-sa', 'http://hdl.handle.net/11336/128463')
+  Unpaywall: green best=repository submittedVersion http://hdl.handle.net/11336/128463
+  OpenAIRE record doi_dedup___::8857e969058f18f0c18bcc2722ec8269 best=RESTRICTED color=None isGreen=False embargoEnd=None date=2019-05-01 from=['Crossref', 'Microsoft Academic Graph', 'CONICET Digital', 'Europe PubMed Central']
+    inst Article | Behavioural Brain Research | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.bbr.2019.02.035
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/30797854
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.bbr.2019.02.035
+    inst Article | CONICET Digital | access=RESTRICTED oaRoute=None | lic=CC BY NC SA | from=CONICET Digital | http://hdl.handle.net/11336/128463
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.bbr.2019.02.035
+
+==== B_oa_free_oaire_closed W2966026939 doi:10.1002/da.22944 year 2019 inst ecsu
+  OpenAlex: hybrid | journal ('Depression and Anxiety', 'Wiley', 'public-domain', 'article')
+    loc ('Depression and Anxiety', 'journal', 'publishedVersion', True, 'public-domain', 'https://doi.org/10.1002/da.22944')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/31356713')
+  Unpaywall: hybrid best=publisher publishedVersion https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/da.22944
+  OpenAIRE record doi_dedup___::1cefc91af96d61b97243fd14f3334015 best=CLOSED color=None isGreen=False embargoEnd=None date=2019-07-29 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Depression and Anxiety | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1002/da.22944
+    inst Article | Depression and Anxiety | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/31356713
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/da.22944
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/da.22944
+
+==== B_oa_free_oaire_closed W3004047271 doi:10.1016/j.fuel.2020.117100 year 2020 inst newhaven
+  OpenAlex: bronze | journal ('Fuel', 'Elsevier BV', None, 'article')
+    loc ('Fuel', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.fuel.2020.117100')
+    loc ('OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)', 'repository', 'submittedVersion', False, None, 'https://www.osti.gov/biblio/1691903')
+    loc ('OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)', 'repository', 'submittedVersion', False, None, 'https://www.osti.gov/biblio/1801352')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S0016236120300958
+  OpenAIRE record doi_dedup___::8fe6b95e5fec919adcebdd9ab27057b5 best=CLOSED color=None isGreen=False embargoEnd=None date=2020-05-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | Fuel | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.fuel.2020.117100
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.fuel.2020.117100
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.fuel.2020.117100
+
+==== B_oa_free_oaire_closed W3016286018 doi:10.1016/j.tcs.2020.03.024 year 2020 inst conncoll
+  OpenAlex: bronze | journal ('Theoretical Computer Science', 'Elsevier BV', None, 'article')
+    loc ('Theoretical Computer Science', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1016/j.tcs.2020.03.024')
+  Unpaywall: bronze best=publisher publishedVersion https://doi.org/10.1016/j.tcs.2020.03.024
+  OpenAIRE record doi_dedup___::235c6ce22d82af70fec4ba7d3fce7224 best=CLOSED color=None isGreen=False embargoEnd=None date=2020-06-01 from=['zbMATH Open', 'Crossref', 'Microsoft Academic Graph', 'DBLP']
+    inst Article | Theoretical Computer Science | access=CLOSED oaRoute=None | lic=http://www.elsevier.com/open-access/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.tcs.2020.03.024
+    inst Article | zbMATH Open | access=CLOSED oaRoute=None | lic=None | from=zbMATH Open | https://doi.org/10.1016/j.tcs.2020.03.024
+    inst Article | DBLP | access=None oaRoute=None | lic=None | from=DBLP | https://doi.org/10.1016/j.tcs.2020.03.024
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.tcs.2020.03.024
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.tcs.2020.03.024
+
+==== B_oa_free_oaire_closed W3081728761 doi:10.1016/j.jvs.2020.08.032 year 2020 inst yale
+  OpenAlex: bronze | journal ('Journal of Vascular Surgery', 'Elsevier BV', None, 'review')
+    loc ('Journal of Vascular Surgery', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1016/j.jvs.2020.08.032')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/32889074')
+  Unpaywall: bronze best=publisher publishedVersion https://doi.org/10.1016/j.jvs.2020.08.032
+  OpenAIRE record doi_dedup___::c8cd4e24fdb93ccda962f3621844a2f0 best=CLOSED color=None isGreen=False embargoEnd=None date=2021-01-01 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Vascular Surgery | access=CLOSED oaRoute=None | lic=http://www.elsevier.com/open-access/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.jvs.2020.08.032
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/32889074
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.jvs.2020.08.032
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.jvs.2020.08.032
+
+==== B_oa_free_oaire_closed W3135902977 doi:10.1016/j.matchar.2021.111016 year 2021 inst uconn
+  OpenAlex: bronze | journal ('Materials Characterization', 'Elsevier BV', None, 'article')
+    loc ('Materials Characterization', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.matchar.2021.111016')
+    loc ('OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)', 'repository', 'submittedVersion', False, None, 'https://www.osti.gov/biblio/1782330')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S1044580321001467
+  OpenAIRE record doi_dedup___::6709c5de8d65b4b4f7690abc8df01ff8 best=CLOSED color=None isGreen=False embargoEnd=None date=2021-04-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | Materials Characterization | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.matchar.2021.111016
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.matchar.2021.111016
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.matchar.2021.111016
+
+==== B_oa_free_oaire_closed W3136610339 doi:10.1002/nau.24649 year 2021 inst uconn
+  OpenAlex: green | journal ('Neurourology and Urodynamics', 'Wiley', None, 'review')
+    loc ('Neurourology and Urodynamics', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1002/nau.24649')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/33719097')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8137595/')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC8137595/
+  OpenAIRE record doi_dedup___::e69274432776467b4c2cde5eb05a03fa best=CLOSED color=None isGreen=False embargoEnd=None date=2021-03-14 from=['Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Neurourology and Urodynamics | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1002/nau.24649
+    inst Article | Neurourology and Urodynamics | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/33719097
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/nau.24649
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/nau.24649
+
+==== B_oa_free_oaire_closed W3217125567 doi:10.1177/02662426211020608 year 2021 inst hartford
+  OpenAlex: bronze | journal ('International Small Business Journal Researching Entrepreneurship', 'SAGE Publishing', None, 'article')
+    loc ('International Small Business Journal Researching Entrepreneurship', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1177/02662426211020608')
+  Unpaywall: bronze best=publisher publishedVersion https://journals.sagepub.com/doi/pdf/10.1177/02662426211020608
+  OpenAIRE record doi_dedup___::72020afa5153af5ede24177d619a4a35 best=CLOSED color=None isGreen=False embargoEnd=None date=2021-11-01 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | International Small Business Journal Researching Entrepreneurship | access=CLOSED oaRoute=None | lic=https://journals.sagepub.com/page/policies/text-and-data-mining-license | from=Crossref | https://doi.org/10.1177/02662426211020608
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1177/02662426211020608
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1177/02662426211020608
+
+==== B_oa_free_oaire_closed W4200118937 doi:10.1108/raf-10-2020-0295 year 2019 inst hartford
+  OpenAlex: green | journal ('Review of Accounting and Finance', 'Emerald Publishing Limited', None, 'article')
+    loc ('Review of Accounting and Finance', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1108/raf-10-2020-0295')
+    loc ('SSRN Electronic Journal', 'repository', 'publishedVersion', True, None, 'https://doi.org/10.2139/ssrn.3452275')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'https://www.emerald.com/insight/content/doi/10.1108/RAF-10-2020-0295.html?utm_source=repec&utm_medium=feed&utm_campaign=repec')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'https://www.emerald.com/insight/content/doi/10.1108/RAF-10-2020-0295/full/html?utm_source=repec&utm_medium=feed&utm_campaign=repec')
+  Unpaywall: green best=repository publishedVersion https://doi.org/10.2139/ssrn.3452275
+  OpenAIRE record doi_________::6e385d0e82ba414c2fd78f96ac7ebb60 best=CLOSED color=None isGreen=False embargoEnd=None date=2021-12-14 from=['Crossref']
+    inst Article | Review of Accounting and Finance | access=CLOSED oaRoute=None | lic=https://www.emerald.com/insight/site-policies | from=Crossref | https://doi.org/10.1108/raf-10-2020-0295
+
+==== B_oa_free_oaire_closed W4283324890 doi:10.1111/1365-2664.14242 year 2022 inst conncoll
+  OpenAlex: bronze | journal ('Journal of Applied Ecology', 'Wiley', None, 'article')
+    loc ('Journal of Applied Ecology', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1111/1365-2664.14242')
+  Unpaywall: bronze best=publisher publishedVersion https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1365-2664.14242
+  OpenAIRE record doi_________::2a3c828339df4e3ff3d7c32cc76fa8ac best=CLOSED color=None isGreen=False embargoEnd=None date=2022-06-30 from=['Crossref']
+    inst Article | Journal of Applied Ecology | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/1365-2664.14242
+
+==== B_oa_free_oaire_closed W4283820042 doi:10.1016/j.atmosenv.2022.119252 year 2021 inst newhaven
+  OpenAlex: bronze | journal ('Atmospheric Environment', 'Elsevier BV', None, 'article')
+    loc ('Atmospheric Environment', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.atmosenv.2022.119252')
+    loc (None, None, 'submittedVersion', False, None, 'https://doi.org/10.1002/essoar.10507784.4')
+    loc (None, None, 'submittedVersion', False, None, 'https://doi.org/10.1002/essoar.10507784.2')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S135223102200317X
+  OpenAIRE record doi_dedup___::f73588d272c5f7b890a61774da66b9e2 best=CLOSED color=None isGreen=False embargoEnd=None date=2021-10-21 from=['Crossref', 'Microsoft Academic Graph']
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1002/essoar.10507784.4
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1002/essoar.10507784.2
+    inst Article | Atmospheric Environment | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.atmosenv.2022.119252
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/essoar.10507784.2
+    inst Other literature type | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/essoar.10507784.2
+
+==== B_oa_free_oaire_closed W4289890972 doi:10.1016/j.matt.2022.06.019 year 2022 inst newhaven
+  OpenAlex: bronze | journal ('Matter', 'Elsevier BV', None, 'article')
+    loc ('Matter', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1016/j.matt.2022.06.019')
+  Unpaywall: bronze best=publisher publishedVersion https://doi.org/10.1016/j.matt.2022.06.019
+  OpenAIRE record doi_________::dc9673b8e2bec748f6d0f385bc7d0790 best=CLOSED color=None isGreen=False embargoEnd=None date=2022-08-01 from=['Crossref']
+    inst Article | Matter | access=CLOSED oaRoute=None | lic=http://www.elsevier.com/open-access/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.matt.2022.06.019
+
+==== B_oa_free_oaire_closed W4296619485 doi:10.1007/s11712-022-09854-8 year 2022 inst wesleyan
+  OpenAlex: green | journal ('Dao', 'Springer Nature', None, 'article')
+    loc ('Dao', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1007/s11712-022-09854-8')
+    loc ('PhilPapers (PhilPapers Foundation)', 'repository', 'submittedVersion', True, None, 'https://philpapers.org/rec/ANGCTP')
+    loc ('PhilPapers (PhilPapers Foundation)', 'repository', 'submittedVersion', False, None, 'https://philarchive.org/rec/ANGCTP')
+  Unpaywall: green best=repository submittedVersion https://philpapers.org/archive/ANGCTP.pdf
+  OpenAIRE record doi_________::7574316e5ab50858bcae00f97155715b best=CLOSED color=None isGreen=False embargoEnd=None date=2022-09-22 from=['Crossref']
+    inst Article | Dao | access=CLOSED oaRoute=None | lic=https://www.springer.com/tdm | from=Crossref | https://doi.org/10.1007/s11712-022-09854-8
+
+==== B_oa_free_oaire_closed W4327629452 doi:10.1016/j.marpol.2023.105568 year 2023 inst uscga
+  OpenAlex: bronze | journal ('Marine Policy', 'Elsevier BV', None, 'article')
+    loc ('Marine Policy', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.marpol.2023.105568')
+    loc ('Journal of Media Literacy Education', 'journal', 'submittedVersion', True, 'cc-by', 'https://digitalcommons.uri.edu/maf_facpubs/73')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S0308597X23000957
+  OpenAIRE record doi_dedup___::bef9a8b4648ab9771f1fb742fa6e2ce2 best=CLOSED color=None isGreen=False embargoEnd=None date=2023-05-01 from=['Bielefeld Academic Search Engine (BASE)', 'Crossref']
+    inst Article | Marine Policy | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.marpol.2023.105568
+    inst Article | University of Rhode Island: DigitalCommons@URI | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.1016/j.marpol.2023.105568
+
+==== B_oa_free_oaire_closed W4378673168 doi:10.1111/1477-8947.12292 year 2023 inst newhaven
+  OpenAlex: bronze | journal ('Natural Resources Forum', 'Wiley', None, 'article')
+    loc ('Natural Resources Forum', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1111/1477-8947.12292')
+    loc ('Eastern Mediterranean University Institutional Repository (Eastern Mediterranean University)', 'repository', 'submittedVersion', True, 'cc-by-nc-nd', 'https://hdl.handle.net/11129/15109')
+  Unpaywall: bronze best=publisher publishedVersion https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-8947.12292
+  OpenAIRE record doi_dedup___::40154ea68bb5e711d0aad476be0da514 best=CLOSED color=None isGreen=False embargoEnd=None date=2023-05-29 from=['Eastern Mediterranean University Institutional Repository (EMU I-REP)', 'Crossref']
+    inst Article | Natural Resources Forum | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/1477-8947.12292
+    inst Article | Eastern Mediterranean University Institutional Repository (EMU I-REP) | access=CLOSED oaRoute=None | lic=None | from=Eastern Mediterranean University Institutional Repository (EMU I-REP) | https://doi.org/10.1111/1477-8947.12292
+
+==== B_oa_free_oaire_closed W4386481910 doi:10.1111/geb.13747 year 2023 inst wesleyan
+  OpenAlex: bronze | journal ('Global Ecology and Biogeography', 'Wiley', None, 'article')
+    loc ('Global Ecology and Biogeography', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1111/geb.13747')
+  Unpaywall: bronze best=publisher publishedVersion https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/geb.13747
+  OpenAIRE record doi_________::b1c5c9be215cf79cfebfaa858b0e0209 best=CLOSED color=None isGreen=False embargoEnd=None date=2023-09-05 from=['Crossref']
+    inst Article | Global Ecology and Biogeography | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/geb.13747
+
+==== B_oa_free_oaire_closed W4387035686 doi:10.1016/j.jvir.2023.09.020 year 2023 inst yale
+  OpenAlex: bronze | journal ('Journal of Vascular and Interventional Radiology', 'Elsevier BV', None, 'review')
+    loc ('Journal of Vascular and Interventional Radiology', 'journal', 'acceptedVersion', True, None, 'https://doi.org/10.1016/j.jvir.2023.09.020')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/37769940')
+  Unpaywall: bronze best=publisher acceptedVersion https://www.sciencedirect.com/science/article/am/pii/S1051044323006966
+  OpenAIRE record doi_dedup___::ec2de69e6747d8147d748d74a02ad234 best=CLOSED color=None isGreen=False embargoEnd=None date=2024-01-01 from=['Crossref', 'Europe PubMed Central']
+    inst Article | Journal of Vascular and Interventional Radiology | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.jvir.2023.09.020
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/37769940
+
+==== B_oa_free_oaire_closed W4388493819 doi:10.1016/j.jor.2023.11.006 year 2023 inst quinnipiac
+  OpenAlex: green | journal ('Journal of Orthopaedics', 'Elsevier BV', None, 'article')
+    loc ('Journal of Orthopaedics', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.jor.2023.11.006')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/10682505')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/38031628')
+  Unpaywall: green best=repository publishedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC10682505/pdf/main.pdf
+  OpenAIRE record doi_dedup___::e94539cc3cfd767f6edf688079b1039b best=CLOSED color=None isGreen=False embargoEnd=None date=2023-12-01 from=['Crossref', 'Europe PubMed Central']
+    inst Article | Journal of Orthopaedics | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.jor.2023.11.006
+    inst Article | Journal of Orthopaedics | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/38031628
+
+==== B_oa_free_oaire_closed W4389237780 doi:10.1002/slct.202302395 year 2023 inst sacredheart
+  OpenAlex: bronze | journal ('ChemistrySelect', 'Wiley', None, 'article')
+    loc ('ChemistrySelect', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.1002/slct.202302395')
+  Unpaywall: bronze best=publisher publishedVersion https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/slct.202302395
+  OpenAIRE record doi_________::bf17201f85f36a2f0d18c267a698ef92 best=CLOSED color=None isGreen=False embargoEnd=None date=2023-12-01 from=['Crossref']
+    inst Article | ChemistrySelect | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1002/slct.202302395
+
+==== B_oa_free_oaire_closed W4390579385 doi:10.1016/j.cell.2023.12.004 year 2024 inst yale
+  OpenAlex: hybrid | journal ('Cell', 'Elsevier BV', 'cc-by', 'article')
+    loc ('Cell', 'journal', 'publishedVersion', True, 'cc-by', 'https://doi.org/10.1016/j.cell.2023.12.004')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/38181741')
+    loc ('Digital Commons-TMC (Texas Medical Center)', 'repository', 'submittedVersion', False, None, 'https://digitalcommons.library.tmc.edu/baylor_docs/6274')
+  Unpaywall: hybrid best=publisher publishedVersion https://doi.org/10.1016/j.cell.2023.12.004
+  OpenAIRE record doi_dedup___::8486c84d683aac8eafff79b0ff20d8e5 best=CLOSED color=None isGreen=False embargoEnd=None date=2024-01-01 from=['Crossref', 'Europe PubMed Central']
+    inst Article | Cell | access=CLOSED oaRoute=None | lic=http://www.elsevier.com/open-access/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.cell.2023.12.004
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/38181741
+
+==== B_oa_free_oaire_closed W4403680470 doi:10.1016/j.laa.2024.10.022 year 2024 inst hartford
+  OpenAlex: green | journal ('Linear Algebra and its Applications', 'Elsevier BV', None, 'article')
+    loc ('Linear Algebra and its Applications', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.laa.2024.10.022')
+    loc ('arXiv (Cornell University)', 'repository', 'submittedVersion', True, 'cc-by', 'http://arxiv.org/abs/2108.02312')
+    loc ('arXiv (Cornell University)', 'repository', 'submittedVersion', True, None, 'https://arxiv.org/pdf/2108.02312.pdf')
+    loc ('arXiv (Cornell University)', 'repository', None, True, 'cc-by', 'https://doi.org/10.48550/arxiv.2108.02312')
+  Unpaywall: green best=repository submittedVersion https://arxiv.org/pdf/2108.02312
+  OpenAIRE record doi_dedup___::6a6d07c0959b94c20e4d05c52d6e6c26 best=CLOSED color=None isGreen=False embargoEnd=None date=2025-09-01 from=['zbMATH Open', 'Crossref']
+    inst Article | Linear Algebra and its Applications | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.laa.2024.10.022
+    inst Article | zbMATH Open | access=CLOSED oaRoute=None | lic=None | from=zbMATH Open | https://doi.org/10.1016/j.laa.2024.10.022
+
+==== B_oa_free_oaire_closed W4417267801 doi:10.1103/k29c-d5ry year 2025 inst scsu
+  OpenAlex: green | journal ('Physical Review C', 'American Physical Society', None, 'article')
+    loc ('Physical Review C', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1103/k29c-d5ry')
+    loc ('arXiv (Cornell University)', 'repository', 'submittedVersion', True, None, 'http://arxiv.org/abs/2505.05789')
+    loc ('Archive of Doctoral Theses and Digital Collections (University of Calabria)', 'repository', 'submittedVersion', False, None, 'https://hdl.handle.net/20.500.11770/400279')
+    loc ('Publication Server of Goethe University Frankfurt am Main (Goethe University Frankfurt)', 'repository', 'submittedVersion', True, 'cc-by-nc-nd', 'http://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/docId/83503')
+    loc ('Publication Server of Goethe University Frankfurt am Main (Goethe University Frankfurt)', 'repository', 'submittedVersion', True, 'cc-by-nc-nd', 'https://nbn-resolving.org/urn:nbn:de:hebis:30:3-967385')
+    loc ('arXiv (Cornell University)', 'repository', None, True, 'cc-by-nc-nd', 'https://doi.org/10.48550/arxiv.2505.05789')
+  Unpaywall: green best=repository submittedVersion https://arxiv.org/pdf/2505.05789
+  OpenAIRE record doi_________::f8e09cfe6629df4474e63a02f46edef9 best=CLOSED color=None isGreen=False embargoEnd=None date=2026-01-08 from=['Crossref']
+    inst Article | Unknown Repository | access=CLOSED oaRoute=None | lic=https://link.aps.org/licenses/aps-default-license | from=Crossref | https://doi.org/10.1103/k29c-d5ry
+
+==== B_oa_free_oaire_closed W7204186396 doi:10.59236/emro.v3i7a1315 year 2018 inst ecsu
+  OpenAlex: hybrid | journal ('Educational Media Reviews Online', 'Pennsylvania State University Libraries', 'other-oa', 'article')
+    loc ('Educational Media Reviews Online', 'journal', 'publishedVersion', True, 'other-oa', 'https://doi.org/10.59236/emro.v3i7a1315')
+  Unpaywall: hybrid best=publisher publishedVersion https://doi.org/10.59236/emro.v3i7a1315
+  OpenAIRE record doi_________::1aacead984a854cfc0e8006e3b874776 best=CLOSED color=None isGreen=None embargoEnd=None date=2018-11-09 from=['Crossref']
+    inst Article | Educational Media Reviews Online | access=CLOSED oaRoute=None | lic=https://journals.psu.edu/emro/pre-open-access-content | from=Crossref | https://doi.org/10.59236/emro.v3i7a1315
+
+==== C_oa_green_oaire_not_green W1498500411 doi:10.1007/s10272-015-0542-2 year 2015 inst wesleyan
+  OpenAlex: green | journal ('Intereconomics', 'Springer Nature', None, 'article')
+    loc ('Intereconomics', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1007/s10272-015-0542-2')
+    loc ('SSRN Electronic Journal', 'repository', 'submittedVersion', True, None, 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2639819')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'http://hdl.handle.net/10.1007/s10272-015-0542-2')
+    loc ('Econstor (Econstor)', 'repository', 'submittedVersion', False, None, 'http://hdl.handle.net/10419/126229')
+    loc ('WESLEYAN', 'repository', None, True, None, 'https://doi.org/10.25438/wes02.32803103')
+    loc ('WESLEYAN', 'repository', None, True, None, 'https://doi.org/10.25438/wes02.32803103.v1')
+    loc ('Wesleyan University Digital Collections (Wesleyan University)', 'repository', 'submittedVersion', False, None, 'https://works.bepress.com/context/basak_kus/article/1025/type/native/viewcontent')
+  Unpaywall: green best=repository submittedVersion https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2639819
+  OpenAIRE record doi_dedup___::adfc7b858ab7131f9908ab3126339024 best=OPEN color=gold isGreen=False embargoEnd=None date=2015-07-01 from=['Datacite', 'UnpayWall', 'EconStor', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Intereconomics | access=OPEN oaRoute=gold | lic=http://www.springer.com/tdm | from=Crossref | https://doi.org/10.1007/s10272-015-0542-2
+    inst Article | Intereconomics | access=OPEN oaRoute=gold | lic=None | from=UnpayWall | https://www.econstor.eu/bitstream/10419/126229/1/833761013.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Datacite | https://dx.doi.org/10.25438/wes02.32803103.v1
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Datacite | https://dx.doi.org/10.25438/wes02.32803103
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s10272-015-0542-2
+    inst Article | EconStor | access=None oaRoute=None | lic=None | from=EconStor | http://hdl.handle.net/10419/126229
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s10272-015-0542-2
+
+==== C_oa_green_oaire_not_green W2126929953 doi:10.58729/1941-6687.1321 year 2015 inst fairfield
+  OpenAlex: green | journal ('Communications of the IIMA', None, None, 'article')
+    loc ('Communications of the IIMA', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.58729/1941-6687.1321')
+    loc ('CSUSB ScholarWorks (California State University, San Bernardino)', 'repository', 'submittedVersion', True, None, 'https://scholarworks.lib.csusb.edu/ciima/vol6/iss3/2')
+    loc (None, None, 'submittedVersion', False, None, 'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.505.7962')
+    loc (None, None, 'submittedVersion', False, None, 'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.674.9309')
+  Unpaywall: green best=repository submittedVersion https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=1321&context=ciima
+  OpenAIRE record doi_dedup___::6a4fe9ac2e7bb546ac89c12e9fc11940 best=None color=None isGreen=False embargoEnd=None date=2015-01-07 from=['Bielefeld Academic Search Engine (BASE)', 'Crossref']
+    inst Article | Communications of the IIMA | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.58729/1941-6687.1321
+    inst Article | California State University, San Bernardino Research: CSUSB ScholarWorks | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.58729/1941-6687.1321
+
+==== C_oa_green_oaire_not_green W2291751883 doi:10.1242/dev.130849 year 2016 inst ecsu
+  OpenAlex: green | journal ('Development', 'The Company of Biologists', None, 'article')
+    loc ('Development', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1242/dev.130849')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'publishedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/4760313')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/26839343')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4760313/')
+    loc ('HighWire Press Open Archive', 'repository', 'submittedVersion', False, None, 'http://dev.biologists.org/cgi/content/short/143/3/398')
+  Unpaywall: green best=repository publishedVersion https://www.ncbi.nlm.nih.gov/pmc/articles/4760313
+  OpenAIRE record doi_dedup___::adc47a0aec2bba7fd9e2199d891d69f7 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-02-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Development | access=CLOSED oaRoute=None | lic=http://www.biologists.com/user-licence-1-1 | from=Crossref | https://doi.org/10.1242/dev.130849
+    inst Article | Development | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://dev.biologists.org/content/develop/143/3/398.full.pdf
+    inst Article | Development | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/26839343
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1242/dev.130849
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1242/dev.130849
+
+==== C_oa_green_oaire_not_green W2529055067 doi:10.2337/db16-0414 year 2016 inst yale
+  OpenAlex: green | journal ('Diabetes', 'American Diabetes Association', None, 'article')
+    loc ('Diabetes', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.2337/db16-0414')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'publishedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/5319714')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/27702833')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5319714/')
+  Unpaywall: green best=repository publishedVersion https://www.ncbi.nlm.nih.gov/pmc/articles/5319714
+  OpenAIRE record doi_dedup___::6b1f08c33373e65a5f328ed06084e592 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-10-04 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Diabetes | access=CLOSED oaRoute=None | lic=http://www.diabetesjournals.org/content/license | from=Crossref | https://doi.org/10.2337/db16-0414
+    inst Article | Diabetes | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://diabetes.diabetesjournals.org/content/diabetes/66/3/754.full.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/27702833
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.2337/db16-0414
+
+==== C_oa_green_oaire_not_green W2529315458 doi:10.1007/s12237-016-0166-1 year 2016 inst conncoll
+  OpenAlex: green | journal ('Estuaries and Coasts', 'Springer Nature', None, 'article')
+    loc ('Estuaries and Coasts', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1007/s12237-016-0166-1')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/30271312')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'acceptedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/6161497')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6161497/')
+  Unpaywall: green best=repository acceptedVersion https://www.ncbi.nlm.nih.gov/pmc/articles/6161497
+  OpenAIRE record doi_dedup___::758e61744d180329da736594936df8a4 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-10-04 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Estuaries and Coasts | access=CLOSED oaRoute=None | lic=http://www.springer.com/tdm | from=Crossref | https://doi.org/10.1007/s12237-016-0166-1
+    inst Article | Estuaries and Coasts | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc6161497?pdf=render
+    inst Article | Estuaries and Coasts | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/30271312
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s12237-016-0166-1
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s12237-016-0166-1
+
+==== C_oa_green_oaire_not_green W2550723764 doi:10.1016/j.ajog.2016.11.1036 year 2016 inst quinnipiac
+  OpenAlex: green | journal ('American Journal of Obstetrics and Gynecology', 'Elsevier BV', None, 'article')
+    loc ('American Journal of Obstetrics and Gynecology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.ajog.2016.11.1036')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/27890648')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5376363/')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC5376363/
+  OpenAIRE record doi_dedup___::f1dce08132e6fa51eb3e68f478225176 best=OPEN color=bronze isGreen=False embargoEnd=None date=2017-04-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | American Journal of Obstetrics and Gynecology | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.ajog.2016.11.1036
+    inst Article | American Journal of Obstetrics and Gynecology | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc5376363?pdf=render
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/27890648
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.ajog.2016.11.1036
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.ajog.2016.11.1036
+
+==== C_oa_green_oaire_not_green W2560394122 doi:10.1007/s11293-016-9521-7 year 2016 inst trinity
+  OpenAlex: green | journal ('Atlantic Economic Journal', 'Springer Nature', None, 'article')
+    loc ('Atlantic Economic Journal', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1007/s11293-016-9521-7')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', True, None, 'http://www3.trincoll.edu/repec/WorkingPapers2015/WP15-05.pdf')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'https://econpapers.repec.org/RePEc:tri:wpaper:1505')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'http://link.springer.com/10.1007/s11293-016-9521-7')
+  Unpaywall: green best=repository submittedVersion http://www3.trincoll.edu/repec/WorkingPapers2015/WP15-05.pdf
+  OpenAIRE record doi_dedup___::dace12be472c69128f23f3b576edf554 best=OPEN color=bronze isGreen=False embargoEnd=None date=2016-12-01 from=['UnpayWall', 'Crossref', 'Research Papers in Economics', 'Microsoft Academic Graph']
+    inst Article | Atlantic Economic Journal | access=CLOSED oaRoute=None | lic=http://www.springer.com/tdm | from=Crossref | https://doi.org/10.1007/s11293-016-9521-7
+    inst Article | Atlantic Economic Journal | access=OPEN oaRoute=green | lic=None | from=UnpayWall | http://www3.trincoll.edu/repec/WorkingPapers2015/WP15-05.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s11293-016-9521-7
+    inst Preprint | Research Papers in Economics | access=None oaRoute=None | lic=None | from=Research Papers in Economics | http://internet2.trincoll.edu/repec/WorkingPapers2015/WP15-05.pdf
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1007/s11293-016-9521-7
+
+==== C_oa_green_oaire_not_green W2576203379 doi:10.1073/pnas.1613422114 year 2017 inst fairfield
+  OpenAlex: green | journal ('Proceedings of the National Academy of Sciences', 'National Academy of Sciences', None, 'article')
+    loc ('Proceedings of the National Academy of Sciences', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1073/pnas.1613422114')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/28096373')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5293115/')
+  Unpaywall: green best=repository publishedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC5293115/
+  OpenAIRE record doi_dedup___::cf591f86d20753d474be25bcbf10d5a5 best=OPEN color=bronze isGreen=False embargoEnd=None date=2017-01-17 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Proceedings of the National Academy of Sciences | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1073/pnas.1613422114
+    inst Article | Proceedings of the National Academy of Sciences | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://www.pnas.org/content/pnas/114/5/E781.full.pdf
+    inst Article | Proceedings of the National Academy of Sciences | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/28096373
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1073/pnas.1613422114
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1073/pnas.1613422114
+
+==== C_oa_green_oaire_not_green W2743559270 doi:10.1111/jgs.15037 year 2017 inst scsu
+  OpenAlex: green | journal ('Journal of the American Geriatrics Society', 'Wiley', None, 'article')
+    loc ('Journal of the American Geriatrics Society', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1111/jgs.15037')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/28799216')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'acceptedVersion', True, None, 'http://europepmc.org/pmc/articles/PMC5657432')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5657432/')
+  Unpaywall: green best=repository acceptedVersion http://europepmc.org/pmc/articles/PMC5657432
+  OpenAIRE record doi_dedup___::36f19e1d43ccb578ae8883c15f286d5d best=OPEN color=bronze isGreen=False embargoEnd=None date=2017-08-11 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of the American Geriatrics Society | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/jgs.15037
+    inst Article | Journal of the American Geriatrics Society | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jgs.15037
+    inst Article | Journal of the American Geriatrics Society | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/28799216
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jgs.15037
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1111/jgs.15037
+
+==== C_oa_green_oaire_not_green W2793199860 doi:10.1080/09540121.2018.1447079 year 2018 inst yale
+  OpenAlex: green | journal ('AIDS Care', 'Informa', None, 'article')
+    loc ('AIDS Care', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/09540121.2018.1447079')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/29527934')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6085161/')
+    loc (None, None, None, False, None, 'https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=3444&context=ymtdl')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC6085161/
+  OpenAIRE record doi_dedup___::1c1b55bc7e2d7e4e7022b08bc844863b best=OPEN color=bronze isGreen=False embargoEnd=None date=2018-03-11 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | AIDS Care | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/09540121.2018.1447079
+    inst Article | AIDS Care | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc6085161?pdf=render
+    inst Article | AIDS Care | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/29527934
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/09540121.2018.1447079
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1080/09540121.2018.1447079
+
+==== C_oa_green_oaire_not_green W2801118900 doi:10.1073/pnas.1722024115 year 2018 inst wesleyan
+  OpenAlex: green | journal ('Proceedings of the National Academy of Sciences', 'National Academy of Sciences', None, 'article')
+    loc ('Proceedings of the National Academy of Sciences', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1073/pnas.1722024115')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'publishedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/5984511')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/29760090')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5984511/')
+    loc ('Bulletin of the American Physical Society', 'journal', None, False, None, 'https://meetings.aps.org/Meeting/MAR18/Session/K03.15')
+  Unpaywall: green best=repository publishedVersion https://www.ncbi.nlm.nih.gov/pmc/articles/5984511
+  OpenAIRE record doi_dedup___::1ad3cb031b5bcc6fb6309b723c60bc25 best=OPEN color=bronze isGreen=False embargoEnd=None date=2018-05-14 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Proceedings of the National Academy of Sciences | access=CLOSED oaRoute=None | lic=http://www.pnas.org/site/aboutpnas/licenses.xhtml | from=Crossref | https://doi.org/10.1073/pnas.1722024115
+    inst Article | Proceedings of the National Academy of Sciences | access=OPEN oaRoute=bronze | lic=None | from=UnpayWall | https://www.pnas.org/content/pnas/115/22/5641.full.pdf
+    inst Article | Proceedings of the National Academy of Sciences | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/29760090
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1073/pnas.1722024115
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1073/pnas.1722024115
+
+==== C_oa_green_oaire_not_green W2883130665 doi:10.1016/j.erss.2018.06.018 year 2018 inst uscga
+  OpenAlex: green | journal ('Energy Research & Social Science', 'Elsevier BV', None, 'article')
+    loc ('Energy Research & Social Science', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.erss.2018.06.018')
+    loc ('Journal of Media Literacy Education', 'journal', 'submittedVersion', True, 'cc-by', 'https://digitalcommons.uri.edu/maf_facpubs/23')
+    loc ('Digital Commons - URI (University of Rhode Island)', 'repository', 'submittedVersion', True, 'cc-by', 'https://digitalcommons.uri.edu/soc_facpubs/16')
+  Unpaywall: green best=repository submittedVersion https://digitalcommons.uri.edu/maf_facpubs/23
+  OpenAIRE record doi_dedup___::c569ea3b3071c753a426875c88664495 best=OPEN color=bronze isGreen=False embargoEnd=None date=2018-11-01 from=['Bielefeld Academic Search Engine (BASE)', 'UnpayWall', 'Crossref', 'Microsoft Academic Graph']
+    inst Article | Energy Research & Social Science | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.erss.2018.06.018
+    inst Article | Energy Research & Social Science | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1022&context=maf_facpubs
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.erss.2018.06.018
+    inst Article | University of Rhode Island: DigitalCommons@URI | access=None oaRoute=None | lic=None | from=Bielefeld Academic Search Engine (BASE) | https://doi.org/https://doi.org/10.1016/j.erss.2018.06.018
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.erss.2018.06.018
+
+==== C_oa_green_oaire_not_green W2911218984 doi:10.1093/jme/tjy138 year 2018 inst wcsu
+  OpenAlex: green | journal ('Journal of Medical Entomology', 'University of Oxford', None, 'article')
+    loc ('Journal of Medical Entomology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1093/jme/tjy138')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/30165532')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'acceptedVersion', True, None, 'https://www.ncbi.nlm.nih.gov/pmc/articles/6326861')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6326861/')
+  Unpaywall: green best=repository acceptedVersion https://www.ncbi.nlm.nih.gov/pmc/articles/6326861
+  OpenAIRE record doi_dedup___::e0f86990803c6c95011ba21d5f981963 best=OPEN color=hybrid isGreen=False embargoEnd=None date=2018-08-27 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Journal of Medical Entomology | access=OPEN oaRoute=hybrid | lic=https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model | from=Crossref | https://doi.org/10.1093/jme/tjy138
+    inst Article | Journal of Medical Entomology | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc6326861?pdf=render
+    inst Article | Journal of Medical Entomology | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/30165532
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/jme/tjy138
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1093/jme/tjy138
+
+==== C_oa_green_oaire_not_green W2913416126 doi:10.1016/j.neuropharm.2019.02.001 year 2019 inst trinity
+  OpenAlex: green | journal ('Neuropharmacology', 'Elsevier BV', None, 'article')
+    loc ('Neuropharmacology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.neuropharm.2019.02.001')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/30731137')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6712576/')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC6712576/
+  OpenAIRE record doi_dedup___::79d406b2a58a08a0bfb7bb8768a5603f best=OPEN color=bronze isGreen=False embargoEnd=None date=2019-05-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Neuropharmacology | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.neuropharm.2019.02.001
+    inst Article | Neuropharmacology | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc6712576?pdf=render
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/30731137
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.neuropharm.2019.02.001
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.neuropharm.2019.02.001
+
+==== C_oa_green_oaire_not_green W2989656234 doi:10.1002/cncr.32611 year 2019 inst usj
+  OpenAlex: green | journal ('Cancer', 'Wiley', None, 'article')
+    loc ('Cancer', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1002/cncr.32611')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/31769872')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7147081/')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC7147081/
+  OpenAIRE record doi_dedup___::3202ce186dd7f2255e8906b4a29bda67 best=OPEN color=bronze isGreen=False embargoEnd=None date=2019-11-26 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Cancer | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1002/cncr.32611
+    inst Article | Cancer | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7147081
+    inst Article | Cancer | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/31769872
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/cncr.32611
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1002/cncr.32611
+
+==== C_oa_green_oaire_not_green W3047210216 doi:10.1016/j.drugalcdep.2020.108210 year 2020 inst yale
+  OpenAlex: green | journal ('Drug and Alcohol Dependence', 'Elsevier BV', None, 'article')
+    loc ('Drug and Alcohol Dependence', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.drugalcdep.2020.108210')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/32805549')
+    loc ('Europe PMC (PubMed Central)', 'repository', 'acceptedVersion', True, None, 'http://europepmc.org/pmc/articles/PMC7609495')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7609495/')
+  Unpaywall: green best=repository acceptedVersion http://europepmc.org/pmc/articles/PMC7609495
+  OpenAIRE record doi_dedup___::ba773b78d92cb93265e1ec37c7b6f43c best=OPEN color=bronze isGreen=False embargoEnd=None date=2020-11-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Drug and Alcohol Dependence | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.drugalcdep.2020.108210
+    inst Article | Drug and Alcohol Dependence | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://europepmc.org/articles/pmc7609495?pdf=render
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/32805549
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.drugalcdep.2020.108210
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.drugalcdep.2020.108210
+
+==== C_oa_green_oaire_not_green W3084955302 doi:10.1016/j.eplepsyres.2020.106469 year 2020 inst trinity
+  OpenAlex: green | journal ('Epilepsy Research', 'Elsevier BV', None, 'review')
+    loc ('Epilepsy Research', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1016/j.eplepsyres.2020.106469')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/33038721')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8250869/')
+  Unpaywall: green best=repository acceptedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC8250869/
+  OpenAIRE record doi_dedup___::3fbcb0e2a19c1c7a93000753f734dea5 best=OPEN color=bronze isGreen=False embargoEnd=None date=2020-11-01 from=['UnpayWall', 'Crossref', 'Microsoft Academic Graph', 'Europe PubMed Central']
+    inst Article | Epilepsy Research | access=CLOSED oaRoute=None | lic=https://www.elsevier.com/tdm/userlicense/1.0/ | from=Crossref | https://doi.org/10.1016/j.eplepsyres.2020.106469
+    inst Article | Epilepsy Research | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8250869
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/33038721
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.eplepsyres.2020.106469
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Microsoft Academic Graph | https://dx.doi.org/10.1016/j.eplepsyres.2020.106469
+
+==== C_oa_green_oaire_not_green W4280500738 doi:10.1142/s2010139222500045 year 2022 inst ccsu
+  OpenAlex: green | journal ('Quarterly Journal of Finance', 'World Scientific', None, 'article')
+    loc ('Quarterly Journal of Finance', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1142/s2010139222500045')
+    loc ('SSRN Electronic Journal', 'repository', 'publishedVersion', True, None, 'https://doi.org/10.2139/ssrn.3998467')
+    loc ('RePEc: Research Papers in Economics', 'repository', 'submittedVersion', False, None, 'http://www.worldscientific.com/doi/abs/10.1142/S2010139222500045')
+  Unpaywall: green best=repository publishedVersion https://doi.org/10.2139/ssrn.3998467
+  OpenAIRE record doi_dedup___::ffe9f3a26768b1c23e5f2dbcb684a057 best=None color=None isGreen=False embargoEnd=None date=2022-01-01 from=['Crossref']
+    inst Article | Quarterly Journal of Finance | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1142/s2010139222500045
+    inst Article | SSRN Electronic Journal | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.2139/ssrn.3998467
+
+==== C_oa_green_oaire_not_green W4287836316 doi:10.1111/1471-0528.17269 year 2022 inst yale
+  OpenAlex: green | journal ('BJOG An International Journal of Obstetrics & Gynaecology', 'Wiley', None, 'article')
+    loc ('BJOG An International Journal of Obstetrics & Gynaecology', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1111/1471-0528.17269')
+    loc (None, None, 'submittedVersion', True, None, 'https://doi.org/10.22541/au.164470075.56901729/v1')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/35876766')
+    loc ('PubMed Central', 'repository', 'acceptedVersion', True, None, 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9643668/')
+  Unpaywall: green best=repository submittedVersion https://www.authorea.com/doi/pdf/10.22541/au.164470075.56901729
+  OpenAIRE record doi_dedup___::7f8dc104056ae4bac3d45e1950732dbc best=OPEN color=None isGreen=False embargoEnd=None date=2022-02-12 from=['UnpayWall', 'Crossref', 'Europe PubMed Central']
+    inst Article | Unknown Repository | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.22541/au.164470075.56901729/v1
+    inst Article | Unknown Repository | access=OPEN oaRoute=green | lic=None | from=UnpayWall | https://www.authorea.com/doi/pdf/10.22541/au.164470075.56901729
+    inst Article | BJOG An International Journal of Obstetrics & Gynaecology | access=CLOSED oaRoute=None | lic=http://onlinelibrary.wiley.com/termsAndConditions#vor | from=Crossref | https://doi.org/10.1111/1471-0528.17269
+    inst Article | BJOG An International Journal of Obstetrics & Gynaecology | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/35876766
+
+==== C_oa_green_oaire_not_green W4297505050 doi:10.1080/10669817.2022.2124617 year 2022 inst hartford
+  OpenAlex: green | journal ('Journal of Manual & Manipulative Therapy', 'Informa', None, 'article')
+    loc ('Journal of Manual & Manipulative Therapy', 'journal', 'publishedVersion', False, None, 'https://doi.org/10.1080/10669817.2022.2124617')
+    loc ('PubMed Central', 'repository', 'publishedVersion', True, 'other-oa', 'https://www.ncbi.nlm.nih.gov/pmc/articles/10288906')
+    loc ('PubMed', 'repository', 'publishedVersion', False, None, 'https://pubmed.ncbi.nlm.nih.gov/36171740')
+  Unpaywall: green best=repository publishedVersion https://pmc.ncbi.nlm.nih.gov/articles/PMC10288906/pdf/YJMT_31_2124617.pdf
+  OpenAIRE record doi_dedup___::7706b4d555efd9dda6248593278fa8a9 best=None color=None isGreen=False embargoEnd=None date=2022-09-28 from=['Crossref', 'Europe PubMed Central']
+    inst Article | Journal of Manual & Manipulative Therapy | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.1080/10669817.2022.2124617
+    inst Article | Journal of Manual & Manipulative Therapy | access=None oaRoute=None | lic=None | from=Europe PubMed Central | https://pubmed.ncbi.nlm.nih.gov/36171740
+
+==== D_oa_free_oaire_blank W2261293011 doi:10.5744/ftr.2004.1004 year 2022 inst hartford
+  OpenAlex: bronze | journal ('Florida Tax Review', 'University Press of Florida', None, 'article')
+    loc ('Florida Tax Review', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.5744/ftr.2004.1004')
+    loc ('bepress Legal Repository', 'repository', 'submittedVersion', False, None, 'https://scholarship.law.ufl.edu/ftr/vol6/iss1/5')
+  Unpaywall: bronze best=publisher publishedVersion https://journals.upress.ufl.edu/ftr/article/download/418/397
+  OpenAIRE record doi_________::8cfe6ce9ddcd0f3894bf696659312afe best=None color=None isGreen=False embargoEnd=None date=2022-04-25 from=['Crossref']
+    inst Article | Florida Tax Review | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.5744/ftr.2004.1004
+
+==== D_oa_free_oaire_blank W2307802331 doi:10.69645/vbre5845 year 2016 inst fairfield
+  OpenAlex: hybrid | journal ('The business & management collection.', 'Henry Stewart Talks', 'cc-by-sa', 'article')
+    loc ('The business & management collection.', 'journal', 'publishedVersion', True, 'cc-by-sa', 'http://dx.doi.org/10.69645/vbre5845')
+  Unpaywall: hybrid best=publisher publishedVersion http://dx.doi.org/10.69645/vbre5845
+  OpenAIRE record doi_________::57c53e2dbe9c3fcdce5aea51933d3f64 best=None color=None isGreen=False embargoEnd=None date=2016-01-31 from=['Crossref']
+    inst Article | The Business & Management Collection | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.69645/vbre5845
+
+==== D_oa_free_oaire_blank W4229449951 doi:10.33423/jabe.v24i2.5143 year 2022 inst wcsu
+  OpenAlex: bronze | journal ('Journal of Applied Business and Economics', 'North American Business Press', None, 'article')
+    loc ('Journal of Applied Business and Economics', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.33423/jabe.v24i2.5143')
+  Unpaywall: bronze best=publisher publishedVersion https://articlegateway.com/index.php/JABE/article/download/5143/4901
+  OpenAIRE record doi_________::21fc8bcd5bed510cc8329c04f5598ca1 best=None color=None isGreen=False embargoEnd=None date=2022-04-27 from=['Crossref']
+    inst Article | Journal of Applied Business and Economics | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.33423/jabe.v24i2.5143
+
+==== D_oa_free_oaire_blank W4385278593 doi:10.33423/jabe.v25i3.6259 year 2023 inst scsu
+  OpenAlex: bronze | journal ('Journal of Applied Business and Economics', 'North American Business Press', None, 'article')
+    loc ('Journal of Applied Business and Economics', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.33423/jabe.v25i3.6259')
+  Unpaywall: bronze best=publisher publishedVersion https://articlegateway.com/index.php/JABE/article/download/6259/5921
+  OpenAIRE record doi_________::3ce487125700a754699a6a8d2218332d best=None color=None isGreen=False embargoEnd=None date=2023-07-24 from=['Crossref']
+    inst Article | Journal of Applied Business and Economics | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.33423/jabe.v25i3.6259
+
+==== D_oa_free_oaire_blank W4391265363 doi:10.33423/jmpp.v24i4.6745 year 2023 inst wcsu
+  OpenAlex: bronze | journal ('Journal of Management Policy and Practice', 'North American Business Press', None, 'article')
+    loc ('Journal of Management Policy and Practice', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.33423/jmpp.v24i4.6745')
+  Unpaywall: bronze best=publisher publishedVersion https://articlegateway.com/index.php/JMPP/article/download/6745/6371
+  OpenAIRE record doi_________::28c462a1b892733270de418e8a530ca8 best=None color=None isGreen=False embargoEnd=None date=2023-12-31 from=['Crossref']
+    inst Article | Journal of Management Policy and Practice | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.33423/jmpp.v24i4.6745
+
+==== D_oa_free_oaire_blank W4402436644 doi:10.56734/ijbms.v5n9a1 year 2024 inst fairfield
+  OpenAlex: hybrid | journal ('International Journal of Business & Management Studies', None, 'cc-by', 'article')
+    loc ('International Journal of Business & Management Studies', 'journal', 'publishedVersion', True, 'cc-by', 'http://dx.doi.org/10.56734/ijbms.v5n9a1')
+  Unpaywall: hybrid best=publisher publishedVersion https://ijbms.net/assets/files/1726076072.pdf
+  OpenAIRE record doi_________::2c90060f539ad0eac1de401b60daacce best=None color=None isGreen=False embargoEnd=None date=2024-09-11 from=['Crossref']
+    inst Article | International Journal of Business & Management Studies | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.56734/ijbms.v5n9a1
+
+==== D_oa_free_oaire_blank W4410267005 doi:10.31586/jaibd.2024.1333 year 2024 inst bridgeport
+  OpenAlex: hybrid | journal ('Journal of Artificial Intelligence and Big Data', 'Science Publications', 'cc-by', 'article')
+    loc ('Journal of Artificial Intelligence and Big Data', 'journal', 'publishedVersion', True, 'cc-by', 'https://doi.org/10.31586/jaibd.2024.1333')
+  Unpaywall: hybrid best=publisher publishedVersion https://www.scipublications.com/journal/index.php/jaibd/article/download/1333/851
+  OpenAIRE record doi_________::92d61a5cb38fa1b14a1944fa58e56bad best=None color=None isGreen=False embargoEnd=None date=2024-12-19 from=['Crossref']
+    inst Article | Journal of Artificial Intelligence and Big Data | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.31586/jaibd.2024.1333
+
+==== D_oa_free_oaire_blank W4413044258 doi:10.32996/jcsts.2025.7.8.84 year 2025 inst bridgeport
+  OpenAlex: diamond | journal ('Journal of Computer Science and Technology Studies', 'Al-Kindi Center for Research and Development', None, 'article')
+    loc ('Journal of Computer Science and Technology Studies', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.32996/jcsts.2025.7.8.84')
+    loc ('Journal of Computer Science and Technology Studies', 'journal', 'publishedVersion', True, None, 'https://al-kindipublisher.com/index.php/jcsts/article/view/10284')
+  Unpaywall: gold best=publisher publishedVersion https://al-kindipublisher.com/index.php/jcsts/article/download/10284/9332
+  OpenAIRE record doi_________::44af27d77ce68dd9a434bc5aff80362f best=None color=None isGreen=False embargoEnd=None date=2025-08-07 from=['Crossref']
+    inst Article | Journal of Computer Science and Technology Studies | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.32996/jcsts.2025.7.8.84
+
+==== D_oa_free_oaire_blank W4414338636 doi:10.63282/3050-9416.ijaibdcms-v3i4p106 year 2022 inst bridgeport
+  OpenAlex: bronze | journal ('International Journal of AI BigData Computational and Management Studies', None, None, 'article')
+    loc ('International Journal of AI BigData Computational and Management Studies', 'journal', 'publishedVersion', True, None, 'https://doi.org/10.63282/3050-9416.ijaibdcms-v3i4p106')
+  Unpaywall: bronze best=publisher publishedVersion https://ijaibdcms.org/index.php/ijaibdcms/article/download/225/229
+  OpenAIRE record doi_________::8975a62b096ef2fc5a0ecfc1016b5f5b best=None color=None isGreen=False embargoEnd=None date=2022-01-01 from=['Crossref']
+    inst Article | International Journal of AI BigData Computational and Management Studies | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.63282/3050-9416.ijaibdcms-v3i4p106
+
+==== D_oa_free_oaire_blank W4414548613 doi:10.53935/jomw.v2024i4.1196 year 2025 inst newhaven
+  OpenAlex: diamond | journal ('Journal of Management World', None, 'other-oa', 'article')
+    loc ('Journal of Management World', 'journal', 'publishedVersion', True, 'other-oa', 'https://doi.org/10.53935/jomw.v2024i4.1196')
+  Unpaywall: gold best=publisher publishedVersion https://managementworld.online/index.php/mw/article/download/1196/627
+  OpenAIRE record doi_________::c33fbc53fa712246fa8fe07c5652e589 best=None color=None isGreen=False embargoEnd=None date=2026-05-13 from=['Crossref']
+    inst Article | Journal of Management World | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.53935/jomw.v2024i4.1196
+
+==== D_oa_free_oaire_blank W4414933177 doi:10.29329/almamater.2025.1349.11 year 2025 inst sacredheart
+  OpenAlex: diamond | journal ('Alma Mater.', None, 'cc-by-nc', 'article')
+    loc ('Alma Mater.', 'journal', 'publishedVersion', True, 'cc-by-nc', 'https://doi.org/10.29329/almamater.2025.1349.11')
+  Unpaywall: gold best=publisher publishedVersion https://almamaterjics.com/files/85/PUB/MA/681B5B09BC3BF/M8426-172536.pdf
+  OpenAIRE record doi_________::3841836908f5e8e279cb9fae11936673 best=None color=None isGreen=False embargoEnd=None date=2025-09-07 from=['Crossref']
+    inst Article | Alma Mater – Journal of Interdisciplinary Cultural Studies | access=None oaRoute=None | lic=None | from=Crossref | https://doi.org/10.29329/almamater.2025.1349.11

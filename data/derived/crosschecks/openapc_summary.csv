@@ -1,0 +1,10 @@
+comparison,articles,total_paid_eur,total_list_eur,paid_as_share_of_list,median_article_ratio,ct_works_in_category,coverage
+"same articles, gold",255,711213,921005,0.772,0.761,,
+"same articles, gold, published 2015-2019",124,312592,462040,0.677,0.661,,
+"same articles, gold, published 2020-2025",131,398620,458965,0.869,0.866,,
+"same journals, gold",12701,30324267,41332767,0.734,0.732,34739,0.366
+"same articles, hybrid",138,428546,605525,0.708,0.736,,
+"same articles, hybrid, published 2015-2019",91,274517,408035,0.673,0.699,,
+"same articles, hybrid, published 2020-2025",47,154029,197490,0.78,0.843,,
+"same journals, hybrid",5496,18450073,24641564,0.749,0.745,17112,0.321
+"no-author-fee works with an OpenAPC payment (library-funded, e.g. SCOAP3)",55,24540,,,,,
