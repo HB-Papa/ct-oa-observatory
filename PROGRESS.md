@@ -32,7 +32,7 @@ Phase 5: deployment (live at https://ct-oa-observatory.vercel.app, awaiting Chri
 | npm | 11.19.0 OK |
 | git | 2.55.0 OK |
 | GitHub CLI | 2.102.0 OK, logged in as HB-Papa |
-| Vercel CLI | 63.1.2 installed, **login token expired** (`vercel login` needed before phase 5) |
+| Vercel CLI | 63.1.2, logged in (team hb-papa) |
 | make | Missing (not needed; a Python `run_all` script replaces the Makefile on Windows) |
 
 ## Next
