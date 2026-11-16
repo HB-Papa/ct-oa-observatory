@@ -132,3 +132,10 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 ## 2026-11-16 — No Open Sun reference on the site
 - **Choice:** The site does not call itself a companion or sibling to Open Sun and does not link to it. The footer line was removed, and the planned About page will not link to Open Sun.
 - **Why:** Chris's call. The project should stand on its own.
+
+## 2026-11-16 — Publishing (phase 5)
+- **Public repo:** https://github.com/HB-Papa/ct-oa-observatory (Chris approved public). Commits use the GitHub no-reply address.
+- **Licenses:** MIT for code (`LICENSE`), CC0 for data (`data/derived/LICENSE.md`). Chris's choice.
+- **Kept out of git:** `.env`, the raw cache (outside the project), `data/derived/*.parquet` (large and rebuilt by the pipeline; the site needs only the metric CSVs), `verification/affiliation_unconfirmed_samples.csv` (raw affiliation text with researchers' names and emails), and `docs/pitch.md` (Chris's full name; outreach text, kept local by Chris's choice). First-name references in the project records are published, as Chris approved.
+- **Search indexing:** off (`noindex` meta tag plus an `X-Robots-Tag` header) until the Methods and Limitations page exists in phase 7, so the numbers are never found without their caveats. Chris's choice.
+- **Security headers** (`site/vercel.json`): a Content Security Policy that blocks all scripts and outside connections (the site has none), plus no-referrer, nosniff, and a permissions policy that opts out of interest-based ad tracking.
