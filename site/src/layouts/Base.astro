@@ -1,0 +1,61 @@
+---
+import '@fontsource-variable/public-sans';
+import '@fontsource-variable/public-sans/wght-italic.css';
+import '@fontsource-variable/source-serif-4';
+import '../styles/global.css';
+import { manifest, PROFILE_KEYS, entityName } from '../lib/data';
+
+interface Props { title: string; description: string; current?: string }
+const { title, description, current } = Astro.props;
+const nav = [
+  { href: '/', label: 'Overview', key: 'overview' },
+  ...PROFILE_KEYS.map((k) => ({ href: `/institutions/${k}/`, label: entityName(k).replace(' (incl. UConn Health)', ''), key: k })),
+];
+const pageTitle = title === 'Overview' ? 'Connecticut Open Access Observatory' : `${title} · Connecticut Open Access Observatory`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex" /><!-- not public until launch (phase 5) -->
+    <meta name="referrer" content="no-referrer" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239b1c31'/%3E%3Cpath d='M9 22V10h3l4 7 4-7h3v12' fill='none' stroke='white' stroke-width='2.5'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="col-wide">
+        <a class="brand" href="/">Connecticut Open Access Observatory</a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            {nav.map((item) => (
+              <li><a href={item.href} aria-current={current === item.key ? 'page' : undefined}>{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="col">
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="col">
+        <p>
+          Data snapshot <time datetime={manifest.snapshot_date}>{manifest.snapshot_date}</time>.
+          Source: <a href="https://openalex.org/">OpenAlex</a>, released into the public domain (CC0). This site’s data is released the same way.
+        </p>
+        <p>Scope: {manifest.scope}</p>
+        <p>
+          No cookies, no analytics, and nothing loaded from other servers. Methods, downloads and all 17
+          institution profiles come in the next version.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

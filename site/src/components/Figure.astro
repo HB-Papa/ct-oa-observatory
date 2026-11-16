@@ -1,0 +1,23 @@
+---
+// One figure = a numbered title, a written summary of what it shows, the
+// chart, and the same numbers as a table behind a disclosure. The chart itself
+// is hidden from screen readers; the summary and table carry everything.
+interface Props { id: string; num: number; title: string; source: string; note?: string }
+const { id, num, title, source, note } = Astro.props;
+---
+<figure class="viz" id={id} aria-labelledby={`${id}-title`}>
+  <figcaption>
+    <p class="viz-title" id={`${id}-title`}><span class="fig-num">Figure {num}</span>{title}</p>
+    <div class="summary"><slot name="summary" /></div>
+  </figcaption>
+  <slot />
+  <div class="fig-foot">
+    <details class="table-view">
+      <summary>Show the numbers as a table</summary>
+      <div class="table-scroll" tabindex="0" role="region" aria-label={`Figure ${num} data table`}>
+        <slot name="table" />
+      </div>
+    </details>
+    <p class="source">Source: OpenAlex, via the project pipeline (<code>{source}</code>).{note && ` ${note}`}</p>
+  </div>
+</figure>

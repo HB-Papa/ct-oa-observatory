@@ -1,0 +1,1461 @@
+{
+ "1_per_year": [
+  {
+   "key": "2015",
+   "mine": 13065,
+   "published": 13065,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2016",
+   "mine": 13535,
+   "published": 13535,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2017",
+   "mine": 13884,
+   "published": 13884,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2018",
+   "mine": 14181,
+   "published": 14181,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2019",
+   "mine": 14989,
+   "published": 14989,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2020",
+   "mine": 17337,
+   "published": 17337,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2021",
+   "mine": 17486,
+   "published": 17486,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2022",
+   "mine": 17112,
+   "published": 17112,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2023",
+   "mine": 17047,
+   "published": 17047,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2024",
+   "mine": 18180,
+   "published": 18180,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2025",
+   "mine": 19382,
+   "published": 19382,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2026",
+   "mine": 17520,
+   "published": 17520,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "1_per_year_oa_file": [
+  {
+   "key": "2015",
+   "mine": 13065,
+   "published": 13065,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2016",
+   "mine": 13535,
+   "published": 13535,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2017",
+   "mine": 13884,
+   "published": 13884,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2018",
+   "mine": 14181,
+   "published": 14181,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2019",
+   "mine": 14989,
+   "published": 14989,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2020",
+   "mine": 17337,
+   "published": 17337,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2021",
+   "mine": 17486,
+   "published": 17486,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2022",
+   "mine": 17112,
+   "published": 17112,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2023",
+   "mine": 17047,
+   "published": 17047,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2024",
+   "mine": 18180,
+   "published": 18180,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2025",
+   "mine": 19382,
+   "published": 19382,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "2026",
+   "mine": 17520,
+   "published": 17520,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "2_works": [
+  {
+   "key": "statewide",
+   "mine": 176198,
+   "published": 176198,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale",
+   "mine": 62580,
+   "published": 62580,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale",
+   "mine": 116949,
+   "published": 116949,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn",
+   "mine": 45618,
+   "published": 45618,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wesleyan",
+   "mine": 2729,
+   "published": 2729,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity",
+   "mine": 848,
+   "published": 848,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "conncoll",
+   "mine": 685,
+   "published": 685,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac",
+   "mine": 2483,
+   "published": 2483,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "fairfield",
+   "mine": 1773,
+   "published": 1773,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "sacredheart",
+   "mine": 1347,
+   "published": 1347,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "hartford",
+   "mine": 1205,
+   "published": 1205,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "newhaven",
+   "mine": 1886,
+   "published": 1886,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "scsu",
+   "mine": 1659,
+   "published": 1659,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ccsu",
+   "mine": 1394,
+   "published": 1394,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wcsu",
+   "mine": 422,
+   "published": 422,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ecsu",
+   "mine": 576,
+   "published": 576,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uscga",
+   "mine": 195,
+   "published": 195,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport",
+   "mine": 754,
+   "published": 754,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "usj",
+   "mine": 541,
+   "published": 541,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "4_free_count": [
+  {
+   "key": "statewide",
+   "mine": 117719,
+   "published": 117719,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale",
+   "mine": 37048,
+   "published": 37048,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale",
+   "mine": 83000,
+   "published": 83000,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn",
+   "mine": 27587,
+   "published": 27587,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wesleyan",
+   "mine": 1856,
+   "published": 1856,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity",
+   "mine": 508,
+   "published": 508,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "conncoll",
+   "mine": 362,
+   "published": 362,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac",
+   "mine": 1246,
+   "published": 1246,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "fairfield",
+   "mine": 947,
+   "published": 947,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "sacredheart",
+   "mine": 596,
+   "published": 596,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "hartford",
+   "mine": 591,
+   "published": 591,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "newhaven",
+   "mine": 1168,
+   "published": 1168,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "scsu",
+   "mine": 903,
+   "published": 903,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ccsu",
+   "mine": 663,
+   "published": 663,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wcsu",
+   "mine": 220,
+   "published": 220,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ecsu",
+   "mine": 293,
+   "published": 293,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uscga",
+   "mine": 117,
+   "published": 117,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport",
+   "mine": 589,
+   "published": 589,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "usj",
+   "mine": 273,
+   "published": 273,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "4_free_share": [
+  {
+   "key": "statewide",
+   "mine": 0.668106334918671,
+   "published": 0.668106334918671,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale",
+   "mine": 0.5920102269095557,
+   "published": 0.5920102269095557,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "yale",
+   "mine": 0.7097110706376284,
+   "published": 0.7097110706376284,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uconn",
+   "mine": 0.6047393572712526,
+   "published": 0.6047393572712526,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "wesleyan",
+   "mine": 0.6801026016855991,
+   "published": 0.6801026016855991,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "trinity",
+   "mine": 0.5990566037735849,
+   "published": 0.5990566037735849,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "conncoll",
+   "mine": 0.5284671532846715,
+   "published": 0.5284671532846715,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac",
+   "mine": 0.5018123238018526,
+   "published": 0.5018123238018526,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "fairfield",
+   "mine": 0.5341229554427523,
+   "published": 0.5341229554427523,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "sacredheart",
+   "mine": 0.4424647364513734,
+   "published": 0.4424647364513734,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "hartford",
+   "mine": 0.4904564315352697,
+   "published": 0.4904564315352697,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "newhaven",
+   "mine": 0.6193001060445387,
+   "published": 0.6193001060445387,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "scsu",
+   "mine": 0.5443037974683544,
+   "published": 0.5443037974683544,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "ccsu",
+   "mine": 0.47560975609756095,
+   "published": 0.47560975609756095,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "wcsu",
+   "mine": 0.5213270142180095,
+   "published": 0.5213270142180095,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "ecsu",
+   "mine": 0.5086805555555556,
+   "published": 0.5086805555555556,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uscga",
+   "mine": 0.6,
+   "published": 0.6,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport",
+   "mine": 0.7811671087533156,
+   "published": 0.7811671087533156,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "usj",
+   "mine": 0.5046210720887245,
+   "published": 0.5046210720887245,
+   "diff": 0.0,
+   "ok": true
+  }
+ ],
+ "3_oa_status": [
+  {
+   "key": "statewide/diamond",
+   "mine": 1609,
+   "published": 1609,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/oa_fee_unconfirmed",
+   "mine": 8349,
+   "published": 8349,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/gold",
+   "mine": 34739,
+   "published": 34739,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/hybrid",
+   "mine": 17112,
+   "published": 17112,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/bronze",
+   "mine": 25211,
+   "published": 25211,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/green",
+   "mine": 30699,
+   "published": 30699,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/closed",
+   "mine": 58479,
+   "published": 58479,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/diamond",
+   "mine": 373,
+   "published": 373,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/oa_fee_unconfirmed",
+   "mine": 4066,
+   "published": 4066,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/gold",
+   "mine": 11082,
+   "published": 11082,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/hybrid",
+   "mine": 5076,
+   "published": 5076,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/bronze",
+   "mine": 7720,
+   "published": 7720,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/green",
+   "mine": 8731,
+   "published": 8731,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/closed",
+   "mine": 25532,
+   "published": 25532,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/diamond",
+   "mine": 3,
+   "published": 3,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/oa_fee_unconfirmed",
+   "mine": 166,
+   "published": 166,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/gold",
+   "mine": 207,
+   "published": 207,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/hybrid",
+   "mine": 67,
+   "published": 67,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/bronze",
+   "mine": 103,
+   "published": 103,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/green",
+   "mine": 43,
+   "published": 43,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/closed",
+   "mine": 165,
+   "published": 165,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/diamond",
+   "mine": 1258,
+   "published": 1258,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/oa_fee_unconfirmed",
+   "mine": 4374,
+   "published": 4374,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/gold",
+   "mine": 24402,
+   "published": 24402,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/hybrid",
+   "mine": 12341,
+   "published": 12341,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/bronze",
+   "mine": 17963,
+   "published": 17963,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/green",
+   "mine": 22662,
+   "published": 22662,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/closed",
+   "mine": 33949,
+   "published": 33949,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/diamond",
+   "mine": 0,
+   "published": 0,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/oa_fee_unconfirmed",
+   "mine": 59,
+   "published": 59,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/gold",
+   "mine": 150,
+   "published": 150,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/hybrid",
+   "mine": 65,
+   "published": 65,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/bronze",
+   "mine": 81,
+   "published": 81,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/green",
+   "mine": 153,
+   "published": 153,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity/closed",
+   "mine": 340,
+   "published": 340,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "5_apc_works": [
+  {
+   "key": "statewide/upper",
+   "mine": 51851,
+   "published": 51851,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/corresponding",
+   "mine": 22358,
+   "published": 22358,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/upper",
+   "mine": 16158,
+   "published": 16158,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/corresponding",
+   "mine": 7230,
+   "published": 7230,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/upper",
+   "mine": 36743,
+   "published": 36743,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/corresponding",
+   "mine": 15237,
+   "published": 15237,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn/upper",
+   "mine": 12316,
+   "published": 12316,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn/corresponding",
+   "mine": 5534,
+   "published": 5534,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/upper",
+   "mine": 599,
+   "published": 599,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/corresponding",
+   "mine": 223,
+   "published": 223,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/upper",
+   "mine": 274,
+   "published": 274,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/corresponding",
+   "mine": 178,
+   "published": 178,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "5_apc_priced": [
+  {
+   "key": "statewide/upper",
+   "mine": 45634,
+   "published": 45634,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide/corresponding",
+   "mine": 19813,
+   "published": 19813,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/upper",
+   "mine": 14120,
+   "published": 14120,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/corresponding",
+   "mine": 6310,
+   "published": 6310,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/upper",
+   "mine": 32453,
+   "published": 32453,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale/corresponding",
+   "mine": 13601,
+   "published": 13601,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn/upper",
+   "mine": 11050,
+   "published": 11050,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn/corresponding",
+   "mine": 4989,
+   "published": 4989,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/upper",
+   "mine": 522,
+   "published": 522,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/corresponding",
+   "mine": 178,
+   "published": 178,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/upper",
+   "mine": 215,
+   "published": 215,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/corresponding",
+   "mine": 140,
+   "published": 140,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "5_apc_usd": [
+  {
+   "key": "statewide/upper",
+   "mine": 145372638,
+   "published": 145372638.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "statewide/corresponding",
+   "mine": 60235164,
+   "published": 60235164.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/upper",
+   "mine": 40476775,
+   "published": 40476775.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale/corresponding",
+   "mine": 16738679,
+   "published": 16738679.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "yale/upper",
+   "mine": 108033775,
+   "published": 108033775.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "yale/corresponding",
+   "mine": 43790862,
+   "published": 43790862.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uconn/upper",
+   "mine": 32362827,
+   "published": 32362827.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uconn/corresponding",
+   "mine": 13584932,
+   "published": 13584932.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/upper",
+   "mine": 1230992,
+   "published": 1230992.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac/corresponding",
+   "mine": 351536,
+   "published": 351536.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/upper",
+   "mine": 471273,
+   "published": 471273.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport/corresponding",
+   "mine": 316542,
+   "published": 316542.0,
+   "diff": 0.0,
+   "ok": true
+  }
+ ],
+ "6_corr_with": [
+  {
+   "key": "statewide",
+   "mine": 144352,
+   "published": 144352,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale",
+   "mine": 51319,
+   "published": 51319,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "yale",
+   "mine": 95695,
+   "published": 95695,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uconn",
+   "mine": 37773,
+   "published": 37773,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wesleyan",
+   "mine": 2215,
+   "published": 2215,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "trinity",
+   "mine": 743,
+   "published": 743,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "conncoll",
+   "mine": 612,
+   "published": 612,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac",
+   "mine": 1976,
+   "published": 1976,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "fairfield",
+   "mine": 1331,
+   "published": 1331,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "sacredheart",
+   "mine": 1068,
+   "published": 1068,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "hartford",
+   "mine": 957,
+   "published": 957,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "newhaven",
+   "mine": 1446,
+   "published": 1446,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "scsu",
+   "mine": 1241,
+   "published": 1241,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ccsu",
+   "mine": 1108,
+   "published": 1108,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "wcsu",
+   "mine": 339,
+   "published": 339,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "ecsu",
+   "mine": 464,
+   "published": 464,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "uscga",
+   "mine": 153,
+   "published": 153,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport",
+   "mine": 596,
+   "published": 596,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "usj",
+   "mine": 425,
+   "published": 425,
+   "diff": 0,
+   "ok": true
+  }
+ ],
+ "6_corr_share": [
+  {
+   "key": "statewide",
+   "mine": 0.8192601505124917,
+   "published": 0.8192601505124917,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "statewide_no_yale",
+   "mine": 0.820054330457015,
+   "published": 0.820054330457015,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "yale",
+   "mine": 0.8182626615020222,
+   "published": 0.8182626615020222,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uconn",
+   "mine": 0.8280284098382218,
+   "published": 0.8280284098382218,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "wesleyan",
+   "mine": 0.8116526200073287,
+   "published": 0.8116526200073287,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "trinity",
+   "mine": 0.8761792452830188,
+   "published": 0.8761792452830188,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "conncoll",
+   "mine": 0.8934306569343066,
+   "published": 0.8934306569343066,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "quinnipiac",
+   "mine": 0.7958115183246073,
+   "published": 0.7958115183246073,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "fairfield",
+   "mine": 0.7507050197405527,
+   "published": 0.7507050197405527,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "sacredheart",
+   "mine": 0.7928730512249443,
+   "published": 0.7928730512249443,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "hartford",
+   "mine": 0.7941908713692946,
+   "published": 0.7941908713692946,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "newhaven",
+   "mine": 0.7667020148462355,
+   "published": 0.7667020148462355,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "scsu",
+   "mine": 0.7480409885473177,
+   "published": 0.7480409885473177,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "ccsu",
+   "mine": 0.7948350071736011,
+   "published": 0.7948350071736011,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "wcsu",
+   "mine": 0.8033175355450237,
+   "published": 0.8033175355450237,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "ecsu",
+   "mine": 0.8055555555555556,
+   "published": 0.8055555555555556,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "uscga",
+   "mine": 0.7846153846153846,
+   "published": 0.7846153846153846,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "bridgeport",
+   "mine": 0.7904509283819628,
+   "published": 0.7904509283819628,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "key": "usj",
+   "mine": 0.7855822550831792,
+   "published": 0.7855822550831792,
+   "diff": 0.0,
+   "ok": true
+  }
+ ],
+ "7_publishers": [
+  {
+   "key": "rank1 name: Elsevier BV | Elsevier BV",
+   "mine": 1,
+   "published": 1,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank1 works",
+   "mine": 42381,
+   "published": 42381,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank1 closed",
+   "mine": 15939,
+   "published": 15939,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank2 name: Springer Nature | Springer Nature",
+   "mine": 1,
+   "published": 1,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank2 works",
+   "mine": 21949,
+   "published": 21949,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank2 closed",
+   "mine": 6241,
+   "published": 6241,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank3 name: Wiley | Wiley",
+   "mine": 1,
+   "published": 1,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank3 works",
+   "mine": 16454,
+   "published": 16454,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank3 closed",
+   "mine": 6082,
+   "published": 6082,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank4 name: Wolters Kluwer | Wolters Kluwer",
+   "mine": 1,
+   "published": 1,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank4 works",
+   "mine": 10092,
+   "published": 10092,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank4 closed",
+   "mine": 5773,
+   "published": 5773,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank5 name: Informa | Informa",
+   "mine": 1,
+   "published": 1,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank5 works",
+   "mine": 7167,
+   "published": 7167,
+   "diff": 0,
+   "ok": true
+  },
+  {
+   "key": "rank5 closed",
+   "mine": 4475,
+   "published": 4475,
+   "diff": 0,
+   "ok": true
+  }
+ ]
+}

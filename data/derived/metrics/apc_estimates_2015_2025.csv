@@ -1,0 +1,39 @@
+entity,entity_name,paid_oa_works,works_with_list_price,estimated_usd,works_without_list_price,method
+bridgeport,University of Bridgeport,274,215,471273.0,59,upper_bound_all_authors
+ccsu,Central Connecticut State University,257,214,474151.0,43,upper_bound_all_authors
+conncoll,Connecticut College,141,126,335444.0,15,upper_bound_all_authors
+ecsu,Eastern Connecticut State University,132,91,202287.0,41,upper_bound_all_authors
+fairfield,Fairfield University,334,256,778150.0,78,upper_bound_all_authors
+hartford,University of Hartford,230,196,473495.0,34,upper_bound_all_authors
+newhaven,University of New Haven,533,352,933190.0,181,upper_bound_all_authors
+quinnipiac,Quinnipiac University,599,522,1230992.0,77,upper_bound_all_authors
+sacredheart,Sacred Heart University,242,184,474371.0,58,upper_bound_all_authors
+scsu,Southern Connecticut State University,296,233,639817.0,63,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),51851,45634,145372638.0,6217,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,16158,14120,40476775.0,2038,upper_bound_all_authors
+trinity,Trinity College,215,182,491335.0,33,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),12316,11050,32362827.0,1266,upper_bound_all_authors
+uscga,United States Coast Guard Academy,35,31,78532.0,4,upper_bound_all_authors
+usj,University of Saint Joseph,105,86,211779.0,19,upper_bound_all_authors
+wcsu,Western Connecticut State University,61,52,112804.0,9,upper_bound_all_authors
+wesleyan,Wesleyan University,742,630,1981995.0,112,upper_bound_all_authors
+yale,Yale University,36743,32453,108033775.0,4290,upper_bound_all_authors
+bridgeport,University of Bridgeport,178,140,316542.0,38,corresponding_author
+ccsu,Central Connecticut State University,117,95,170813.0,22,corresponding_author
+conncoll,Connecticut College,64,58,143578.0,6,corresponding_author
+ecsu,Eastern Connecticut State University,65,31,63391.0,34,corresponding_author
+fairfield,Fairfield University,115,87,241067.0,28,corresponding_author
+hartford,University of Hartford,97,81,187768.0,16,corresponding_author
+newhaven,University of New Haven,229,150,378952.0,79,corresponding_author
+quinnipiac,Quinnipiac University,223,178,351536.0,45,corresponding_author
+sacredheart,Sacred Heart University,91,67,170471.0,24,corresponding_author
+scsu,Southern Connecticut State University,108,88,209025.0,20,corresponding_author
+statewide,Connecticut (all 17 institutions),22358,19813,60235164.0,2545,corresponding_author
+statewide_no_yale,Connecticut without Yale,7230,6310,16738679.0,920,corresponding_author
+trinity,Trinity College,101,83,207224.0,18,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),5534,4989,13584932.0,545,corresponding_author
+uscga,United States Coast Guard Academy,9,9,23525.0,0,corresponding_author
+usj,University of Saint Joseph,33,28,61899.0,5,corresponding_author
+wcsu,Western Connecticut State University,24,17,28797.0,7,corresponding_author
+wesleyan,Wesleyan University,282,244,682773.0,38,corresponding_author
+yale,Yale University,15237,13601,43790862.0,1636,corresponding_author

@@ -1,0 +1,311 @@
+---
+import Base from '../layouts/Base.astro';
+import Figure from '../components/Figure.astro';
+import CategoryLegend from '../components/CategoryLegend.astro';
+import SegmentedBars from '../components/SegmentedBars.astro';
+import LineChart from '../components/LineChart.astro';
+import BarList from '../components/BarList.astro';
+import ClosedBars from '../components/ClosedBars.astro';
+import {
+  manifest, CATEGORIES, STATEWIDE, STATEWIDE_NO_YALE, PROFILE_KEYS, tables,
+  freeFor, categoryMix, freeTrend, categoryTrend, institutionKeys, entityName, topBy, apcFor,
+} from '../lib/data';
+import { n, pct, pct0, dollars, inWords, capitalize } from '../lib/format';
+
+// ---- headline figures (all from free_to_read_2015_2025.csv) ----
+const all = freeFor(STATEWIDE);
+const noYale = freeFor(STATEWIDE_NO_YALE);
+const trendAll = freeTrend(STATEWIDE);
+const trendNoYale = freeTrend(STATEWIDE_NO_YALE);
+const complete = trendAll.filter((p) => !p.incomplete);
+const first = complete[0], lastC = complete.at(-1)!;
+const peak = complete.reduce((m, p) => (p.share > m.share ? p : m));
+const y2026 = trendAll.find((p) => p.incomplete)!;
+
+// ---- category trend: which category drives the change after the peak ----
+const catTrend = categoryTrend(STATEWIDE);
+const shareOf = (year: number, key: string) => catTrend.find((r) => r.year === year)!.parts.find((p) => p.key === key)!.share;
+const drops = CATEGORIES.filter((c) => c.key !== 'closed')
+  .map((c) => ({ ...c, from: shareOf(peak.year, c.key), to: shareOf(lastC.year, c.key) }))
+  .map((c) => ({ ...c, change: c.to - c.from }))
+  .sort((a, b) => a.change - b.change);
+const biggestDrop = drops[0];
+
+// ---- institutions ranked ----
+const inst = institutionKeys().map((k) => ({ key: k, ...freeFor(k) }))
+  .sort((a, b) => b.free_to_read_share - a.free_to_read_share);
+const above = inst.filter((r) => r.free_to_read_share > all.free_to_read_share).length;
+const shortName = (k: string) => entityName(k).replace(' (incl. UConn Health)', '');
+
+// ---- category mix ----
+const mixAll = categoryMix(STATEWIDE);
+const mixNoYale = categoryMix(STATEWIDE_NO_YALE);
+const catLabel = (k: string) => CATEGORIES.find((c) => c.key === k)!.label;
+const largestFree = [...mixAll].filter((c) => c.key !== 'closed').sort((a, b) => b.share - a.share);
+
+// ---- publishers and fields with the most closed works ----
+const pubs = topBy(tables.publishers, STATEWIDE, 'publisher_parent_name', 'rank_by_closed', 10);
+const fields = topBy(tables.fields, STATEWIDE, 'field_name', 'rank_by_closed', 10);
+
+// ---- APC estimates ----
+const apc = apcFor(STATEWIDE);
+const apcNoYale = apcFor(STATEWIDE_NO_YALE);
+const feeUnconfirmed = mixAll.find((c) => c.key === 'oa_fee_unconfirmed')!;
+const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title="Overview" current="overview"
+  description="How much of the research from 17 Connecticut colleges and universities is free to read, and how that has changed since 2015.">
+  <div class="page-head">
+    <p class="kicker">Statewide report · {first.year}–{lastC.year} · data snapshot {snapshotLong}</p>
+    <h1>{capitalize(inWords(all.free_to_read_share))} of Connecticut’s research is free to read. The rest is behind a paywall.</h1>
+    <p class="deck">
+      An analysis of {n(all.works)} research articles by authors at 17 Connecticut colleges and universities,
+      published from {first.year} to {lastC.year}, using the open database OpenAlex.
+    </p>
+  </div>
+
+  <section class="findings" aria-labelledby="findings">
+    <h2 id="findings">Key findings</h2>
+    <ol>
+      <li>
+        <strong>{pct(all.free_to_read_share)}</strong> of articles are free to read ({n(all.free_to_read)} of {n(all.works)}).
+        Without Yale, the figure is <strong>{pct(noYale.free_to_read_share)}</strong>. Yale is the only Connecticut
+        institution on {pct0(1 - noYale.works / all.works)} of these articles, so it shapes the statewide number.
+      </li>
+      <li>
+        The share rose from {pct(first.share)} in {first.year} to a peak of {pct(peak.share)} in {peak.year}, and was
+        {' '}{pct(lastC.share)} in {lastC.year}. The recent dip is mostly in {biggestDrop.label.toLowerCase()} articles, which
+        may still become free.
+      </li>
+      <li>
+        Institutions range from {pct(inst.at(-1)!.free_to_read_share)} ({shortName(inst.at(-1)!.key)}) to
+        {' '}{pct(inst[0].free_to_read_share)} ({shortName(inst[0].key)}).
+      </li>
+      <li>
+        {pubs[0].name} published the most closed articles: {n(pubs[0].closed)}, or {pct0(pubs[0].closed / pubs[0].works)} of
+        its Connecticut articles.
+      </li>
+      <li>
+        Authors may have paid about <strong>{dollars(apc.corresponding.estimated_usd)}</strong> in publishing fees, based on
+        journals’ listed prices <span class="estimate-tag">Estimate</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="categories">
+    <h2 id="categories">Ways an article can be free</h2>
+    <p>
+      There are several routes to free reading. They matter to libraries because they cost different amounts and
+      last for different lengths of time. These are categories, not rankings. Together they cover every article.
+    </p>
+    <dl class="defs">
+      {CATEGORIES.map((c) => (
+        <>
+          <dt><span class="swatch" data-cat={c.key} style={`background: var(--c-${c.key})`} aria-hidden="true"></span>{c.label}</dt>
+          <dd>{c.meaning}</dd>
+        </>
+      ))}
+    </dl>
+  </section>
+
+  <section class="block" aria-labelledby="trend">
+    <h2 id="trend">How it has changed since 2015</h2>
+    <Figure num={1} id="fig-trend" title="Share of articles free to read, by year of publication" source="free_to_read_by_year.csv">
+      <Fragment slot="summary">
+        <p>
+          Statewide, the share of articles free to read rose from {pct(first.share)} in {first.year} to a peak of
+          {' '}{pct(peak.share)} in {peak.year}, then fell to {pct(lastC.share)} in {lastC.year}. Without Yale the
+          pattern is the same at a lower level: {pct(trendNoYale.find((p) => p.year === first.year)!.share)} in {first.year},
+          {' '}{pct(trendNoYale.find((p) => p.year === lastC.year)!.share)} in {lastC.year}.
+        </p>
+        <p>
+          The drop after {peak.year} is mostly in <strong>{biggestDrop.label.toLowerCase()}</strong> articles, which went
+          from {pct(biggestDrop.from)} to {pct(biggestDrop.to)} of the total. Some publishers make articles free to read
+          a year or more after publication, so recent years are likely to rise as the data updates. The next snapshot
+          will show whether that happens.
+        </p>
+        <p class="small muted">
+          {y2026.year} is shown on its own because the year is not over and indexing lags: {pct(y2026.share)} of the
+          {' '}{n(y2026.works)} articles counted so far are free to read.
+        </p>
+      </Fragment>
+      <LineChart a={{ name: 'All 17', points: trendAll }} b={{ name: 'Without Yale', points: trendNoYale }} />
+      <table class="data" slot="table">
+        <caption>Share of articles free to read, by year</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col" class="r">All 17: free / total</th><th scope="col" class="r">All 17: share</th><th scope="col" class="r">Without Yale: free / total</th><th scope="col" class="r">Without Yale: share</th></tr></thead>
+        <tbody>
+          {trendAll.map((p, i) => (
+            <tr>
+              <th scope="row">{p.year}{p.incomplete && ' (incomplete)'}</th>
+              <td class="r">{n(p.free)} / {n(p.works)}</td><td class="r">{pct(p.share)}</td>
+              <td class="r">{n(trendNoYale[i].free)} / {n(trendNoYale[i].works)}</td><td class="r">{pct(trendNoYale[i].share)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Figure>
+
+    <Figure num={2} id="fig-cat-year" title="How articles were free to read, by year (all 17 institutions)" source="oa_category_by_year.csv">
+      <Fragment slot="summary">
+        <p>
+          The mix has shifted toward routes where authors usually pay. Gold went from
+          {' '}{pct(shareOf(first.year, 'gold'))} in {first.year} to {pct(shareOf(lastC.year, 'gold'))} in {lastC.year},
+          and hybrid from {pct(shareOf(first.year, 'hybrid'))} to {pct(shareOf(lastC.year, 'hybrid'))}. Green (a free
+          copy in a repository) went from {pct(shareOf(first.year, 'green'))} to {pct(shareOf(lastC.year, 'green'))}, and
+          closed from {pct(shareOf(first.year, 'closed'))} to {pct(shareOf(lastC.year, 'closed'))}.
+        </p>
+      </Fragment>
+      <CategoryLegend />
+      <SegmentedBars rows={catTrend.map((r) => ({ label: String(r.year), note: r.incomplete ? 'incomplete' : undefined, parts: r.parts }))} />
+      <table class="data" slot="table">
+        <caption>Share of articles in each category, by year (all 17 institutions)</caption>
+        <thead><tr><th scope="col">Year</th>{CATEGORIES.map((c) => <th scope="col" class="r">{c.short}</th>)}</tr></thead>
+        <tbody>
+          {catTrend.map((r) => (
+            <tr><th scope="row">{r.year}{r.incomplete && ' (incomplete)'}</th>{r.parts.map((p) => <td class="r">{pct(p.share)}</td>)}</tr>
+          ))}
+        </tbody>
+      </table>
+    </Figure>
+  </section>
+
+  <section class="block" aria-labelledby="institutions">
+    <h2 id="institutions">By institution</h2>
+    <Figure num={3} id="fig-inst" title="Share of articles free to read, 2015–2025, by institution" source="free_to_read_2015_2025.csv">
+      <Fragment slot="summary">
+        <p>
+          Shares range from {pct(inst.at(-1)!.free_to_read_share)} at {shortName(inst.at(-1)!.key)} to
+          {' '}{pct(inst[0].free_to_read_share)} at {shortName(inst[0].key)}. {above} of the 17 institutions are above the
+          statewide figure of {pct(all.free_to_read_share)}. An article with authors at two institutions counts for both.
+          Smaller institutions have fewer articles, so their shares move more from year to year.
+        </p>
+      </Fragment>
+      <BarList label="Institutions by share of articles free to read" items={[
+        ...inst.map((r) => ({ name: shortName(r.key), value: r.free_to_read_share,
+          href: PROFILE_KEYS.includes(r.key) ? `/institutions/${r.key}/` : undefined, detail: `of ${n(r.works)}` })),
+        { name: 'All 17 (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
+      ]} />
+      <table class="data" slot="table">
+        <caption>Articles free to read, 2015–2025, by institution</caption>
+        <thead><tr><th scope="col">Institution</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Free to read</th><th scope="col" class="r">Share</th></tr></thead>
+        <tbody>
+          {inst.map((r) => (<tr><th scope="row">{entityName(r.key)}</th><td class="r">{n(r.works)}</td><td class="r">{n(r.free_to_read)}</td><td class="r">{pct(r.free_to_read_share)}</td></tr>))}
+          <tr><th scope="row">All 17 (each article once)</th><td class="r">{n(all.works)}</td><td class="r">{n(all.free_to_read)}</td><td class="r">{pct(all.free_to_read_share)}</td></tr>
+          <tr><th scope="row">Without Yale (each article once)</th><td class="r">{n(noYale.works)}</td><td class="r">{n(noYale.free_to_read)}</td><td class="r">{pct(noYale.free_to_read_share)}</td></tr>
+        </tbody>
+      </table>
+    </Figure>
+
+    <Figure num={4} id="fig-inst-mix" title="How each institution’s articles were free to read, 2015–2025" source="oa_category_2015_2025.csv">
+      <Fragment slot="summary">
+        <p>
+          Across all 17 institutions, the largest free route is {catLabel(largestFree[0].key).toLowerCase()} ({pct(largestFree[0].share)}),
+          followed by {catLabel(largestFree[1].key).toLowerCase()} ({pct(largestFree[1].share)}).
+          {pct(mixAll.find((c) => c.key === 'closed')!.share)} of articles are closed, and
+          {' '}{pct(mixNoYale.find((c) => c.key === 'closed')!.share)} without Yale.
+        </p>
+      </Fragment>
+      <CategoryLegend />
+      <SegmentedBars rows={[
+        { label: 'All 17', parts: mixAll },
+        { label: 'Without Yale', parts: mixNoYale },
+        ...inst.map((r) => ({ label: shortName(r.key), parts: categoryMix(r.key) })),
+      ]} />
+      <table class="data" slot="table">
+        <caption>Share of articles in each category, 2015–2025</caption>
+        <thead><tr><th scope="col">Institution</th>{CATEGORIES.map((c) => <th scope="col" class="r">{c.short}</th>)}</tr></thead>
+        <tbody>
+          {[STATEWIDE, STATEWIDE_NO_YALE, ...inst.map((r) => r.key)].map((k) => (
+            <tr><th scope="row">{entityName(k)}</th>{categoryMix(k).map((c) => <td class="r">{pct(c.share)}</td>)}</tr>
+          ))}
+        </tbody>
+      </table>
+    </Figure>
+  </section>
+
+  <section class="block" aria-labelledby="where-closed">
+    <h2 id="where-closed">Where the closed articles are</h2>
+    <div>
+      <Figure num={5} id="fig-pub" title="Publishers with the most closed articles, 2015–2025" source="publishers_2015_2025.csv">
+        <Fragment slot="summary">
+          <p>
+            {pubs[0].name} published the most closed articles: {n(pubs[0].closed)} of {n(pubs[0].works)}{' '}
+            ({pct0(pubs[0].closed / pubs[0].works)}). Next are {pubs[1].name} ({n(pubs[1].closed)}) and {pubs[2].name}
+            {' '}({n(pubs[2].closed)}). Imprints are grouped under their parent company.
+          </p>
+        </Fragment>
+        <ClosedBars items={pubs} label="Publishers by number of closed articles" />
+        <table class="data" slot="table">
+          <caption>Publishers with the most closed articles, all 17 institutions, 2015–2025</caption>
+          <thead><tr><th scope="col">Publisher</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Closed</th><th scope="col" class="r">Closed share</th></tr></thead>
+          <tbody>{pubs.map((p) => (<tr><th scope="row">{p.name}</th><td class="r">{n(p.works)}</td><td class="r">{n(p.closed)}</td><td class="r">{pct(p.closedShare)}</td></tr>))}</tbody>
+        </table>
+      </Figure>
+      <Figure num={6} id="fig-field" title="Fields with the most closed articles, 2015–2025" source="fields_2015_2025.csv">
+        <Fragment slot="summary">
+          <p>
+            {fields[0].name} has the most closed articles: {n(fields[0].closed)} of {n(fields[0].works)}{' '}
+            ({pct0(fields[0].closed / fields[0].works)}). Fields are OpenAlex’s broad subject groups, assigned to each
+            article’s main topic.
+          </p>
+        </Fragment>
+        <ClosedBars items={fields} label="Fields by number of closed articles" />
+        <table class="data" slot="table">
+          <caption>Fields with the most closed articles, all 17 institutions, 2015–2025</caption>
+          <thead><tr><th scope="col">Field</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Closed</th><th scope="col" class="r">Closed share</th></tr></thead>
+          <tbody>{fields.map((p) => (<tr><th scope="row">{p.name}</th><td class="r">{n(p.works)}</td><td class="r">{n(p.closed)}</td><td class="r">{pct(p.closedShare)}</td></tr>))}</tbody>
+        </table>
+      </Figure>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="fees">
+    <h2 id="fees">What authors may be paying to publish <span class="estimate-tag">Estimate</span></h2>
+    <p>
+      Many open access journals charge authors an article processing charge (APC). OpenAlex records each journal’s
+      listed price, not what anyone actually paid, so these figures are <strong>estimates</strong>. They count gold
+      and hybrid articles from 2015 to 2025, each article’s fee once.
+    </p>
+    <div class="tiles">
+      <div class="tile">
+        <p class="label">Estimate based on corresponding authors <span class="estimate-tag">Estimate</span></p>
+        <p class="value">{dollars(apc.corresponding.estimated_usd)}</p>
+        <p class="note">
+          {n(apc.corresponding.paid_oa_works)} gold and hybrid articles where a corresponding author (the one who
+          usually arranges payment) is at one of the 17 institutions. {n(apc.corresponding.works_without_list_price)} of
+          them have no listed price and are not included. This is the more realistic figure.
+        </p>
+      </div>
+      <div class="tile">
+        <p class="label">Upper bound, any Connecticut author <span class="estimate-tag">Estimate</span></p>
+        <p class="value">{dollars(apc.upper.estimated_usd)}</p>
+        <p class="note">
+          {n(apc.upper.paid_oa_works)} gold and hybrid articles with any author at the 17 institutions, even when the fee
+          was likely paid elsewhere. {n(apc.upper.works_without_list_price)} have no listed price.
+        </p>
+      </div>
+      <div class="tile">
+        <p class="label">Without Yale, corresponding authors <span class="estimate-tag">Estimate</span></p>
+        <p class="value">{dollars(apcNoYale.corresponding.estimated_usd)}</p>
+        <p class="note">
+          {n(apcNoYale.corresponding.paid_oa_works)} articles where a corresponding author is at one of the other 16
+          institutions.
+        </p>
+      </div>
+    </div>
+    <div class="callout">
+      <p><strong>Why these are estimates, and which way they could be off</strong></p>
+      <p>
+        Listed prices are not payments. Discounts, waivers and library agreements lower what is actually paid, and
+        prices rise over time, so earlier years are likely overstated. When two Connecticut institutions are both
+        corresponding, the fee is credited to each in their own figures, but counted once here. Only
+        {' '}{pct(apc.coverage.coverage_share)} of articles have a corresponding author’s institution recorded. {n(feeUnconfirmed.works)} articles are in open access
+        journals whose fee is not confirmed and are not counted, which may understate the total.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>

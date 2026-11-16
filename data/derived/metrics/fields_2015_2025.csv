@@ -1,0 +1,216 @@
+entity,entity_name,field_name,works,closed,closed_share,rank_by_output,rank_by_closed
+bridgeport,University of Bridgeport,Computer Science,185,26,0.14054054054054055,1,1
+bridgeport,University of Bridgeport,Engineering,99,18,0.18181818181818182,2,4
+bridgeport,University of Bridgeport,Medicine,96,20,0.20833333333333334,3,3
+bridgeport,University of Bridgeport,Social Sciences,66,24,0.36363636363636365,4,2
+bridgeport,University of Bridgeport,"Business, Management and Accounting",60,14,0.23333333333333334,5,5
+bridgeport,University of Bridgeport,Health Professions,30,6,0.2,6,11
+bridgeport,University of Bridgeport,Materials Science,27,8,0.2962962962962963,7,7
+bridgeport,University of Bridgeport,Decision Sciences,25,7,0.28,8,9
+bridgeport,University of Bridgeport,"Biochemistry, Genetics and Molecular Biology",23,4,0.17391304347826086,9,13
+bridgeport,University of Bridgeport,"Economics, Econometrics and Finance",23,9,0.391304347826087,10,6
+bridgeport,University of Bridgeport,Psychology,20,8,0.4,11,8
+bridgeport,University of Bridgeport,Arts and Humanities,13,6,0.46153846153846156,13,10
+ccsu,Central Connecticut State University,Social Sciences,393,240,0.6106870229007634,1,1
+ccsu,Central Connecticut State University,Medicine,135,71,0.5259259259259259,2,3
+ccsu,Central Connecticut State University,"Business, Management and Accounting",133,84,0.631578947368421,3,2
+ccsu,Central Connecticut State University,Psychology,101,61,0.6039603960396039,4,4
+ccsu,Central Connecticut State University,Arts and Humanities,87,50,0.5747126436781609,5,5
+ccsu,Central Connecticut State University,Engineering,73,32,0.4383561643835616,6,6
+ccsu,Central Connecticut State University,Mathematics,66,28,0.42424242424242425,7,7
+ccsu,Central Connecticut State University,"Economics, Econometrics and Finance",51,24,0.47058823529411764,8,8
+ccsu,Central Connecticut State University,Environmental Science,47,19,0.40425531914893614,9,9
+ccsu,Central Connecticut State University,Materials Science,43,19,0.4418604651162791,10,10
+conncoll,Connecticut College,Social Sciences,179,106,0.5921787709497207,1,1
+conncoll,Connecticut College,Arts and Humanities,85,56,0.6588235294117647,2,2
+conncoll,Connecticut College,Agricultural and Biological Sciences,56,19,0.3392857142857143,3,4
+conncoll,Connecticut College,Environmental Science,47,13,0.2765957446808511,4,9
+conncoll,Connecticut College,"Economics, Econometrics and Finance",43,16,0.37209302325581395,5,6
+conncoll,Connecticut College,Psychology,41,24,0.5853658536585366,6,3
+conncoll,Connecticut College,Mathematics,39,18,0.46153846153846156,7,5
+conncoll,Connecticut College,Medicine,39,16,0.41025641025641024,8,7
+conncoll,Connecticut College,"Biochemistry, Genetics and Molecular Biology",32,9,0.28125,9,10
+conncoll,Connecticut College,Chemistry,26,14,0.5384615384615384,10,8
+ecsu,Eastern Connecticut State University,Social Sciences,123,71,0.5772357723577236,1,1
+ecsu,Eastern Connecticut State University,Psychology,48,30,0.625,2,2
+ecsu,Eastern Connecticut State University,Arts and Humanities,46,27,0.5869565217391305,3,3
+ecsu,Eastern Connecticut State University,"Biochemistry, Genetics and Molecular Biology",43,13,0.3023255813953488,4,8
+ecsu,Eastern Connecticut State University,Medicine,43,20,0.46511627906976744,5,4
+ecsu,Eastern Connecticut State University,Earth and Planetary Sciences,40,16,0.4,6,7
+ecsu,Eastern Connecticut State University,Agricultural and Biological Sciences,35,12,0.34285714285714286,7,11
+ecsu,Eastern Connecticut State University,"Business, Management and Accounting",34,19,0.5588235294117647,8,5
+ecsu,Eastern Connecticut State University,Computer Science,26,16,0.6153846153846154,9,6
+ecsu,Eastern Connecticut State University,Engineering,26,13,0.5,10,10
+ecsu,Eastern Connecticut State University,Decision Sciences,16,13,0.8125,12,9
+fairfield,Fairfield University,Physics and Astronomy,309,8,0.025889967637540454,1,16
+fairfield,Fairfield University,Social Sciences,307,196,0.6384364820846905,2,1
+fairfield,Fairfield University,Medicine,223,124,0.5560538116591929,3,2
+fairfield,Fairfield University,"Business, Management and Accounting",143,103,0.7202797202797203,4,3
+fairfield,Fairfield University,"Economics, Econometrics and Finance",135,89,0.6592592592592592,5,4
+fairfield,Fairfield University,Arts and Humanities,121,66,0.5454545454545454,6,6
+fairfield,Fairfield University,Psychology,120,77,0.6416666666666667,7,5
+fairfield,Fairfield University,Mathematics,73,13,0.1780821917808219,8,11
+fairfield,Fairfield University,Environmental Science,60,23,0.38333333333333336,9,9
+fairfield,Fairfield University,Computer Science,56,17,0.30357142857142855,10,10
+fairfield,Fairfield University,Health Professions,35,25,0.7142857142857143,11,8
+fairfield,Fairfield University,Nursing,35,26,0.7428571428571429,12,7
+hartford,University of Hartford,Medicine,252,133,0.5277777777777778,1,2
+hartford,University of Hartford,Social Sciences,239,147,0.6150627615062761,2,1
+hartford,University of Hartford,Engineering,97,47,0.4845360824742268,3,5
+hartford,University of Hartford,Psychology,97,50,0.5154639175257731,4,4
+hartford,University of Hartford,"Business, Management and Accounting",93,63,0.6774193548387096,5,3
+hartford,University of Hartford,Arts and Humanities,65,44,0.676923076923077,6,6
+hartford,University of Hartford,Health Professions,58,25,0.43103448275862066,7,7
+hartford,University of Hartford,Computer Science,49,19,0.3877551020408163,8,9
+hartford,University of Hartford,"Economics, Econometrics and Finance",44,21,0.4772727272727273,9,8
+hartford,University of Hartford,Neuroscience,35,14,0.4,10,10
+newhaven,University of New Haven,Social Sciences,305,185,0.6065573770491803,1,1
+newhaven,University of New Haven,Medicine,212,49,0.23113207547169812,2,4
+newhaven,University of New Haven,Engineering,161,57,0.35403726708074534,3,3
+newhaven,University of New Haven,"Business, Management and Accounting",153,72,0.47058823529411764,4,2
+newhaven,University of New Haven,Computer Science,139,22,0.15827338129496402,5,13
+newhaven,University of New Haven,"Economics, Econometrics and Finance",102,30,0.29411764705882354,6,8
+newhaven,University of New Haven,"Biochemistry, Genetics and Molecular Biology",97,18,0.18556701030927836,7,14
+newhaven,University of New Haven,Environmental Science,93,35,0.3763440860215054,8,7
+newhaven,University of New Haven,Mathematics,80,36,0.45,9,6
+newhaven,University of New Haven,Psychology,79,45,0.569620253164557,10,5
+newhaven,University of New Haven,Materials Science,58,30,0.5172413793103449,11,9
+newhaven,University of New Haven,Chemistry,48,25,0.5208333333333334,14,10
+quinnipiac,Quinnipiac University,Medicine,1021,440,0.4309500489715965,1,1
+quinnipiac,Quinnipiac University,Social Sciences,467,261,0.5588865096359743,2,2
+quinnipiac,Quinnipiac University,Health Professions,163,105,0.6441717791411042,3,3
+quinnipiac,Quinnipiac University,"Business, Management and Accounting",146,103,0.7054794520547946,4,4
+quinnipiac,Quinnipiac University,Psychology,121,64,0.5289256198347108,5,5
+quinnipiac,Quinnipiac University,Arts and Humanities,88,53,0.6022727272727273,6,6
+quinnipiac,Quinnipiac University,"Economics, Econometrics and Finance",65,42,0.6461538461538462,7,7
+quinnipiac,Quinnipiac University,"Biochemistry, Genetics and Molecular Biology",57,18,0.3157894736842105,8,10
+quinnipiac,Quinnipiac University,Neuroscience,55,16,0.2909090909090909,9,13
+quinnipiac,Quinnipiac University,Immunology and Microbiology,52,15,0.28846153846153844,10,14
+quinnipiac,Quinnipiac University,Engineering,33,19,0.5757575757575758,13,9
+quinnipiac,Quinnipiac University,Decision Sciences,29,22,0.7586206896551724,16,8
+sacredheart,Sacred Heart University,Medicine,327,189,0.5779816513761468,1,1
+sacredheart,Sacred Heart University,Social Sciences,249,149,0.5983935742971888,2,2
+sacredheart,Sacred Heart University,"Business, Management and Accounting",126,74,0.5873015873015873,3,3
+sacredheart,Sacred Heart University,Psychology,98,68,0.6938775510204082,4,4
+sacredheart,Sacred Heart University,Health Professions,92,65,0.7065217391304348,5,5
+sacredheart,Sacred Heart University,Computer Science,79,20,0.25316455696202533,6,8
+sacredheart,Sacred Heart University,"Economics, Econometrics and Finance",78,37,0.47435897435897434,7,7
+sacredheart,Sacred Heart University,Arts and Humanities,67,38,0.5671641791044776,8,6
+sacredheart,Sacred Heart University,Environmental Science,32,12,0.375,9,12
+sacredheart,Sacred Heart University,Engineering,25,14,0.56,10,9
+sacredheart,Sacred Heart University,Agricultural and Biological Sciences,23,12,0.5217391304347826,12,10
+scsu,Southern Connecticut State University,Social Sciences,410,240,0.5853658536585366,1,1
+scsu,Southern Connecticut State University,Physics and Astronomy,241,4,0.016597510373443983,2,19
+scsu,Southern Connecticut State University,Medicine,207,107,0.5169082125603864,3,2
+scsu,Southern Connecticut State University,Psychology,148,88,0.5945945945945946,4,3
+scsu,Southern Connecticut State University,Arts and Humanities,97,66,0.6804123711340206,5,4
+scsu,Southern Connecticut State University,"Business, Management and Accounting",75,41,0.5466666666666666,6,5
+scsu,Southern Connecticut State University,Environmental Science,64,27,0.421875,7,8
+scsu,Southern Connecticut State University,Computer Science,58,31,0.5344827586206896,8,6
+scsu,Southern Connecticut State University,Health Professions,58,28,0.4827586206896552,9,7
+scsu,Southern Connecticut State University,"Economics, Econometrics and Finance",53,21,0.39622641509433965,10,9
+scsu,Southern Connecticut State University,Agricultural and Biological Sciences,40,16,0.4,11,10
+statewide,Connecticut (all 17 institutions),Medicine,66049,21952,0.3323593089978652,1,1
+statewide,Connecticut (all 17 institutions),Social Sciences,16307,7768,0.47635984546513765,2,2
+statewide,Connecticut (all 17 institutions),"Biochemistry, Genetics and Molecular Biology",14350,2236,0.15581881533101044,3,6
+statewide,Connecticut (all 17 institutions),Psychology,10026,4080,0.4069419509275883,4,3
+statewide,Connecticut (all 17 institutions),Physics and Astronomy,9009,785,0.08713508713508714,5,17
+statewide,Connecticut (all 17 institutions),Neuroscience,6510,1396,0.21443932411674346,6,9
+statewide,Connecticut (all 17 institutions),Environmental Science,6306,2116,0.3355534411671424,7,7
+statewide,Connecticut (all 17 institutions),Engineering,5288,2435,0.4604765506807867,8,5
+statewide,Connecticut (all 17 institutions),Arts and Humanities,4410,2463,0.5585034013605442,9,4
+statewide,Connecticut (all 17 institutions),"Economics, Econometrics and Finance",3983,1467,0.3683153401958323,10,8
+statewide,Connecticut (all 17 institutions),Materials Science,3052,1379,0.4518348623853211,17,10
+statewide_no_yale,Connecticut without Yale,Medicine,15562,6236,0.40071970183781,1,1
+statewide_no_yale,Connecticut without Yale,Social Sciences,7959,4423,0.5557230807890439,2,2
+statewide_no_yale,Connecticut without Yale,"Biochemistry, Genetics and Molecular Biology",4045,748,0.1849196538936959,3,10
+statewide_no_yale,Connecticut without Yale,Psychology,3990,1972,0.4942355889724311,4,3
+statewide_no_yale,Connecticut without Yale,Engineering,3633,1817,0.5001376273052573,5,4
+statewide_no_yale,Connecticut without Yale,Physics and Astronomy,2851,304,0.10662925289372151,6,18
+statewide_no_yale,Connecticut without Yale,Environmental Science,2751,976,0.35478007997091965,7,6
+statewide_no_yale,Connecticut without Yale,Agricultural and Biological Sciences,2147,751,0.3497904052165813,8,9
+statewide_no_yale,Connecticut without Yale,Materials Science,1948,955,0.4902464065708419,9,7
+statewide_no_yale,Connecticut without Yale,Arts and Humanities,1895,1096,0.5783641160949868,10,5
+statewide_no_yale,Connecticut without Yale,"Business, Management and Accounting",1539,868,0.5640025990903184,14,8
+trinity,Trinity College,Social Sciences,157,95,0.6050955414012739,1,1
+trinity,Trinity College,Medicine,99,27,0.2727272727272727,2,3
+trinity,Trinity College,Arts and Humanities,74,53,0.7162162162162162,3,2
+trinity,Trinity College,Environmental Science,60,25,0.4166666666666667,4,4
+trinity,Trinity College,Physics and Astronomy,59,1,0.01694915254237288,5,21
+trinity,Trinity College,"Economics, Econometrics and Finance",48,23,0.4791666666666667,6,5
+trinity,Trinity College,Neuroscience,43,11,0.2558139534883721,7,10
+trinity,Trinity College,Psychology,42,16,0.38095238095238093,8,9
+trinity,Trinity College,"Biochemistry, Genetics and Molecular Biology",41,17,0.4146341463414634,9,8
+trinity,Trinity College,Earth and Planetary Sciences,37,18,0.4864864864864865,10,7
+trinity,Trinity College,Agricultural and Biological Sciences,34,18,0.5294117647058824,12,6
+uconn,University of Connecticut (incl. UConn Health),Medicine,13001,5123,0.3940466117990924,1,1
+uconn,University of Connecticut (incl. UConn Health),Social Sciences,4538,2445,0.5387836051123843,2,2
+uconn,University of Connecticut (incl. UConn Health),"Biochemistry, Genetics and Molecular Biology",3436,599,0.17433061699650756,3,8
+uconn,University of Connecticut (incl. UConn Health),Engineering,2986,1568,0.5251172136637642,4,3
+uconn,University of Connecticut (incl. UConn Health),Psychology,2929,1377,0.4701263229771253,5,4
+uconn,University of Connecticut (incl. UConn Health),Environmental Science,2149,755,0.35132619823173566,6,6
+uconn,University of Connecticut (incl. UConn Health),Agricultural and Biological Sciences,1814,614,0.33847850055126794,7,7
+uconn,University of Connecticut (incl. UConn Health),Physics and Astronomy,1743,240,0.13769363166953527,8,19
+uconn,University of Connecticut (incl. UConn Health),Materials Science,1685,839,0.49792284866468844,9,5
+uconn,University of Connecticut (incl. UConn Health),Neuroscience,1321,361,0.2732778198334595,10,13
+uconn,University of Connecticut (incl. UConn Health),Computer Science,947,384,0.40549102428722283,13,10
+uconn,University of Connecticut (incl. UConn Health),Arts and Humanities,864,476,0.5509259259259259,15,9
+uscga,United States Coast Guard Academy,Social Sciences,71,27,0.38028169014084506,1,1
+uscga,United States Coast Guard Academy,Engineering,26,17,0.6538461538461539,2,2
+uscga,United States Coast Guard Academy,Medicine,22,10,0.45454545454545453,3,3
+uscga,United States Coast Guard Academy,Environmental Science,17,6,0.35294117647058826,4,4
+uscga,United States Coast Guard Academy,"Business, Management and Accounting",11,3,0.2727272727272727,5,7
+uscga,United States Coast Guard Academy,Earth and Planetary Sciences,11,4,0.36363636363636365,6,6
+uscga,United States Coast Guard Academy,Decision Sciences,6,4,0.6666666666666666,7,5
+uscga,United States Coast Guard Academy,Psychology,6,1,0.16666666666666666,8,12
+uscga,United States Coast Guard Academy,Computer Science,5,2,0.4,9,9
+uscga,United States Coast Guard Academy,Arts and Humanities,4,2,0.5,10,8
+uscga,United States Coast Guard Academy,Materials Science,1,1,1.0,20,10
+usj,University of Saint Joseph,Medicine,175,89,0.5085714285714286,1,1
+usj,University of Saint Joseph,Social Sciences,121,68,0.5619834710743802,2,2
+usj,University of Saint Joseph,Psychology,70,45,0.6428571428571429,3,3
+usj,University of Saint Joseph,"Biochemistry, Genetics and Molecular Biology",35,12,0.34285714285714286,4,4
+usj,University of Saint Joseph,Neuroscience,19,8,0.42105263157894735,5,5
+usj,University of Saint Joseph,Health Professions,12,7,0.5833333333333334,6,6
+usj,University of Saint Joseph,Arts and Humanities,11,5,0.45454545454545453,7,8
+usj,University of Saint Joseph,Engineering,11,4,0.36363636363636365,8,11
+usj,University of Saint Joseph,Nursing,11,6,0.5454545454545454,9,7
+usj,University of Saint Joseph,Agricultural and Biological Sciences,10,4,0.4,10,10
+usj,University of Saint Joseph,"Pharmacology, Toxicology and Pharmaceutics",7,5,0.7142857142857143,15,9
+wcsu,Western Connecticut State University,Social Sciences,105,63,0.6,1,1
+wcsu,Western Connecticut State University,"Business, Management and Accounting",52,24,0.46153846153846156,2,2
+wcsu,Western Connecticut State University,"Economics, Econometrics and Finance",34,12,0.35294117647058826,3,6
+wcsu,Western Connecticut State University,Arts and Humanities,33,23,0.696969696969697,4,3
+wcsu,Western Connecticut State University,Psychology,31,15,0.4838709677419355,5,4
+wcsu,Western Connecticut State University,Medicine,26,14,0.5384615384615384,6,5
+wcsu,Western Connecticut State University,Environmental Science,25,8,0.32,7,8
+wcsu,Western Connecticut State University,Agricultural and Biological Sciences,21,9,0.42857142857142855,8,7
+wcsu,Western Connecticut State University,Immunology and Microbiology,17,2,0.11764705882352941,9,17
+wcsu,Western Connecticut State University,Physics and Astronomy,12,0,0.0,10,22
+wcsu,Western Connecticut State University,Decision Sciences,11,4,0.36363636363636365,12,10
+wcsu,Western Connecticut State University,Health Professions,10,8,0.8,13,9
+wesleyan,Wesleyan University,Physics and Astronomy,464,31,0.0668103448275862,1,11
+wesleyan,Wesleyan University,Social Sciences,446,221,0.49551569506726456,2,1
+wesleyan,Wesleyan University,Arts and Humanities,221,121,0.5475113122171946,3,2
+wesleyan,Wesleyan University,"Biochemistry, Genetics and Molecular Biology",221,39,0.17647058823529413,4,7
+wesleyan,Wesleyan University,Psychology,179,75,0.41899441340782123,5,3
+wesleyan,Wesleyan University,Medicine,175,52,0.29714285714285715,6,4
+wesleyan,Wesleyan University,Earth and Planetary Sciences,161,43,0.2670807453416149,7,6
+wesleyan,Wesleyan University,Mathematics,157,25,0.1592356687898089,8,13
+wesleyan,Wesleyan University,Environmental Science,106,36,0.33962264150943394,9,10
+wesleyan,Wesleyan University,Computer Science,93,29,0.3118279569892473,10,12
+wesleyan,Wesleyan University,Chemistry,87,43,0.4942528735632184,12,5
+wesleyan,Wesleyan University,"Economics, Econometrics and Finance",83,37,0.4457831325301205,13,9
+wesleyan,Wesleyan University,Materials Science,77,39,0.5064935064935064,14,8
+yale,Yale University,Medicine,51856,16189,0.31219145325516817,1,1
+yale,Yale University,"Biochemistry, Genetics and Molecular Biology",10569,1519,0.14372220645283376,2,4
+yale,Yale University,Social Sciences,8631,3457,0.4005329625767582,3,2
+yale,Yale University,Physics and Astronomy,6436,487,0.07566811684275948,4,12
+yale,Yale University,Psychology,6356,2231,0.3510069225928257,5,3
+yale,Yale University,Neuroscience,4980,958,0.19236947791164657,6,7
+yale,Yale University,Environmental Science,3653,1158,0.3169997262523953,7,6
+yale,Yale University,Immunology and Microbiology,2779,446,0.16048938467074486,8,14
+yale,Yale University,Arts and Humanities,2529,1373,0.5429023329379201,9,5
+yale,Yale University,"Economics, Econometrics and Finance",2490,816,0.327710843373494,10,8
+yale,Yale University,Health Professions,2255,733,0.32505543237250556,11,9
+yale,Yale University,Earth and Planetary Sciences,1891,665,0.35166578529878373,13,10

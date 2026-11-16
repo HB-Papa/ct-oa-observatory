@@ -1,0 +1,35 @@
+---
+// Tall segmented bars: each row is one whole (all works) split into OA
+// categories. 28px tall, 2px surface gap between parts, share printed inside a
+// part only when it is wide enough (>= 9%) and the container is wide enough
+// (CSS container query hides them on narrow screens). The legend names the
+// parts; the table view has every value.
+import { CATEGORIES } from '../lib/data';
+import { CATEGORY_COLORS } from '../lib/palette';
+import { inkOn, pct0 } from '../lib/format';
+
+interface Part { key: string; share: number; works: number }
+interface Props { rows: { label: string; parts: Part[]; note?: string }[] }
+const { rows } = Astro.props;
+const label = (k: string) => CATEGORIES.find((c) => c.key === k)!.short;
+---
+<div class="seg-rows" aria-hidden="true">
+  {rows.map((row) => (
+    <div class="seg-row">
+      <span class="seg-label">{row.label}{row.note && <> <span class="incomplete-tag">{row.note}</span></>}</span>
+      <div class="seg-bar">
+        {row.parts.filter((p) => p.share > 0).map((p) => (
+          <span class="seg" data-cat={p.key}
+                style={`flex: ${p.share} 1 0; background: var(--c-${p.key}); --ink-light: ${inkOn(CATEGORY_COLORS[p.key].light)}; --ink-dark: ${inkOn(CATEGORY_COLORS[p.key].dark)}`}
+                title={`${label(p.key)}: ${pct0(p.share)}`}>
+            {p.share >= 0.09 && <span class="seg-val">{pct0(p.share)}</span>}
+          </span>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
+<style>
+  .seg { color: var(--ink-light); }
+  @media (prefers-color-scheme: dark) { .seg { color: var(--ink-dark); } }
+</style>

@@ -1,0 +1,249 @@
+---
+// One profile per institution. The template is shared; which institutions get a
+// page is controlled by PROFILE_KEYS in src/lib/data.ts (phase 4: UConn only).
+import Base from '../../layouts/Base.astro';
+import Figure from '../../components/Figure.astro';
+import CategoryLegend from '../../components/CategoryLegend.astro';
+import SegmentedBars from '../../components/SegmentedBars.astro';
+import LineChart from '../../components/LineChart.astro';
+import ClosedBars from '../../components/ClosedBars.astro';
+import {
+  manifest, CATEGORIES, STATEWIDE, PROFILE_KEYS, tables, freeFor, categoryMix, freeTrend,
+  categoryTrend, entityName, topBy, apcFor, booksFor, institutionKeys,
+} from '../../lib/data';
+import { n, pct, pct0, points, dollars, inWords, capitalize } from '../../lib/format';
+
+export function getStaticPaths() {
+  return PROFILE_KEYS.map((key) => ({ params: { key } }));
+}
+
+const { key } = Astro.params as { key: string };
+const name = entityName(key);
+const short = name.replace(' (incl. UConn Health)', '');
+const notes: Record<string, string> = {
+  uconn: 'Includes UConn Health (the medical school and hospital in Farmington). OpenAlex lists UConn Health separately, so both are counted together here and each article is counted once.',
+};
+
+const me = freeFor(key);
+const all = freeFor(STATEWIDE);
+const rank = institutionKeys().map((k) => freeFor(k)).sort((a, b) => b.free_to_read_share - a.free_to_read_share)
+  .findIndex((r) => r.entity === key) + 1;
+const trend = freeTrend(key);
+const trendAll = freeTrend(STATEWIDE);
+const complete = trend.filter((p) => !p.incomplete);
+const first = complete[0], lastC = complete.at(-1)!;
+const peak = complete.reduce((m, p) => (p.share > m.share ? p : m));
+const yInc = trend.find((p) => p.incomplete)!;
+const mix = categoryMix(key);
+const mixAll = categoryMix(STATEWIDE);
+const catTrend = categoryTrend(key);
+const shareOf = (year: number, k: string) => catTrend.find((r) => r.year === year)!.parts.find((p) => p.key === k)!.share;
+const closed = mix.find((c) => c.key === 'closed')!;
+const freeRoutes = mix.filter((c) => c.key !== 'closed').sort((a, b) => b.share - a.share);
+const diffs = mix.map((c) => ({ ...c, diff: c.share - mixAll.find((x) => x.key === c.key)!.share }))
+  .sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff));
+const pubs = topBy(tables.publishers, key, 'publisher_parent_name', 'rank_by_closed', 10);
+const fields = topBy(tables.fields, key, 'field_name', 'rank_by_closed', 10);
+const topics = topBy(tables.topics, key, 'topic_name', 'rank_by_output', 10);
+const apc = apcFor(key);
+const books = booksFor(key);
+const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const ordinal = (k: number) => k + (k % 10 === 1 && k !== 11 ? 'st' : k % 10 === 2 && k !== 12 ? 'nd' : k % 10 === 3 && k !== 13 ? 'rd' : 'th');
+const y0 = Math.floor(Math.min(...trend.map((p) => p.share), ...trendAll.map((p) => p.share)) * 10) / 10;
+const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) => p.share)) * 10) / 10;
+---
+<Base title={short} current={key}
+  description={`How much of ${short}'s research is free to read, 2015 to 2025, from OpenAlex data.`}>
+  <div class="page-head">
+    <p class="kicker">Institution profile · {first.year}–{lastC.year} · data snapshot {snapshotLong}</p>
+    <h1>{capitalize(inWords(me.free_to_read_share))} of {short}’s research is free to read.</h1>
+    <p class="deck">
+      {n(me.works)} research articles with at least one {short} author, published from {first.year} to {lastC.year}.
+      Statewide, the figure is {pct(all.free_to_read_share)}.
+    </p>
+    {notes[key] && <p class="small muted">{notes[key]}</p>}
+  </div>
+
+  <section class="findings" aria-labelledby="findings">
+    <h2 id="findings">Key findings</h2>
+    <ol>
+      <li>
+        <strong>{pct(me.free_to_read_share)}</strong> of {short}’s articles are free to read ({n(me.free_to_read)} of {n(me.works)}),
+        {' '}{rank === 1 ? 'the highest' : `the ${ordinal(rank)} highest`} of the 17 institutions.
+      </li>
+      <li>
+        The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}{' '}{' '}
+        ({points(lastC.share - first.share)}), with a peak of {pct(peak.share)} in {peak.year}.
+      </li>
+      <li>
+        The largest free route is {freeRoutes[0].label.toLowerCase()} ({pct(freeRoutes[0].share)}). {pct(closed.share)} of
+        articles are closed.
+      </li>
+      <li>
+        {pubs[0].name} published the most closed {short} articles: {n(pubs[0].closed)}.
+      </li>
+      <li>
+        Where {short} is the corresponding institution, authors may have paid about
+        {' '}<strong>{dollars(apc.corresponding.estimated_usd)}</strong> in publishing fees <span class="estimate-tag">Estimate</span>
+      </li>
+    </ol>
+    <p class="small muted">{yInc.year} is not over: {n(yInc.works)} articles so far <span class="incomplete-tag">incomplete</span></p>
+  </section>
+
+  <section class="block" aria-labelledby="trend">
+    <h2 id="trend">How it has changed since 2015</h2>
+    <Figure num={1} id="fig-trend" title={`Share of ${short} articles free to read, by year`} source="free_to_read_by_year.csv">
+      <Fragment slot="summary">
+        <p>
+          The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}, peaking at
+          {' '}{pct(peak.share)} in {peak.year}. The statewide line is shown for comparison.
+          {yInc.year} is incomplete: {pct(yInc.share)} of the {n(yInc.works)} articles counted so far are free to read.
+        </p>
+      </Fragment>
+      <LineChart a={{ name: short, points: trend }} b={{ name: 'All 17', points: trendAll }} yMin={y0} yMax={y1} />
+      <table class="data" slot="table">
+        <caption>Share of {short} articles free to read, by year, with the statewide figure</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col" class="r">{short}: free / total</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">All 17: share</th></tr></thead>
+        <tbody>
+          {trend.map((p, i) => (
+            <tr><th scope="row">{p.year}{p.incomplete && ' (incomplete)'}</th><td class="r">{n(p.free)} / {n(p.works)}</td><td class="r">{pct(p.share)}</td><td class="r">{pct(trendAll[i].share)}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </Figure>
+  </section>
+
+  <section class="block" aria-labelledby="routes">
+    <h2 id="routes">How its articles are free to read</h2>
+    <Figure num={2} id="fig-mix" title={`${short} compared with all 17 institutions, 2015–2025`} source="oa_category_2015_2025.csv">
+      <Fragment slot="summary">
+        <p>
+          The largest free route for {short} is {freeRoutes[0].label.toLowerCase()} ({pct(freeRoutes[0].share)}),
+          then {freeRoutes[1].label.toLowerCase()} ({pct(freeRoutes[1].share)}). {pct(closed.share)} of its articles are
+          closed. The biggest difference from the statewide mix is in {diffs[0].label.toLowerCase()}:
+          {' '}{pct(diffs[0].share)} here against {pct(diffs[0].share - diffs[0].diff)} statewide.
+        </p>
+      </Fragment>
+      <CategoryLegend />
+      <SegmentedBars rows={[{ label: short, parts: mix }, { label: 'All 17', parts: mixAll }]} />
+      <table class="data" slot="table">
+        <caption>Share of articles in each category, 2015–2025</caption>
+        <thead><tr><th scope="col">Category</th><th scope="col" class="r">{short}: articles</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">All 17: share</th></tr></thead>
+        <tbody>
+          {mix.map((c, i) => (<tr><th scope="row">{c.label}</th><td class="r">{n(c.works)}</td><td class="r">{pct(c.share)}</td><td class="r">{pct(mixAll[i].share)}</td></tr>))}
+        </tbody>
+      </table>
+    </Figure>
+
+    <Figure num={3} id="fig-mix-year" title={`How ${short} articles were free to read, by year`} source="oa_category_by_year.csv">
+      <Fragment slot="summary">
+        <p>
+          Gold went from {pct(shareOf(first.year, 'gold'))} in {first.year} to {pct(shareOf(lastC.year, 'gold'))} in
+          {' '}{lastC.year}, hybrid from {pct(shareOf(first.year, 'hybrid'))} to {pct(shareOf(lastC.year, 'hybrid'))}, and
+          green from {pct(shareOf(first.year, 'green'))} to {pct(shareOf(lastC.year, 'green'))}. Closed went from
+          {' '}{pct(shareOf(first.year, 'closed'))} to {pct(shareOf(lastC.year, 'closed'))}.
+        </p>
+      </Fragment>
+      <CategoryLegend />
+      <SegmentedBars rows={catTrend.map((r) => ({ label: String(r.year), note: r.incomplete ? 'incomplete' : undefined, parts: r.parts }))} />
+      <table class="data" slot="table">
+        <caption>Share of {short} articles in each category, by year</caption>
+        <thead><tr><th scope="col">Year</th>{CATEGORIES.map((c) => <th scope="col" class="r">{c.short}</th>)}</tr></thead>
+        <tbody>
+          {catTrend.map((r) => (<tr><th scope="row">{r.year}{r.incomplete && ' (incomplete)'}</th>{r.parts.map((p) => <td class="r">{pct(p.share)}</td>)}</tr>))}
+        </tbody>
+      </table>
+    </Figure>
+  </section>
+
+  <section class="block" aria-labelledby="where-closed">
+    <h2 id="where-closed">Where the closed articles are</h2>
+    <div>
+      <Figure num={4} id="fig-pub" title="Publishers with the most closed articles, 2015–2025" source="publishers_2015_2025.csv">
+        <Fragment slot="summary">
+          <p>
+            {pubs[0].name} published the most closed {short} articles: {n(pubs[0].closed)} of {n(pubs[0].works)}{' '}
+            ({pct0(pubs[0].closed / pubs[0].works)}). Next are {pubs[1].name} ({n(pubs[1].closed)}) and {pubs[2].name} ({n(pubs[2].closed)}).
+          </p>
+        </Fragment>
+        <ClosedBars items={pubs} label={`Publishers by number of closed ${short} articles`} />
+        <table class="data" slot="table">
+          <caption>Publishers with the most closed {short} articles, 2015–2025</caption>
+          <thead><tr><th scope="col">Publisher</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Closed</th><th scope="col" class="r">Closed share</th></tr></thead>
+          <tbody>{pubs.map((p) => (<tr><th scope="row">{p.name}</th><td class="r">{n(p.works)}</td><td class="r">{n(p.closed)}</td><td class="r">{pct(p.closedShare)}</td></tr>))}</tbody>
+        </table>
+      </Figure>
+      <Figure num={5} id="fig-field" title="Fields with the most closed articles, 2015–2025" source="fields_2015_2025.csv">
+        <Fragment slot="summary">
+          <p>
+            {fields[0].name} has the most closed {short} articles: {n(fields[0].closed)} of {n(fields[0].works)}{' '}
+            ({pct0(fields[0].closed / fields[0].works)}).
+          </p>
+        </Fragment>
+        <ClosedBars items={fields} label={`Fields by number of closed ${short} articles`} />
+        <table class="data" slot="table">
+          <caption>Fields with the most closed {short} articles, 2015–2025</caption>
+          <thead><tr><th scope="col">Field</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Closed</th><th scope="col" class="r">Closed share</th></tr></thead>
+          <tbody>{fields.map((p) => (<tr><th scope="row">{p.name}</th><td class="r">{n(p.works)}</td><td class="r">{n(p.closed)}</td><td class="r">{pct(p.closedShare)}</td></tr>))}</tbody>
+        </table>
+      </Figure>
+    </div>
+
+    <Figure num={6} id="fig-topics" title={`${short}’s ten largest research topics, 2015–2025`} source="topics_2015_2025.csv">
+      <Fragment slot="summary">
+        <p>
+          The largest topic is {topics[0].name}, with {n(topics[0].works)} articles, {pct0(topics[0].closedShare)} of them
+          closed. Topics are OpenAlex’s detailed subject labels, one per article.
+        </p>
+      </Fragment>
+      <ClosedBars items={topics} label={`${short}’s largest topics`} />
+      <table class="data" slot="table">
+        <caption>{short}’s ten largest topics, 2015–2025</caption>
+        <thead><tr><th scope="col">Topic</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Closed</th><th scope="col" class="r">Closed share</th></tr></thead>
+        <tbody>{topics.map((p) => (<tr><th scope="row">{p.name}</th><td class="r">{n(p.works)}</td><td class="r">{n(p.closed)}</td><td class="r">{pct(p.closedShare)}</td></tr>))}</tbody>
+      </table>
+    </Figure>
+  </section>
+
+  <section class="block" aria-labelledby="fees">
+    <h2 id="fees">What authors may be paying to publish <span class="estimate-tag">Estimate</span></h2>
+    <p>
+      Based on journals’ listed prices for gold and hybrid articles, 2015–2025. Listed prices are not payments, so
+      these are <strong>estimates</strong>.
+    </p>
+    <div class="tiles">
+      <div class="tile">
+        <p class="label">Corresponding author at {short} <span class="estimate-tag">Estimate</span></p>
+        <p class="value">{dollars(apc.corresponding.estimated_usd)}</p>
+        <p class="note">
+          {n(apc.corresponding.paid_oa_works)} articles where {short} is a corresponding institution (the author who usually
+          arranges payment). {n(apc.corresponding.works_without_list_price)} have no listed price and are not included.
+          If another institution is also corresponding, {short} is still credited the full fee.
+        </p>
+      </div>
+      <div class="tile">
+        <p class="label">Upper bound, any {short} author <span class="estimate-tag">Estimate</span></p>
+        <p class="value">{dollars(apc.upper.estimated_usd)}</p>
+        <p class="note">
+          {n(apc.upper.paid_oa_works)} gold and hybrid articles with any {short} author, even when the fee was likely paid
+          elsewhere.
+        </p>
+      </div>
+    </div>
+    <p class="small muted">
+      {pct(apc.coverage.coverage_share)} of {short}’s articles have a corresponding author’s institution recorded in
+      OpenAlex. Listed prices rise over time, so earlier years are likely overstated.
+    </p>
+  </section>
+
+  {books && (
+    <section class="block" aria-labelledby="books">
+      <h2 id="books">Books and book chapters</h2>
+      <p>
+        OpenAlex lists {n(books.books_and_chapters_2015_2025)} books and book chapters with a {short} author from 2015 to
+        2025. They are not included in the figures above, because open access works differently for books and OpenAlex
+        covers them less completely, especially in the humanities.
+      </p>
+    </section>
+  )}
+</Base>

@@ -1,0 +1,23 @@
+{
+ "list_records": 195561,
+ "list_unique": 195561,
+ "list_dupes": 0,
+ "single_records": 3320,
+ "truncated_in_list": 3320,
+ "truncated_without_full": 0,
+ "replaced": 3320,
+ "single_not_in_list": 0,
+ "out_of_scope": 0,
+ "in_scope_no_inst": 0,
+ "in_scope_no_inst_sample": []
+}
+per_year {2015: 13066, 2016: 13536, 2017: 13884, 2018: 14182, 2019: 14992, 2020: 17338, 2021: 17488, 2022: 17112, 2023: 17052, 2024: 18180, 2025: 19382, 2026: 17522}
+excluded_A {'total': 1827, '2015': 255, '2016': 230, '2017': 160, '2018': 144, '2019': 123, '2020': 116, '2021': 99, '2022': 72, '2023': 66, '2024': 60, '2025': 93, '2026': 409}
+works gaining an institution once full author list is used: {'yale': 1408, 'fairfield': 162, 'wesleyan': 9, 'uconn': 59, 'conncoll': 1, 'newhaven': 3, 'scsu': 6, 'quinnipiac': 3, 'ccsu': 2, 'hartford': 1, 'trinity': 1}
+bridgeport top publishers: [('Unknown', 228), ('Multidisciplinary Digital Publishing Institute', 98), ('Elsevier BV', 60), ('Institute of Electrical and Electronics Engineers', 54), ('Springer Nature', 53), ('Informa', 21)]
+bridgeport top diamond/gold sources: [(('IEEE Access', 'gold'), 28), (('Sensors', 'gold'), 22), (('European Journal of Engineering and Technology Research', 'diamond'), 17), (('Applied Sciences', 'gold'), 14), (('Electronics', 'gold'), 14), (('Journal of Computer Science and Technology Studies', 'diamond'), 11), (('Chiropractic & Manual Therapies', 'gold'), 9), (('Entropy', 'gold'), 8)]
+bridgeport Unknown-publisher works by status: Counter({'diamond': 96, 'bronze': 73, 'hybrid': 36, 'closed': 15, 'green': 4, 'gold': 4})
+bridgeport works by year: [(2015, 48), (2016, 87), (2017, 64), (2018, 99), (2019, 62), (2020, 67), (2021, 52), (2022, 48), (2023, 47), (2024, 60), (2025, 120)]
+noYale A (non-Yale inst corresponding): (7230, 6310, 16738679)
+noYale B (any of 17 corresponding):     (7559, 6621, 17758370)
+noYale B-A (Yale the only CT corresp.): (329, 311, 1019691)

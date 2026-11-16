@@ -1,0 +1,19 @@
+# Secrets
+.env
+# Raw API responses are cached locally and never committed
+data/raw/
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+# Site
+site/node_modules/
+site/dist/
+site/.astro/
+.vercel/
+# Large regenerable tables: the pipeline rebuilds them; the site needs only data/derived/metrics/*.csv
+data/derived/*.parquet
+# Contains raw affiliation text with researchers' names and email addresses: never publish
+verification/affiliation_unconfirmed_samples.csv
+# Outreach text with the owner's full name: kept local (Chris, 2026-11-16)
+docs/pitch.md

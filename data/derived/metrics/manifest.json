@@ -1,0 +1,52 @@
+{
+  "snapshot_date": "2026-11-15",
+  "generated_at": "2026-11-16T18:41:17+00:00",
+  "works_in_scope": 193718,
+  "tables": {
+    "oa_category_by_year": {
+      "rows": 1596,
+      "note": "Works and share by OA category, per entity and year. 2026 is incomplete. diamond = fee confirmed $0; oa_fee_unconfirmed = OpenAlex diamond without a confirmed $0 fee."
+    },
+    "oa_category_2015_2025": {
+      "rows": 133,
+      "note": "Works and share by OA category, 2015-2025 pooled."
+    },
+    "free_to_read_by_year": {
+      "rows": 228,
+      "note": "Share of works free to read (any status but closed), per year."
+    },
+    "free_to_read_2015_2025": {
+      "rows": 19,
+      "note": "Share free to read, 2015-2025 pooled."
+    },
+    "fields_2015_2025": {
+      "rows": 215,
+      "note": "OpenAlex fields: top 10 by output and top 10 by closed works, 2015-2025."
+    },
+    "topics_2015_2025": {
+      "rows": 290,
+      "note": "OpenAlex topics: top 10 by output and top 10 by closed works, 2015-2025."
+    },
+    "publishers_2015_2025": {
+      "rows": 225,
+      "note": "Publishers (top of OpenAlex host organization lineage): top 10 by output and by closed works, 2015-2025."
+    },
+    "apc_estimates_by_year": {
+      "rows": 449,
+      "note": "ESTIMATE. List-price APCs for gold and hybrid works (oa_fee_unconfirmed works are not counted). Two methods: upper bound (all authors) and corresponding-author attribution. Not actual payments."
+    },
+    "apc_estimates_2015_2025": {
+      "rows": 38,
+      "note": "ESTIMATE. As above, 2015-2025 pooled."
+    },
+    "corresponding_coverage": {
+      "rows": 38,
+      "note": "Works with any corresponding institution recorded in OpenAlex."
+    },
+    "books_and_chapters_2015_2025": {
+      "rows": 17,
+      "note": "Books and book chapters counted separately (not in OA or APC metrics). From OpenAlex group_by."
+    }
+  },
+  "scope": "Articles and reviews, not retracted, 2015-2026, 17 Connecticut institutions; repository records without a DOI excluded (rule A)."
+}

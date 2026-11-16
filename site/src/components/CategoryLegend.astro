@@ -1,0 +1,10 @@
+---
+import { CATEGORIES } from '../lib/data';
+interface Props { label?: string }
+const { label = 'Categories' } = Astro.props;
+---
+<ul class="legend" aria-label={label}>
+  {CATEGORIES.map((c) => (
+    <li><span class="swatch" data-cat={c.key} style={`background: var(--c-${c.key})`} aria-hidden="true"></span>{c.short}</li>
+  ))}
+</ul>
