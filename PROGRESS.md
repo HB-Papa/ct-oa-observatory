@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 5: deployment (GitHub repo public; waiting on Chris to run vercel login)
+Phase 5: deployment (live at https://ct-oa-observatory.vercel.app, awaiting Chris's approval)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -22,6 +22,7 @@ Phase 5: deployment (GitHub repo public; waiting on Chris to run vercel login)
 - 2026-11-16: Chris disliked the Open Sun look. Three mockups compared; Chris chose "research report". Site restyled (Source Serif 4 + Public Sans, white, numbered figures, key findings). Mockups and old fonts removed. Chart palette re-validated on the new surfaces; green, bronze and closed adjusted for 4.5:1 in-bar labels. axe: 0 violations on both pages in light and dark (remaining 'needs review' items are SVG axis labels at 7.6:1, checked by hand). Keyboard pass OK (skip link, focus order, table toggles). Reflows at 320px on both pages. Text scanned for run-together words.
 - 2026-11-16: Phase 4 approved (Open Sun mention removed from the site).
 - 2026-11-16: Phase 5: public repo https://github.com/HB-Papa/ct-oa-observatory pushed (MIT code, CC0 data; parquet, researcher-email samples and pitch kept local). site/vercel.json with no-script CSP and noindex header.
+- 2026-11-16: Deployed: https://ct-oa-observatory.vercel.app (CLI deploy; headers, no cookies, no scripts, no external requests checked live).
 
 ## Environment (2026-11-15)
 | Tool | Status |
@@ -35,7 +36,8 @@ Phase 5: deployment (GitHub repo public; waiting on Chris to run vercel login)
 | make | Missing (not needed; a Python `run_all` script replaces the Makefile on Windows) |
 
 ## Next
-- Chris runs `vercel login`; then create Vercel project ct-oa-observatory (team hb-papa, root directory site/, ASTRO_TELEMETRY_DISABLED=1) and deploy. Check the live headers and pages.
+- Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
+- Phase 6: cross-checks (Unpaywall, OpenAIRE, CORE, DOAJ, OpenAPC) and deposit policies / green proxy.
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.

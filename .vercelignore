@@ -1,0 +1,16 @@
+# Safety net: never upload these to Vercel, even from a local deploy.
+.env
+.venv/
+data/raw/
+data/derived/*.parquet
+verification/affiliation_unconfirmed_samples.csv
+docs/pitch.md
+site/node_modules/
+site/dist/
+site/.astro/
+.env.local
+.env*.local
+.vercel/
+.pytest_cache/
+**/__pycache__/
+.claude/
