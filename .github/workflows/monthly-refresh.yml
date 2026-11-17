@@ -1,0 +1,125 @@
+# Monthly data refresh.
+#
+# Plain-language summary: on the 3rd of each month (or when started by hand
+# from the Actions tab), GitHub downloads a fresh copy of the data from
+# OpenAlex, rebuilds every table, and runs every check: the tests, the
+# independent recomputation, and the refresh report's comparison with last
+# month. Only if all of them pass does it commit the new tables and the
+# changelog entry. If anything fails, nothing is published and an issue is
+# opened instead.
+#
+# Cost: about 2,800 OpenAlex credits per run (a full re-download plus the
+# green-proxy queries), under the free allowance of 10,000 per day.
+# Cross-checks against other sources are not rerun here; they are run by hand.
+#
+# Needs one repository secret: OPENALEX_API_KEY.
+# Publishing: a push to main deploys the site if Vercel's GitHub app has access
+# to this repository. Otherwise, add a VERCEL_TOKEN secret and the last step
+# deploys with it.
+
+name: Monthly data refresh
+
+on:
+  schedule:
+    - cron: "0 10 3 * *"   # 10:00 UTC on the 3rd of every month
+  workflow_dispatch:
+
+concurrency:
+  group: monthly-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  ASTRO_TELEMETRY_DISABLED: "1"
+  PYTHONUTF8: "1"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.15.2"
+
+      - name: Install the pipeline's exact package versions
+        run: pip install -r requirements.lock.txt
+
+      - name: Check the OpenAlex key is set
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          if [ -z "$OPENALEX_API_KEY" ]; then
+            echo "::error::Add the OPENALEX_API_KEY repository secret (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Start a new snapshot dated today
+        run: python -m pipeline.new_snapshot
+
+      - name: Download from OpenAlex and rebuild every table
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python -m pipeline.run_all
+
+      - name: Run the tests
+        run: python -m pytest -q
+
+      - name: Independent recomputation (must match every published figure)
+        run: |
+          python verification/recompute.py > /dev/null
+          python verification/compare.py
+
+      - name: Compare with last month (stops on suspicious changes)
+        run: python -m pipeline.refresh_report
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1  # v7.1.0
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build the site (checks every page and the data dictionary)
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit the refreshed data
+        run: |
+          git config user.name "HB-Papa"
+          git config user.email "341102662+HB-Papa@users.noreply.github.com"
+          git add data/snapshot.json data/derived data/logs docs/data-quality.md \
+                  verification/mine.json verification/comparison.json site/src/lib/changelog.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Monthly data refresh: OpenAlex data as of $(python -c 'import json;print(json.load(open("data/snapshot.json"))["snapshot_date"])')"
+            git push
+          fi
+
+      - name: Deploy with a Vercel token (only if VERCEL_TOKEN is set)
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: team_9kVp4Zq7S8CnOdrI2Fitg4DN
+          VERCEL_PROJECT_ID: prj_RZRGzXU1iAH5gYripSWT3TJgzEWm
+        run: |
+          if [ -n "$VERCEL_TOKEN" ]; then
+            npx --yes vercel@63.1.2 deploy --prod --yes --token "$VERCEL_TOKEN"
+          else
+            echo "No VERCEL_TOKEN secret: relying on Vercel's GitHub app to deploy the push."
+          fi
+
+      - name: Open an issue if anything failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Monthly data refresh failed ($(date -u +%Y-%m-%d))" \
+            --body "The monthly refresh stopped and nothing was published. See the run log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. If the refresh checks failed, the report is in the run summary."

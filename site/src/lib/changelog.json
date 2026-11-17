@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-11-16",
+    "title": "Charts and citation",
+    "items": [
+      "Line charts are larger, show each year’s figures when you point at them, and join 2025 to the incomplete year 2026 with a dashed line.",
+      "An APA citation for the site is on the Methods page. No figures changed.",
+      "The combined line and bar for all 17 institutions is now labeled “Statewide total” instead of “All 17”."
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Full site",
+    "items": [
+      "Profiles for all 17 institutions, a Compare page, a Methods and Limitations page, and Downloads with a data dictionary.",
+      "New figure: articles that could likely be made free in a repository (a proxy based on what other authors in the same journal have done), with an article list for librarians.",
+      "Checks against Unpaywall, OpenAIRE, DOAJ and OpenAPC, summarized on the Methods page. They do not change any figure."
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Meeting abstracts removed",
+    "items": [
+      "Conference abstracts printed in journal supplements (mostly Neurology, The FASEB Journal, Journal of Clinical Oncology, Blood and American Heart Association journals) are no longer counted as articles. 1,279 works from 2015 to 2025 were removed.",
+      "Statewide share free to read, 2015 to 2025: 66.8% before, 67.3% after. Without Yale: 59.2% before, 59.6% after."
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "First version",
+    "items": [
+      "Overview of all 17 institutions and a profile of the University of Connecticut, from the OpenAlex snapshot of 2026-11-15."
+    ]
+  }
+]

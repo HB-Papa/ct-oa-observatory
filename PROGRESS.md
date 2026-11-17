@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 7: full site, Compare, downloads, Methods, accessibility audit (deployed, awaiting Chris's approval)
+Phase 8: monthly refresh (workflow built and tested locally; waiting on Chris for the secret and deploy choice)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -32,6 +32,7 @@ Phase 7: full site, Compare, downloads, Methods, accessibility audit (deployed, 
 - 2026-11-16: Phase 7 build: all 17 profiles, Institutions directory, Compare (no-JS, CSS :has()), Methods and Limitations, Downloads with generated data dictionary, About, Changelog, 404, sitemap, robots.txt. Green opportunity on Overview and profiles. New pipeline outputs: quality/exclusions_summary.csv, crosschecks/summary.csv (s13). README rewritten with a guide for librarians. 25 pages, zero scripts.
 - 2026-11-16: Accessibility audit agent (docs/accessibility-audit.md): axe 0 violations on 25 pages, light and dark, 1280 and 320px, after fixing 1; Lighthouse 100 on 5 pages; keyboard, reflow, text spacing and target size pass. Indexing turned on. Deployed.
 - 2026-11-16: Chris's feedback applied: full name and University of South Carolina on About; APA citation; clearer data-date wording; larger line charts with CSS-only hover readout, dashed 2025-2026 segment, short-name labels; three spacing bugs fixed. axe 0 violations on changed pages, light and dark.
+- 2026-11-16: Phase 7 approved (with "Statewide total" labels). Phase 8: .github/workflows/monthly-refresh.yml, pipeline/refresh_report.py with quality gates, changelog.json, verification scripts made CI-ready, quality report made byte-stable. Whole refresh path run locally from cache: all steps pass. 33 pytest tests pass.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -45,8 +46,9 @@ Phase 7: full site, Compare, downloads, Methods, accessibility audit (deployed, 
 
 ## Next
 - Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
-- Phase 7: Chris's approval. Optional: a short NVDA or VoiceOver pass by Chris.
-- Phase 8: monthly refresh GitHub Action (needs Chris's OK for a Vercel token secret, or Vercel's GitHub app access).
+- Optional: a short NVDA or VoiceOver pass by Chris.
+- Phase 8: Chris adds the OPENALEX_API_KEY secret and picks a deploy route (Vercel GitHub app access, or a VERCEL_TOKEN secret); then a first run by hand from the Actions tab, then Chris's approval.
+- Phase 9: write-ups.
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.

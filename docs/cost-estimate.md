@@ -37,3 +37,6 @@ Real counts replace the placeholders. Statewide, deduplicated, articles and revi
 
 ## Phase 6 (2026-11-16)
 Estimate before running: about 100 credits for the green proxy (10,045 journals, 100 per `group_by` request) and about 100 for journal ISSN and price lookups. Actual, from the query log: **207 credits ($0.02)**. Green proxy 101, OpenAPC price lookups 68, DOAJ ISSN lookups 34, filter tests 4. Unpaywall (510 lookups), OpenAIRE (11 requests), DOAJ (84 requests) and the OpenAPC file download are free and do not use OpenAlex credits.
+
+## Monthly refresh (phase 8)
+Each run starts a new snapshot, so nothing is read from a cache: about 1,960 credits for the full-record harvest, about 600 for `group_by` counts, about 100 for the green proxy, and 0 for single-record fetches of large collaborations. About **2,700 to 2,800 credits ($0.27 to $0.28) per month**, under one free day (10,000 credits). The query log records the real figure for every run.

@@ -77,3 +77,7 @@ for fig, lst in res.items():
         print("   ", b)
 print(top_pub[["publisher_parent_name", "works", "closed"]])
 print(mine["publishers_top"][:6])
+
+# Exit with an error if any figure group failed, so an automated refresh stops.
+if any(not x["ok"] for lst in res.values() for x in lst):
+    raise SystemExit(1)

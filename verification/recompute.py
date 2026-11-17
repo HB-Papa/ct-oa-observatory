@@ -9,8 +9,25 @@ import gzip
 import json, os, re, sys, collections
 from urllib.parse import parse_qs, urlparse
 
-CACHE = sys.argv[1] if len(sys.argv) > 1 else r"C:\Users\chris\ct-oa-observatory-cache\openalex\2026-11-15"
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def _default_cache():
+    """The current snapshot's raw OpenAlex cache: RAW_DIR (from the environment or
+    .env) or data/raw, then openalex/<snapshot date from data/snapshot.json>."""
+    root = os.path.join(HERE, "..")
+    raw = os.environ.get("RAW_DIR")
+    env = os.path.join(root, ".env")
+    if not raw and os.path.exists(env):
+        for line in open(env, encoding="utf-8"):
+            if line.startswith("RAW_DIR="):
+                raw = line.split("=", 1)[1].strip()
+    raw = raw or os.path.join(root, "data", "raw")
+    snap = json.load(open(os.path.join(root, "data", "snapshot.json"), encoding="utf-8"))["snapshot_date"]
+    return os.path.join(raw, "openalex", snap)
+
+
+CACHE = sys.argv[1] if len(sys.argv) > 1 else _default_cache()
 
 INST = {
     "yale": ["I32971472"], "uconn": ["I140172145", "I75929689"], "wesleyan": ["I100538780"],

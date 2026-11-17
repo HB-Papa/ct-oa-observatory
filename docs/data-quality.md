@@ -158,8 +158,8 @@ Top repository sources:
 | OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information) |      62 |            24 |
 | Europe PMC (PubMed Central)                                                         |      61 |            48 |
 | OpenCommons - UConn (University of Connecticut)                                     |      58 |            58 |
-| Digital Commons - New Heaven (University of New Haven)                              |      52 |            52 |
 | DOAJ (DOAJ: Directory of Open Access Journals)                                      |      52 |            31 |
+| Digital Commons - New Heaven (University of New Haven)                              |      52 |            52 |
 | eYLS (Yale Law School)                                                              |      45 |            45 |
 | eScholarship (California Digital Library)                                           |      44 |            22 |
 | Figshare                                                                            |      35 |             1 |
@@ -187,9 +187,9 @@ Affiliation corrections (see `AFFILIATION_CORRECTIONS` in s04): institution cred
 
 | exclude_reason                           |   works |
 |:-----------------------------------------|--------:|
-| repository_record_no_doi                 |    1827 |
 | affiliation_correction_no_ct_institution |      16 |
 | meeting_abstract                         |    1384 |
+| repository_record_no_doi                 |    1827 |
 
 Excluded: **3,227** works. Counted in metrics: **192,334** works. The list is in `data/derived/quality/excluded_works.csv`.
 

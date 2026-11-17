@@ -88,9 +88,9 @@ def main():
     # 3. OA status mix
     oa = con.execute("""SELECT oa_status, COUNT(*) works,
                                ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) pct
-                        FROM works WHERE publication_year <= 2025 GROUP BY 1 ORDER BY 2 DESC""").df()
+                        FROM works WHERE publication_year <= 2025 GROUP BY 1 ORDER BY 2 DESC, 1""").df()
     cat = con.execute("""SELECT oa_category, COUNT(*) works, ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) pct
-                         FROM works WHERE publication_year <= 2025 AND in_scope GROUP BY 1 ORDER BY 2 DESC""").df()
+                         FROM works WHERE publication_year <= 2025 AND in_scope GROUP BY 1 ORDER BY 2 DESC, 1""").df()
     out += ["## 3. OA status mix, statewide 2015–2025", "",
             "OpenAlex `oa_status`, all harvested works (before exclusions):", "", md(oa), "",
             "Reported `oa_category` (diamond split by confirmed $0 fee), in-scope works:", "", md(cat), ""]
@@ -100,12 +100,12 @@ def main():
         SELECT wi.institution_key, w.publication_year, COUNT(*) works,
                SUM((w.doi IS NULL)::INT) AS without_doi
         FROM works w JOIN work_institutions wi USING (work_id)
-        WHERE w.primary_is_repository GROUP BY ALL ORDER BY works DESC""").df()
+        WHERE w.primary_is_repository GROUP BY ALL ORDER BY works DESC, institution_key, publication_year""").df()
     repo.to_csv(Q / "repository_primary_records.csv", index=False)
     repo_total = con.execute(
         "SELECT COUNT(*), SUM((doi IS NULL)::INT) FROM works WHERE primary_is_repository").fetchone()
     top_repo_sources = con.execute("""SELECT source_name, COUNT(*) works, SUM((doi IS NULL)::INT) without_doi
-        FROM works WHERE primary_is_repository GROUP BY 1 ORDER BY 2 DESC LIMIT 15""").df()
+        FROM works WHERE primary_is_repository GROUP BY 1 ORDER BY 2 DESC, 1 LIMIT 15""").df()
     repo_by_inst = (repo.groupby("institution_key", as_index=False)[["works", "without_doi"]].sum()
                     .sort_values("works", ascending=False))
     repo_by_year = repo.groupby("publication_year", as_index=False)[["works"]].sum()
@@ -137,10 +137,10 @@ def main():
     # 6. Exclusions applied (rule A, meeting abstracts, affiliation corrections)
     excl = con.execute("""SELECT wi.institution_key, COUNT(*) excluded
         FROM works w JOIN work_institutions wi USING (work_id) WHERE NOT wi.in_scope
-        GROUP BY 1 ORDER BY 2 DESC""").df()
+        GROUP BY 1 ORDER BY 2 DESC, 1""").df()
     n_excl, n_in = con.execute("SELECT COUNT(*) FILTER (WHERE NOT in_scope), COUNT(*) FILTER (WHERE in_scope) FROM works").fetchone()
     con.execute(f"""COPY (SELECT work_id, publication_year, source_name, title, exclude_reason FROM works WHERE NOT in_scope
-                 ORDER BY publication_year, source_name) TO '{(Q / "excluded_works.csv").as_posix()}' (HEADER)""")
+                 ORDER BY publication_year, source_name, work_id) TO '{(Q / "excluded_works.csv").as_posix()}' (HEADER)""")
     con.execute(f"""COPY (SELECT exclude_reason,
                  CASE WHEN publication_year <= 2025 THEN 'complete' ELSE 'incomplete' END AS period, COUNT(*) works
                  FROM works WHERE NOT in_scope GROUP BY ALL ORDER BY 1, 2)
@@ -156,8 +156,8 @@ def main():
             "assigned in error are flagged `affiliation_corrected` and left out of metrics. A work whose only "
             "Connecticut credit was corrected is excluded.", "",
             md(con.execute("""SELECT institution_key, COUNT(*) corrected_credits FROM work_institutions
-                              WHERE affiliation_corrected GROUP BY 1""").df()), "",
-            md(con.execute("SELECT exclude_reason, COUNT(*) works FROM works WHERE NOT in_scope GROUP BY 1").df()), "",
+                              WHERE affiliation_corrected GROUP BY 1 ORDER BY 1""").df()), "",
+            md(con.execute("SELECT exclude_reason, COUNT(*) works FROM works WHERE NOT in_scope GROUP BY 1 ORDER BY 1").df()), "",
             f"Excluded: **{n_excl:,}** works. Counted in metrics: **{n_in:,}** works. "
             "The list is in `data/derived/quality/excluded_works.csv`.", "", md(excl), ""]
     (ROOT / "docs" / "data-quality.md").write_text("\n".join(out), encoding="utf-8")
