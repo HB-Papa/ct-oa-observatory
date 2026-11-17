@@ -135,10 +135,10 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
           {' '}{n(y2026.works)} articles counted so far are free to read.
         </p>
       </Fragment>
-      <LineChart a={{ name: 'All 17', points: trendAll }} b={{ name: 'Without Yale', points: trendNoYale }} />
+      <LineChart a={{ name: 'Statewide total', short: 'Statewide', points: trendAll }} b={{ name: 'Without Yale', points: trendNoYale }} />
       <table class="data" slot="table">
         <caption>Share of articles free to read, by year</caption>
-        <thead><tr><th scope="col">Year</th><th scope="col" class="r">All 17: free / total</th><th scope="col" class="r">All 17: share</th><th scope="col" class="r">Without Yale: free / total</th><th scope="col" class="r">Without Yale: share</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" class="r">Statewide: free / total</th><th scope="col" class="r">Statewide: share</th><th scope="col" class="r">Without Yale: free / total</th><th scope="col" class="r">Without Yale: share</th></tr></thead>
         <tbody>
           {trendAll.map((p, i) => (
             <tr>
@@ -189,14 +189,14 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
       <BarList label="Institutions by share of articles free to read" items={[
         ...inst.map((r) => ({ name: shortName(r.key), value: r.free_to_read_share,
           href: PROFILE_KEYS.includes(r.key) ? `/institutions/${r.key}/` : undefined, detail: `of ${n(r.works)}` })),
-        { name: 'All 17 (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
+        { name: 'Statewide total (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
       ]} />
       <table class="data" slot="table">
         <caption>Articles free to read, 2015–2025, by institution</caption>
         <thead><tr><th scope="col">Institution</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Free to read</th><th scope="col" class="r">Share</th></tr></thead>
         <tbody>
           {inst.map((r) => (<tr><th scope="row">{entityName(r.key)}</th><td class="r">{n(r.works)}</td><td class="r">{n(r.free_to_read)}</td><td class="r">{pct(r.free_to_read_share)}</td></tr>))}
-          <tr><th scope="row">All 17 (each article once)</th><td class="r">{n(all.works)}</td><td class="r">{n(all.free_to_read)}</td><td class="r">{pct(all.free_to_read_share)}</td></tr>
+          <tr><th scope="row">Statewide total (each article once)</th><td class="r">{n(all.works)}</td><td class="r">{n(all.free_to_read)}</td><td class="r">{pct(all.free_to_read_share)}</td></tr>
           <tr><th scope="row">Without Yale (each article once)</th><td class="r">{n(noYale.works)}</td><td class="r">{n(noYale.free_to_read)}</td><td class="r">{pct(noYale.free_to_read_share)}</td></tr>
         </tbody>
       </table>
@@ -213,7 +213,7 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
       </Fragment>
       <CategoryLegend />
       <SegmentedBars rows={[
-        { label: 'All 17', parts: mixAll },
+        { label: 'Statewide total', parts: mixAll },
         { label: 'Without Yale', parts: mixNoYale },
         ...inst.map((r) => ({ label: shortName(r.key), parts: categoryMix(r.key) })),
       ]} />

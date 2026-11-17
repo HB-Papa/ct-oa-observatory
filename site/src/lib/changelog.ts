@@ -7,6 +7,7 @@ export const CHANGELOG: { date: string; title: string; items: string[] }[] = [
     items: [
       'Line charts are larger, show each year’s figures when you point at them, and join 2025 to the incomplete year 2026 with a dashed line.',
       'An APA citation for the site is on the Methods page. No figures changed.',
+      'The combined line and bar for all 17 institutions is now labeled “Statewide total” instead of “All 17”.',
     ],
   },
   {

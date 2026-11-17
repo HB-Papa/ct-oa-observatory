@@ -164,7 +164,7 @@ const ABBREVIATIONS: Record<string, string> = {
   yale: 'Yale', uconn: 'UConn', wesleyan: 'Wesleyan', trinity: 'Trinity', conncoll: 'Conn College',
   quinnipiac: 'Quinnipiac', fairfield: 'Fairfield', sacredheart: 'Sacred Heart', hartford: 'UHart',
   newhaven: 'UNH', scsu: 'SCSU', ccsu: 'CCSU', wcsu: 'WCSU', ecsu: 'ECSU', uscga: 'USCGA',
-  bridgeport: 'UB', usj: 'USJ', statewide: 'All 17', statewide_no_yale: 'Without Yale',
+  bridgeport: 'UB', usj: 'USJ', statewide: 'Statewide', statewide_no_yale: 'Without Yale',
 };
 export function abbreviation(key: string): string {
   return ABBREVIATIONS[key] ?? shortName(key);

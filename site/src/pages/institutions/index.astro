@@ -36,7 +36,7 @@ const all = freeFor(STATEWIDE);
     </Fragment>
     <BarList label="Institutions, alphabetical, with share of articles free to read" items={[
       ...keys.map((k) => ({ name: shortName(k), value: freeFor(k).free_to_read_share, href: `/institutions/${k}/`, detail: `of ${n(freeFor(k).works)}` })),
-      { name: 'All 17 (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
+      { name: 'Statewide total (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
     ]} />
     <table class="data" slot="table">
       <caption>The 17 institutions, 2015–2025</caption>

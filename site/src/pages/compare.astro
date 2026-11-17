@@ -15,7 +15,7 @@ import {
 import { n, pct, points, dollars } from '../lib/format';
 
 const groups = [STATEWIDE, STATEWIDE_NO_YALE];
-const label = (k: string) => (k === STATEWIDE ? 'All 17 (each article once)' : k === STATEWIDE_NO_YALE ? 'Without Yale (each article once)' : shortName(k));
+const label = (k: string) => (k === STATEWIDE ? 'Statewide total (each article once)' : k === STATEWIDE_NO_YALE ? 'Without Yale (each article once)' : shortName(k));
 const keys = [...institutionsAlpha(), ...groups];
 const years = freeTrend(STATEWIDE).map((p) => p.year);
 const lastComplete = freeTrend(STATEWIDE).filter((p) => !p.incomplete).at(-1)!.year;

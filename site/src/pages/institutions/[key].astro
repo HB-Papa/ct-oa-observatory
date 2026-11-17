@@ -102,10 +102,10 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
           {yInc.year} is incomplete: {pct(yInc.share)} of the {n(yInc.works)} articles counted so far are free to read.
         </p>
       </Fragment>
-      <LineChart a={{ name: short, short: abbreviation(key), points: trend }} b={{ name: 'All 17', points: trendAll }} yMin={y0} yMax={y1} />
+      <LineChart a={{ name: short, short: abbreviation(key), points: trend }} b={{ name: 'Statewide total', short: 'Statewide', points: trendAll }} yMin={y0} yMax={y1} />
       <table class="data" slot="table">
         <caption>Share of {short} articles free to read, by year, with the statewide figure</caption>
-        <thead><tr><th scope="col">Year</th><th scope="col" class="r">{short}: free / total</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">All 17: share</th></tr></thead>
+        <thead><tr><th scope="col">Year</th><th scope="col" class="r">{short}: free / total</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">Statewide: share</th></tr></thead>
         <tbody>
           {trend.map((p, i) => (
             <tr><th scope="row">{p.year}{p.incomplete && ' (incomplete)'}</th><td class="r">{n(p.free)} / {n(p.works)}</td><td class="r">{pct(p.share)}</td><td class="r">{pct(trendAll[i].share)}</td></tr>
@@ -127,10 +127,10 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
         </p>
       </Fragment>
       <CategoryLegend />
-      <SegmentedBars rows={[{ label: short, parts: mix }, { label: 'All 17', parts: mixAll }]} />
+      <SegmentedBars rows={[{ label: short, parts: mix }, { label: 'Statewide total', parts: mixAll }]} />
       <table class="data" slot="table">
         <caption>Share of articles in each category, 2015–2025</caption>
-        <thead><tr><th scope="col">Category</th><th scope="col" class="r">{short}: articles</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">All 17: share</th></tr></thead>
+        <thead><tr><th scope="col">Category</th><th scope="col" class="r">{short}: articles</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">Statewide: share</th></tr></thead>
         <tbody>
           {mix.map((c, i) => (<tr><th scope="row">{c.label}</th><td class="r">{n(c.works)}</td><td class="r">{pct(c.share)}</td><td class="r">{pct(mixAll[i].share)}</td></tr>))}
         </tbody>

@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/styles/global.css"
+        ],
+        "createdAt": "2026-11-17T01:04:24.357Z",
+        "reason": "Claude: .callout is the research-report note style (3px accent rule on a wash panel) in the design Chris approved at phase 4 (DECISIONS.md, research report); unchanged in this edit"
+      }
+    ]
+  }
+}
