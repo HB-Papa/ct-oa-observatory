@@ -1,18 +1,18 @@
 entity,entity_name,oa_category,works,share
-bridgeport,University of Bridgeport,diamond,3,0.003978779840848806
-bridgeport,University of Bridgeport,oa_fee_unconfirmed,166,0.22015915119363394
-bridgeport,University of Bridgeport,gold,207,0.27453580901856767
-bridgeport,University of Bridgeport,hybrid,67,0.08885941644562334
-bridgeport,University of Bridgeport,bronze,103,0.13660477453580902
-bridgeport,University of Bridgeport,green,43,0.05702917771883289
-bridgeport,University of Bridgeport,closed,165,0.21883289124668434
+bridgeport,University of Bridgeport,diamond,3,0.003973509933774834
+bridgeport,University of Bridgeport,oa_fee_unconfirmed,162,0.21456953642384105
+bridgeport,University of Bridgeport,gold,212,0.280794701986755
+bridgeport,University of Bridgeport,hybrid,67,0.08874172185430464
+bridgeport,University of Bridgeport,bronze,103,0.13642384105960265
+bridgeport,University of Bridgeport,green,44,0.05827814569536424
+bridgeport,University of Bridgeport,closed,164,0.21721854304635763
 ccsu,Central Connecticut State University,diamond,5,0.003586800573888092
-ccsu,Central Connecticut State University,oa_fee_unconfirmed,180,0.1291248206599713
-ccsu,Central Connecticut State University,gold,197,0.14131994261119082
-ccsu,Central Connecticut State University,hybrid,60,0.043041606886657105
+ccsu,Central Connecticut State University,oa_fee_unconfirmed,178,0.12769010043041606
+ccsu,Central Connecticut State University,gold,199,0.14275466284074606
+ccsu,Central Connecticut State University,hybrid,61,0.04375896700143472
 ccsu,Central Connecticut State University,bronze,100,0.07173601147776183
 ccsu,Central Connecticut State University,green,121,0.08680057388809183
-ccsu,Central Connecticut State University,closed,731,0.524390243902439
+ccsu,Central Connecticut State University,closed,730,0.5236728837876614
 conncoll,Connecticut College,diamond,1,0.00145985401459854
 conncoll,Connecticut College,oa_fee_unconfirmed,65,0.0948905109489051
 conncoll,Connecticut College,gold,85,0.12408759124087591
@@ -20,34 +20,34 @@ conncoll,Connecticut College,hybrid,56,0.08175182481751825
 conncoll,Connecticut College,bronze,72,0.10510948905109489
 conncoll,Connecticut College,green,83,0.12116788321167883
 conncoll,Connecticut College,closed,323,0.47153284671532847
-ecsu,Eastern Connecticut State University,diamond,3,0.005208333333333333
-ecsu,Eastern Connecticut State University,oa_fee_unconfirmed,58,0.10069444444444445
-ecsu,Eastern Connecticut State University,gold,78,0.13541666666666666
-ecsu,Eastern Connecticut State University,hybrid,54,0.09375
-ecsu,Eastern Connecticut State University,bronze,51,0.08854166666666667
-ecsu,Eastern Connecticut State University,green,49,0.08506944444444445
-ecsu,Eastern Connecticut State University,closed,283,0.4913194444444444
-fairfield,Fairfield University,diamond,134,0.07652769845802398
-fairfield,Fairfield University,oa_fee_unconfirmed,119,0.06796116504854369
-fairfield,Fairfield University,gold,159,0.09080525414049115
-fairfield,Fairfield University,hybrid,175,0.09994288977727013
-fairfield,Fairfield University,bronze,174,0.09937178754997145
-fairfield,Fairfield University,green,186,0.10622501427755568
-fairfield,Fairfield University,closed,804,0.4591661907481439
-hartford,University of Hartford,diamond,4,0.0033222591362126247
-hartford,University of Hartford,oa_fee_unconfirmed,116,0.09634551495016612
-hartford,University of Hartford,gold,159,0.13205980066445183
-hartford,University of Hartford,hybrid,71,0.058970099667774084
-hartford,University of Hartford,bronze,110,0.09136212624584718
-hartford,University of Hartford,green,131,0.10880398671096346
-hartford,University of Hartford,closed,613,0.5091362126245847
+ecsu,Eastern Connecticut State University,diamond,3,0.0052173913043478265
+ecsu,Eastern Connecticut State University,oa_fee_unconfirmed,57,0.09913043478260869
+ecsu,Eastern Connecticut State University,gold,79,0.1373913043478261
+ecsu,Eastern Connecticut State University,hybrid,54,0.09391304347826086
+ecsu,Eastern Connecticut State University,bronze,51,0.08869565217391304
+ecsu,Eastern Connecticut State University,green,49,0.08521739130434783
+ecsu,Eastern Connecticut State University,closed,282,0.49043478260869566
+fairfield,Fairfield University,diamond,134,0.07648401826484018
+fairfield,Fairfield University,oa_fee_unconfirmed,118,0.06735159817351598
+fairfield,Fairfield University,gold,160,0.091324200913242
+fairfield,Fairfield University,hybrid,175,0.09988584474885845
+fairfield,Fairfield University,bronze,174,0.09931506849315068
+fairfield,Fairfield University,green,186,0.10616438356164383
+fairfield,Fairfield University,closed,805,0.4594748858447489
+hartford,University of Hartford,diamond,4,0.0033195020746887966
+hartford,University of Hartford,oa_fee_unconfirmed,114,0.0946058091286307
+hartford,University of Hartford,gold,161,0.13360995850622406
+hartford,University of Hartford,hybrid,71,0.05892116182572614
+hartford,University of Hartford,bronze,110,0.0912863070539419
+hartford,University of Hartford,green,131,0.1087136929460581
+hartford,University of Hartford,closed,614,0.5095435684647303
 newhaven,University of New Haven,diamond,11,0.00583864118895966
-newhaven,University of New Haven,oa_fee_unconfirmed,280,0.14861995753715498
-newhaven,University of New Haven,gold,305,0.1618895966029724
-newhaven,University of New Haven,hybrid,228,0.12101910828025478
+newhaven,University of New Haven,oa_fee_unconfirmed,273,0.1449044585987261
+newhaven,University of New Haven,gold,312,0.16560509554140126
+newhaven,University of New Haven,hybrid,227,0.12048832271762208
 newhaven,University of New Haven,bronze,198,0.10509554140127389
-newhaven,University of New Haven,green,146,0.07749469214437367
-newhaven,University of New Haven,closed,716,0.38004246284501064
+newhaven,University of New Haven,green,145,0.07696390658174097
+newhaven,University of New Haven,closed,718,0.38110403397027603
 quinnipiac,Quinnipiac University,diamond,2,0.000819672131147541
 quinnipiac,Quinnipiac University,oa_fee_unconfirmed,172,0.07049180327868852
 quinnipiac,Quinnipiac University,gold,425,0.17418032786885246
@@ -55,80 +55,80 @@ quinnipiac,Quinnipiac University,hybrid,174,0.07131147540983607
 quinnipiac,Quinnipiac University,bronze,244,0.1
 quinnipiac,Quinnipiac University,green,216,0.08852459016393442
 quinnipiac,Quinnipiac University,closed,1207,0.494672131147541
-sacredheart,Sacred Heart University,diamond,1,0.0007423904974016332
-sacredheart,Sacred Heart University,oa_fee_unconfirmed,168,0.12472160356347439
-sacredheart,Sacred Heart University,gold,154,0.11432813659985153
-sacredheart,Sacred Heart University,hybrid,88,0.06533036377134373
-sacredheart,Sacred Heart University,bronze,96,0.07126948775055679
-sacredheart,Sacred Heart University,green,89,0.06607275426874536
-sacredheart,Sacred Heart University,closed,751,0.5575352635486266
-scsu,Southern Connecticut State University,diamond,16,0.009644364074743821
-scsu,Southern Connecticut State University,oa_fee_unconfirmed,184,0.11091018685955395
-scsu,Southern Connecticut State University,gold,182,0.10970464135021098
-scsu,Southern Connecticut State University,hybrid,114,0.06871609403254973
-scsu,Southern Connecticut State University,bronze,193,0.11633514165159735
-scsu,Southern Connecticut State University,green,214,0.1289933694996986
-scsu,Southern Connecticut State University,closed,756,0.45569620253164556
-statewide,Connecticut (all 17 institutions),diamond,1609,0.009198543325767927
-statewide,Connecticut (all 17 institutions),oa_fee_unconfirmed,8344,0.047702079248109125
-statewide,Connecticut (all 17 institutions),gold,34738,0.19859477815446006
-statewide,Connecticut (all 17 institutions),hybrid,17112,0.09782813759511545
-statewide,Connecticut (all 17 institutions),bronze,25171,0.1439008912696734
-statewide,Connecticut (all 17 institutions),green,30683,0.17541261955533705
-statewide,Connecticut (all 17 institutions),closed,57262,0.327362950851537
-statewide_no_yale,Connecticut without Yale,diamond,373,0.006002285052218271
-statewide_no_yale,Connecticut without Yale,oa_fee_unconfirmed,4064,0.06539755081022802
-statewide_no_yale,Connecticut without Yale,gold,11081,0.17831453261026986
-statewide_no_yale,Connecticut without Yale,hybrid,5076,0.08168257084466472
-statewide_no_yale,Connecticut without Yale,bronze,7701,0.12392385304861368
-statewide_no_yale,Connecticut without Yale,green,8727,0.14043415992147146
-statewide_no_yale,Connecticut without Yale,closed,25121,0.404245047712534
+sacredheart,Sacred Heart University,diamond,1,0.0007429420505200594
+sacredheart,Sacred Heart University,oa_fee_unconfirmed,166,0.12332838038632987
+sacredheart,Sacred Heart University,gold,155,0.1151560178306092
+sacredheart,Sacred Heart University,hybrid,88,0.06537890044576523
+sacredheart,Sacred Heart University,bronze,96,0.0713224368499257
+sacredheart,Sacred Heart University,green,89,0.06612184249628529
+sacredheart,Sacred Heart University,closed,751,0.5579494799405647
+scsu,Southern Connecticut State University,diamond,16,0.00963275135460566
+scsu,Southern Connecticut State University,oa_fee_unconfirmed,185,0.11137868753762793
+scsu,Southern Connecticut State University,gold,183,0.11017459361830223
+scsu,Southern Connecticut State University,hybrid,114,0.06863335340156532
+scsu,Southern Connecticut State University,bronze,193,0.11619506321493077
+scsu,Southern Connecticut State University,green,214,0.1288380493678507
+scsu,Southern Connecticut State University,closed,756,0.4551475015051174
+statewide,Connecticut (all 17 institutions),diamond,1610,0.009200525744328248
+statewide,Connecticut (all 17 institutions),oa_fee_unconfirmed,8329,0.04759700554317389
+statewide,Connecticut (all 17 institutions),gold,34773,0.19871421224069946
+statewide,Connecticut (all 17 institutions),hybrid,17123,0.09785130578890222
+statewide,Connecticut (all 17 institutions),bronze,25165,0.143808217612435
+statewide,Connecticut (all 17 institutions),green,30742,0.1756786102062975
+statewide,Connecticut (all 17 institutions),closed,57248,0.3271501228641637
+statewide_no_yale,Connecticut without Yale,diamond,373,0.006001802149707151
+statewide_no_yale,Connecticut without Yale,oa_fee_unconfirmed,4040,0.0650061144365064
+statewide_no_yale,Connecticut without Yale,gold,11111,0.17878290532277788
+statewide_no_yale,Connecticut without Yale,hybrid,5082,0.08177254296196176
+statewide_no_yale,Connecticut without Yale,bronze,7701,0.12391388298899401
+statewide_no_yale,Connecticut without Yale,green,8736,0.14056767715775245
+statewide_no_yale,Connecticut without Yale,closed,25105,0.4039550749823003
 trinity,Trinity College,diamond,0,0.0
-trinity,Trinity College,oa_fee_unconfirmed,59,0.06973995271867613
-trinity,Trinity College,gold,150,0.1773049645390071
-trinity,Trinity College,hybrid,65,0.0768321513002364
-trinity,Trinity College,bronze,81,0.09574468085106383
-trinity,Trinity College,green,153,0.18085106382978725
-trinity,Trinity College,closed,338,0.39952718676122934
-uconn,University of Connecticut (incl. UConn Health),diamond,203,0.004483512600216445
-uconn,University of Connecticut (incl. UConn Health),oa_fee_unconfirmed,2307,0.05095302250590808
-uconn,University of Connecticut (incl. UConn Health),gold,8640,0.1908253638712812
-uconn,University of Connecticut (incl. UConn Health),hybrid,3675,0.08116703845219427
-uconn,University of Connecticut (incl. UConn Health),bronze,5873,0.12971265764074474
-uconn,University of Connecticut (incl. UConn Health),green,6874,0.15182101287629482
-uconn,University of Connecticut (incl. UConn Health),closed,17705,0.3910373920533604
-uscga,United States Coast Guard Academy,diamond,1,0.005128205128205128
-uscga,United States Coast Guard Academy,oa_fee_unconfirmed,35,0.1794871794871795
-uscga,United States Coast Guard Academy,gold,23,0.11794871794871795
-uscga,United States Coast Guard Academy,hybrid,12,0.06153846153846154
-uscga,United States Coast Guard Academy,bronze,22,0.11282051282051282
-uscga,United States Coast Guard Academy,green,24,0.12307692307692308
-uscga,United States Coast Guard Academy,closed,78,0.4
-usj,University of Saint Joseph,diamond,2,0.0038461538461538464
-usj,University of Saint Joseph,oa_fee_unconfirmed,67,0.12884615384615383
-usj,University of Saint Joseph,gold,75,0.14423076923076922
-usj,University of Saint Joseph,hybrid,30,0.057692307692307696
-usj,University of Saint Joseph,bronze,44,0.08461538461538462
-usj,University of Saint Joseph,green,55,0.10576923076923077
-usj,University of Saint Joseph,closed,247,0.475
+trinity,Trinity College,oa_fee_unconfirmed,57,0.06698002350176263
+trinity,Trinity College,gold,152,0.17861339600470036
+trinity,Trinity College,hybrid,67,0.07873090481786134
+trinity,Trinity College,bronze,81,0.09518213866039953
+trinity,Trinity College,green,153,0.1797884841363102
+trinity,Trinity College,closed,341,0.4007050528789659
+uconn,University of Connecticut (incl. UConn Health),diamond,203,0.00448281953890999
+uconn,University of Connecticut (incl. UConn Health),oa_fee_unconfirmed,2303,0.05085681476901334
+uconn,University of Connecticut (incl. UConn Health),gold,8649,0.19099461178341137
+uconn,University of Connecticut (incl. UConn Health),hybrid,3681,0.08128698878190972
+uconn,University of Connecticut (incl. UConn Health),bronze,5873,0.12969260666018903
+uconn,University of Connecticut (incl. UConn Health),green,6883,0.1519962900803816
+uconn,University of Connecticut (incl. UConn Health),closed,17692,0.39068986838618497
+uscga,United States Coast Guard Academy,diamond,1,0.005154639175257732
+uscga,United States Coast Guard Academy,oa_fee_unconfirmed,34,0.17525773195876287
+uscga,United States Coast Guard Academy,gold,23,0.11855670103092783
+uscga,United States Coast Guard Academy,hybrid,12,0.061855670103092786
+uscga,United States Coast Guard Academy,bronze,22,0.1134020618556701
+uscga,United States Coast Guard Academy,green,25,0.12886597938144329
+uscga,United States Coast Guard Academy,closed,77,0.39690721649484534
+usj,University of Saint Joseph,diamond,2,0.003929273084479371
+usj,University of Saint Joseph,oa_fee_unconfirmed,67,0.13163064833005894
+usj,University of Saint Joseph,gold,75,0.14734774066797643
+usj,University of Saint Joseph,hybrid,28,0.0550098231827112
+usj,University of Saint Joseph,bronze,44,0.08644400785854617
+usj,University of Saint Joseph,green,52,0.10216110019646366
+usj,University of Saint Joseph,closed,241,0.47347740667976423
 wcsu,Western Connecticut State University,diamond,2,0.004739336492890996
-wcsu,Western Connecticut State University,oa_fee_unconfirmed,67,0.15876777251184834
-wcsu,Western Connecticut State University,gold,50,0.11848341232227488
+wcsu,Western Connecticut State University,oa_fee_unconfirmed,66,0.15639810426540285
+wcsu,Western Connecticut State University,gold,51,0.12085308056872038
 wcsu,Western Connecticut State University,hybrid,11,0.026066350710900472
 wcsu,Western Connecticut State University,bronze,44,0.10426540284360189
 wcsu,Western Connecticut State University,green,46,0.10900473933649289
 wcsu,Western Connecticut State University,closed,202,0.4786729857819905
-wesleyan,Wesleyan University,diamond,5,0.0018422991893883567
-wesleyan,Wesleyan University,oa_fee_unconfirmed,148,0.054532056005895356
-wesleyan,Wesleyan University,gold,445,0.16396462785556373
-wesleyan,Wesleyan University,hybrid,297,0.10943257184966838
-wesleyan,Wesleyan University,bronze,475,0.17501842299189388
-wesleyan,Wesleyan University,green,486,0.17907148120854827
-wesleyan,Wesleyan University,closed,858,0.31613854089904203
-yale,Yale University,diamond,1258,0.010836980117845698
-yale,Yale University,oa_fee_unconfirmed,4371,0.037653767961131596
-yale,Yale University,gold,24401,0.21020123358946968
-yale,Yale University,hybrid,12341,0.10631094724509838
-yale,Yale University,bronze,17940,0.15454326177595534
-yale,Yale University,green,22648,0.1951000999276386
-yale,Yale University,closed,33125,0.2853537093828607
+wesleyan,Wesleyan University,diamond,5,0.001840942562592047
+wesleyan,Wesleyan University,oa_fee_unconfirmed,148,0.054491899852724596
+wesleyan,Wesleyan University,gold,445,0.1638438880706922
+wesleyan,Wesleyan University,hybrid,297,0.1093519882179676
+wesleyan,Wesleyan University,bronze,475,0.17488954344624447
+wesleyan,Wesleyan University,green,488,0.1796759941089838
+wesleyan,Wesleyan University,closed,858,0.3159057437407953
+yale,Yale University,diamond,1259,0.010839525092768771
+yale,Yale University,oa_fee_unconfirmed,4380,0.037710182610267845
+yale,Yale University,gold,24406,0.2101266476680815
+yale,Yale University,hybrid,12346,0.10629450102885087
+yale,Yale University,bronze,17934,0.15440511756450767
+yale,Yale University,green,22698,0.19542139837622363
+yale,Yale University,closed,33126,0.2852026276592997

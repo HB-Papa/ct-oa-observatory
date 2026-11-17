@@ -1,20 +1,20 @@
 entity,entity_name,works,free_to_read,free_to_read_share
-bridgeport,University of Bridgeport,754,589,0.7811671087533156
-ccsu,Central Connecticut State University,1394,663,0.47560975609756095
+bridgeport,University of Bridgeport,755,591,0.7827814569536424
+ccsu,Central Connecticut State University,1394,664,0.4763271162123386
 conncoll,Connecticut College,685,362,0.5284671532846715
-ecsu,Eastern Connecticut State University,576,293,0.5086805555555556
-fairfield,Fairfield University,1751,947,0.5408338092518561
-hartford,University of Hartford,1204,591,0.4908637873754153
-newhaven,University of New Haven,1884,1168,0.6199575371549894
+ecsu,Eastern Connecticut State University,575,293,0.5095652173913043
+fairfield,Fairfield University,1752,947,0.5405251141552512
+hartford,University of Hartford,1205,591,0.4904564315352697
+newhaven,University of New Haven,1884,1166,0.618895966029724
 quinnipiac,Quinnipiac University,2440,1233,0.5053278688524591
-sacredheart,Sacred Heart University,1347,596,0.4424647364513734
-scsu,Southern Connecticut State University,1659,903,0.5443037974683544
-statewide,Connecticut (all 17 institutions),174919,117657,0.672637049148463
-statewide_no_yale,Connecticut without Yale,62143,37022,0.595754952287466
-trinity,Trinity College,846,508,0.6004728132387707
-uconn,University of Connecticut (incl. UConn Health),45277,27572,0.6089626079466396
-uscga,United States Coast Guard Academy,195,117,0.6
-usj,University of Saint Joseph,520,273,0.525
+sacredheart,Sacred Heart University,1346,595,0.44205052005943535
+scsu,Southern Connecticut State University,1661,905,0.5448524984948826
+statewide,Connecticut (all 17 institutions),174990,117742,0.6728498771358363
+statewide_no_yale,Connecticut without Yale,62148,37043,0.5960449250176997
+trinity,Trinity College,851,510,0.599294947121034
+uconn,University of Connecticut (incl. UConn Health),45284,27592,0.6093101316138151
+uscga,United States Coast Guard Academy,194,117,0.6030927835051546
+usj,University of Saint Joseph,509,268,0.5265225933202358
 wcsu,Western Connecticut State University,422,220,0.5213270142180095
-wesleyan,Wesleyan University,2714,1856,0.683861459100958
-yale,Yale University,116084,82959,0.7146462906171394
+wesleyan,Wesleyan University,2716,1858,0.6840942562592047
+yale,Yale University,116149,83023,0.7147973723407003

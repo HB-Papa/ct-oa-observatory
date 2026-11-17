@@ -1,39 +1,39 @@
 entity,entity_name,period,works,with_corresponding_info,coverage_share
-bridgeport,University of Bridgeport,complete,754,596,0.7904509283819628
+bridgeport,University of Bridgeport,complete,755,597,0.7907284768211921
 bridgeport,University of Bridgeport,incomplete,69,47,0.6811594202898551
-ccsu,Central Connecticut State University,complete,1394,1108,0.7948350071736011
-ccsu,Central Connecticut State University,incomplete,130,96,0.7384615384615385
+ccsu,Central Connecticut State University,complete,1394,1110,0.7962697274031564
+ccsu,Central Connecticut State University,incomplete,128,95,0.7421875
 conncoll,Connecticut College,complete,685,612,0.8934306569343066
 conncoll,Connecticut College,incomplete,40,33,0.825
-ecsu,Eastern Connecticut State University,complete,576,464,0.8055555555555556
+ecsu,Eastern Connecticut State University,complete,575,465,0.808695652173913
 ecsu,Eastern Connecticut State University,incomplete,48,34,0.7083333333333334
-fairfield,Fairfield University,complete,1751,1315,0.7509994288977727
-fairfield,Fairfield University,incomplete,159,120,0.7547169811320755
-hartford,University of Hartford,complete,1204,957,0.7948504983388704
+fairfield,Fairfield University,complete,1752,1316,0.7511415525114156
+fairfield,Fairfield University,incomplete,160,121,0.75625
+hartford,University of Hartford,complete,1205,960,0.7966804979253111
 hartford,University of Hartford,incomplete,106,79,0.7452830188679245
-newhaven,University of New Haven,complete,1884,1445,0.7669851380042463
+newhaven,University of New Haven,complete,1884,1449,0.7691082802547771
 newhaven,University of New Haven,incomplete,301,221,0.7342192691029901
-quinnipiac,Quinnipiac University,complete,2440,1963,0.8045081967213115
-quinnipiac,Quinnipiac University,incomplete,280,203,0.725
-sacredheart,Sacred Heart University,complete,1347,1068,0.7928730512249443
-sacredheart,Sacred Heart University,incomplete,152,104,0.6842105263157895
-scsu,Southern Connecticut State University,complete,1659,1241,0.7480409885473177
+quinnipiac,Quinnipiac University,complete,2440,1975,0.8094262295081968
+quinnipiac,Quinnipiac University,incomplete,279,203,0.7275985663082437
+sacredheart,Sacred Heart University,complete,1346,1068,0.7934621099554234
+sacredheart,Sacred Heart University,incomplete,154,107,0.6948051948051948
+scsu,Southern Connecticut State University,complete,1661,1239,0.7459361830222757
 scsu,Southern Connecticut State University,incomplete,134,98,0.7313432835820896
-statewide,Connecticut (all 17 institutions),complete,174919,144004,0.8232610522584739
-statewide,Connecticut (all 17 institutions),incomplete,17415,13277,0.7623887453344818
-statewide_no_yale,Connecticut without Yale,complete,62143,51174,0.8234877620970986
-statewide_no_yale,Connecticut without Yale,incomplete,5884,4515,0.7673351461590755
-trinity,Trinity College,complete,846,742,0.8770685579196218
-trinity,Trinity College,incomplete,48,39,0.8125
-uconn,University of Connecticut (incl. UConn Health),complete,45277,37678,0.8321664421229322
-uconn,University of Connecticut (incl. UConn Health),incomplete,4181,3242,0.7754125807223152
-uscga,United States Coast Guard Academy,complete,195,153,0.7846153846153846
+statewide,Connecticut (all 17 institutions),complete,174990,144361,0.8249671409794845
+statewide,Connecticut (all 17 institutions),incomplete,17435,13333,0.7647261256094063
+statewide_no_yale,Connecticut without Yale,complete,62148,51275,0.8250466628049173
+statewide_no_yale,Connecticut without Yale,incomplete,5892,4531,0.7690088255261371
+trinity,Trinity College,complete,851,748,0.8789659224441834
+trinity,Trinity College,incomplete,49,39,0.7959183673469388
+uconn,University of Connecticut (incl. UConn Health),complete,45284,37766,0.83398109707623
+uconn,University of Connecticut (incl. UConn Health),incomplete,4187,3255,0.7774062574635777
+uscga,United States Coast Guard Academy,complete,194,152,0.7835051546391752
 uscga,United States Coast Guard Academy,incomplete,18,16,0.8888888888888888
-usj,University of Saint Joseph,complete,520,417,0.801923076923077
-usj,University of Saint Joseph,incomplete,42,37,0.8809523809523809
-wcsu,Western Connecticut State University,complete,422,339,0.8033175355450237
+usj,University of Saint Joseph,complete,509,407,0.7996070726915521
+usj,University of Saint Joseph,incomplete,41,37,0.9024390243902439
+wcsu,Western Connecticut State University,complete,422,341,0.8080568720379147
 wcsu,Western Connecticut State University,incomplete,36,34,0.9444444444444444
-wesleyan,Wesleyan University,complete,2714,2203,0.81171702284451
-wesleyan,Wesleyan University,incomplete,281,206,0.7330960854092526
-yale,Yale University,complete,116084,95491,0.8226025981186038
-yale,Yale University,incomplete,11902,9045,0.7599563098638884
+wesleyan,Wesleyan University,complete,2716,2208,0.812960235640648
+wesleyan,Wesleyan University,incomplete,282,206,0.7304964539007093
+yale,Yale University,complete,116149,95752,0.8243893619402664
+yale,Yale University,incomplete,11914,9085,0.7625482625482626

@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-11-15",
-  "generated_at": "2026-11-17T03:01:12+00:00",
-  "works_in_scope": 192334,
+  "snapshot_date": "2026-11-17",
+  "generated_at": "2026-11-17T15:07:15+00:00",
+  "works_in_scope": 192425,
   "tables": {
     "oa_category_by_year": {
       "rows": 1596,
@@ -24,7 +24,7 @@
       "note": "OpenAlex fields: top 10 by output and top 10 by closed works, 2015-2025."
     },
     "topics_2015_2025": {
-      "rows": 290,
+      "rows": 291,
       "note": "OpenAlex topics: top 10 by output and top 10 by closed works, 2015-2025."
     },
     "publishers_2015_2025": {

@@ -7,9 +7,9 @@ bridgeport,University of Bridgeport,2019,complete,15,14,24458.0,1,upper_bound_al
 bridgeport,University of Bridgeport,2020,complete,24,22,34753.0,2,upper_bound_all_authors
 bridgeport,University of Bridgeport,2021,complete,22,18,33662.0,4,upper_bound_all_authors
 bridgeport,University of Bridgeport,2022,complete,18,15,35135.0,3,upper_bound_all_authors
-bridgeport,University of Bridgeport,2023,complete,19,16,33763.0,3,upper_bound_all_authors
-bridgeport,University of Bridgeport,2024,complete,17,12,27678.0,5,upper_bound_all_authors
-bridgeport,University of Bridgeport,2025,complete,58,29,67050.0,29,upper_bound_all_authors
+bridgeport,University of Bridgeport,2023,complete,21,18,34961.0,3,upper_bound_all_authors
+bridgeport,University of Bridgeport,2024,complete,18,13,27977.0,5,upper_bound_all_authors
+bridgeport,University of Bridgeport,2025,complete,60,30,67549.0,30,upper_bound_all_authors
 bridgeport,University of Bridgeport,2026,incomplete,34,20,49725.0,14,upper_bound_all_authors
 ccsu,Central Connecticut State University,2015,complete,15,14,22589.0,1,upper_bound_all_authors
 ccsu,Central Connecticut State University,2016,complete,4,3,5490.0,1,upper_bound_all_authors
@@ -18,11 +18,11 @@ ccsu,Central Connecticut State University,2018,complete,19,15,32228.0,4,upper_bo
 ccsu,Central Connecticut State University,2019,complete,25,22,48253.0,3,upper_bound_all_authors
 ccsu,Central Connecticut State University,2020,complete,16,15,28228.0,1,upper_bound_all_authors
 ccsu,Central Connecticut State University,2021,complete,24,16,30940.0,8,upper_bound_all_authors
-ccsu,Central Connecticut State University,2022,complete,36,24,53638.0,12,upper_bound_all_authors
+ccsu,Central Connecticut State University,2022,complete,37,25,54537.0,12,upper_bound_all_authors
 ccsu,Central Connecticut State University,2023,complete,36,30,74823.0,6,upper_bound_all_authors
 ccsu,Central Connecticut State University,2024,complete,34,33,68605.0,1,upper_bound_all_authors
-ccsu,Central Connecticut State University,2025,complete,38,34,91324.0,4,upper_bound_all_authors
-ccsu,Central Connecticut State University,2026,incomplete,41,32,79458.0,9,upper_bound_all_authors
+ccsu,Central Connecticut State University,2025,complete,40,35,92223.0,5,upper_bound_all_authors
+ccsu,Central Connecticut State University,2026,incomplete,42,33,80157.0,9,upper_bound_all_authors
 conncoll,Connecticut College,2015,complete,5,5,13110.0,0,upper_bound_all_authors
 conncoll,Connecticut College,2016,complete,7,7,23123.0,0,upper_bound_all_authors
 conncoll,Connecticut College,2017,complete,7,4,11807.0,3,upper_bound_all_authors
@@ -43,7 +43,7 @@ ecsu,Eastern Connecticut State University,2019,complete,8,8,16203.0,0,upper_boun
 ecsu,Eastern Connecticut State University,2020,complete,10,9,18384.0,1,upper_bound_all_authors
 ecsu,Eastern Connecticut State University,2021,complete,23,18,34299.0,5,upper_bound_all_authors
 ecsu,Eastern Connecticut State University,2022,complete,8,7,12300.0,1,upper_bound_all_authors
-ecsu,Eastern Connecticut State University,2023,complete,13,12,31693.0,1,upper_bound_all_authors
+ecsu,Eastern Connecticut State University,2023,complete,14,13,32592.0,1,upper_bound_all_authors
 ecsu,Eastern Connecticut State University,2024,complete,14,11,24527.0,3,upper_bound_all_authors
 ecsu,Eastern Connecticut State University,2025,complete,13,11,23271.0,2,upper_bound_all_authors
 ecsu,Eastern Connecticut State University,2026,incomplete,18,13,29394.0,5,upper_bound_all_authors
@@ -57,8 +57,8 @@ fairfield,Fairfield University,2021,complete,27,23,78593.0,4,upper_bound_all_aut
 fairfield,Fairfield University,2022,complete,30,29,68821.0,1,upper_bound_all_authors
 fairfield,Fairfield University,2023,complete,34,31,95162.0,3,upper_bound_all_authors
 fairfield,Fairfield University,2024,complete,54,51,154909.0,3,upper_bound_all_authors
-fairfield,Fairfield University,2025,complete,60,47,146356.0,13,upper_bound_all_authors
-fairfield,Fairfield University,2026,incomplete,58,47,159981.0,11,upper_bound_all_authors
+fairfield,Fairfield University,2025,complete,61,48,146955.0,13,upper_bound_all_authors
+fairfield,Fairfield University,2026,incomplete,59,48,163371.0,11,upper_bound_all_authors
 hartford,University of Hartford,2015,complete,10,5,8991.0,5,upper_bound_all_authors
 hartford,University of Hartford,2016,complete,16,14,30965.0,2,upper_bound_all_authors
 hartford,University of Hartford,2017,complete,15,14,28764.0,1,upper_bound_all_authors
@@ -66,8 +66,8 @@ hartford,University of Hartford,2018,complete,17,17,46464.0,0,upper_bound_all_au
 hartford,University of Hartford,2019,complete,12,8,17954.0,4,upper_bound_all_authors
 hartford,University of Hartford,2020,complete,26,21,35809.0,5,upper_bound_all_authors
 hartford,University of Hartford,2021,complete,23,22,44529.0,1,upper_bound_all_authors
-hartford,University of Hartford,2022,complete,22,21,55391.0,1,upper_bound_all_authors
-hartford,University of Hartford,2023,complete,27,27,65379.0,0,upper_bound_all_authors
+hartford,University of Hartford,2022,complete,23,22,56090.0,1,upper_bound_all_authors
+hartford,University of Hartford,2023,complete,28,28,66378.0,0,upper_bound_all_authors
 hartford,University of Hartford,2024,complete,27,23,66994.0,4,upper_bound_all_authors
 hartford,University of Hartford,2025,complete,35,24,72255.0,11,upper_bound_all_authors
 hartford,University of Hartford,2026,incomplete,38,33,115178.0,5,upper_bound_all_authors
@@ -79,10 +79,10 @@ newhaven,University of New Haven,2019,complete,24,24,60616.0,0,upper_bound_all_a
 newhaven,University of New Haven,2020,complete,26,24,44391.0,2,upper_bound_all_authors
 newhaven,University of New Haven,2021,complete,40,37,100835.0,3,upper_bound_all_authors
 newhaven,University of New Haven,2022,complete,52,42,104629.0,10,upper_bound_all_authors
-newhaven,University of New Haven,2023,complete,72,52,124888.0,20,upper_bound_all_authors
-newhaven,University of New Haven,2024,complete,117,71,200917.0,46,upper_bound_all_authors
-newhaven,University of New Haven,2025,complete,149,69,204984.0,80,upper_bound_all_authors
-newhaven,University of New Haven,2026,incomplete,125,84,252125.0,41,upper_bound_all_authors
+newhaven,University of New Haven,2023,complete,77,57,128783.0,20,upper_bound_all_authors
+newhaven,University of New Haven,2024,complete,119,73,202215.0,46,upper_bound_all_authors
+newhaven,University of New Haven,2025,complete,148,69,204984.0,79,upper_bound_all_authors
+newhaven,University of New Haven,2026,incomplete,126,85,252424.0,41,upper_bound_all_authors
 quinnipiac,Quinnipiac University,2015,complete,16,7,13158.0,9,upper_bound_all_authors
 quinnipiac,Quinnipiac University,2016,complete,16,12,27249.0,4,upper_bound_all_authors
 quinnipiac,Quinnipiac University,2017,complete,25,20,39404.0,5,upper_bound_all_authors
@@ -94,7 +94,7 @@ quinnipiac,Quinnipiac University,2022,complete,75,70,158532.0,5,upper_bound_all_
 quinnipiac,Quinnipiac University,2023,complete,65,57,130029.0,8,upper_bound_all_authors
 quinnipiac,Quinnipiac University,2024,complete,94,80,188673.0,14,upper_bound_all_authors
 quinnipiac,Quinnipiac University,2025,complete,139,125,345684.0,14,upper_bound_all_authors
-quinnipiac,Quinnipiac University,2026,incomplete,118,101,279181.0,17,upper_bound_all_authors
+quinnipiac,Quinnipiac University,2026,incomplete,118,101,276580.0,17,upper_bound_all_authors
 sacredheart,Sacred Heart University,2015,complete,6,4,11328.0,2,upper_bound_all_authors
 sacredheart,Sacred Heart University,2016,complete,8,3,8180.0,5,upper_bound_all_authors
 sacredheart,Sacred Heart University,2017,complete,5,4,7129.0,1,upper_bound_all_authors
@@ -105,7 +105,7 @@ sacredheart,Sacred Heart University,2021,complete,25,22,47557.0,3,upper_bound_al
 sacredheart,Sacred Heart University,2022,complete,26,21,49524.0,5,upper_bound_all_authors
 sacredheart,Sacred Heart University,2023,complete,24,22,57396.0,2,upper_bound_all_authors
 sacredheart,Sacred Heart University,2024,complete,47,33,107884.0,14,upper_bound_all_authors
-sacredheart,Sacred Heart University,2025,complete,68,44,120638.0,24,upper_bound_all_authors
+sacredheart,Sacred Heart University,2025,complete,69,45,121137.0,24,upper_bound_all_authors
 sacredheart,Sacred Heart University,2026,incomplete,39,29,84381.0,10,upper_bound_all_authors
 scsu,Southern Connecticut State University,2015,complete,12,6,20195.0,6,upper_bound_all_authors
 scsu,Southern Connecticut State University,2016,complete,6,5,15656.0,1,upper_bound_all_authors
@@ -115,22 +115,22 @@ scsu,Southern Connecticut State University,2019,complete,22,17,33325.0,5,upper_b
 scsu,Southern Connecticut State University,2020,complete,21,16,33977.0,5,upper_bound_all_authors
 scsu,Southern Connecticut State University,2021,complete,37,30,70184.0,7,upper_bound_all_authors
 scsu,Southern Connecticut State University,2022,complete,39,33,96756.0,6,upper_bound_all_authors
-scsu,Southern Connecticut State University,2023,complete,36,33,74598.0,3,upper_bound_all_authors
+scsu,Southern Connecticut State University,2023,complete,37,34,75697.0,3,upper_bound_all_authors
 scsu,Southern Connecticut State University,2024,complete,36,28,96387.0,8,upper_bound_all_authors
 scsu,Southern Connecticut State University,2025,complete,54,40,124761.0,14,upper_bound_all_authors
 scsu,Southern Connecticut State University,2026,incomplete,43,32,100570.0,11,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2015,complete,2053,1712,5414142.0,341,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2016,complete,2293,1964,6300588.0,329,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2017,complete,2569,2269,7210536.0,300,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2017,complete,2570,2269,7210536.0,301,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2018,complete,3009,2574,8547838.0,435,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2019,complete,3426,3043,8086211.0,383,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2020,complete,4552,4075,11264810.0,477,upper_bound_all_authors
 statewide,Connecticut (all 17 institutions),2021,complete,5441,4865,13627442.0,576,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2022,complete,6221,5569,16840846.0,652,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2023,complete,6619,5816,18977648.0,803,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2024,complete,7273,6391,22299273.0,882,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2025,complete,8394,7355,26802388.0,1039,upper_bound_all_authors
-statewide,Connecticut (all 17 institutions),2026,incomplete,7950,6974,25626004.0,976,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2022,complete,6226,5573,16845596.0,653,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2023,complete,6641,5835,18993229.0,806,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2024,complete,7279,6398,22308157.0,881,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2025,complete,8406,7358,26800178.0,1048,upper_bound_all_authors
+statewide,Connecticut (all 17 institutions),2026,incomplete,7958,6981,25645969.0,977,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2015,complete,700,592,1672091.0,108,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2016,complete,742,621,1778761.0,121,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2017,complete,844,731,2121560.0,113,upper_bound_all_authors
@@ -138,11 +138,11 @@ statewide_no_yale,Connecticut without Yale,2018,complete,996,826,2447588.0,170,u
 statewide_no_yale,Connecticut without Yale,2019,complete,1134,1019,2490903.0,115,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2020,complete,1421,1301,3205931.0,120,upper_bound_all_authors
 statewide_no_yale,Connecticut without Yale,2021,complete,1708,1527,3804100.0,181,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2022,complete,1844,1664,4490297.0,180,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2023,complete,1966,1715,5003070.0,251,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2024,complete,2218,1927,6133667.0,291,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2025,complete,2584,2196,7327891.0,388,upper_bound_all_authors
-statewide_no_yale,Connecticut without Yale,2026,incomplete,2360,2018,6680087.0,342,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2022,complete,1847,1666,4491895.0,181,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2023,complete,1986,1732,5017453.0,254,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2024,complete,2222,1932,6137262.0,290,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2025,complete,2593,2201,7334387.0,392,upper_bound_all_authors
+statewide_no_yale,Connecticut without Yale,2026,incomplete,2365,2023,6689924.0,342,upper_bound_all_authors
 trinity,Trinity College,2015,complete,13,10,38991.0,3,upper_bound_all_authors
 trinity,Trinity College,2016,complete,12,9,34081.0,3,upper_bound_all_authors
 trinity,Trinity College,2017,complete,13,11,27452.0,2,upper_bound_all_authors
@@ -151,9 +151,9 @@ trinity,Trinity College,2019,complete,13,11,21674.0,2,upper_bound_all_authors
 trinity,Trinity College,2020,complete,15,14,35778.0,1,upper_bound_all_authors
 trinity,Trinity College,2021,complete,24,21,47791.0,3,upper_bound_all_authors
 trinity,Trinity College,2022,complete,18,17,47798.0,1,upper_bound_all_authors
-trinity,Trinity College,2023,complete,34,28,63033.0,6,upper_bound_all_authors
+trinity,Trinity College,2023,complete,35,29,63832.0,6,upper_bound_all_authors
 trinity,Trinity College,2024,complete,33,26,73708.0,7,upper_bound_all_authors
-trinity,Trinity College,2025,complete,31,27,76703.0,4,upper_bound_all_authors
+trinity,Trinity College,2025,complete,34,28,77002.0,6,upper_bound_all_authors
 trinity,Trinity College,2026,incomplete,14,11,33977.0,3,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2015,complete,554,498,1411338.0,56,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2016,complete,583,507,1467494.0,76,upper_bound_all_authors
@@ -162,11 +162,11 @@ uconn,University of Connecticut (incl. UConn Health),2018,complete,757,658,19966
 uconn,University of Connecticut (incl. UConn Health),2019,complete,904,822,2057896.0,82,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2020,complete,1164,1073,2722961.0,91,upper_bound_all_authors
 uconn,University of Connecticut (incl. UConn Health),2021,complete,1314,1198,3046196.0,116,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2022,complete,1419,1290,3527465.0,129,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2023,complete,1503,1326,3937005.0,177,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2024,complete,1643,1467,4820680.0,176,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2025,complete,1812,1624,5638240.0,188,upper_bound_all_authors
-uconn,University of Connecticut (incl. UConn Health),2026,incomplete,1685,1486,5045214.0,199,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2022,complete,1420,1290,3527465.0,130,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2023,complete,1512,1332,3942699.0,180,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2024,complete,1645,1469,4822678.0,176,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2025,complete,1815,1625,5642440.0,190,upper_bound_all_authors
+uconn,University of Connecticut (incl. UConn Health),2026,incomplete,1686,1487,5049664.0,199,upper_bound_all_authors
 uscga,United States Coast Guard Academy,2015,complete,1,0,0.0,1,upper_bound_all_authors
 uscga,United States Coast Guard Academy,2016,complete,1,1,738.0,0,upper_bound_all_authors
 uscga,United States Coast Guard Academy,2018,complete,2,2,5088.0,0,upper_bound_all_authors
@@ -187,8 +187,8 @@ usj,University of Saint Joseph,2020,complete,13,12,26211.0,1,upper_bound_all_aut
 usj,University of Saint Joseph,2021,complete,11,9,17323.0,2,upper_bound_all_authors
 usj,University of Saint Joseph,2022,complete,4,4,7956.0,0,upper_bound_all_authors
 usj,University of Saint Joseph,2023,complete,9,9,23884.0,0,upper_bound_all_authors
-usj,University of Saint Joseph,2024,complete,16,14,37806.0,2,upper_bound_all_authors
-usj,University of Saint Joseph,2025,complete,16,11,32401.0,5,upper_bound_all_authors
+usj,University of Saint Joseph,2024,complete,15,14,37806.0,1,upper_bound_all_authors
+usj,University of Saint Joseph,2025,complete,15,11,32401.0,4,upper_bound_all_authors
 usj,University of Saint Joseph,2026,incomplete,13,13,40335.0,0,upper_bound_all_authors
 wcsu,Western Connecticut State University,2015,complete,3,2,3855.0,1,upper_bound_all_authors
 wcsu,Western Connecticut State University,2016,complete,4,4,6044.0,0,upper_bound_all_authors
@@ -198,7 +198,7 @@ wcsu,Western Connecticut State University,2019,complete,4,4,6470.0,0,upper_bound
 wcsu,Western Connecticut State University,2020,complete,4,3,3902.0,1,upper_bound_all_authors
 wcsu,Western Connecticut State University,2021,complete,12,10,16653.0,2,upper_bound_all_authors
 wcsu,Western Connecticut State University,2022,complete,8,7,18388.0,1,upper_bound_all_authors
-wcsu,Western Connecticut State University,2023,complete,6,6,12519.0,0,upper_bound_all_authors
+wcsu,Western Connecticut State University,2023,complete,7,7,13418.0,0,upper_bound_all_authors
 wcsu,Western Connecticut State University,2024,complete,9,7,19568.0,2,upper_bound_all_authors
 wcsu,Western Connecticut State University,2025,complete,6,5,17767.0,1,upper_bound_all_authors
 wcsu,Western Connecticut State University,2026,incomplete,17,13,52527.0,4,upper_bound_all_authors
@@ -213,30 +213,30 @@ wesleyan,Wesleyan University,2022,complete,97,91,274517.0,6,upper_bound_all_auth
 wesleyan,Wesleyan University,2023,complete,106,86,316395.0,20,upper_bound_all_authors
 wesleyan,Wesleyan University,2024,complete,104,91,308113.0,13,upper_bound_all_authors
 wesleyan,Wesleyan University,2025,complete,130,116,392016.0,14,upper_bound_all_authors
-wesleyan,Wesleyan University,2026,incomplete,146,126,427196.0,20,upper_bound_all_authors
+wesleyan,Wesleyan University,2026,incomplete,147,127,427895.0,20,upper_bound_all_authors
 yale,Yale University,2015,complete,1387,1148,3829090.0,239,upper_bound_all_authors
 yale,Yale University,2016,complete,1593,1372,4619436.0,221,upper_bound_all_authors
-yale,Yale University,2017,complete,1775,1583,5222832.0,192,upper_bound_all_authors
+yale,Yale University,2017,complete,1776,1583,5222832.0,193,upper_bound_all_authors
 yale,Yale University,2018,complete,2074,1798,6263742.0,276,upper_bound_all_authors
 yale,Yale University,2019,complete,2370,2093,5806140.0,277,upper_bound_all_authors
 yale,Yale University,2020,complete,3205,2841,8271477.0,364,upper_bound_all_authors
 yale,Yale University,2021,complete,3825,3422,10083979.0,403,upper_bound_all_authors
-yale,Yale University,2022,complete,4515,4032,12754142.0,483,upper_bound_all_authors
-yale,Yale University,2023,complete,4789,4222,14388851.0,567,upper_bound_all_authors
-yale,Yale University,2024,complete,5210,4610,16672497.0,600,upper_bound_all_authors
-yale,Yale University,2025,complete,5999,5331,20120673.0,668,upper_bound_all_authors
-yale,Yale University,2026,incomplete,5758,5104,19539944.0,654,upper_bound_all_authors
+yale,Yale University,2022,complete,4517,4034,12757294.0,483,upper_bound_all_authors
+yale,Yale University,2023,complete,4791,4224,14390049.0,567,upper_bound_all_authors
+yale,Yale University,2024,complete,5212,4612,16677786.0,600,upper_bound_all_authors
+yale,Yale University,2025,complete,6002,5329,20111967.0,673,upper_bound_all_authors
+yale,Yale University,2026,incomplete,5761,5106,19550072.0,655,upper_bound_all_authors
 bridgeport,University of Bridgeport,2015,complete,12,9,27130.0,3,corresponding_author
 bridgeport,University of Bridgeport,2016,complete,11,8,19580.0,3,corresponding_author
 bridgeport,University of Bridgeport,2017,complete,22,21,53504.0,1,corresponding_author
 bridgeport,University of Bridgeport,2018,complete,32,27,68763.0,5,corresponding_author
 bridgeport,University of Bridgeport,2019,complete,14,13,23678.0,1,corresponding_author
-bridgeport,University of Bridgeport,2020,complete,15,14,18274.0,1,corresponding_author
+bridgeport,University of Bridgeport,2020,complete,14,13,16373.0,1,corresponding_author
 bridgeport,University of Bridgeport,2021,complete,10,8,16870.0,2,corresponding_author
 bridgeport,University of Bridgeport,2022,complete,8,8,15985.0,0,corresponding_author
-bridgeport,University of Bridgeport,2023,complete,6,6,14406.0,0,corresponding_author
-bridgeport,University of Bridgeport,2024,complete,9,8,19323.0,1,corresponding_author
-bridgeport,University of Bridgeport,2025,complete,39,18,39029.0,21,corresponding_author
+bridgeport,University of Bridgeport,2023,complete,8,8,15604.0,0,corresponding_author
+bridgeport,University of Bridgeport,2024,complete,10,9,19622.0,1,corresponding_author
+bridgeport,University of Bridgeport,2025,complete,40,18,39029.0,22,corresponding_author
 bridgeport,University of Bridgeport,2026,incomplete,18,11,27344.0,7,corresponding_author
 ccsu,Central Connecticut State University,2015,complete,6,6,7904.0,0,corresponding_author
 ccsu,Central Connecticut State University,2016,complete,1,1,400.0,0,corresponding_author
@@ -245,10 +245,10 @@ ccsu,Central Connecticut State University,2018,complete,7,5,6766.0,2,correspondi
 ccsu,Central Connecticut State University,2019,complete,11,9,8448.0,2,corresponding_author
 ccsu,Central Connecticut State University,2020,complete,10,9,9456.0,1,corresponding_author
 ccsu,Central Connecticut State University,2021,complete,11,9,16370.0,2,corresponding_author
-ccsu,Central Connecticut State University,2022,complete,19,11,25704.0,8,corresponding_author
+ccsu,Central Connecticut State University,2022,complete,20,12,26603.0,8,corresponding_author
 ccsu,Central Connecticut State University,2023,complete,21,15,31338.0,6,corresponding_author
 ccsu,Central Connecticut State University,2024,complete,14,14,26274.0,0,corresponding_author
-ccsu,Central Connecticut State University,2025,complete,15,15,35016.0,0,corresponding_author
+ccsu,Central Connecticut State University,2025,complete,17,16,35915.0,1,corresponding_author
 ccsu,Central Connecticut State University,2026,incomplete,16,14,23108.0,2,corresponding_author
 conncoll,Connecticut College,2015,complete,2,2,6697.0,0,corresponding_author
 conncoll,Connecticut College,2016,complete,4,4,14290.0,0,corresponding_author
@@ -270,8 +270,8 @@ ecsu,Eastern Connecticut State University,2019,complete,4,4,7234.0,0,correspondi
 ecsu,Eastern Connecticut State University,2020,complete,5,4,6144.0,1,corresponding_author
 ecsu,Eastern Connecticut State University,2021,complete,9,4,7020.0,5,corresponding_author
 ecsu,Eastern Connecticut State University,2022,complete,3,3,6480.0,0,corresponding_author
-ecsu,Eastern Connecticut State University,2023,complete,4,4,9489.0,0,corresponding_author
-ecsu,Eastern Connecticut State University,2024,complete,5,2,3396.0,3,corresponding_author
+ecsu,Eastern Connecticut State University,2023,complete,5,5,10388.0,0,corresponding_author
+ecsu,Eastern Connecticut State University,2024,complete,6,3,4533.0,3,corresponding_author
 ecsu,Eastern Connecticut State University,2025,complete,6,5,13364.0,1,corresponding_author
 ecsu,Eastern Connecticut State University,2026,incomplete,7,6,12910.0,1,corresponding_author
 fairfield,Fairfield University,2015,complete,2,2,6689.0,0,corresponding_author
@@ -284,8 +284,8 @@ fairfield,Fairfield University,2021,complete,9,8,16922.0,1,corresponding_author
 fairfield,Fairfield University,2022,complete,7,6,11174.0,1,corresponding_author
 fairfield,Fairfield University,2023,complete,7,7,20570.0,0,corresponding_author
 fairfield,Fairfield University,2024,complete,16,14,38074.0,2,corresponding_author
-fairfield,Fairfield University,2025,complete,23,19,57404.0,4,corresponding_author
-fairfield,Fairfield University,2026,incomplete,22,20,62739.0,2,corresponding_author
+fairfield,Fairfield University,2025,complete,24,20,58003.0,4,corresponding_author
+fairfield,Fairfield University,2026,incomplete,23,21,66129.0,2,corresponding_author
 hartford,University of Hartford,2015,complete,3,2,1700.0,1,corresponding_author
 hartford,University of Hartford,2016,complete,8,7,10049.0,1,corresponding_author
 hartford,University of Hartford,2017,complete,8,7,14449.0,1,corresponding_author
@@ -293,8 +293,8 @@ hartford,University of Hartford,2018,complete,8,8,21752.0,0,corresponding_author
 hartford,University of Hartford,2019,complete,2,1,2026.0,1,corresponding_author
 hartford,University of Hartford,2020,complete,11,9,14777.0,2,corresponding_author
 hartford,University of Hartford,2021,complete,12,12,28160.0,0,corresponding_author
-hartford,University of Hartford,2022,complete,9,8,16131.0,1,corresponding_author
-hartford,University of Hartford,2023,complete,10,10,30113.0,0,corresponding_author
+hartford,University of Hartford,2022,complete,10,9,16830.0,1,corresponding_author
+hartford,University of Hartford,2023,complete,9,9,25113.0,0,corresponding_author
 hartford,University of Hartford,2024,complete,12,8,18825.0,4,corresponding_author
 hartford,University of Hartford,2025,complete,14,9,29786.0,5,corresponding_author
 hartford,University of Hartford,2026,incomplete,15,14,50986.0,1,corresponding_author
@@ -305,11 +305,11 @@ newhaven,University of New Haven,2018,complete,1,1,2750.0,0,corresponding_author
 newhaven,University of New Haven,2019,complete,7,7,15138.0,0,corresponding_author
 newhaven,University of New Haven,2020,complete,12,10,19748.0,2,corresponding_author
 newhaven,University of New Haven,2021,complete,17,15,38251.0,2,corresponding_author
-newhaven,University of New Haven,2022,complete,29,23,52784.0,6,corresponding_author
-newhaven,University of New Haven,2023,complete,34,25,58376.0,9,corresponding_author
+newhaven,University of New Haven,2022,complete,28,23,52784.0,5,corresponding_author
+newhaven,University of New Haven,2023,complete,35,26,58975.0,9,corresponding_author
 newhaven,University of New Haven,2024,complete,44,29,73826.0,15,corresponding_author
 newhaven,University of New Haven,2025,complete,67,28,83745.0,39,corresponding_author
-newhaven,University of New Haven,2026,incomplete,57,34,94630.0,23,corresponding_author
+newhaven,University of New Haven,2026,incomplete,58,35,94929.0,23,corresponding_author
 quinnipiac,Quinnipiac University,2015,complete,10,3,5258.0,7,corresponding_author
 quinnipiac,Quinnipiac University,2016,complete,9,5,8058.0,4,corresponding_author
 quinnipiac,Quinnipiac University,2017,complete,11,8,9623.0,3,corresponding_author
@@ -317,11 +317,11 @@ quinnipiac,Quinnipiac University,2018,complete,9,6,15024.0,3,corresponding_autho
 quinnipiac,Quinnipiac University,2019,complete,12,11,16392.0,1,corresponding_author
 quinnipiac,Quinnipiac University,2020,complete,19,18,30296.0,1,corresponding_author
 quinnipiac,Quinnipiac University,2021,complete,30,26,43733.0,4,corresponding_author
-quinnipiac,Quinnipiac University,2022,complete,20,17,30316.0,3,corresponding_author
+quinnipiac,Quinnipiac University,2022,complete,19,17,30316.0,2,corresponding_author
 quinnipiac,Quinnipiac University,2023,complete,24,21,42144.0,3,corresponding_author
-quinnipiac,Quinnipiac University,2024,complete,31,23,51305.0,8,corresponding_author
+quinnipiac,Quinnipiac University,2024,complete,32,24,52805.0,8,corresponding_author
 quinnipiac,Quinnipiac University,2025,complete,48,40,99387.0,8,corresponding_author
-quinnipiac,Quinnipiac University,2026,incomplete,42,38,101548.0,4,corresponding_author
+quinnipiac,Quinnipiac University,2026,incomplete,43,39,102547.0,4,corresponding_author
 sacredheart,Sacred Heart University,2015,complete,3,1,3470.0,2,corresponding_author
 sacredheart,Sacred Heart University,2016,complete,6,2,3490.0,4,corresponding_author
 sacredheart,Sacred Heart University,2017,complete,2,1,500.0,1,corresponding_author
@@ -344,32 +344,32 @@ scsu,Southern Connecticut State University,2021,complete,11,8,20419.0,3,correspo
 scsu,Southern Connecticut State University,2022,complete,13,11,26493.0,2,corresponding_author
 scsu,Southern Connecticut State University,2023,complete,15,14,32827.0,1,corresponding_author
 scsu,Southern Connecticut State University,2024,complete,15,11,31658.0,4,corresponding_author
-scsu,Southern Connecticut State University,2025,complete,19,15,37398.0,4,corresponding_author
+scsu,Southern Connecticut State University,2025,complete,17,14,32899.0,3,corresponding_author
 scsu,Southern Connecticut State University,2026,incomplete,15,10,27760.0,5,corresponding_author
-statewide,Connecticut (all 17 institutions),2015,complete,975,821,2551530.0,154,corresponding_author
-statewide,Connecticut (all 17 institutions),2016,complete,1133,988,3076704.0,145,corresponding_author
-statewide,Connecticut (all 17 institutions),2017,complete,1253,1128,3451370.0,125,corresponding_author
-statewide,Connecticut (all 17 institutions),2018,complete,1408,1206,3841031.0,202,corresponding_author
-statewide,Connecticut (all 17 institutions),2019,complete,1571,1424,3588639.0,147,corresponding_author
-statewide,Connecticut (all 17 institutions),2020,complete,2027,1832,4809039.0,195,corresponding_author
-statewide,Connecticut (all 17 institutions),2021,complete,2421,2202,5864322.0,219,corresponding_author
-statewide,Connecticut (all 17 institutions),2022,complete,2704,2426,6998276.0,278,corresponding_author
-statewide,Connecticut (all 17 institutions),2023,complete,2738,2404,7436582.0,334,corresponding_author
-statewide,Connecticut (all 17 institutions),2024,complete,2859,2511,8341049.0,348,corresponding_author
-statewide,Connecticut (all 17 institutions),2025,complete,3269,2871,10276622.0,398,corresponding_author
-statewide,Connecticut (all 17 institutions),2026,incomplete,3061,2700,9691303.0,361,corresponding_author
-statewide_no_yale,Connecticut without Yale,2015,complete,345,295,793365.0,50,corresponding_author
-statewide_no_yale,Connecticut without Yale,2016,complete,370,311,853238.0,59,corresponding_author
-statewide_no_yale,Connecticut without Yale,2017,complete,431,382,1061038.0,49,corresponding_author
-statewide_no_yale,Connecticut without Yale,2018,complete,499,405,1128156.0,94,corresponding_author
+statewide,Connecticut (all 17 institutions),2015,complete,979,820,2547040.0,159,corresponding_author
+statewide,Connecticut (all 17 institutions),2016,complete,1139,986,3071017.0,153,corresponding_author
+statewide,Connecticut (all 17 institutions),2017,complete,1269,1127,3448233.0,142,corresponding_author
+statewide,Connecticut (all 17 institutions),2018,complete,1413,1203,3833251.0,210,corresponding_author
+statewide,Connecticut (all 17 institutions),2019,complete,1574,1424,3588639.0,150,corresponding_author
+statewide,Connecticut (all 17 institutions),2020,complete,2030,1830,4805388.0,200,corresponding_author
+statewide,Connecticut (all 17 institutions),2021,complete,2423,2199,5857964.0,224,corresponding_author
+statewide,Connecticut (all 17 institutions),2022,complete,2697,2421,6984296.0,276,corresponding_author
+statewide,Connecticut (all 17 institutions),2023,complete,2739,2408,7433133.0,331,corresponding_author
+statewide,Connecticut (all 17 institutions),2024,complete,2859,2514,8345013.0,345,corresponding_author
+statewide,Connecticut (all 17 institutions),2025,complete,3253,2848,10176137.0,405,corresponding_author
+statewide,Connecticut (all 17 institutions),2026,incomplete,3072,2709,9714921.0,363,corresponding_author
+statewide_no_yale,Connecticut without Yale,2015,complete,346,295,793365.0,51,corresponding_author
+statewide_no_yale,Connecticut without Yale,2016,complete,370,310,850101.0,60,corresponding_author
+statewide_no_yale,Connecticut without Yale,2017,complete,435,381,1057901.0,54,corresponding_author
+statewide_no_yale,Connecticut without Yale,2018,complete,499,403,1122776.0,96,corresponding_author
 statewide_no_yale,Connecticut without Yale,2019,complete,531,479,1070578.0,52,corresponding_author
-statewide_no_yale,Connecticut without Yale,2020,complete,661,604,1361484.0,57,corresponding_author
-statewide_no_yale,Connecticut without Yale,2021,complete,783,715,1685588.0,68,corresponding_author
-statewide_no_yale,Connecticut without Yale,2022,complete,799,728,1785277.0,71,corresponding_author
-statewide_no_yale,Connecticut without Yale,2023,complete,825,718,1938090.0,107,corresponding_author
-statewide_no_yale,Connecticut without Yale,2024,complete,918,790,2375147.0,128,corresponding_author
-statewide_no_yale,Connecticut without Yale,2025,complete,1068,883,2686718.0,185,corresponding_author
-statewide_no_yale,Connecticut without Yale,2026,incomplete,939,806,2479539.0,133,corresponding_author
+statewide_no_yale,Connecticut without Yale,2020,complete,661,603,1359583.0,58,corresponding_author
+statewide_no_yale,Connecticut without Yale,2021,complete,784,715,1685588.0,69,corresponding_author
+statewide_no_yale,Connecticut without Yale,2022,complete,795,726,1780770.0,69,corresponding_author
+statewide_no_yale,Connecticut without Yale,2023,complete,830,723,1936378.0,107,corresponding_author
+statewide_no_yale,Connecticut without Yale,2024,complete,918,791,2375514.0,127,corresponding_author
+statewide_no_yale,Connecticut without Yale,2025,complete,1068,880,2665953.0,188,corresponding_author
+statewide_no_yale,Connecticut without Yale,2026,incomplete,942,809,2484876.0,133,corresponding_author
 trinity,Trinity College,2015,complete,7,5,14729.0,2,corresponding_author
 trinity,Trinity College,2016,complete,4,2,7050.0,2,corresponding_author
 trinity,Trinity College,2017,complete,8,7,15393.0,1,corresponding_author
@@ -378,22 +378,22 @@ trinity,Trinity College,2019,complete,4,4,7864.0,0,corresponding_author
 trinity,Trinity College,2020,complete,12,11,28111.0,1,corresponding_author
 trinity,Trinity College,2021,complete,14,12,27510.0,2,corresponding_author
 trinity,Trinity College,2022,complete,4,4,7672.0,0,corresponding_author
-trinity,Trinity College,2023,complete,16,11,23130.0,5,corresponding_author
+trinity,Trinity College,2023,complete,17,12,23929.0,5,corresponding_author
 trinity,Trinity College,2024,complete,15,11,31907.0,4,corresponding_author
-trinity,Trinity College,2025,complete,13,13,36117.0,0,corresponding_author
+trinity,Trinity College,2025,complete,15,14,36416.0,1,corresponding_author
 trinity,Trinity College,2026,incomplete,7,6,18909.0,1,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2015,complete,277,254,689734.0,23,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2016,complete,287,252,703616.0,35,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2017,complete,339,304,872124.0,35,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2018,complete,366,321,916257.0,45,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2015,complete,278,254,689734.0,24,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2016,complete,287,251,700479.0,36,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2017,complete,343,303,868987.0,40,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2018,complete,366,319,910877.0,47,corresponding_author
 uconn,University of Connecticut (incl. UConn Health),2019,complete,415,375,861161.0,40,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2020,complete,524,484,1133943.0,40,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2021,complete,622,578,1399622.0,44,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2022,complete,636,591,1485492.0,45,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2023,complete,636,563,1567341.0,73,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2024,complete,690,611,1903227.0,79,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2025,complete,742,656,2052415.0,86,corresponding_author
-uconn,University of Connecticut (incl. UConn Health),2026,incomplete,649,576,1830888.0,73,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2020,complete,525,484,1133943.0,41,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2021,complete,623,578,1399622.0,45,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2022,complete,632,587,1479387.0,45,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2023,complete,636,563,1566235.0,73,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2024,complete,688,609,1900658.0,79,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2025,complete,740,652,2038851.0,88,corresponding_author
+uconn,University of Connecticut (incl. UConn Health),2026,incomplete,650,577,1835338.0,73,corresponding_author
 uscga,United States Coast Guard Academy,2016,complete,1,1,738.0,0,corresponding_author
 uscga,United States Coast Guard Academy,2019,complete,1,1,2490.0,0,corresponding_author
 uscga,United States Coast Guard Academy,2021,complete,1,1,2592.0,0,corresponding_author
@@ -410,8 +410,8 @@ usj,University of Saint Joseph,2019,complete,3,1,1699.0,2,corresponding_author
 usj,University of Saint Joseph,2020,complete,4,4,5721.0,0,corresponding_author
 usj,University of Saint Joseph,2021,complete,2,2,4126.0,0,corresponding_author
 usj,University of Saint Joseph,2023,complete,4,4,9831.0,0,corresponding_author
-usj,University of Saint Joseph,2024,complete,7,6,10611.0,1,corresponding_author
-usj,University of Saint Joseph,2025,complete,6,5,14390.0,1,corresponding_author
+usj,University of Saint Joseph,2024,complete,6,6,10611.0,0,corresponding_author
+usj,University of Saint Joseph,2025,complete,5,5,14390.0,0,corresponding_author
 usj,University of Saint Joseph,2026,incomplete,7,7,21127.0,0,corresponding_author
 wcsu,Western Connecticut State University,2015,complete,2,1,1165.0,1,corresponding_author
 wcsu,Western Connecticut State University,2017,complete,1,0,0.0,1,corresponding_author
@@ -420,7 +420,7 @@ wcsu,Western Connecticut State University,2019,complete,2,2,1925.0,0,correspondi
 wcsu,Western Connecticut State University,2020,complete,3,2,2846.0,1,corresponding_author
 wcsu,Western Connecticut State University,2021,complete,5,4,4973.0,1,corresponding_author
 wcsu,Western Connecticut State University,2022,complete,2,1,2700.0,1,corresponding_author
-wcsu,Western Connecticut State University,2023,complete,3,3,4919.0,0,corresponding_author
+wcsu,Western Connecticut State University,2023,complete,4,4,5818.0,0,corresponding_author
 wcsu,Western Connecticut State University,2024,complete,3,2,6061.0,1,corresponding_author
 wcsu,Western Connecticut State University,2025,complete,2,1,3043.0,1,corresponding_author
 wcsu,Western Connecticut State University,2026,incomplete,3,1,1689.0,2,corresponding_author
@@ -434,17 +434,17 @@ wesleyan,Wesleyan University,2021,complete,22,20,42798.0,2,corresponding_author
 wesleyan,Wesleyan University,2022,complete,34,32,81814.0,2,corresponding_author
 wesleyan,Wesleyan University,2023,complete,34,26,77481.0,8,corresponding_author
 wesleyan,Wesleyan University,2024,complete,40,35,104595.0,5,corresponding_author
-wesleyan,Wesleyan University,2025,complete,40,36,120944.0,4,corresponding_author
-wesleyan,Wesleyan University,2026,incomplete,52,46,143839.0,6,corresponding_author
-yale,Yale University,2015,complete,633,529,1767705.0,104,corresponding_author
-yale,Yale University,2016,complete,772,683,2244725.0,89,corresponding_author
-yale,Yale University,2017,complete,832,755,2417746.0,77,corresponding_author
-yale,Yale University,2018,complete,917,809,2734134.0,108,corresponding_author
-yale,Yale University,2019,complete,1045,950,2532487.0,95,corresponding_author
-yale,Yale University,2020,complete,1372,1234,3471400.0,138,corresponding_author
-yale,Yale University,2021,complete,1644,1493,4195295.0,151,corresponding_author
-yale,Yale University,2022,complete,1922,1713,5256302.0,209,corresponding_author
-yale,Yale University,2023,complete,1929,1701,5540204.0,228,corresponding_author
-yale,Yale University,2024,complete,1952,1730,5993491.0,222,corresponding_author
-yale,Yale University,2025,complete,2219,2004,7637373.0,215,corresponding_author
-yale,Yale University,2026,incomplete,2133,1904,7248194.0,229,corresponding_author
+wesleyan,Wesleyan University,2025,complete,39,35,116445.0,4,corresponding_author
+wesleyan,Wesleyan University,2026,incomplete,51,45,140038.0,6,corresponding_author
+yale,Yale University,2015,complete,636,528,1763215.0,108,corresponding_author
+yale,Yale University,2016,complete,778,682,2242175.0,96,corresponding_author
+yale,Yale University,2017,complete,844,755,2417746.0,89,corresponding_author
+yale,Yale University,2018,complete,922,808,2731734.0,114,corresponding_author
+yale,Yale University,2019,complete,1048,950,2532487.0,98,corresponding_author
+yale,Yale University,2020,complete,1375,1233,3469650.0,142,corresponding_author
+yale,Yale University,2021,complete,1645,1490,4188937.0,155,corresponding_author
+yale,Yale University,2022,complete,1919,1710,5246829.0,209,corresponding_author
+yale,Yale University,2023,complete,1925,1700,5538467.0,225,corresponding_author
+yale,Yale University,2024,complete,1951,1731,5994798.0,220,corresponding_author
+yale,Yale University,2025,complete,2202,1983,7554953.0,219,corresponding_author
+yale,Yale University,2026,incomplete,2141,1910,7266475.0,231,corresponding_author
