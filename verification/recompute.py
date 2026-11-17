@@ -48,6 +48,30 @@ def short(x):
     return x.rsplit("/", 1)[-1] if x else x
 
 
+def slim(r):
+    """Keep only what this script reads, so the whole harvest fits in memory on a
+    small machine (the GitHub runner). Authorship count is preserved for the
+    100-author truncation check; only Connecticut institutions are kept (others
+    never change a result), and raw affiliation text only for authors matched
+    to a Connecticut institution (used by the Trinity check)."""
+    def keep(inst):
+        ids = [short(inst.get("id"))] + [short(x) for x in (inst.get("lineage") or [])]
+        return any(i in ID2INST for i in ids)
+    auths = []
+    for a in r.get("authorships") or []:
+        insts = [{"id": i.get("id"), "lineage": i.get("lineage")} for i in a.get("institutions") or [] if keep(i)]
+        auths.append({"institutions": insts, "raw_affiliation_strings": (a.get("raw_affiliation_strings") or []) if insts else []})
+    src = ((r.get("primary_location") or {}).get("source")) or {}
+    return {
+        "id": r.get("id"), "doi": r.get("doi"), "type": r.get("type"), "publication_year": r.get("publication_year"),
+        "open_access": {"oa_status": (r.get("open_access") or {}).get("oa_status")},
+        "apc_list": {"value_usd": (r.get("apc_list") or {}).get("value_usd")},
+        "corresponding_institution_ids": r.get("corresponding_institution_ids"),
+        "primary_location": {"source": {k: src.get(k) for k in ("type", "host_organization_lineage_names", "host_organization_name")}},
+        "authorships": auths,
+    }
+
+
 # ---------- load ----------
 list_recs = {}          # id -> record (from list pages)
 list_dupes = 0
@@ -70,9 +94,9 @@ for fn in sorted(os.listdir(CACHE)):
             wid = short(r["id"])
             if wid in list_recs:
                 list_dupes += 1
-            list_recs[wid] = r
+            list_recs[wid] = slim(r)
     elif re.match(r"https://api\.openalex\.org/works/W\d+\?", u):
-        single[short(body["id"])] = body
+        single[short(body["id"])] = slim(body)
 
 # ---------- truncation handling ----------
 trunc = [w for w, r in list_recs.items() if len(r.get("authorships") or []) >= 100]
