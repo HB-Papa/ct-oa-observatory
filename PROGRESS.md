@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 8: monthly refresh (workflow built and tested locally; waiting on Chris for the secret and deploy choice)
+Phase 8: monthly refresh (working end to end; awaiting Chris's approval)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -33,6 +33,7 @@ Phase 8: monthly refresh (workflow built and tested locally; waiting on Chris fo
 - 2026-11-16: Accessibility audit agent (docs/accessibility-audit.md): axe 0 violations on 25 pages, light and dark, 1280 and 320px, after fixing 1; Lighthouse 100 on 5 pages; keyboard, reflow, text spacing and target size pass. Indexing turned on. Deployed.
 - 2026-11-16: Chris's feedback applied: full name and University of South Carolina on About; APA citation; clearer data-date wording; larger line charts with CSS-only hover readout, dashed 2025-2026 segment, short-name labels; three spacing bugs fixed. axe 0 violations on changed pages, light and dark.
 - 2026-11-16: Phase 7 approved (with "Statewide total" labels). Phase 8: .github/workflows/monthly-refresh.yml, pipeline/refresh_report.py with quality gates, changelog.json, verification scripts made CI-ready, quality report made byte-stable. Whole refresh path run locally from cache: all steps pass. 33 pytest tests pass.
+- 2026-11-17: First successful monthly refresh on GitHub (run 44108525935): new snapshot 2026-11-17, 2,129 credits, every check passed, refreshed data committed and deployed automatically through Vercel's GitHub app. Statewide 174,990 articles (+71), 67.3% free to read (unchanged). Earlier attempts: two stopped at the key check (secret first added to open-sun by mistake), one ran out of memory in the recompute (fixed, 21.8 GB to 2.7 GB). Failure issues #1 and #2 closed.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -47,7 +48,7 @@ Phase 8: monthly refresh (workflow built and tested locally; waiting on Chris fo
 ## Next
 
 - Optional: a short NVDA or VoiceOver pass by Chris.
-- Phase 8: Chris adds the OPENALEX_API_KEY secret; then a first run by hand from the Actions tab, then Chris's approval. (Vercel GitHub app connected 2026-11-16: pushes to main deploy automatically.)
+- Phase 8: Chris's approval. Next scheduled run: 3 December 2026.
 - Phase 9: write-ups.
 
 ## Open questions
