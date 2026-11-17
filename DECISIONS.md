@@ -208,4 +208,5 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Not rerun monthly:** the cross-checks against other sources (Unpaywall, OpenAIRE, DOAJ, OpenAPC), which CLAUDE.md says are quarterly or by hand. Their figures on the Methods page describe the snapshot they were run on.
 - **Reproducibility fixes found while testing:** `verification/recompute.py` finds the current snapshot's cache itself (it had a fixed Windows path), `verification/compare.py` now exits with an error on any FAIL, and every table in the quality report has a full sort order, so reruns are byte-identical.
 - **Actions pinned** to commit SHAs of releases at least two weeks old: checkout v7.0.1, setup-python v7.1.0 (Python 3.15.2, matching the lock file), setup-node v7.1.0.
-- **Pending Chris:** the `OPENALEX_API_KEY` repository secret, and how pushes get deployed (Vercel's GitHub app, or a `VERCEL_TOKEN` secret).
+- **Deploy route (Chris, 2026-11-16): Vercel's GitHub app.** Chris gave the app access to the repository and `vercel git connect` succeeded, so every push to main deploys. No Vercel token is stored anywhere. The workflow's token step stays as an unused fallback.
+- **Pending Chris:** the `OPENALEX_API_KEY` repository secret.

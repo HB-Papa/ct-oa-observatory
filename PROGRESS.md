@@ -45,9 +45,9 @@ Phase 8: monthly refresh (workflow built and tested locally; waiting on Chris fo
 | make | Missing (not needed; a Python `run_all` script replaces the Makefile on Windows) |
 
 ## Next
-- Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
+
 - Optional: a short NVDA or VoiceOver pass by Chris.
-- Phase 8: Chris adds the OPENALEX_API_KEY secret and picks a deploy route (Vercel GitHub app access, or a VERCEL_TOKEN secret); then a first run by hand from the Actions tab, then Chris's approval.
+- Phase 8: Chris adds the OPENALEX_API_KEY secret; then a first run by hand from the Actions tab, then Chris's approval. (Vercel GitHub app connected 2026-11-16: pushes to main deploy automatically.)
 - Phase 9: write-ups.
 
 ## Open questions
