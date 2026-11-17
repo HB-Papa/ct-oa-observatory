@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 8: monthly refresh (working end to end; awaiting Chris's approval)
+Phase 9: write-ups (drafted in docs/writeups.md, awaiting Chris's review)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -34,6 +34,7 @@ Phase 8: monthly refresh (working end to end; awaiting Chris's approval)
 - 2026-11-16: Chris's feedback applied: full name and University of South Carolina on About; APA citation; clearer data-date wording; larger line charts with CSS-only hover readout, dashed 2025-2026 segment, short-name labels; three spacing bugs fixed. axe 0 violations on changed pages, light and dark.
 - 2026-11-16: Phase 7 approved (with "Statewide total" labels). Phase 8: .github/workflows/monthly-refresh.yml, pipeline/refresh_report.py with quality gates, changelog.json, verification scripts made CI-ready, quality report made byte-stable. Whole refresh path run locally from cache: all steps pass. 33 pytest tests pass.
 - 2026-11-17: First successful monthly refresh on GitHub (run 44108525935): new snapshot 2026-11-17, 2,129 credits, every check passed, refreshed data committed and deployed automatically through Vercel's GitHub app. Statewide 174,990 articles (+71), 67.3% free to read (unchanged). Earlier attempts: two stopped at the key check (secret first added to open-sun by mistake), one ran out of memory in the recompute (fixed, 21.8 GB to 2.7 GB). Failure issues #1 and #2 closed.
+- 2026-11-17: Phase 8 approved. Phase 9: docs/writeups.md (abstract, resume bullets, interview notes) from the 2026-11-17 figures; style scan clean; kept out of git.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -48,8 +49,8 @@ Phase 8: monthly refresh (working end to end; awaiting Chris's approval)
 ## Next
 
 - Optional: a short NVDA or VoiceOver pass by Chris.
-- Phase 8: Chris's approval. Next scheduled run: 3 December 2026.
-- Phase 9: write-ups.
+- Next scheduled refresh: 3 December 2026.
+- Phase 9: Chris reviews docs/writeups.md (kept local).
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.

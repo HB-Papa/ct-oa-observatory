@@ -211,3 +211,9 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Deploy route (Chris, 2026-11-16): Vercel's GitHub app.** Chris gave the app access to the repository and `vercel git connect` succeeded, so every push to main deploys. No Vercel token is stored anywhere. The workflow's token step stays as an unused fallback.
 - **Pending Chris:** the `OPENALEX_API_KEY` repository secret.
 - **First full run on GitHub (2026-11-17) ran out of memory** in the independent recomputation: the runner "lost communication" after the download, tests and table build had passed. Measured locally, `verification/recompute.py` peaked at 21.8 GB because it held every full record in memory; the GitHub runner has 16 GB. It now keeps only the fields it reads (Connecticut institutions, raw affiliation text for Connecticut authors, and a few work-level fields), peaking at 2.7 GB with byte-identical output. Nothing was published by the failed run.
+
+## 2026-11-17 — Phase 9 write-ups
+- **File:** `docs/writeups.md` (abstract, eight resume bullets, interview notes). Kept out of git like `docs/pitch.md`, because it is personal career material and includes a statement about how the project was built; Chris decides whether to publish it.
+- **Figures:** all from the 2026-11-17 refresh (174,990 articles, 67.3% free to read) and the phase 6 cross-check files. Checked against the metric CSVs when written. If a later refresh changes them, update the write-ups from the current files.
+- **Style:** Chris's phase 9 rules, checked by a scan for em and en dashes, colons, semicolons and common filler adjectives. Interview headings are questions so no colons are needed. The site address is written without "https://" for the same reason.
+- **"How did you build it":** the notes say the project was built with Claude Code and list decisions Chris made. Chris may reword or remove this.

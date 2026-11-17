@@ -17,6 +17,7 @@ data/derived/*.parquet
 verification/affiliation_unconfirmed_samples.csv
 # Outreach text with the owner's full name: kept local (Chris, 2026-11-16)
 docs/pitch.md
+docs/writeups.md
 
 .vercel
 .env*
