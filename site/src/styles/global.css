@@ -196,6 +196,18 @@ svg .dot-b { fill: var(--s-b); stroke: var(--surface); stroke-width: 2; }
 svg .hollow-a { fill: var(--surface); stroke: var(--s-a); stroke-width: 2; }
 svg .hollow-b { fill: var(--surface); stroke: var(--s-b); stroke-width: 2; }
 svg .incomplete-band { fill: var(--track); }
+svg .key-a { fill: var(--s-a); }
+svg .key-b { fill: var(--s-b); }
+/* Hover readout (CSS only): each year's column reveals its guide, dots and box. */
+svg .yr-hit { fill: transparent; pointer-events: all; }
+svg .yr-show { visibility: hidden; pointer-events: none; }
+svg .yr:hover .yr-show { visibility: visible; }
+svg .yr-guide { stroke: var(--axis); stroke-width: 1; stroke-dasharray: 3 3; }
+svg .yr-tip { fill: var(--page); stroke: var(--rule-strong); stroke-width: 1; }
+svg text.yr-tip-year { fill: var(--ink); font-weight: 700; font-size: 14px; }
+svg text.yr-tip-text { fill: var(--body); font-size: 13px; }
+.chart-hint { margin: -0.4rem 0 0.25rem; }
+@media (hover: none) { .chart-hint { display: none; } }
 
 /* Definitions */
 dl.defs { display: grid; grid-template-columns: max-content 1fr; gap: 0.55rem 1.25rem; margin: 0; font-size: 1rem; }

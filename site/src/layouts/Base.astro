@@ -54,15 +54,16 @@ const pageTitle = title === 'Overview' ? 'Connecticut Open Access Observatory' :
     <footer class="site-footer">
       <div class="col">
         <p>
-          Data snapshot <time datetime={manifest.snapshot_date}>{manifest.snapshot_date}</time>.
-          Source: <a href="https://openalex.org/">OpenAlex</a>, released into the public domain (CC0). This site’s data is released the same way.
+          Figures use data downloaded from <a href="https://openalex.org/">OpenAlex</a> on
+          {' '}<time datetime={manifest.snapshot_date}>{new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>.
+          OpenAlex is in the public domain (CC0), and so is this site’s data.
         </p>
         <p>Scope: {manifest.scope}</p>
         <p>No cookies, no analytics, and nothing loaded from other servers.</p>
         <p>
-          <a href="/methods/">How the numbers are made</a> ·
-          <a href="/downloads/">Download the data</a> ·
-          <a href="/changelog/">Changelog</a> ·
+          <a href="/methods/">How the numbers are made</a>{' · '}
+          <a href="/downloads/">Download the data</a>{' · '}
+          <a href="/changelog/">Changelog</a>{' · '}
           <a href={REPO_URL}>Code and pipeline on GitHub</a>
         </p>
       </div>

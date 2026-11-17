@@ -157,3 +157,15 @@ export function apcFor(key: string) {
 export function booksFor(key: string) {
   return tables.books.find((r) => r.entity === key);
 }
+
+/** Abbreviations for tight spaces such as chart end labels. These are the
+ *  forms each institution commonly uses for itself. */
+const ABBREVIATIONS: Record<string, string> = {
+  yale: 'Yale', uconn: 'UConn', wesleyan: 'Wesleyan', trinity: 'Trinity', conncoll: 'Conn College',
+  quinnipiac: 'Quinnipiac', fairfield: 'Fairfield', sacredheart: 'Sacred Heart', hartford: 'UHart',
+  newhaven: 'UNH', scsu: 'SCSU', ccsu: 'CCSU', wcsu: 'WCSU', ecsu: 'ECSU', uscga: 'USCGA',
+  bridgeport: 'UB', usj: 'USJ', statewide: 'All 17', statewide_no_yale: 'Without Yale',
+};
+export function abbreviation(key: string): string {
+  return ABBREVIATIONS[key] ?? shortName(key);
+}

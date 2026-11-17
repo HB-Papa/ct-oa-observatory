@@ -31,7 +31,7 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
 <Base title="Methods and limitations" current="methods"
   description="How the Connecticut Open Access Observatory counts articles, classifies open access, estimates fees, and where the numbers fall short.">
   <div class="page-head">
-    <p class="kicker">Methods and limitations · data snapshot {snapshotLong}</p>
+    <p class="kicker">Methods and limitations · OpenAlex data as of {snapshotLong}</p>
     <h1>How the numbers are made</h1>
     <p class="deck">
       Every figure on this site comes from OpenAlex, a free and open index of research. Other sources are used only to
@@ -57,7 +57,7 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
   <section class="block" aria-labelledby="scope">
     <h2 id="scope">What is counted</h2>
     <p>
-      <strong>Source.</strong> OpenAlex, snapshot taken {snapshotLong}. OpenAlex is run by the nonprofit OurResearch and
+      <strong>Source.</strong> OpenAlex. The data was downloaded on {snapshotLong}, and every figure on the site reflects OpenAlex as of that date. OpenAlex is run by the nonprofit OurResearch and
       released into the public domain (CC0). It is the only source for the numbers on this site.
     </p>
     <p>
@@ -306,7 +306,14 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
       This site’s own data is released into the public domain (CC0), except the cross-check files built from OpenAIRE and
       OpenAPC, which keep those sources’ licenses. The code is MIT licensed.
     </p>
-    <p><strong>To cite this site:</strong> Connecticut Open Access Observatory, data snapshot {snapshotLong}. https://ct-oa-observatory.vercel.app</p>
+    <h3 id="cite">How to cite this site (APA 7th edition)</h3>
+    <p class="citation">Misciagna, C. (2026). <cite>Connecticut Open Access Observatory</cite> [Website and data set]. https://ct-oa-observatory.vercel.app/</p>
+    <p>To cite one page, name the page and give its address, for example:</p>
+    <p class="citation">Misciagna, C. (2026). <cite>Methods and limitations</cite>. Connecticut Open Access Observatory. https://ct-oa-observatory.vercel.app/methods/</p>
+    <p class="small muted">
+      The figures change when the data is refreshed. If you quote a specific number, also say that it uses OpenAlex data
+      as of {snapshotLong}, so readers can match it to the right version on the <a href="/changelog/">Changelog</a>.
+    </p>
   </section>
 </Base>
 
@@ -316,5 +323,6 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
   .toc ol { margin: 0; padding-left: 1.4rem; columns: 2 16rem; }
   .toc li { margin-bottom: 0.35rem; }
   ul.spaced li { margin-bottom: 0.75rem; }
+  .citation { padding-left: 2rem; text-indent: -2rem; }
   section.block table.data th[scope='row'] { font-weight: 400; }
 </style>

@@ -31,6 +31,7 @@ Phase 7: full site, Compare, downloads, Methods, accessibility audit (deployed, 
 - 2026-11-16: Phase 6 approved. Stray Vercel project "site" (created by mistake) deleted at Chris's request.
 - 2026-11-16: Phase 7 build: all 17 profiles, Institutions directory, Compare (no-JS, CSS :has()), Methods and Limitations, Downloads with generated data dictionary, About, Changelog, 404, sitemap, robots.txt. Green opportunity on Overview and profiles. New pipeline outputs: quality/exclusions_summary.csv, crosschecks/summary.csv (s13). README rewritten with a guide for librarians. 25 pages, zero scripts.
 - 2026-11-16: Accessibility audit agent (docs/accessibility-audit.md): axe 0 violations on 25 pages, light and dark, 1280 and 320px, after fixing 1; Lighthouse 100 on 5 pages; keyboard, reflow, text spacing and target size pass. Indexing turned on. Deployed.
+- 2026-11-16: Chris's feedback applied: full name and University of South Carolina on About; APA citation; clearer data-date wording; larger line charts with CSS-only hover readout, dashed 2025-2026 segment, short-name labels; three spacing bugs fixed. axe 0 violations on changed pages, light and dark.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|

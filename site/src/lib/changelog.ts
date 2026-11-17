@@ -3,6 +3,14 @@
 export const CHANGELOG: { date: string; title: string; items: string[] }[] = [
   {
     date: '2026-11-16',
+    title: 'Charts and citation',
+    items: [
+      'Line charts are larger, show each year’s figures when you point at them, and join 2025 to the incomplete year 2026 with a dashed line.',
+      'An APA citation for the site is on the Methods page. No figures changed.',
+    ],
+  },
+  {
+    date: '2026-11-16',
     title: 'Full site',
     items: [
       'Profiles for all 17 institutions, a Compare page, a Methods and Limitations page, and Downloads with a data dictionary.',

@@ -57,7 +57,7 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
 <Base title="Overview" current="overview"
   description="How much of the research from 17 Connecticut colleges and universities is free to read, and how that has changed since 2015.">
   <div class="page-head">
-    <p class="kicker">Statewide report · {first.year}–{lastC.year} · data snapshot {snapshotLong}</p>
+    <p class="kicker">Statewide report · {first.year}–{lastC.year} · OpenAlex data as of {snapshotLong}</p>
     <h1>{capitalize(inWords(all.free_to_read_share))} of Connecticut’s research is free to read. The rest is behind a paywall.</h1>
     <p class="deck">
       An analysis of {n(all.works)} research articles by authors at 17 Connecticut colleges and universities,
@@ -207,7 +207,7 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
         <p>
           Across all 17 institutions, the largest free route is {catLabel(largestFree[0].key).toLowerCase()} ({pct(largestFree[0].share)}),
           followed by {catLabel(largestFree[1].key).toLowerCase()} ({pct(largestFree[1].share)}).
-          {pct(mixAll.find((c) => c.key === 'closed')!.share)} of articles are closed, and
+          {' '}{pct(mixAll.find((c) => c.key === 'closed')!.share)} of articles are closed, and
           {' '}{pct(mixNoYale.find((c) => c.key === 'closed')!.share)} without Yale.
         </p>
       </Fragment>

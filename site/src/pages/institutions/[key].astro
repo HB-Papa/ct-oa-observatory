@@ -10,7 +10,7 @@ import ClosedBars from '../../components/ClosedBars.astro';
 import GreenOpportunity from '../../components/GreenOpportunity.astro';
 import {
   manifest, CATEGORIES, STATEWIDE, PROFILE_KEYS, tables, freeFor, categoryMix, freeTrend,
-  categoryTrend, entityName, topBy, apcFor, booksFor,
+  categoryTrend, entityName, topBy, apcFor, booksFor, abbreviation,
 } from '../../lib/data';
 import { n, pct, pct0, points, dollars, inWords, capitalize } from '../../lib/format';
 
@@ -56,7 +56,7 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
   description={`How much of ${short}'s research is free to read, 2015 to 2025, from OpenAlex data.`}>
   <div class="page-head">
     <p class="small breadcrumb"><a href="/institutions/">All institutions</a></p>
-    <p class="kicker">Institution profile · {first.year}–{lastC.year} · data snapshot {snapshotLong}</p>
+    <p class="kicker">Institution profile · {first.year}–{lastC.year} · OpenAlex data as of {snapshotLong}</p>
     <h1>{capitalize(inWords(me.free_to_read_share))} of {short}’s research is free to read.</h1>
     <p class="deck">
       {n(me.works)} research articles with at least one {short} author, published from {first.year} to {lastC.year}.
@@ -98,11 +98,11 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
         <p>
           The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}, peaking at
           {' '}{pct(peak.share)} in {peak.year}. The statewide line is shown for comparison.
-          {small && ` ${short} has fewer than 1,000 articles in these years, so its yearly share can move a lot from one year to the next.`}
+          {small && ` ${short} has fewer than 1,000 articles in these years, so its yearly share can move a lot from one year to the next.`}{' '}
           {yInc.year} is incomplete: {pct(yInc.share)} of the {n(yInc.works)} articles counted so far are free to read.
         </p>
       </Fragment>
-      <LineChart a={{ name: short, points: trend }} b={{ name: 'All 17', points: trendAll }} yMin={y0} yMax={y1} />
+      <LineChart a={{ name: short, short: abbreviation(key), points: trend }} b={{ name: 'All 17', points: trendAll }} yMin={y0} yMax={y1} />
       <table class="data" slot="table">
         <caption>Share of {short} articles free to read, by year, with the statewide figure</caption>
         <thead><tr><th scope="col">Year</th><th scope="col" class="r">{short}: free / total</th><th scope="col" class="r">{short}: share</th><th scope="col" class="r">All 17: share</th></tr></thead>
