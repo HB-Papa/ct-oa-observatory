@@ -3,14 +3,20 @@ import '@fontsource-variable/public-sans';
 import '@fontsource-variable/public-sans/wght-italic.css';
 import '@fontsource-variable/source-serif-4';
 import '../styles/global.css';
-import { manifest, PROFILE_KEYS, entityName } from '../lib/data';
+import { manifest } from '../lib/data';
+import { INDEXABLE, SITE_URL, REPO_URL } from '../lib/site';
 
 interface Props { title: string; description: string; current?: string }
 const { title, description, current } = Astro.props;
 const nav = [
   { href: '/', label: 'Overview', key: 'overview' },
-  ...PROFILE_KEYS.map((k) => ({ href: `/institutions/${k}/`, label: entityName(k).replace(' (incl. UConn Health)', ''), key: k })),
+  { href: '/institutions/', label: 'Institutions', key: 'institutions' },
+  { href: '/compare/', label: 'Compare', key: 'compare' },
+  { href: '/methods/', label: 'Methods', key: 'methods' },
+  { href: '/downloads/', label: 'Downloads', key: 'downloads' },
+  { href: '/about/', label: 'About', key: 'about' },
 ];
+const canonical = new URL(Astro.url.pathname, SITE_URL).href;
 const pageTitle = title === 'Overview' ? 'Connecticut Open Access Observatory' : `${title} · Connecticut Open Access Observatory`;
 ---
 <!doctype html>
@@ -20,7 +26,8 @@ const pageTitle = title === 'Overview' ? 'Connecticut Open Access Observatory' :
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="noindex" /><!-- not public until launch (phase 5) -->
+    {!INDEXABLE && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
     <meta name="referrer" content="no-referrer" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239b1c31'/%3E%3Cpath d='M9 22V10h3l4 7 4-7h3v12' fill='none' stroke='white' stroke-width='2.5'/%3E%3C/svg%3E" />
@@ -51,9 +58,12 @@ const pageTitle = title === 'Overview' ? 'Connecticut Open Access Observatory' :
           Source: <a href="https://openalex.org/">OpenAlex</a>, released into the public domain (CC0). This site’s data is released the same way.
         </p>
         <p>Scope: {manifest.scope}</p>
+        <p>No cookies, no analytics, and nothing loaded from other servers.</p>
         <p>
-          No cookies, no analytics, and nothing loaded from other servers. Methods, downloads and all 17
-          institution profiles come in the next version.
+          <a href="/methods/">How the numbers are made</a> ·
+          <a href="/downloads/">Download the data</a> ·
+          <a href="/changelog/">Changelog</a> ·
+          <a href={REPO_URL}>Code and pipeline on GitHub</a>
         </p>
       </div>
     </footer>

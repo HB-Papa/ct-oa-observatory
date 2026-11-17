@@ -6,10 +6,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { csvParse, autoType } from 'd3-dsv';
 
-const METRICS = path.resolve(process.cwd(), '..', 'data', 'derived', 'metrics');
+export const DERIVED = path.resolve(process.cwd(), '..', 'data', 'derived');
+const METRICS = path.join(DERIVED, 'metrics');
 
-function load<T = Record<string, any>>(name: string): T[] {
-  const text = fs.readFileSync(path.join(METRICS, `${name}.csv`), 'utf-8');
+function load<T = Record<string, any>>(name: string, dir = METRICS): T[] {
+  const text = fs.readFileSync(path.join(dir, `${name}.csv`), 'utf-8');
   return csvParse(text, autoType) as unknown as T[];
 }
 
@@ -33,7 +34,31 @@ export const tables = {
   apc: load('apc_estimates_2015_2025'),
   coverage: load('corresponding_coverage'),
   books: load('books_and_chapters_2015_2025'),
+  green: load('green_opportunity_2015_2025'),
 };
+
+/** Cross-check and quality tables. Used only on the Methods page, never blended
+ *  into the OpenAlex figures above. */
+export const checks = {
+  summary: load('summary', path.join(DERIVED, 'crosschecks')),
+  doajFeeUnconfirmed: load('doaj_fee_unconfirmed', path.join(DERIVED, 'crosschecks')),
+  openapc: load('openapc_summary', path.join(DERIVED, 'crosschecks')),
+  exclusions: load('exclusions_summary', path.join(DERIVED, 'quality')),
+};
+export function check(metric: string) {
+  return checks.summary.find((r) => r.metric === metric)!;
+}
+export function exclusions(reason: string, period = 'complete'): number {
+  return checks.exclusions.find((r) => r.exclude_reason === reason && r.period === period)?.works ?? 0;
+}
+export function openapc(comparison: string) {
+  return checks.openapc.find((r) => r.comparison === comparison)!;
+}
+
+export function greenFor(key: string) {
+  const k = key === 'statewide_no_yale' ? 'statewide_without_yale' : key;
+  return tables.green.find((r) => r.entity === k)!;
+}
 
 /** OA categories in display order, with plain-language names and meanings. */
 export const CATEGORIES = [
@@ -54,9 +79,10 @@ export const CATEGORIES = [
 ] as const;
 export type CategoryKey = (typeof CATEGORIES)[number]['key'];
 
-/** Institutions that have a published profile page. Phase 4 ships one; the
- *  rest are added by extending this list. */
-export const PROFILE_KEYS = ['uconn'];
+/** Short display names (the long OpenAlex-style name is used in tables). */
+export function shortName(key: string): string {
+  return entityName(key).replace(' (incl. UConn Health)', '');
+}
 
 export const STATEWIDE = 'statewide';
 export const STATEWIDE_NO_YALE = 'statewide_no_yale';
@@ -68,6 +94,14 @@ export function entityName(key: string): string {
 
 export function institutionKeys(): string[] {
   return tables.free.map((r) => r.entity).filter((k) => k !== STATEWIDE && k !== STATEWIDE_NO_YALE);
+}
+
+/** Every institution has a profile page. */
+export const PROFILE_KEYS = institutionKeys();
+
+/** Institutions in alphabetical order of their short name. */
+export function institutionsAlpha(): string[] {
+  return [...institutionKeys()].sort((a, b) => shortName(a).localeCompare(shortName(b)));
 }
 
 export function freeFor(key: string) {

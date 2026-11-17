@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { REPO_URL } from '../lib/site';
+---
+<Base title="About" current="about" description="Why the Connecticut Open Access Observatory exists, who made it, and the principles it follows.">
+  <div class="page-head">
+    <p class="kicker">About</p>
+    <h1>About this site</h1>
+    <p class="deck">
+      A free, public look at how much research from Connecticut’s colleges and universities anyone can read without a
+      subscription.
+    </p>
+  </div>
+
+  <section class="block" aria-labelledby="why">
+    <h2 id="why">Why it exists</h2>
+    <p>
+      Libraries pay for journal subscriptions, support open access publishing, and run repositories where authors can share
+      their work. Decisions about all three need evidence: how much research is already free, which routes it takes, where
+      the paywalled articles are, and what authors may be paying to publish. This site brings those figures together for
+      17 Connecticut institutions, from open data, with its methods and limits in the open.
+    </p>
+    <p>
+      It is meant for librarians, scholarly communication staff, research offices, and anyone curious about open access
+      in the state.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="principles">
+    <h2 id="principles">Principles</h2>
+    <ul>
+      <li><strong>Institutions, not people.</strong> The site reports totals for institutions. It has no pages about individual researchers.</li>
+      <li><strong>Describe, don’t rank.</strong> Institutions differ in size, subjects and funding. The figures are context for decisions, not a league table.</li>
+      <li><strong>Show the working.</strong> Every number comes from open data and a published script. Estimates and proxies are labeled as such, and the <a href="/methods/">Methods page</a> says where the numbers fall short.</li>
+      <li><strong>No tracking.</strong> No cookies, analytics or accounts, and nothing is loaded from other servers.</li>
+      <li><strong>Open data.</strong> All the tables can be <a href="/downloads/">downloaded</a> and reused freely.</li>
+      <li><strong>Accessible.</strong> Every chart has a written summary and a data table, and the site is built to meet WCAG 2.2 AA.</li>
+    </ul>
+  </section>
+
+  <section class="block" aria-labelledby="who">
+    <h2 id="who">Who made it</h2>
+    <p>
+      The site was built by Chris, a librarian with an MLIS, as an independent project. It is not affiliated with any of the
+      institutions it covers, or with OpenAlex.
+    </p>
+    <p>
+      Corrections and questions are welcome through the project’s <a href={`${REPO_URL}/issues`}>GitHub issues page</a>.
+      If you work at one of these institutions and see something that looks wrong, such as missing repository copies or
+      misassigned articles, that is especially useful to hear.
+    </p>
+  </section>
+</Base>

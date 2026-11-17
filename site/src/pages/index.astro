@@ -6,9 +6,10 @@ import SegmentedBars from '../components/SegmentedBars.astro';
 import LineChart from '../components/LineChart.astro';
 import BarList from '../components/BarList.astro';
 import ClosedBars from '../components/ClosedBars.astro';
+import GreenOpportunity from '../components/GreenOpportunity.astro';
 import {
   manifest, CATEGORIES, STATEWIDE, STATEWIDE_NO_YALE, PROFILE_KEYS, tables,
-  freeFor, categoryMix, freeTrend, categoryTrend, institutionKeys, entityName, topBy, apcFor,
+  freeFor, categoryMix, freeTrend, categoryTrend, institutionKeys, entityName, topBy, apcFor, greenFor,
 } from '../lib/data';
 import { n, pct, pct0, dollars, inWords, capitalize } from '../lib/format';
 
@@ -89,7 +90,12 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
         Authors may have paid about <strong>{dollars(apc.corresponding.estimated_usd)}</strong> in publishing fees, based on
         journals’ listed prices <span class="estimate-tag">Estimate</span>
       </li>
+      <li>
+        About {n(greenFor(STATEWIDE).candidates)} closed or bronze articles could likely be made free by depositing the
+        author’s accepted version in a repository <span class="estimate-tag">Proxy</span>
+      </li>
     </ol>
+    <p class="small"><a href="/methods/">How these figures are made, and their limits</a></p>
   </section>
 
   <section class="block" aria-labelledby="categories">
@@ -259,6 +265,8 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
     </div>
   </section>
 
+  <GreenOpportunity entity={STATEWIDE} who="all 17 institutions" />
+
   <section class="block" aria-labelledby="fees">
     <h2 id="fees">What authors may be paying to publish <span class="estimate-tag">Estimate</span></h2>
     <p>
@@ -301,6 +309,10 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
         corresponding, the fee is credited to each in their own figures, but counted once here. Only
         {' '}{pct(apc.coverage.coverage_share)} of articles have a corresponding author’s institution recorded. {n(feeUnconfirmed.works)} articles are in open access
         journals whose fee is not confirmed and are not counted, which may understate the total.
+      </p>
+      <p>
+        Fees that other universities report actually paying (to OpenAPC) for the same articles average well under
+        today’s listed prices. <a href="/methods/#fees">See the comparison on the Methods page</a>.
       </p>
     </div>
   </section>

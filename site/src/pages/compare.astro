@@ -1,0 +1,142 @@
+---
+// Compare 2 to 4 institutions, with no JavaScript. Every figure lists all 17
+// institutions plus the two statewide groups. Ticking boxes hides the other
+// rows, using CSS :has() rules generated below. With nothing ticked, all rows
+// show, so the page works fully even where :has() is not supported.
+import Base from '../layouts/Base.astro';
+import Figure from '../components/Figure.astro';
+import BarList from '../components/BarList.astro';
+import CategoryLegend from '../components/CategoryLegend.astro';
+import SegmentedBars from '../components/SegmentedBars.astro';
+import {
+  CATEGORIES, STATEWIDE, STATEWIDE_NO_YALE, freeFor, categoryMix, freeTrend, apcFor, greenFor,
+  institutionsAlpha, shortName,
+} from '../lib/data';
+import { n, pct, points, dollars } from '../lib/format';
+
+const groups = [STATEWIDE, STATEWIDE_NO_YALE];
+const label = (k: string) => (k === STATEWIDE ? 'All 17 (each article once)' : k === STATEWIDE_NO_YALE ? 'Without Yale (each article once)' : shortName(k));
+const keys = [...institutionsAlpha(), ...groups];
+const years = freeTrend(STATEWIDE).map((p) => p.year);
+const lastComplete = freeTrend(STATEWIDE).filter((p) => !p.incomplete).at(-1)!.year;
+const firstYear = years[0];
+
+// One rule set per key: when its box is ticked, its rows show again.
+const css = [
+  '.compare:has(.picker input:checked) [data-k] { display: none; }',
+  '.compare:has(.picker input:checked) .when-none { display: none; }',
+  '.compare:not(:has(.picker input:checked)) .when-some { display: none; }',
+  ...keys.map((k) => [
+    `.compare:has(#pick-${k}:checked) tr[data-k="${k}"] { display: table-row; }`,
+    `.compare:has(#pick-${k}:checked) li[data-k="${k}"] { display: grid; }`,
+    `.compare:has(#pick-${k}:checked) div[data-k="${k}"] { display: grid; }`,
+  ].join('\n')),
+].join('\n');
+---
+<Base title="Compare institutions" current="compare"
+  description="Compare open access figures for two to four Connecticut colleges and universities, 2015 to 2025.">
+  <style is:inline set:html={css}></style>
+  <div class="page-head">
+    <p class="kicker">Compare · 2015–2025</p>
+    <h1>Compare institutions</h1>
+    <p class="deck">Choose the institutions to compare (two to four work best). Every figure and table on this page then shows only those.</p>
+  </div>
+
+  <div class="compare">
+    <fieldset class="picker">
+      <legend>Institutions to compare</legend>
+      <ul>
+        {keys.map((k) => (
+          <li><input type="checkbox" id={`pick-${k}`} /><label for={`pick-${k}`}>{label(k)}</label></li>
+        ))}
+      </ul>
+      <p class="small muted picker-status" role="status">
+        <span class="when-none">Nothing chosen, so all 17 institutions and both statewide groups are shown.</span>
+        <span class="when-some">Showing your choices only. Untick a box to remove it.</span>
+      </p>
+    </fieldset>
+
+    <p class="small muted">
+      Institutions differ in size and subject mix: a medical school or a physics department changes the picture a lot.
+      An article with authors at two institutions counts for both. Smaller institutions have fewer articles, so their
+      shares carry more uncertainty.
+    </p>
+
+    <Figure num={1} id="cmp-free" title="Share of articles free to read, 2015–2025" source="free_to_read_2015_2025.csv">
+      <Fragment slot="summary"><p>Free to read means any open access category except closed.</p></Fragment>
+      <BarList label="Share of articles free to read" items={keys.map((k) => ({
+        k, name: label(k), value: freeFor(k).free_to_read_share, detail: `of ${n(freeFor(k).works)}`,
+        statewide: groups.includes(k), highlight: groups.includes(k),
+        href: groups.includes(k) ? undefined : `/institutions/${k}/` }))} />
+      <table class="data" slot="table">
+        <caption>Articles free to read, 2015–2025</caption>
+        <thead><tr><th scope="col">Institution</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Free to read</th><th scope="col" class="r">Share</th></tr></thead>
+        <tbody>{keys.map((k) => (<tr data-k={k}><th scope="row">{label(k)}</th><td class="r">{n(freeFor(k).works)}</td><td class="r">{n(freeFor(k).free_to_read)}</td><td class="r">{pct(freeFor(k).free_to_read_share)}</td></tr>))}</tbody>
+      </table>
+    </Figure>
+
+    <Figure num={2} id="cmp-mix" title="How articles were free to read, 2015–2025" source="oa_category_2015_2025.csv">
+      <Fragment slot="summary"><p>Each bar is all of an institution’s articles, split into the open access categories. The table has every value.</p></Fragment>
+      <CategoryLegend />
+      <SegmentedBars rows={keys.map((k) => ({ k, label: label(k), parts: categoryMix(k) }))} />
+      <table class="data" slot="table">
+        <caption>Share of articles in each category, 2015–2025</caption>
+        <thead><tr><th scope="col">Institution</th>{CATEGORIES.map((c) => <th scope="col" class="r">{c.short}</th>)}</tr></thead>
+        <tbody>{keys.map((k) => (<tr data-k={k}><th scope="row">{label(k)}</th>{categoryMix(k).map((c) => <td class="r">{pct(c.share)}</td>)}</tr>))}</tbody>
+      </table>
+    </Figure>
+
+    <section class="block" aria-labelledby="cmp-years">
+      <h2 id="cmp-years">Change by year</h2>
+      <p>Share of articles free to read in each year of publication. {years.at(-1)} is incomplete because indexing lags.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Share free to read by year, table">
+        <table class="data">
+          <caption>Share of articles free to read, by year</caption>
+          <thead><tr><th scope="col">Institution</th>{years.map((y) => <th scope="col" class="r">{y}{y > lastComplete && ' (incomplete)'}</th>)}<th scope="col" class="r">Change {firstYear}–{lastComplete}</th></tr></thead>
+          <tbody>
+            {keys.map((k) => {
+              const t = freeTrend(k);
+              const a = t.find((p) => p.year === firstYear)!, b = t.find((p) => p.year === lastComplete)!;
+              return (<tr data-k={k}><th scope="row">{label(k)}</th>{years.map((y) => <td class="r">{pct(t.find((p) => p.year === y)!.share)}</td>)}<td class="r">{points(b.share - a.share)}</td></tr>);
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="cmp-fees">
+      <h2 id="cmp-fees">Fees and repository candidates <span class="estimate-tag">Estimate</span> <span class="estimate-tag">Proxy</span></h2>
+      <p>
+        Fee estimates use journals’ listed prices for gold and hybrid articles where the institution is a corresponding
+        author’s institution. They are estimates, not payments. Repository candidates are closed or bronze articles in
+        journals that show deposit evidence, a proxy explained on the <a href="/methods/#green">Methods page</a>.
+      </p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Fees and repository candidates, table">
+        <table class="data">
+          <caption>Estimated fees and repository candidates, 2015–2025</caption>
+          <thead><tr><th scope="col">Institution</th><th scope="col" class="r">Estimated fees, corresponding author (estimate)</th><th scope="col" class="r">Articles in that estimate</th><th scope="col" class="r">Corresponding author recorded</th><th scope="col" class="r">Repository candidates (proxy)</th><th scope="col" class="r">Share of articles</th></tr></thead>
+          <tbody>
+            {keys.map((k) => {
+              const a = apcFor(k), g = greenFor(k);
+              return (<tr data-k={k}><th scope="row">{label(k)}</th><td class="r">{dollars(a.corresponding.estimated_usd)}</td><td class="r">{n(a.corresponding.paid_oa_works)}</td><td class="r">{pct(a.coverage.coverage_share)}</td><td class="r">{n(g.candidates)}</td><td class="r">{pct(g.candidates_share_of_articles)}</td></tr>);
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted">
+        For the statewide groups, a fee is counted once even when authors at two institutions are both corresponding. For
+        a single institution, the full fee is credited to it whenever one of its authors is corresponding.
+      </p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .picker { border: 1px solid var(--rule); border-radius: 4px; padding: 1rem 1.25rem 0.5rem; margin: 0 0 2rem; }
+  .picker legend { font-weight: 700; color: var(--ink); padding-inline: 0.25rem; }
+  .picker ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(14rem, 100%), 1fr)); gap: 0.15rem 1.25rem; }
+  .picker li { display: flex; align-items: center; gap: 0.5rem; min-height: 2.25rem; }
+  .picker input { width: 1.25rem; height: 1.25rem; margin: 0; flex: none; accent-color: var(--accent); }
+  .picker label { font-size: var(--text-small); color: var(--ink); cursor: pointer; line-height: 1.3; }
+  .picker-status { margin: 0.75rem 0 0.5rem; }
+</style>

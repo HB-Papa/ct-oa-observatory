@@ -28,6 +28,7 @@ CROSSCHECK_STEPS = [
     ("s09_openaire", "Look up the sample in OpenAIRE"),
     ("s10_doaj", "Check journals against DOAJ"),
     ("s11_openapc", "Compare list prices with fees paid (OpenAPC)"),
+    ("s13_crosscheck_summary", "Summarise cross-check agreement for the Methods page"),
 ]
 
 if __name__ == "__main__":

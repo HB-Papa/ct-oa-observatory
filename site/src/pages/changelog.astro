@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { CHANGELOG } from '../lib/changelog';
+const fmt = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title="Changelog" current="changelog" description="What has changed on the Connecticut Open Access Observatory, and how the figures moved.">
+  <div class="page-head">
+    <p class="kicker">Changelog</p>
+    <h1>What has changed</h1>
+    <p class="deck">Changes to the figures, definitions and pages, newest first.</p>
+  </div>
+  {CHANGELOG.map((e) => (
+    <section class="block" aria-labelledby={`c-${e.date}-${e.title.replace(/\W+/g, '-')}`}>
+      <h2 id={`c-${e.date}-${e.title.replace(/\W+/g, '-')}`}>{e.title}</h2>
+      <p class="small muted"><time datetime={e.date}>{fmt(e.date)}</time></p>
+      <ul>{e.items.map((i) => <li>{i}</li>)}</ul>
+    </section>
+  ))}
+</Base>

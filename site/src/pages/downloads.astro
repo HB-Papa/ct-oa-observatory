@@ -1,0 +1,73 @@
+---
+// Every published data file, with its license and a column-by-column
+// dictionary (src/lib/dictionary.ts, from src/lib/downloads.json).
+import Base from '../layouts/Base.astro';
+import { groups, size } from '../lib/dictionary';
+import { manifest } from '../lib/data';
+import { REPO_URL } from '../lib/site';
+
+const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title="Downloads" current="downloads"
+  description="Download the tables behind the Connecticut Open Access Observatory, with a data dictionary. Public domain (CC0) unless noted.">
+  <div class="page-head">
+    <p class="kicker">Downloads · data snapshot {snapshotLong}</p>
+    <h1>Download the data</h1>
+    <p class="deck">
+      Every table behind the charts, as CSV files. Free to reuse: public domain (CC0) unless a file says otherwise.
+    </p>
+  </div>
+
+  <p>
+    Each file lists its columns below. The whole dictionary is also a file: <a href="/data/data-dictionary.csv" download>data
+    dictionary (CSV)</a>. The scripts that build the files, and the log of every query, are on <a href={REPO_URL}>GitHub</a>.
+    The <a href="/methods/">Methods page</a> explains the definitions.
+  </p>
+
+  <nav class="toc" aria-labelledby="dl-toc">
+    <h2 id="dl-toc">Sections</h2>
+    <ul>{groups.map((g) => <li><a href={`#${g.id}`}>{g.title}</a></li>)}</ul>
+  </nav>
+
+  {groups.map((g) => (
+    <section class="block" aria-labelledby={g.id}>
+      <h2 id={g.id}>{g.title}</h2>
+      <p>{g.intro}</p>
+      <ul class="files">
+        {g.files.map((f) => (
+          <li class="file">
+            <h3><a href={`/data/${f.path}`} download>{f.title}</a></h3>
+            <p class="small muted file-meta">
+              <code>{f.path.split('/').at(-1)}</code> · {size(f.bytes)}{f.license && <> · License: {f.license}</>}
+            </p>
+            <p>{f.description}</p>
+            {f.columns.length > 0 && (
+              <details class="table-view">
+                <summary>Columns ({f.columns.length})<span class="visually-hidden"> in {f.title}</span></summary>
+                <div class="table-scroll" tabindex="0" role="region" aria-label={`Columns in ${f.title}`}>
+                  <table class="data">
+                    <caption class="visually-hidden">Columns in {f.title}</caption>
+                    <thead><tr><th scope="col">Column</th><th scope="col">Meaning</th></tr></thead>
+                    <tbody>{f.columns.map((c) => (<tr><th scope="row"><code>{c.name}</code></th><td>{c.meaning}</td></tr>))}</tbody>
+                  </table>
+                </div>
+              </details>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .toc { border-top: 3px solid var(--rule-strong); border-bottom: 1px solid var(--rule); padding: 1rem 0 0.5rem; margin: 1.5rem 0 1rem; }
+  .toc h2 { font: 700 0.875rem/1.4 var(--font-sans); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.5rem; }
+  .toc ul { margin: 0; padding-left: 1.2rem; }
+  .files { list-style: none; margin: 0; padding: 0; }
+  .file { border-top: 1px solid var(--rule); padding-block: 1.1rem 0.6rem; }
+  .file h3 { margin: 0 0 0.2rem; }
+  .file-meta { margin: 0 0 0.5rem; }
+  code { font-size: 0.92em; overflow-wrap: anywhere; }
+  table.data th[scope='row'] { font-weight: 400; white-space: nowrap; }
+</style>

@@ -4,7 +4,6 @@ S64187185,Nature Communications,True,True,6990,True,True,7350,6150 EUR|5490 GBP,
 S125754415,Proceedings of the National Academy of Sciences,False,False,,False,,,,,,,top50_all,1259
 S196734849,Scientific Reports,True,True,2690,True,True,2850,2490 EUR|2290 GBP,False,2011,2011-11-04,top50_all|top50_oa,1234
 S1980519,The Astrophysical Journal,True,True,4499,True,True,3162,2356 GBP|2727 EUR,True,2022,2022-05-05,top50_all|top50_oa,1087
-S79704628,Neurology,False,False,,False,,,,,,,top50_all,933
 S58727509,Journal of the American Academy of Dermatology,False,False,4200,False,,,,,,,top50_all,854
 S205482884,Biological Psychiatry,False,False,5489,False,,,,,,,top50_all,759
 S4210217848,JAMA Network Open,True,True,3000,True,True,3000,,False,2018,2019-04-09,top50_all|top50_oa,733
@@ -12,7 +11,6 @@ S60865174,Journal of the American College of Cardiology,False,False,7166,False,,
 S98085912,Biophysical Journal,False,False,3000,False,,,,,,,top50_all,679
 S24807848,Physical Review Letters,False,False,3750,False,,,,,,,top50_all,639
 S187585107,Journal of High Energy Physics,True,True,0,True,False,,,False,2014,2016-12-07,diamond|top50_all|top50_oa,604
-S25293849,The FASEB Journal,False,False,3740,False,,,,,,,top50_all,596
 S137773608,Nature,False,False,12690,False,,,,,,,fee_unconfirmed|top50_all,590
 S195663288,Monthly Notices of the Royal Astronomical Society,True,True,3046,True,True,,2310 GBP,True,2024,2024-07-11,top50_all,566
 S2738950867,Cureus,False,True,,False,,,,,,,fee_unconfirmed|top50_all|top50_oa,549
@@ -20,8 +18,8 @@ S110533041,International Journal of Radiation Oncology*Biology*Physics,False,Fal
 S45445671,Fertility and Sterility,False,False,4220,False,,,,,,,top50_all,522
 S109998069,Drug and Alcohol Dependence,False,False,4380,False,,,,,,,top50_all,481
 S4210238307,Physical review. D/Physical review. D.,False,False,,False,,,,,,,top50_all,470
+S79704628,Neurology,False,False,,False,,,,,,,top50_all,468
 S60711021,Journal of the American Academy of Child & Adolescent Psychiatry,False,False,3710,False,,,,,,,top50_all,464
-S200071133,Blood,False,False,5500,False,,,,,,,top50_all,456
 S7407056561,Journal of Financial Crises,False,False,,False,,,,,,,top50_all,430
 S41454044,Annals of Oncology,False,False,5080,False,,,,,,,top50_all,407
 S94052278,The European Physical Journal C,True,True,0,True,False,,,False,2014,2017-01-16,diamond|top50_all|top50_oa,397
@@ -49,6 +47,8 @@ S104135014,Journal of Vascular Surgery,False,False,4010,False,,,,,,,top50_all,28
 S140251998,Journal of Biological Chemistry,True,True,3430,True,True,3430,,False,2021,2021-02-15,top50_all,287
 S2735557189,Innovation in Aging,True,True,3977,True,True,3615,,False,2017,2019-03-05,top50_all|top50_oa,280
 S4210175824,The Astrophysical Journal Letters,True,True,2400,True,True,2978,2219 GBP|2568 EUR,True,2022,2022-05-12,top50_all|top50_oa,279
+S113871862,Journal of Affective Disorders,False,False,3790,False,,,,,,,top50_all,273
+S182891740,American Journal of Geriatric Psychiatry,False,False,4400,False,,,,,,,top50_all,273
 S10623703,International Journal of Molecular Sciences,False,True,3499,False,,,,,,,top50_oa,264
 S15239247,International Journal of Environmental Research and Public Health,False,True,3016,False,,,,,,,top50_oa,262
 S79054089,BMJ Open,True,True,1839,True,True,,2390 GBP,False,2011,2011-03-29,top50_oa,261

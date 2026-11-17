@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-11-15",
-  "generated_at": "2026-11-16T23:02:32+00:00",
+  "generated_at": "2026-11-17T00:17:51+00:00",
   "works_in_scope": 192334,
   "tables": {
     "oa_category_by_year": {
@@ -48,5 +48,5 @@
       "note": "Books and book chapters counted separately (not in OA or APC metrics). From OpenAlex group_by."
     }
   },
-  "scope": "Articles and reviews, not retracted, 2015-2026, 17 Connecticut institutions; repository records without a DOI excluded (rule A)."
+  "scope": "Articles and reviews, not retracted, 2015-2026, 17 Connecticut institutions; repository records without a DOI, meeting abstracts and known affiliation errors excluded."
 }

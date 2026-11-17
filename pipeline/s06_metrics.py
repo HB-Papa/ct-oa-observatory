@@ -113,7 +113,7 @@ def main():
                 "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                 "works_in_scope": int(len(works)), "tables": written,
                 "scope": "Articles and reviews, not retracted, 2015-2026, 17 Connecticut institutions; "
-                         "repository records without a DOI excluded (rule A)."}
+                         "repository records without a DOI, meeting abstracts and known affiliation errors excluded."}
     (OUT / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     for k, v in written.items():
         print(f"{k}: {v['rows']} rows")

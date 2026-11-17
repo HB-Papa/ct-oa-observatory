@@ -9,13 +9,13 @@ import { CATEGORY_COLORS } from '../lib/palette';
 import { inkOn, pct0 } from '../lib/format';
 
 interface Part { key: string; share: number; works: number }
-interface Props { rows: { label: string; parts: Part[]; note?: string }[] }
+interface Props { rows: { label: string; parts: Part[]; note?: string; k?: string }[] }
 const { rows } = Astro.props;
 const label = (k: string) => CATEGORIES.find((c) => c.key === k)!.short;
 ---
 <div class="seg-rows" aria-hidden="true">
   {rows.map((row) => (
-    <div class="seg-row">
+    <div class="seg-row" data-k={row.k}>
       <span class="seg-label">{row.label}{row.note && <> <span class="incomplete-tag">{row.note}</span></>}</span>
       <div class="seg-bar">
         {row.parts.filter((p) => p.share > 0).map((p) => (

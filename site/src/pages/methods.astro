@@ -1,0 +1,320 @@
+---
+// Methods and limitations. Every number on this page is read at build time
+// from a pipeline output (metric CSVs, crosschecks/summary.csv, OpenAPC
+// summary, DOAJ table, exclusions summary). The two figures from the
+// cross-check agent's manual review are cited to docs/crosschecks.md.
+import Base from '../layouts/Base.astro';
+import {
+  manifest, CATEGORIES, STATEWIDE, STATEWIDE_NO_YALE, freeFor, apcFor, greenFor, institutionsAlpha, entityName,
+  check, exclusions, openapc, checks, categoryMix,
+} from '../lib/data';
+import { REPO_URL } from '../lib/site';
+import { n, pct, pct0 } from '../lib/format';
+
+const all = freeFor(STATEWIDE);
+const apc = apcFor(STATEWIDE);
+const g = greenFor(STATEWIDE);
+const mix = categoryMix(STATEWIDE);
+const share = (k: string) => mix.find((c) => c.key === k)!;
+const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const doaj = (a: string) => checks.doajFeeUnconfirmed.find((r) => r.entity === 'statewide' && r.doaj_answer === a)?.works ?? 0;
+const doajTotal = checks.doajFeeUnconfirmed.filter((r) => r.entity === 'statewide').reduce((s, r) => s + r.works, 0);
+const gold = openapc('same articles, gold');
+const hybrid = openapc('same articles, hybrid');
+const goldEarly = openapc('same articles, gold, published 2015-2019');
+const goldLate = openapc('same articles, gold, published 2020-2025');
+const goldJ = openapc('same journals, gold');
+const scoap3 = checks.openapc.find((r) => String(r.comparison).startsWith('no-author-fee'))!;
+const c = (m: string) => check(m);
+const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
+---
+<Base title="Methods and limitations" current="methods"
+  description="How the Connecticut Open Access Observatory counts articles, classifies open access, estimates fees, and where the numbers fall short.">
+  <div class="page-head">
+    <p class="kicker">Methods and limitations · data snapshot {snapshotLong}</p>
+    <h1>How the numbers are made</h1>
+    <p class="deck">
+      Every figure on this site comes from OpenAlex, a free and open index of research. Other sources are used only to
+      check it. This page explains the rules, and where the numbers are likely to be wrong.
+    </p>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">On this page</h2>
+    <ol>
+      <li><a href="#scope">What is counted</a></li>
+      <li><a href="#excluded">What is left out</a></li>
+      <li><a href="#categories">How open access is classified</a></li>
+      <li><a href="#fees">Article fee estimates</a></li>
+      <li><a href="#green">Repository candidates (green proxy)</a></li>
+      <li><a href="#crosschecks">Checks against other sources</a></li>
+      <li><a href="#limitations">Limitations</a></li>
+      <li><a href="#reproduce">Reproducing the figures</a></li>
+      <li><a href="#credits">Sources, licenses and how to cite</a></li>
+    </ol>
+  </nav>
+
+  <section class="block" aria-labelledby="scope">
+    <h2 id="scope">What is counted</h2>
+    <p>
+      <strong>Source.</strong> OpenAlex, snapshot taken {snapshotLong}. OpenAlex is run by the nonprofit OurResearch and
+      released into the public domain (CC0). It is the only source for the numbers on this site.
+    </p>
+    <p>
+      <strong>Institutions.</strong> 17 Connecticut colleges and universities: {institutionsAlpha().map((k) => entityName(k)).join(', ')}.
+      UConn Health (the medical school and hospital in Farmington) is listed separately in OpenAlex and counted under
+      UConn here, each article once. Community colleges and other organizations are out of scope.
+    </p>
+    <p>
+      <strong>An article counts for an institution</strong> if any author lists it as an affiliation, including its
+      departments and units (OpenAlex’s institution “lineage”). An article with authors at two Connecticut institutions
+      counts for both. <strong>Statewide totals</strong> count each article once. <strong>Without Yale</strong> means
+      articles with at least one author at one of the other 16, each once. Yale is the only Connecticut institution on
+      {' '}{pct0(1 - freeFor(STATEWIDE_NO_YALE).works / all.works)} of the articles, so it shapes the statewide figure.
+    </p>
+    <p>
+      <strong>Work types.</strong> Journal articles and reviews that are not retracted. Books and book chapters are
+      counted separately on each profile and are not in any other figure. Editorials, letters, preprints, datasets and
+      conference papers are not counted.
+    </p>
+    <p>
+      <strong>Years.</strong> 2015 to 2025, the last complete year. 2026 is shown separately and labeled incomplete,
+      because new articles take months to be indexed and some publishers open articles a year or more after publication.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="excluded">
+    <h2 id="excluded">What is left out</h2>
+    <p>Three kinds of records are excluded from every figure. They stay in the data files, flagged, so they can be checked.</p>
+    <table class="data">
+      <caption>Records excluded, 2015–2025</caption>
+      <thead><tr><th scope="col">Reason</th><th scope="col" class="r">Works</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Repository-only records with no DOI (mostly student work, course material and catalog stubs that OpenAlex types as articles)</th><td class="r">{n(exclusions('repository_record_no_doi'))}</td></tr>
+        <tr><th scope="row">Meeting abstracts printed in journal supplements (Neurology, The FASEB Journal, Journal of Clinical Oncology, American Heart Association journals, Blood and a few others), found by their DOI pattern</th><td class="r">{n(exclusions('meeting_abstract'))}</td></tr>
+        <tr><th scope="row">Known affiliation errors: authors at Washington College in Maryland matched to Trinity College (founded as Washington College), where no Connecticut author remained</th><td class="r">{n(exclusions('affiliation_correction_no_ct_institution'))}</td></tr>
+      </tbody>
+    </table>
+    <p class="small muted">
+      The list of excluded works is on the <a href="/downloads/#data-quality">Downloads page</a>. Meeting abstracts without
+      one of the known DOI patterns are still counted, so a few remain.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="categories">
+    <h2 id="categories">How open access is classified</h2>
+    <p>
+      Each article gets one category, from OpenAlex’s open access status. OpenAlex looks at where free copies exist and
+      under what license, and largely decides by the journal: whether it is fully open access, and whether it is listed in
+      the Directory of Open Access Journals (DOAJ).
+    </p>
+    <dl class="defs">
+      {CATEGORIES.map((cat) => (<><dt>{cat.label}</dt><dd>{cat.meaning} Statewide, {pct(share(cat.key).share)} of articles.</dd></>))}
+    </dl>
+    <p>
+      <strong>Free to read</strong> means any category except closed. Bronze counts as free to read, but bronze articles
+      have no open license and the publisher can withdraw them.
+    </p>
+    <p>
+      <strong>Diamond is split in two.</strong> OpenAlex calls an article “diamond” when the journal is open access and it
+      has no fee on record. That is not the same as a confirmed fee of zero. This site reports “diamond” only where the
+      listed fee is $0, and “open journal, fee not confirmed” for the rest ({n(share('oa_fee_unconfirmed').works)}{' '}
+      articles statewide). Both are free to read. Neither is counted in the fee estimates.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="fees">
+    <h2 id="fees">Article fee estimates <span class="estimate-tag">Estimate</span></h2>
+    <p>
+      Many journals charge an article processing charge (APC) to publish open access. OpenAlex records each journal’s
+      <strong>listed price</strong>, not what anyone paid. The estimates add up listed prices, in US dollars, for gold and
+      hybrid articles, 2015 to 2025.
+    </p>
+    <ul>
+      <li>
+        <strong>Corresponding author estimate</strong> (the more realistic figure): articles where a corresponding author
+        (the author who usually arranges payment) is at the institution. Only {pct(apc.coverage.coverage_share)} of
+        articles statewide have a corresponding author’s institution recorded, so this can understate. When authors at
+        two Connecticut institutions are both corresponding, each institution’s own figure includes the full fee, and the
+        statewide figure counts it once.
+      </li>
+      <li>
+        <strong>Upper bound</strong>: articles with any author at the institution, even when the fee was likely paid
+        elsewhere.
+      </li>
+      <li>
+        Articles with no listed price are left out, as are articles in the “fee not confirmed” category. Statewide,
+        {' '}{n(apc.corresponding.works_without_list_price)} articles in the corresponding author estimate have no listed price.
+      </li>
+    </ul>
+    <h3>Listed prices compared with fees actually paid</h3>
+    <p>
+      No Connecticut institution reports its payments to OpenAPC, the public database of fees universities have paid. But
+      other universities, mostly in Europe, have reported paying for {n(gold.articles + hybrid.articles)} articles with
+      Connecticut co-authors. For those same articles, the fees paid came to <strong>{pct0(gold.paid_as_share_of_list)}</strong>
+      {' '}of today’s listed price for gold articles and <strong>{pct0(hybrid.paid_as_share_of_list)}</strong> for hybrid
+      (compared in euros, including VAT). For gold articles published 2015–2019 it was {pct0(goldEarly.paid_as_share_of_list)},
+      and for 2020–2025 {pct0(goldLate.paid_as_share_of_list)}, which fits listed prices rising over time. Using the typical fee
+      paid per journal instead gives a similar result ({pct0(goldJ.paid_as_share_of_list)} for gold, covering
+      {' '}{pct0(goldJ.coverage)} of Connecticut gold articles).
+    </p>
+    <p>
+      So the listed-price estimates on this site are <strong>likely too high</strong>, especially for earlier years.
+      Payments can also be lower through discounts, waivers and library agreements, which OpenAPC does not fully capture.
+    </p>
+    <p class="small muted">
+      A special case: {n(scoap3.articles)} articles that charge authors nothing (mostly in physics journals funded by the
+      SCOAP3 library consortium) appear in OpenAPC because a library reports its share of the consortium cost per article.
+      They stay in the no-fee categories here.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="green">
+    <h2 id="green">Repository candidates (green proxy) <span class="estimate-tag">Proxy</span></h2>
+    <p>
+      Whether an author may put a paywalled article in a repository depends on the publisher’s policy. The main policy
+      database, Open Policy Finder (formerly Sherpa Romeo), is licensed CC BY-NC-ND, which conflicts with releasing this
+      site’s data into the public domain. So the site uses a proxy built only from OpenAlex.
+    </p>
+    <ol>
+      <li>
+        A journal <strong>shows deposit evidence</strong> if at least 3 of its articles worldwide (2015–2025) are free only
+        as an accepted manuscript in a repository. Deposits in PubMed Central and Europe PMC are not counted, because most
+        follow funder rules (such as NIH’s) that publishers accept only for funded articles.
+      </li>
+      <li>
+        A Connecticut article is a <strong>candidate</strong> if it is closed or bronze, has no free copy anywhere except
+        the publisher’s page (no free preprint either), and is in a journal that shows deposit evidence.
+      </li>
+    </ol>
+    <p>
+      Statewide that gives {n(g.candidates)} candidates ({pct(g.candidates_share_of_articles)} of articles):
+      {' '}{n(g.closed_candidates)} closed and {n(g.bronze_candidates)} bronze. The threshold matters: with 1 deposit as
+      evidence the count is {n(g.candidates_if_threshold_1)}, and with 10 it is {n(g.candidates_if_threshold_10)}.
+      This is a starting point for outreach. Embargoes and each publisher’s current policy still need checking.
+    </p>
+  </section>
+
+  <section class="block" aria-labelledby="crosschecks">
+    <h2 id="crosschecks">Checks against other sources</h2>
+    <p>
+      A sample of {n(c('sample_size').numerator)} articles (30 per institution, spread over 2015–2025) was looked up in
+      other sources. Because every institution has the same number, these are sample rates, not statewide estimates.
+      None of these sources changes a figure on the site.
+    </p>
+    <ul>
+      <li>
+        <strong>Unpaywall</strong> agrees with OpenAlex on {n(c('unpaywall_status_agrees').numerator)} of
+        {' '}{n(c('unpaywall_status_agrees').denominator)} articles it found. This is expected: Unpaywall is made by the same
+        nonprofit and now runs on the OpenAlex database, so it is not an independent check.
+      </li>
+      <li>
+        <strong>OpenAIRE</strong>, a European research graph built separately, is the main independent check. Where it
+        gives an answer, it agrees on whether an article is free to read for {n(c('openaire_free_to_read_agrees').numerator)}
+        {' '}of {n(c('openaire_free_to_read_agrees').denominator)} articles ({pct(c('openaire_free_to_read_agrees').share)}).
+        It has no access information for another {n(c('openaire_no_access_value').numerator)}. Every disagreement was
+        examined by hand. Where OpenAlex says free and OpenAIRE says closed ({n(c('openaire_free_but_openaire_not_open').numerator)}
+        {' '}articles), OpenAlex looked right in most cases, usually because OpenAIRE had not linked a repository or publisher
+        copy. Where OpenAlex says closed and OpenAIRE says open ({n(c('openaire_closed_but_openaire_open').numerator)}), the
+        picture was mixed: some came from old or misread data at OpenAIRE, and some revealed free copies in Connecticut
+        repositories that OpenAlex misses (see <a href="#limitations">Limitations</a>).
+      </li>
+      <li>
+        <strong>DOAJ</strong>: OpenAlex’s “in DOAJ” flag matches DOAJ for {pct(c('doaj_flag_agrees').share)} of
+        {' '}{n(c('doaj_flag_agrees').denominator)} journals checked. For the {n(doajTotal)} “fee not confirmed” articles
+        (2015–2025), DOAJ lists the journal as charging no fee for {n(doaj('doaj_no_fee'))}, charging a fee for
+        {' '}{n(doaj('doaj_charges_fee'))}, and no article fee but other charges for {n(doaj('doaj_no_apc_but_other_charges'))}.
+        {' '}{n(doaj('not_in_doaj'))} are in journals DOAJ does not list, and {n(doaj('published_before_doaj_oa_start'))} were
+        published before the journal became open access. This is reported here only. The category figures stay as OpenAlex
+        has them.
+      </li>
+      <li>
+        <strong>CORE</strong>, a repository aggregator, has not been used yet while its license terms for this kind of
+        site are confirmed.
+      </li>
+    </ul>
+    <p class="small"><a href={report}>Full cross-check report</a> (on GitHub)</p>
+  </section>
+
+  <section class="block" aria-labelledby="limitations">
+    <h2 id="limitations">Limitations</h2>
+    <ul class="spaced">
+      <li>
+        <strong>OpenAlex misses some free copies in Connecticut’s own repositories.</strong> The cross-check found records in
+        Digital Commons repositories and in Yale’s EliScholar that offer a public download but are marked not free in
+        OpenAlex. Up to 553 articles called closed have such a record (an upper bound, because some records hold no file).
+        The Journal of Financial Crises, published by Yale on EliScholar, appears free to read but has 143 articles
+        labeled closed. Free-to-read shares are therefore slightly too low for some institutions, notably Fairfield and the
+        University of New Haven. Source: the <a href={report}>cross-check report</a>.
+      </li>
+      <li>
+        <strong>Affiliation errors.</strong> OpenAlex matches authors to institutions automatically. Spot checks of the raw
+        affiliation text confirmed 97 to 100 percent of each institution’s articles. One systematic error (Washington
+        College in Maryland matched to Trinity) is corrected. Others may remain.
+      </li>
+      <li>
+        <strong>Classification depends on the journal.</strong> Gold, diamond and hybrid depend on journal-level data
+        (DOAJ listing, listed fees). A journal that changed its model, or added a fee, may be classified by its current
+        state.
+      </li>
+      <li>
+        <strong>Recent years are still moving.</strong> The share of articles free to read peaked in 2023 and is lower for
+        2024 and 2025, mostly because of fewer bronze articles. Some publishers open articles a year or more after
+        publication, so this is likely partly a timing effect. Later snapshots will show.
+      </li>
+      <li>
+        <strong>Fees are listed prices, not payments.</strong> See <a href="#fees">the comparison with OpenAPC</a>.
+      </li>
+      <li>
+        <strong>Books and the humanities are covered less well.</strong> OpenAlex is strongest for journal articles in the
+        sciences and medicine. Humanities scholarship, which appears more in books, is undercounted, so institutions with
+        strong humanities programs are described less completely.
+      </li>
+      <li>
+        <strong>Sources disagree.</strong> OpenAIRE agrees with OpenAlex on free-to-read status for about nine in ten sampled
+        articles. Neither is complete.
+      </li>
+    </ul>
+  </section>
+
+  <section class="block" aria-labelledby="reproduce">
+    <h2 id="reproduce">Reproducing the figures</h2>
+    <p>
+      The pipeline is open source on <a href={REPO_URL}>GitHub</a>. A Python script downloads the data from OpenAlex,
+      saves every response, and logs every query, so each number on this site traces back to a saved query. One command
+      rebuilds every table from the saved responses. Tests check the metric definitions on small examples with known
+      answers.
+    </p>
+    <p>
+      Two independent checks were run: a separate program, written without seeing the pipeline code, recomputed the key
+      figures from the raw data and matched every one; and a sample of counts was checked by hand against the OpenAlex
+      website.
+    </p>
+    <p>All the tables behind the charts can be downloaded on the <a href="/downloads/">Downloads page</a>.</p>
+  </section>
+
+  <section class="block" aria-labelledby="credits">
+    <h2 id="credits">Sources, licenses and how to cite</h2>
+    <ul class="spaced">
+      <li><strong>OpenAlex</strong> (CC0). Priem, J., Piwowar, H., and Orr, R. (2022). OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts. arXiv:2205.01833.</li>
+      <li><strong>OpenAIRE Graph</strong> (CC BY 4.0), used for the cross-check. OpenAIRE Research Graph, doi:10.5281/zenodo.3516917.</li>
+      <li><strong>DOAJ</strong> journal metadata (CC0), used for the cross-check.</li>
+      <li><strong>OpenAPC</strong>: contains information from OpenAPC, made available under the Open Database License (ODbL) 1.0. Used for the fee comparison.</li>
+      <li><strong>Unpaywall</strong>, used for the cross-check.</li>
+    </ul>
+    <p>
+      This site’s own data is released into the public domain (CC0), except the cross-check files built from OpenAIRE and
+      OpenAPC, which keep those sources’ licenses. The code is MIT licensed.
+    </p>
+    <p><strong>To cite this site:</strong> Connecticut Open Access Observatory, data snapshot {snapshotLong}. https://ct-oa-observatory.vercel.app</p>
+  </section>
+</Base>
+
+<style>
+  .toc { border-top: 3px solid var(--rule-strong); border-bottom: 1px solid var(--rule); padding: 1rem 0 0.5rem; margin: 0 0 2rem; }
+  .toc h2 { font: 700 0.875rem/1.4 var(--font-sans); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.5rem; }
+  .toc ol { margin: 0; padding-left: 1.4rem; columns: 2 16rem; }
+  .toc li { margin-bottom: 0.35rem; }
+  ul.spaced li { margin-bottom: 0.75rem; }
+  section.block table.data th[scope='row'] { font-weight: 400; }
+</style>

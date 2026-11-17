@@ -1,0 +1,49 @@
+---
+// Green open access opportunity (question 5). Big numbers, not a chart: the
+// point is a count and a share. Labeled as a proxy everywhere, as the brief
+// requires. Numbers come from green_opportunity_2015_2025.csv.
+import { greenFor } from '../lib/data';
+import { n, pct } from '../lib/format';
+interface Props { entity: string; who: string; headingId?: string }
+const { entity, who, headingId = 'green' } = Astro.props;
+const g = greenFor(entity);
+---
+<section class="block" aria-labelledby={headingId}>
+  <h2 id={headingId}>Articles that could be made free in a repository <span class="estimate-tag">Proxy</span></h2>
+  <p>
+    Many publishers let authors put the accepted version of a paywalled article (the final text before the publisher’s
+    formatting) in a repository, the route called green open access. This is one of the cheapest ways a library can
+    make research free to read.
+  </p>
+  <div class="tiles">
+    <div class="tile">
+      <p class="label">Likely candidates, {who} <span class="estimate-tag">Proxy</span></p>
+      <p class="value">{n(g.candidates)}</p>
+      <p class="note">{pct(g.candidates_share_of_articles)} of all {n(g.articles)} articles, 2015–2025.</p>
+    </div>
+    <div class="tile">
+      <p class="label">Closed articles among them</p>
+      <p class="value">{n(g.closed_candidates)}</p>
+      <p class="note">of {n(g.closed)} closed articles.</p>
+    </div>
+    <div class="tile">
+      <p class="label">Bronze articles among them</p>
+      <p class="value">{n(g.bronze_candidates)}</p>
+      <p class="note">of {n(g.bronze)} bronze articles, which are free to read now but could be withdrawn.</p>
+    </div>
+  </div>
+  <div class="callout">
+    <p><strong>This is a proxy, not a policy check.</strong></p>
+    <p>
+      An article counts if it is closed or bronze, has no free copy anywhere except the publisher’s page, and its journal
+      “shows deposit evidence”: at least 3 of the journal’s articles worldwide are free only as an accepted manuscript in a
+      repository other than PubMed Central. Publisher policies and embargoes still need checking article by article.
+      With a looser rule (1 deposit) the count would be {n(g.candidates_if_threshold_1)}; with a stricter one (10 deposits),
+      {' '}{n(g.candidates_if_threshold_10)}. <a href="/methods/#green">How this works</a>.
+    </p>
+    <p>
+      Librarians can download the article list for planning outreach:
+      {' '}<a href="/downloads/#for-librarians">repository candidates (CSV)</a>. It names no authors.
+    </p>
+  </div>
+</section>

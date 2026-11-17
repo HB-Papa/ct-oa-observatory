@@ -139,8 +139,12 @@ def main():
         FROM works w JOIN work_institutions wi USING (work_id) WHERE NOT wi.in_scope
         GROUP BY 1 ORDER BY 2 DESC""").df()
     n_excl, n_in = con.execute("SELECT COUNT(*) FILTER (WHERE NOT in_scope), COUNT(*) FILTER (WHERE in_scope) FROM works").fetchone()
-    con.execute(f"""COPY (SELECT work_id, publication_year, source_name, title FROM works WHERE NOT in_scope
+    con.execute(f"""COPY (SELECT work_id, publication_year, source_name, title, exclude_reason FROM works WHERE NOT in_scope
                  ORDER BY publication_year, source_name) TO '{(Q / "excluded_works.csv").as_posix()}' (HEADER)""")
+    con.execute(f"""COPY (SELECT exclude_reason,
+                 CASE WHEN publication_year <= 2025 THEN 'complete' ELSE 'incomplete' END AS period, COUNT(*) works
+                 FROM works WHERE NOT in_scope GROUP BY ALL ORDER BY 1, 2)
+                 TO '{(Q / "exclusions_summary.csv").as_posix()}' (HEADER)""")
     out += ["## 6. Exclusions applied", "",
             "Rule A (approved 2026-11-16): works whose primary location is a repository and that have no DOI "
             "are excluded from every metric. They stay in the tables with `in_scope = false`.", "",

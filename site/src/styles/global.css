@@ -71,7 +71,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { background: var(--page); -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--page); color: var(--body); font: var(--text-body)/1.65 var(--font-sans); }
+body { margin: 0; background: var(--page); color: var(--body); font: var(--text-body)/1.65 var(--font-sans); overflow-wrap: break-word; }
 h1, h2, h3 { color: var(--ink); margin: 0 0 0.5em; }
 h1 { font: 600 clamp(2rem, 1.4rem + 2.6vw, 3rem)/1.12 var(--font-serif); letter-spacing: -0.01em; }
 h2 { font: 600 clamp(1.5rem, 1.25rem + 1vw, 1.875rem)/1.2 var(--font-serif); margin-top: 0; }
@@ -177,12 +177,13 @@ table.data td.r, table.data th.r { text-align: right; font-variant-numeric: tabu
 .bar-track { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; min-width: 0; }
 .bar-fill { height: 14px; border-radius: 0 3px 3px 0; background: var(--s-a); forced-color-adjust: none; flex: none; }
 .bar-fill.statewide { background: var(--s-b); }
-.bar-val { font-size: var(--text-small); font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ink); min-width: 0; }
+.bar-val { font-size: var(--text-small); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 0; }
 .bar-item.is-highlight .bar-name { font-weight: 700; }
 @media (max-width: 34rem) { .bar-item { grid-template-columns: 1fr; } }
 
 /* Line chart */
 .chart-scroll { overflow-x: auto; }
+.chart-scroll:focus-visible { outline-offset: 4px; }
 .chart-scroll svg { display: block; width: 100%; min-width: 30rem; height: auto; }
 svg .grid { stroke: var(--grid); stroke-width: 1; }
 svg .axis { stroke: var(--axis); stroke-width: 1; }

@@ -32,7 +32,7 @@ const incX = x(x1);
   {series.map(({ s, cls }) => (<li><span class="line-key" style={`background: var(--s-${cls})`}></span>{s.name}</li>))}
   <li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2" /></svg>2026, incomplete year</li>
 </ul>
-<div class="chart-scroll">
+<div class="chart-scroll" tabindex="0" role="region" aria-label="Line chart, scrolls sideways on narrow screens. The same numbers are in the table below.">
   <svg viewBox={`0 0 ${W} ${H}`} role="presentation" aria-hidden="true" focusable="false">
     <rect class="incomplete-band" x={incX - 14} y={T} width="28" height={H - T - B} rx="4" />
     {ticks.map((t) => (

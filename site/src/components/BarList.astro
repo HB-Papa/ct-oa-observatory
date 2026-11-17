@@ -3,13 +3,13 @@
 // HTML list so names wrap and reflow at any zoom. Bar length is the value on a
 // 0-100% scale, so lengths compare honestly.
 import { pct } from '../lib/format';
-interface Item { name: string; value: number; href?: string; highlight?: boolean; statewide?: boolean; detail?: string }
+interface Item { name: string; value: number; href?: string; highlight?: boolean; statewide?: boolean; detail?: string; k?: string }
 interface Props { items: Item[]; label: string; max?: number }
 const { items, label, max = 1 } = Astro.props;
 ---
 <ul class="bar-list" aria-label={label}>
   {items.map((it) => (
-    <li class:list={['bar-item', { 'is-highlight': it.highlight }]}>
+    <li class:list={["bar-item", { "is-highlight": it.highlight }]} data-k={it.k}>
       <span class="bar-name">{it.href ? <a href={it.href}>{it.name}</a> : it.name}</span>
       <span class="bar-track">
         <span class:list={['bar-fill', { statewide: it.statewide }]} style={`width: calc((100% - 10rem) * ${(it.value / max).toFixed(4)})`} aria-hidden="true"></span>

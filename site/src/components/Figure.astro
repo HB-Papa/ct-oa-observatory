@@ -13,7 +13,7 @@ const { id, num, title, source, note } = Astro.props;
   <slot />
   <div class="fig-foot">
     <details class="table-view">
-      <summary>Show the numbers as a table</summary>
+      <summary>Show the numbers as a table<span class="visually-hidden"> for Figure {num}</span></summary>
       <div class="table-scroll" tabindex="0" role="region" aria-label={`Figure ${num} data table`}>
         <slot name="table" />
       </div>

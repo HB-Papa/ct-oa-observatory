@@ -1,0 +1,355 @@
+{
+  "_note": "Files offered on the Downloads page. scripts/copy-data.mjs copies each 'path' (relative to data/derived) into public/data/ at build time, and the Downloads page shows the description, license and columns. Shared columns are defined once in 'common_columns'.",
+  "common_columns": {
+    "entity": "Which group the row describes: an institution key (for example yale, uconn), statewide (all 17, each article once) or statewide_no_yale / statewide_without_yale (articles with at least one author at one of the other 16, each once)",
+    "entity_name": "Display name of the entity",
+    "publication_year": "Year of publication in OpenAlex",
+    "period": "complete for 2015 to 2025; incomplete for 2026, which is still being indexed",
+    "works": "Number of articles (articles and reviews), each counted once within the entity",
+    "share": "works divided by all articles for that entity (and year, if given)",
+    "oa_category": "Open access category: diamond, oa_fee_unconfirmed, gold, hybrid, bronze, green or closed (see the Methods page)",
+    "closed": "Articles in the closed category",
+    "closed_share": "closed divided by works",
+    "rank_by_output": "Rank within the entity by number of articles (1 = most)",
+    "rank_by_closed": "Rank within the entity by number of closed articles (1 = most)",
+    "work_id": "OpenAlex work ID",
+    "doi": "DOI of the article",
+    "source_id": "OpenAlex journal ID",
+    "journal": "Journal name in OpenAlex",
+    "openalex_is_in_doaj": "OpenAlex says the journal is in DOAJ",
+    "openalex_is_oa": "OpenAlex says the journal is fully open access",
+    "openalex_apc_usd": "OpenAlex listed fee, US dollars",
+    "in_doaj": "Found in DOAJ by ISSN",
+    "doaj_has_apc": "DOAJ: journal charges an article fee",
+    "doaj_max_apc_usd": "DOAJ: highest fee in US dollars, if given",
+    "doaj_max_apc_other": "DOAJ: fees in other currencies",
+    "doaj_has_other_charges": "DOAJ: other charges (for example submission or page fees)",
+    "doaj_oa_start": "DOAJ: year the journal became open access",
+    "doaj_added": "Date added to DOAJ",
+    "groups": "Why the journal was checked"
+  },
+  "groups": [
+    {
+      "title": "Main figures",
+      "intro": "Everything on the site's charts comes from these files. Built from OpenAlex by pipeline/s06_metrics.py and s12_green_proxy.py. Articles and reviews only, 2015 to 2025 unless a column says otherwise.",
+      "license": "CC0 1.0",
+      "files": [
+        {
+          "path": "metrics/free_to_read_2015_2025.csv",
+          "title": "Free to read, 2015 to 2025",
+          "description": "Articles free to read in any way (every category except closed), by institution and statewide.",
+          "columns": {
+            "free_to_read": "Articles in any category except closed",
+            "free_to_read_share": "free_to_read divided by works"
+          }
+        },
+        {
+          "path": "metrics/free_to_read_by_year.csv",
+          "title": "Free to read, by year",
+          "description": "The same, for each year from 2015 to 2026. 2026 is incomplete.",
+          "columns": {
+            "free_to_read": "Articles in any category except closed",
+            "free_to_read_share": "free_to_read divided by works"
+          }
+        },
+        {
+          "path": "metrics/oa_category_2015_2025.csv",
+          "title": "Open access categories, 2015 to 2025",
+          "description": "Articles in each open access category, by institution and statewide.",
+          "columns": {}
+        },
+        {
+          "path": "metrics/oa_category_by_year.csv",
+          "title": "Open access categories, by year",
+          "description": "The same, for each year from 2015 to 2026.",
+          "columns": {}
+        },
+        {
+          "path": "metrics/publishers_2015_2025.csv",
+          "title": "Publishers",
+          "description": "Articles and closed articles by publisher (imprints grouped under their parent company), top publishers per entity.",
+          "columns": {
+            "publisher_parent_name": "Top-level publisher in OpenAlex's publisher hierarchy"
+          }
+        },
+        {
+          "path": "metrics/fields_2015_2025.csv",
+          "title": "Fields",
+          "description": "Articles and closed articles by OpenAlex field (a broad subject group, from each article's main topic).",
+          "columns": {
+            "field_name": "OpenAlex field"
+          }
+        },
+        {
+          "path": "metrics/topics_2015_2025.csv",
+          "title": "Topics",
+          "description": "Articles and closed articles by OpenAlex topic (a detailed subject label, one per article), top topics per entity.",
+          "columns": {
+            "topic_name": "OpenAlex topic"
+          }
+        },
+        {
+          "path": "metrics/apc_estimates_2015_2025.csv",
+          "title": "Article fee estimates (APCs), 2015 to 2025",
+          "description": "ESTIMATES of article processing charges, from journals' listed prices for gold and hybrid articles. Two methods, one row each.",
+          "columns": {
+            "method": "corresponding_author: articles where the entity is a corresponding author's institution; upper_bound_all_authors: any author at the entity",
+            "paid_oa_works": "Gold and hybrid articles counted by this method",
+            "works_with_list_price": "Of those, articles whose journal has a listed price in OpenAlex",
+            "works_without_list_price": "Of those, articles with no listed price (not included in the estimate)",
+            "estimated_usd": "Sum of listed prices in US dollars. An estimate, not a payment"
+          }
+        },
+        {
+          "path": "metrics/apc_estimates_by_year.csv",
+          "title": "Article fee estimates, by year",
+          "description": "The same estimates for each year from 2015 to 2026.",
+          "columns": {
+            "method": "corresponding_author or upper_bound_all_authors (see above)",
+            "paid_oa_works": "Gold and hybrid articles counted by this method",
+            "works_with_list_price": "Of those, articles with a listed price",
+            "works_without_list_price": "Of those, articles with no listed price",
+            "estimated_usd": "Sum of listed prices in US dollars. An estimate"
+          }
+        },
+        {
+          "path": "metrics/corresponding_coverage.csv",
+          "title": "Corresponding author coverage",
+          "description": "How many articles have a corresponding author's institution recorded in OpenAlex. The corresponding-author fee estimate depends on it.",
+          "columns": {
+            "with_corresponding_info": "Articles with at least one corresponding institution recorded",
+            "coverage_share": "with_corresponding_info divided by works"
+          }
+        },
+        {
+          "path": "metrics/green_opportunity_2015_2025.csv",
+          "title": "Green open access opportunity (proxy)",
+          "description": "Closed and bronze articles that could likely be made free in a repository, by a proxy based on what other authors in the same journal have done. Not a check of publisher policy.",
+          "columns": {
+            "articles": "All articles for the entity, 2015 to 2025",
+            "closed": "Closed articles",
+            "bronze": "Bronze articles",
+            "closed_candidates": "Closed articles with no free copy, in a journal that shows deposit evidence",
+            "bronze_candidates": "Bronze articles with no free copy except the publisher's page, in a journal that shows deposit evidence",
+            "candidates": "closed_candidates plus bronze_candidates",
+            "candidates_share_of_articles": "candidates divided by articles",
+            "candidates_if_threshold_1": "Candidates if one deposit in the journal counted as evidence (instead of three)",
+            "candidates_if_threshold_10": "Candidates if ten deposits were required"
+          }
+        },
+        {
+          "path": "metrics/books_and_chapters_2015_2025.csv",
+          "title": "Books and book chapters",
+          "description": "A count only. Books and chapters are not in the other figures.",
+          "columns": {
+            "books_and_chapters_2015_2025": "Books and book chapters with an author at the institution",
+            "all_types_2015_2025": "All work types in OpenAlex, for scale"
+          }
+        },
+        {
+          "path": "metrics/manifest.json",
+          "title": "Manifest",
+          "description": "Snapshot date, build time and scope of this release.",
+          "columns": {}
+        }
+      ]
+    },
+    {
+      "title": "For librarians",
+      "intro": "An article list for planning repository outreach. It is not shown on the site and names no authors.",
+      "license": "CC0 1.0",
+      "files": [
+        {
+          "path": "downloads/repository_candidates.csv",
+          "title": "Repository candidates",
+          "description": "Closed and bronze articles, 2015 to 2026, with no free copy except possibly the publisher's page, in journals that show deposit evidence. One row per institution and article. A proxy: check the publisher's current policy and any embargo before depositing.",
+          "columns": {
+            "institution": "Connecticut institution the article is credited to",
+            "institution_key": "Short key for the institution",
+            "openalex_id": "OpenAlex work ID",
+            "doi": "DOI link",
+            "title": "Article title",
+            "year": "Publication year",
+            "year_complete": "false for 2026, which is still being indexed",
+            "journal": "Journal",
+            "publisher": "Top-level publisher",
+            "current_status": "closed or bronze",
+            "journal_deposit_evidence_articles": "Articles in this journal (2015 to 2025, worldwide) free only as an accepted manuscript in a repository other than PubMed Central or Europe PMC. Higher means stronger evidence"
+          }
+        },
+        {
+          "path": "downloads/README.md",
+          "title": "Read me for the candidate list",
+          "description": "How the list was built and how to use it.",
+          "columns": {}
+        }
+      ]
+    },
+    {
+      "title": "Cross-checks",
+      "intro": "Comparisons between OpenAlex and other sources, used to test OpenAlex. Their numbers are never added to the main figures. Licenses differ by file.",
+      "license": "See each file",
+      "files": [
+        {
+          "path": "crosschecks/summary.csv",
+          "title": "Cross-check summary",
+          "license": "CC0 1.0",
+          "description": "The agreement figures quoted on the Methods page, with numerators and denominators.",
+          "columns": {
+            "metric": "What is measured",
+            "numerator": "Count that meets the test",
+            "denominator": "Count tested",
+            "note": "Notes"
+          }
+        },
+        {
+          "path": "crosschecks/sample.csv",
+          "title": "Cross-check sample",
+          "license": "CC0 1.0",
+          "description": "The 510 articles checked against other sources: 30 per institution, 2015 to 2025, with a DOI.",
+          "columns": {
+            "institution_key": "Institution the article was sampled for",
+            "year": "Publication year",
+            "oa_status": "OpenAlex's own status (diamond not split)",
+            "source_issn_l": "Journal ISSN-L"
+          }
+        },
+        {
+          "path": "crosschecks/unpaywall_sample.csv",
+          "title": "Unpaywall lookups",
+          "license": "CC0 1.0",
+          "description": "What Unpaywall says about each sample article. Unpaywall runs on the OpenAlex database, so this is a consistency check, not an independent one.",
+          "columns": {
+            "found": "Unpaywall knows the DOI",
+            "upw_is_oa": "Unpaywall: free to read",
+            "upw_oa_status": "Unpaywall status",
+            "upw_has_repository_copy": "Unpaywall lists a free repository copy",
+            "upw_has_accepted_repository_copy": "That copy is an accepted or published version",
+            "upw_journal_is_in_doaj": "Unpaywall: journal is in DOAJ"
+          }
+        },
+        {
+          "path": "crosschecks/openaire_sample.csv",
+          "title": "OpenAIRE lookups",
+          "license": "CC BY 4.0, credit OpenAIRE Research Graph (doi:10.5281/zenodo.3516917)",
+          "description": "What the OpenAIRE Graph says about each sample article.",
+          "columns": {
+            "found": "OpenAIRE knows the DOI",
+            "oaire_access": "Best access right: OPEN, CLOSED, RESTRICTED, EMBARGO, or blank (no information)",
+            "oaire_color": "Publisher open access color: gold, hybrid or bronze",
+            "oaire_is_green": "OpenAIRE lists a repository copy",
+            "oaire_in_diamond_journal": "OpenAIRE marks the journal as diamond",
+            "oaire_n_records": "OpenAIRE records found for the DOI"
+          }
+        },
+        {
+          "path": "crosschecks/doaj_journals.csv",
+          "title": "DOAJ journal checks",
+          "license": "CC0 1.0",
+          "description": "Journals checked against the Directory of Open Access Journals: listed or not, fee or no fee, open access start year.",
+          "columns": {}
+        },
+        {
+          "path": "crosschecks/doaj_fee_unconfirmed.csv",
+          "title": "DOAJ answer for 'fee not confirmed' articles",
+          "license": "CC0 1.0",
+          "description": "What DOAJ says about articles in the 'open journal, fee not confirmed' category. Reported only; it does not change the main figures.",
+          "columns": {
+            "doaj_answer": "doaj_no_fee, doaj_charges_fee, doaj_no_apc_but_other_charges, published_before_doaj_oa_start, or not_in_doaj"
+          }
+        },
+        {
+          "path": "crosschecks/doaj_top_journals.csv",
+          "title": "DOAJ check of top journals",
+          "license": "CC0 1.0",
+          "description": "The 50 journals with the most Connecticut articles, and the 50 largest fully open access journals, with OpenAlex and DOAJ side by side.",
+          "columns": {
+            "ct_articles_2015_2025": "Connecticut articles in the journal, 2015 to 2025"
+          }
+        },
+        {
+          "path": "crosschecks/green_proxy_journals.csv",
+          "title": "Green proxy: journal evidence",
+          "license": "CC0 1.0",
+          "description": "For each journal with closed or bronze Connecticut articles, the deposit evidence count used by the green proxy.",
+          "columns": {
+            "accepted_manuscript_repository_articles_2015_2025": "Articles (worldwide) free only as an accepted manuscript in a repository other than PubMed Central or Europe PMC",
+            "shows_deposit_evidence": "true if at least 3"
+          }
+        },
+        {
+          "path": "crosschecks/openapc_summary.csv",
+          "title": "Fees paid compared with listed prices (OpenAPC)",
+          "license": "Contains information from OpenAPC, made available under the ODbL 1.0",
+          "description": "How fees actually paid (reported by other universities to OpenAPC) compare with listed prices, in euros.",
+          "columns": {
+            "comparison": "Which articles are compared",
+            "articles": "Articles compared",
+            "total_paid_eur": "Sum of fees paid",
+            "total_list_eur": "Sum of today's listed prices",
+            "paid_as_share_of_list": "total_paid_eur divided by total_list_eur",
+            "median_article_ratio": "Median of paid divided by listed, per article",
+            "ct_works_in_category": "All Connecticut articles in the category",
+            "coverage": "Share of those with a journal benchmark"
+          }
+        },
+        {
+          "path": "crosschecks/openapc/openapc_ct_matches.csv",
+          "title": "OpenAPC matches",
+          "license": "ODbL 1.0",
+          "description": "Connecticut articles whose fee was reported to OpenAPC by a co-author's institution.",
+          "columns": {
+            "openapc_period": "Year paid",
+            "openapc_euro": "Fee paid in euros, including VAT",
+            "openapc_is_hybrid": "OpenAPC: hybrid article",
+            "openapc_institution": "Institution that reported the payment",
+            "openalex_list_eur_today": "Journal's current listed price in euros (OpenAlex)"
+          }
+        },
+        {
+          "path": "crosschecks/LICENSE.md",
+          "title": "Cross-check licenses",
+          "license": "",
+          "description": "Which license applies to which file.",
+          "columns": {}
+        }
+      ]
+    },
+    {
+      "title": "Data quality",
+      "intro": "What was left out and why. Built by pipeline/s05_quality_report.py.",
+      "license": "CC0 1.0",
+      "files": [
+        {
+          "path": "quality/exclusions_summary.csv",
+          "title": "Exclusions summary",
+          "description": "Works left out of every figure, by reason.",
+          "columns": {
+            "exclude_reason": "repository_record_no_doi, meeting_abstract, or affiliation_correction_no_ct_institution (see Methods)"
+          }
+        },
+        {
+          "path": "quality/excluded_works.csv",
+          "title": "Excluded works",
+          "description": "Every excluded work with its reason.",
+          "columns": {
+            "source_name": "Journal or repository",
+            "title": "Title",
+            "exclude_reason": "Why it is excluded"
+          }
+        },
+        {
+          "path": "quality/completeness_by_institution_year.csv",
+          "title": "Harvest completeness",
+          "description": "Works downloaded compared with OpenAlex's own count, per institution and year.",
+          "columns": {
+            "institution_key": "Institution",
+            "group_by_count": "OpenAlex's count",
+            "harvested": "Works downloaded",
+            "diff": "Difference"
+          }
+        }
+      ]
+    }
+  ]
+}

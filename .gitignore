@@ -21,3 +21,4 @@ docs/pitch.md
 .vercel
 .env*
 !.env.example
+site/public/data/

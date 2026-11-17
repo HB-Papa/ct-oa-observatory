@@ -55,6 +55,7 @@ S111155417,Journal of the American Chemical Society,False,False,4500,False,,,,,,
 S111213320,Journal of Gynecologic Oncology,True,True,,True,True,1000,,True,2011,2021-11-04,fee_unconfirmed
 S112025928,Indian Journal of Medical and Paediatric Oncology,True,True,,True,False,,,False,2004,2025-03-05,fee_unconfirmed
 S113542759,Acta Mathematica,False,True,,False,,,,,,,fee_unconfirmed
+S113871862,Journal of Affective Disorders,False,False,3790,False,,,,,,,top50_all
 S114141714,Journal of Software,False,True,,False,,,,,,,fee_unconfirmed
 S114379355,Logical Methods in Computer Science,True,True,,True,False,,,False,2004,2004-09-24,fee_unconfirmed
 S114420980,Gut and Liver,True,True,,True,True,1000,,True,2007,2023-10-13,fee_unconfirmed
@@ -266,6 +267,7 @@ S180931821,Taiwanese Journal of Obstetrics and Gynecology,True,True,0,True,False
 S181350553,Revista Brasileira de Paleontologia,False,True,,False,,,,,,,fee_unconfirmed
 S181849870,Indian Journal of Critical Care Medicine,False,True,,False,,,,,,,fee_unconfirmed
 S182646890,Episodes,False,True,,False,,,,,,,fee_unconfirmed
+S182891740,American Journal of Geriatric Psychiatry,False,False,4400,False,,,,,,,top50_all
 S183158886,MMWR Morbidity and Mortality Weekly Report,False,True,,False,,,,,,,fee_unconfirmed
 S184645833,Chemical Science,True,True,,True,True,,2850 GBP,False,2015,2017-06-25,fee_unconfirmed
 S184793761,Demographic Research,True,True,,True,False,,,False,1999,2003-12-01,fee_unconfirmed
@@ -301,7 +303,6 @@ S196975874,American Journal of Veterinary Research,True,True,,True,True,1250,,Fa
 S1980519,The Astrophysical Journal,True,True,4499,True,True,3162,2356 GBP|2727 EUR,True,2022,2022-05-05,top50_all|top50_oa
 S199464710,Læknablaðið,True,True,,True,False,,,False,2000,2016-09-15,fee_unconfirmed
 S19980739,Journal of Mining and Metallurgy Section B Metallurgy,True,True,,True,False,,,False,2002,2010-09-28,fee_unconfirmed
-S200071133,Blood,False,False,5500,False,,,,,,,top50_all
 S200334879,Discrete Mathematics & Theoretical Computer Science,True,True,,True,False,,,False,1997,2004-05-07,fee_unconfirmed
 S200437886,BMC Public Health,True,True,3290,True,True,3450,3150 EUR|2690 GBP,False,2001,2003-04-03,top50_oa
 S200472310,Cryptogamie Bryologie,False,True,,False,,,,,,,fee_unconfirmed
@@ -362,7 +363,6 @@ S2498826820,Annali dell Istituto Superiore di Sanità,True,True,,True,False,,,Fa
 S2502647897,Blood transfusion,False,True,,False,,,,,,,fee_unconfirmed
 S2504426957,Beilstein Journal of Nanotechnology,True,True,,True,False,,,False,2010,2012-06-15,fee_unconfirmed
 S25288002,Indian Journal of Psychiatry,True,True,,True,False,,,False,2007,2017-08-31,fee_unconfirmed
-S25293849,The FASEB Journal,False,False,3740,False,,,,,,,top50_all
 S2531072874,SpringerPlus,False,True,,False,,,,,,,fee_unconfirmed
 S2595292759,Frontiers in Immunology,True,True,3801,True,True,,3150 CHF,False,2010,2011-04-28,top50_oa
 S2595917421,Frontiers for Young Minds,False,True,0,False,,,,,,,diamond
@@ -2635,7 +2635,6 @@ S4210238810,Mathematical Foundations of Computing,False,True,,False,,,,,,,fee_un
 S4210238819,Light Advanced Manufacturing,True,True,,True,False,,,False,2020,2022-02-23,fee_unconfirmed
 S4210238955,Archives in Biomedical Engineering & Biotechnology,False,True,,False,,,,,,,fee_unconfirmed
 S4210239035,Journal of Population and Social Studies,False,True,,False,,,,,,,fee_unconfirmed
-S4210239061,Proceedings for Annual Meeting of The Japanese Pharmacological Society,False,True,,False,,,,,,,fee_unconfirmed
 S4210239098,Interdisciplinaria Revista de Psicología y Ciencias Afines,True,True,,True,False,,,False,2015,2018-04-04,fee_unconfirmed
 S4210239114,Wrocławski Rocznik Historii Mówionej,True,True,,True,False,,,False,2011,2021-03-29,fee_unconfirmed
 S4210239144,Modern applications in Pharmacy & Pharmacology,False,True,,False,,,,,,,fee_unconfirmed

@@ -1,0 +1,51 @@
+---
+// The 17 institutions, alphabetical (a directory, not a ranking), each linking
+// to its profile.
+import Base from '../../layouts/Base.astro';
+import Figure from '../../components/Figure.astro';
+import BarList from '../../components/BarList.astro';
+import { STATEWIDE, freeFor, institutionsAlpha, shortName, entityName, greenFor } from '../../lib/data';
+import { n, pct } from '../../lib/format';
+
+const keys = institutionsAlpha();
+const all = freeFor(STATEWIDE);
+---
+<Base title="Institutions" current="institutions"
+  description="Open access profiles for 17 Connecticut colleges and universities, 2015 to 2025.">
+  <div class="page-head">
+    <p class="kicker">Institution profiles · 2015–2025</p>
+    <h1>17 Connecticut colleges and universities</h1>
+    <p class="deck">
+      Each profile shows how much of the institution’s research is free to read, how that has changed, where its closed
+      articles are, and what authors may be paying to publish.
+    </p>
+  </div>
+
+  <p>
+    An article counts for every institution with an author on it, so the institutions’ totals add up to more than the
+    statewide total. Institutions differ a lot in size and subject mix, so these figures describe each one rather than
+    rank them. To set two to four side by side, use <a href="/compare/">Compare</a>.
+  </p>
+
+  <Figure num={1} id="fig-dir" title="Share of articles free to read, 2015–2025, alphabetical" source="free_to_read_2015_2025.csv">
+    <Fragment slot="summary">
+      <p>
+        Select an institution’s name to open its profile. The statewide figure, counting each article once, is
+        {' '}{pct(all.free_to_read_share)}.
+      </p>
+    </Fragment>
+    <BarList label="Institutions, alphabetical, with share of articles free to read" items={[
+      ...keys.map((k) => ({ name: shortName(k), value: freeFor(k).free_to_read_share, href: `/institutions/${k}/`, detail: `of ${n(freeFor(k).works)}` })),
+      { name: 'All 17 (each article once)', value: all.free_to_read_share, statewide: true, highlight: true, detail: `of ${n(all.works)}` },
+    ]} />
+    <table class="data" slot="table">
+      <caption>The 17 institutions, 2015–2025</caption>
+      <thead><tr><th scope="col">Institution</th><th scope="col" class="r">Articles</th><th scope="col" class="r">Free to read</th><th scope="col" class="r">Repository candidates (proxy)</th></tr></thead>
+      <tbody>
+        {keys.map((k) => (
+          <tr><th scope="row"><a href={`/institutions/${k}/`}>{entityName(k)}</a></th><td class="r">{n(freeFor(k).works)}</td><td class="r">{pct(freeFor(k).free_to_read_share)}</td><td class="r">{n(greenFor(k).candidates)}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </Figure>
+</Base>

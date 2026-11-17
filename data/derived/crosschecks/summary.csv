@@ -1,0 +1,10 @@
+metric,numerator,denominator,share,note
+sample_size,510,510,1.0,"30 articles per institution, 2015-2025, with a DOI"
+unpaywall_found,501,510,0.9824,
+unpaywall_status_agrees,501,501,1.0,not independent: Unpaywall runs on the OpenAlex database
+openaire_found,504,510,0.9882,
+openaire_no_access_value,97,504,0.1925,OpenAIRE has no access information for these
+openaire_free_to_read_agrees,358,407,0.8796,where OpenAIRE gives an access value
+openaire_closed_but_openaire_open,23,407,0.0565,
+openaire_free_but_openaire_not_open,26,407,0.0639,
+doaj_flag_agrees,3324,3329,0.9985,journals checked

@@ -1,15 +1,16 @@
 ---
-// One profile per institution. The template is shared; which institutions get a
-// page is controlled by PROFILE_KEYS in src/lib/data.ts (phase 4: UConn only).
+// One profile per institution, all 17 from the same template (PROFILE_KEYS in
+// src/lib/data.ts). Every number comes from the pipeline's metric CSVs.
 import Base from '../../layouts/Base.astro';
 import Figure from '../../components/Figure.astro';
 import CategoryLegend from '../../components/CategoryLegend.astro';
 import SegmentedBars from '../../components/SegmentedBars.astro';
 import LineChart from '../../components/LineChart.astro';
 import ClosedBars from '../../components/ClosedBars.astro';
+import GreenOpportunity from '../../components/GreenOpportunity.astro';
 import {
   manifest, CATEGORIES, STATEWIDE, PROFILE_KEYS, tables, freeFor, categoryMix, freeTrend,
-  categoryTrend, entityName, topBy, apcFor, booksFor, institutionKeys,
+  categoryTrend, entityName, topBy, apcFor, booksFor,
 } from '../../lib/data';
 import { n, pct, pct0, points, dollars, inWords, capitalize } from '../../lib/format';
 
@@ -26,8 +27,8 @@ const notes: Record<string, string> = {
 
 const me = freeFor(key);
 const all = freeFor(STATEWIDE);
-const rank = institutionKeys().map((k) => freeFor(k)).sort((a, b) => b.free_to_read_share - a.free_to_read_share)
-  .findIndex((r) => r.entity === key) + 1;
+const vsState = me.free_to_read_share > all.free_to_read_share ? 'above' : me.free_to_read_share < all.free_to_read_share ? 'below' : 'equal to';
+const small = me.works < 1000;
 const trend = freeTrend(key);
 const trendAll = freeTrend(STATEWIDE);
 const complete = trend.filter((p) => !p.incomplete);
@@ -48,13 +49,13 @@ const topics = topBy(tables.topics, key, 'topic_name', 'rank_by_output', 10);
 const apc = apcFor(key);
 const books = booksFor(key);
 const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
-const ordinal = (k: number) => k + (k % 10 === 1 && k !== 11 ? 'st' : k % 10 === 2 && k !== 12 ? 'nd' : k % 10 === 3 && k !== 13 ? 'rd' : 'th');
 const y0 = Math.floor(Math.min(...trend.map((p) => p.share), ...trendAll.map((p) => p.share)) * 10) / 10;
 const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) => p.share)) * 10) / 10;
 ---
-<Base title={short} current={key}
+<Base title={short} current="institutions"
   description={`How much of ${short}'s research is free to read, 2015 to 2025, from OpenAlex data.`}>
   <div class="page-head">
+    <p class="small breadcrumb"><a href="/institutions/">All institutions</a></p>
     <p class="kicker">Institution profile · {first.year}–{lastC.year} · data snapshot {snapshotLong}</p>
     <h1>{capitalize(inWords(me.free_to_read_share))} of {short}’s research is free to read.</h1>
     <p class="deck">
@@ -69,7 +70,7 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
     <ol>
       <li>
         <strong>{pct(me.free_to_read_share)}</strong> of {short}’s articles are free to read ({n(me.free_to_read)} of {n(me.works)}),
-        {' '}{rank === 1 ? 'the highest' : `the ${ordinal(rank)} highest`} of the 17 institutions.
+        {' '}{vsState} the statewide figure of {pct(all.free_to_read_share)}.
       </li>
       <li>
         The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}{' '}{' '}
@@ -97,6 +98,7 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
         <p>
           The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}, peaking at
           {' '}{pct(peak.share)} in {peak.year}. The statewide line is shown for comparison.
+          {small && ` ${short} has fewer than 1,000 articles in these years, so its yearly share can move a lot from one year to the next.`}
           {yInc.year} is incomplete: {pct(yInc.share)} of the {n(yInc.works)} articles counted so far are free to read.
         </p>
       </Fragment>
@@ -204,6 +206,8 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
       </table>
     </Figure>
   </section>
+
+  <GreenOpportunity entity={key} who={short} />
 
   <section class="block" aria-labelledby="fees">
     <h2 id="fees">What authors may be paying to publish <span class="estimate-tag">Estimate</span></h2>

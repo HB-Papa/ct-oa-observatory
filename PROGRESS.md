@@ -1,7 +1,7 @@
 # Progress
 
 ## Current phase
-Phase 6: cross-checks and enrichment (in progress)
+Phase 7: full site, Compare, downloads, Methods, accessibility audit (deployed, awaiting Chris's approval)
 
 ## Done
 - 2026-11-15: Created project folder `Desktop/Access/ct-oa-observatory`, CLAUDE.md, PROGRESS.md, DECISIONS.md.
@@ -28,6 +28,9 @@ Phase 6: cross-checks and enrichment (in progress)
 - 2026-11-16: Phase 6 pipeline steps s07 to s12 (sample, Unpaywall, OpenAIRE, DOAJ, OpenAPC, green proxy) plus `pipeline/sources.py`. 207 OpenAlex credits. 28 pytest tests pass. Cross-check tables in data/derived/crosschecks/ with per-file licenses; green opportunity metric; repository candidate CSV in data/derived/downloads/.
 
 - 2026-11-16: Chris decided: meeting abstracts dropped from all figures (1,384 works, DOI patterns in s04); DOAJ fee answers kept separate. Tables, metrics and green proxy rebuilt; statewide free to read 67.3% (was 66.8%). Independent recompute PASS on all 12 groups. 29 pytest tests pass. Site rebuilt; headlines unchanged.
+- 2026-11-16: Phase 6 approved. Stray Vercel project "site" (created by mistake) deleted at Chris's request.
+- 2026-11-16: Phase 7 build: all 17 profiles, Institutions directory, Compare (no-JS, CSS :has()), Methods and Limitations, Downloads with generated data dictionary, About, Changelog, 404, sitemap, robots.txt. Green opportunity on Overview and profiles. New pipeline outputs: quality/exclusions_summary.csv, crosschecks/summary.csv (s13). README rewritten with a guide for librarians. 25 pages, zero scripts.
+- 2026-11-16: Accessibility audit agent (docs/accessibility-audit.md): axe 0 violations on 25 pages, light and dark, 1280 and 320px, after fixing 1; Lighthouse 100 on 5 pages; keyboard, reflow, text spacing and target size pass. Indexing turned on. Deployed.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -41,8 +44,8 @@ Phase 6: cross-checks and enrichment (in progress)
 
 ## Next
 - Optional: Chris grants Vercel's GitHub app access to HB-Papa/ct-oa-observatory so pushes deploy automatically; otherwise redeploy with `vercel deploy --prod`.
-- Phase 6 approval from Chris.
-- Phase 7: full site (17 profiles, Compare, Methods, downloads, About, Changelog), accessibility audit, remove noindex.
+- Phase 7: Chris's approval. Optional: a short NVDA or VoiceOver pass by Chris.
+- Phase 8: monthly refresh GitHub Action (needs Chris's OK for a Vercel token secret, or Vercel's GitHub app access).
 
 ## Open questions
 - UConn Health is not in UConn's OpenAlex lineage; roll-up uses an OR filter (UConn | UConn Health), deduplicated.
