@@ -12,8 +12,8 @@ export const pointsShort = (x: number) => `${x >= 0 ? '+' : '−'}${Math.abs(x *
  *  Only used when the share is within 1.5 points of the fraction; otherwise
  *  the exact percentage is returned, so a headline never rounds misleadingly. */
 const FRACTIONS: [number, string][] = [
-  [1 / 4, 'a quarter'], [1 / 3, 'a third'], [2 / 5, 'two in five'], [1 / 2, 'half'],
-  [3 / 5, 'three in five'], [2 / 3, 'two-thirds'], [3 / 4, 'three-quarters'], [4 / 5, 'four in five'],
+  [1 / 4, 'a quarter'], [1 / 3, 'a third'], [2 / 5, 'two-fifths'], [1 / 2, 'half'],
+  [3 / 5, 'three-fifths'], [2 / 3, 'two-thirds'], [3 / 4, 'three-quarters'], [4 / 5, 'four-fifths'],
 ];
 export function inWords(x: number): string {
   const [f, w] = FRACTIONS.reduce((best, cur) => (Math.abs(cur[0] - x) < Math.abs(best[0] - x) ? cur : best));
@@ -40,4 +40,36 @@ export function contrast(a: string, b: string) {
 }
 export function inkOn(fill: string) {
   return contrast(fill, '#ffffff') >= contrast(fill, '#141414') ? '#ffffff' : '#141414';
+}
+
+/** "A", "A and B", "A, B and C". */
+export function listNames(names: string[]): string {
+  return names.length <= 1 ? (names[0] ?? '') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`;
+}
+
+/** The sentence naming the publisher or field with the most closed articles,
+ *  handling ties (two items with the same count both lead).
+ *  kind: 'publisher' uses "published", 'field' uses "has".
+ *  detail adds "of N (x%)"; next adds the two items after the leaders. */
+export function mostClosedSentence(
+  items: { name: string; works: number; closed: number }[],
+  kind: 'publisher' | 'field', articles: string, opts: { detail?: boolean; next?: boolean } = {},
+): string {
+  const top = items[0].closed;
+  const leaders = items.filter((i) => i.closed === top);
+  const rest = items.slice(leaders.length, leaders.length + 2);
+  let s: string;
+  if (leaders.length === 1) {
+    const l = leaders[0];
+    const verb = kind === 'publisher' ? 'published' : 'has';
+    s = `${l.name} ${verb} the most closed ${articles}: ${n(l.closed)}`
+      + (opts.detail ? ` of ${n(l.works)} (${pct0(l.closed / l.works)}).` : '.');
+  } else {
+    const verb = kind === 'publisher' ? 'each published' : 'each have';
+    s = `${listNames(leaders.map((l) => l.name))} ${verb} ${n(top)} closed ${articles}, the most of any ${kind}.`;
+  }
+  if (opts.next && rest.length) {
+    s += ` Next ${rest.length === 1 ? 'is' : 'are'} ${listNames(rest.map((r) => `${r.name} (${n(r.closed)})`))}.`;
+  }
+  return s;
 }

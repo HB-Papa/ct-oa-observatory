@@ -17,7 +17,13 @@ interface Series { name: string; short?: string; points: Pt[] }
 interface Props { a: Series; b?: Series; yMin?: number; yMax?: number }
 const { a, b, yMin = 0.4, yMax = 0.8 } = Astro.props;
 
-const W = 680, H = 440, L = 46, R = 112, TIP = 62, T = TIP + 14, B = 36;
+// Text widths are estimated generously (13px Public Sans averages under 7.5
+// chart units per character; 8.2 leaves room for bold digits and font fallback),
+// so the right margin and the hover box always fit their longest text.
+const CHAR = 8.2;
+const endTexts = [a, ...(b ? [b] : [])].map((s) => `100% ${s.short ?? s.name}`);
+const W = 680, H = 440, L = 46, TIP = 62, T = TIP + 14, B = 36;
+const R = Math.ceil(34 + Math.max(...endTexts.map((t) => t.length)) * CHAR);
 const years = a.points.map((p) => p.year);
 const x0 = Math.min(...years), x1 = Math.max(...years);
 const step = (W - L - R) / (x1 - x0);
@@ -39,9 +45,10 @@ if (ends.length === 2 && Math.abs(ends[0].yy - ends[1].yy) < 32) {
 const incX = x(x1);
 const lastX = x(last(a.points).year);
 // Hover readout box
-const TW = 256, TH = 22 + series.length * 19;
-const tipX = (yr: number) => Math.min(Math.max(x(yr) - TW / 2, L - 30), W - TW - 2);
 const line = (p: Pt | undefined) => (p ? `${pct(p.share)}${p.free != null && p.works != null ? ` · ${n(p.free)} of ${n(p.works)} free` : ''}` : '');
+const longest = Math.max(...years.flatMap((yr) => series.map(({ s }) => `${label(s)} ${line(s.points.find((q) => q.year === yr))}`.length)), 24);
+const TW = Math.min(Math.ceil(longest * 7.6 + 36), W - 4), TH = 22 + series.length * 19;
+const tipX = (yr: number) => Math.min(Math.max(x(yr) - TW / 2, 2), W - TW - 2);
 ---
 <ul class="legend" aria-hidden="true">
   {series.map(({ s, cls }) => (<li><span class="line-key" style={`background: var(--s-${cls})`}></span>{s.name}</li>))}

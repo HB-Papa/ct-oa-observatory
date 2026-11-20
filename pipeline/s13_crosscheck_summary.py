@@ -15,10 +15,11 @@ Output: data/derived/crosschecks/summary.csv
 from __future__ import annotations
 
 import csv
+import json
 
 import pandas as pd
 
-from pipeline.config import DERIVED
+from pipeline.config import DERIVED, snapshot
 
 C = DERIVED / "crosschecks"
 
@@ -49,6 +50,10 @@ def main() -> None:
     add("openaire_closed_but_openaire_open", ((ans.oa_status == "closed") & (ans.oaire_access == "OPEN")).sum(), len(ans))
     add("openaire_free_but_openaire_not_open", ((ans.oa_status != "closed") & (ans.oaire_access != "OPEN")).sum(), len(ans))
     add("doaj_flag_agrees", (j.openalex_is_in_doaj == j.in_doaj).sum(), len(j), "journals checked")
+    # Record which OpenAlex snapshot the checks were run on, so the Methods page
+    # can date them (they are rerun by hand, not with the monthly refresh).
+    (C / "manifest.json").write_text(json.dumps({"snapshot_date": snapshot()["snapshot_date"]}, indent=2) + "\n",
+                                     encoding="utf-8")
     with (C / "summary.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()

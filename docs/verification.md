@@ -28,3 +28,12 @@ Common filter: `type:article|review,is_retracted:false`, plus what is listed. "H
 - **Fix:** `pipeline/s03b_fetch_full_authorships.py` fetches each of the 3,320 capped works individually, which returns the full author list and costs 0 credits. `s04` uses the full record for those works.
 - **After:** 0 works without an institution; 204 of 204 institution-years match.
 - **Remaining edge:** 7 works have exactly 5,000 authorships in the single-record response, which may be a second cap. All 7 already match a Connecticut institution, so totals are unaffected; a second Connecticut institution past author 5,000 could be missed on those 7 works.
+
+## Pre-launch QA check against live OpenAlex (2026-11-19)
+
+Published data: OpenAlex as of 2026-11-17 (monthly refresh run 44108525935).
+
+- **Statewide total, 2015-2025.** Live OpenAlex count today: 176,808. Published articles plus excluded records from the 2026-11-17 download: 174,990 + 2,611 = 177,601. Difference -793 (0.45%).
+- **Cause: OpenAlex changed, not the pipeline.** The 2026-11-17 run saved OpenAlex's own per-institution counts, and the download matched them exactly (`data/derived/quality/completeness_by_institution_year.csv`, gap 0.00%). Two days later the same queries give different counts: Yale 2015 8,530 then 8,434; Yale 2022 11,642 then 11,515; UConn 2015 3,685 then 3,615; UConn 2025 4,640 then 4,654. Older years fell and recent years rose, consistent with OpenAlex merging and reclassifying records while new ones are indexed.
+- **USCGA open access breakdown, live versus published** (OpenAlex diamond = our diamond plus fee not confirmed): diamond 35 and 35, gold 23 and 23, hybrid 12 and 12, bronze 22 and 22, green 29 and 25, closed 75 and 77. Small moves of the same kind.
+- **Action:** the Methods page now states that OpenAlex changes daily and that figures reflect the download date. The monthly refresh's -2% to +5% statewide gate allows for changes of this size.

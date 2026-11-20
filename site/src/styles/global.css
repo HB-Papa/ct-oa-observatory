@@ -136,13 +136,13 @@ section.block > h2 { padding-top: 1.25rem; border-top: 1px solid var(--rule); }
 .tile .note { font-size: var(--text-small); color: var(--body); margin: 0; }
 
 /* Figures */
-figure.viz { margin: 2.5rem 0; }
+figure.viz { margin: 3.25rem 0; }
 figure.viz figcaption .viz-title { font: 600 1.125rem/1.4 var(--font-sans); color: var(--ink); margin: 0 0 0.5rem; }
 figure.viz .fig-num { color: var(--accent); margin-right: 0.5rem; }
 figure.viz .summary p { margin-bottom: 0.75em; }
-figure.viz .summary { margin-bottom: 1rem; }
+figure.viz .summary { margin-bottom: 1.5rem; }
 figure.viz .source { font-size: var(--text-small); color: var(--muted); margin: 0.75rem 0 0; }
-.fig-foot { border-top: 1px solid var(--rule); margin-top: 1rem; padding-top: 0.5rem; }
+.fig-foot { border-top: 1px solid var(--rule); margin-top: 1.5rem; padding-top: 0.6rem; }
 details.table-view > summary { cursor: pointer; font-size: var(--text-small); font-weight: 600; color: var(--accent); padding-block: 0.25rem; width: fit-content; }
 details.table-view > summary:hover { color: var(--accent-hover); text-decoration: underline; }
 .table-scroll { overflow-x: auto; margin-top: 0.75rem; }
@@ -155,27 +155,27 @@ table.data thead th { border-bottom: 2px solid var(--rule-strong); color: var(--
 table.data td.r, table.data th.r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* Legend */
-.legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; padding: 0; margin: 0 0 0.9rem; font-size: var(--text-small); color: var(--muted); }
+.legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; padding: 0; margin: 0 0 1.25rem; font-size: var(--text-small); color: var(--muted); }
 .legend li { display: inline-flex; align-items: center; gap: 0.45rem; }
 .swatch { width: 0.85rem; height: 0.85rem; border-radius: 2px; flex: none; forced-color-adjust: none; }
 .line-key { width: 1.2rem; height: 3px; border-radius: 2px; flex: none; forced-color-adjust: none; }
 
 /* Tall segmented bars */
-.seg-rows { container-type: inline-size; display: grid; gap: 0.6rem; }
+.seg-rows { container-type: inline-size; display: grid; gap: 0.85rem; }
 .seg-row { display: grid; grid-template-columns: minmax(6rem, 11rem) 1fr; gap: 0.3rem 1rem; align-items: center; }
 .seg-row .seg-label { font-size: var(--text-small); color: var(--ink); }
-.seg-bar { display: flex; gap: 2px; height: 28px; forced-color-adjust: none; }
+.seg-bar { display: flex; gap: 2px; height: 30px; forced-color-adjust: none; }
 .seg { height: 100%; border-radius: 3px; display: flex; align-items: center; padding-inline: 0.35rem; font: 700 0.75rem/1 var(--font-sans); min-width: 0; }
 .seg .seg-val { white-space: nowrap; }
 @container (max-width: 32rem) { .seg-row { grid-template-columns: 1fr; } }
 @container (max-width: 24rem) { .seg .seg-val { display: none; } }
 
 /* Horizontal bars */
-.bar-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
-.bar-item { display: grid; grid-template-columns: minmax(8rem, 15rem) 1fr; gap: 0.2rem 1rem; align-items: center; }
+.bar-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+.bar-item { display: grid; grid-template-columns: minmax(8rem, 14rem) 1fr; gap: 0.3rem 1.25rem; align-items: center; }
 .bar-item .bar-name { font-size: var(--text-small); color: var(--ink); line-height: 1.35; }
 .bar-track { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; min-width: 0; }
-.bar-fill { height: 14px; border-radius: 0 3px 3px 0; background: var(--s-a); forced-color-adjust: none; flex: none; }
+.bar-fill { height: 16px; border-radius: 0 3px 3px 0; background: var(--s-a); forced-color-adjust: none; flex: none; }
 .bar-fill.statewide { background: var(--s-b); }
 .bar-val { font-size: var(--text-small); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 0; }
 .bar-item.is-highlight .bar-name { font-weight: 700; }

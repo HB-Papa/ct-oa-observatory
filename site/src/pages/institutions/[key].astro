@@ -12,7 +12,7 @@ import {
   manifest, CATEGORIES, STATEWIDE, PROFILE_KEYS, tables, freeFor, categoryMix, freeTrend,
   categoryTrend, entityName, topBy, apcFor, booksFor, abbreviation,
 } from '../../lib/data';
-import { n, pct, pct0, points, dollars, inWords, capitalize } from '../../lib/format';
+import { n, pct, pct0, points, dollars, inWords, capitalize, mostClosedSentence } from '../../lib/format';
 
 export function getStaticPaths() {
   return PROFILE_KEYS.map((key) => ({ params: { key } }));
@@ -34,6 +34,7 @@ const trendAll = freeTrend(STATEWIDE);
 const complete = trend.filter((p) => !p.incomplete);
 const first = complete[0], lastC = complete.at(-1)!;
 const peak = complete.reduce((m, p) => (p.share > m.share ? p : m));
+const peakIsLast = peak.year === lastC.year;
 const yInc = trend.find((p) => p.incomplete)!;
 const mix = categoryMix(key);
 const mixAll = categoryMix(STATEWIDE);
@@ -73,15 +74,15 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
         {' '}{vsState} the statewide figure of {pct(all.free_to_read_share)}.
       </li>
       <li>
-        The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}{' '}{' '}
-        ({points(lastC.share - first.share)}), with a peak of {pct(peak.share)} in {peak.year}.
+        The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}{' '}
+        ({points(lastC.share - first.share)}){peakIsLast ? ', its highest level in these years.' : `, with a peak of ${pct(peak.share)} in ${peak.year}.`}
       </li>
       <li>
         The largest free route is {freeRoutes[0].label.toLowerCase()} ({pct(freeRoutes[0].share)}). {pct(closed.share)} of
         articles are closed.
       </li>
       <li>
-        {pubs[0].name} published the most closed {short} articles: {n(pubs[0].closed)}.
+        {mostClosedSentence(pubs, 'publisher', `${short} articles`)}
       </li>
       <li>
         Where {short} is the corresponding institution, authors may have paid about
@@ -96,8 +97,7 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
     <Figure num={1} id="fig-trend" title={`Share of ${short} articles free to read, by year`} source="free_to_read_by_year.csv">
       <Fragment slot="summary">
         <p>
-          The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}, peaking at
-          {' '}{pct(peak.share)} in {peak.year}. The statewide line is shown for comparison.
+          The share went from {pct(first.share)} in {first.year} to {pct(lastC.share)} in {lastC.year}{peakIsLast ?', its highest level in these years.' : `, peaking at ${pct(peak.share)} in ${peak.year}.`} The statewide line is shown for comparison.
           {small && ` ${short} has fewer than 1,000 articles in these years, so its yearly share can move a lot from one year to the next.`}{' '}
           {yInc.year} is incomplete: {pct(yInc.share)} of the {n(yInc.works)} articles counted so far are free to read.
         </p>
@@ -164,8 +164,8 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
       <Figure num={4} id="fig-pub" title="Publishers with the most closed articles, 2015–2025" source="publishers_2015_2025.csv">
         <Fragment slot="summary">
           <p>
-            {pubs[0].name} published the most closed {short} articles: {n(pubs[0].closed)} of {n(pubs[0].works)}{' '}
-            ({pct0(pubs[0].closed / pubs[0].works)}). Next are {pubs[1].name} ({n(pubs[1].closed)}) and {pubs[2].name} ({n(pubs[2].closed)}).
+            {mostClosedSentence(pubs, 'publisher', `${short} articles`, { detail: true, next: true })} Imprints are grouped
+            under their parent company.
           </p>
         </Fragment>
         <ClosedBars items={pubs} label={`Publishers by number of closed ${short} articles`} />
@@ -178,8 +178,7 @@ const y1 = Math.ceil(Math.max(...trend.map((p) => p.share), ...trendAll.map((p) 
       <Figure num={5} id="fig-field" title="Fields with the most closed articles, 2015–2025" source="fields_2015_2025.csv">
         <Fragment slot="summary">
           <p>
-            {fields[0].name} has the most closed {short} articles: {n(fields[0].closed)} of {n(fields[0].works)}{' '}
-            ({pct0(fields[0].closed / fields[0].works)}).
+            {mostClosedSentence(fields, 'field', `${short} articles`, { detail: true })}
           </p>
         </Fragment>
         <ClosedBars items={fields} label={`Fields by number of closed ${short} articles`} />

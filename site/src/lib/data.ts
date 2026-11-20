@@ -44,6 +44,7 @@ export const checks = {
   doajFeeUnconfirmed: load('doaj_fee_unconfirmed', path.join(DERIVED, 'crosschecks')),
   openapc: load('openapc_summary', path.join(DERIVED, 'crosschecks')),
   exclusions: load('exclusions_summary', path.join(DERIVED, 'quality')),
+  date: JSON.parse(fs.readFileSync(path.join(DERIVED, 'crosschecks', 'manifest.json'), 'utf-8')).snapshot_date as string,
 };
 export function check(metric: string) {
   return checks.summary.find((r) => r.metric === metric)!;
@@ -140,7 +141,7 @@ export function topBy(table: Row[], key: string, dim: string, rankCol: 'rank_by_
   return table
     .filter((r) => r.entity === key && r[rankCol] <= n)
     .sort((a, b) => a[rankCol] - b[rankCol])
-    .map((r) => ({ name: String(r[dim]), works: r.works as number, closed: r.closed as number,
+    .map((r) => ({ name: dim === 'publisher_parent_name' ? publisherName(String(r[dim])) : String(r[dim]), works: r.works as number, closed: r.closed as number,
                    closedShare: r.closed_share as number }));
 }
 
@@ -161,11 +162,30 @@ export function booksFor(key: string) {
 /** Abbreviations for tight spaces such as chart end labels. These are the
  *  forms each institution commonly uses for itself. */
 const ABBREVIATIONS: Record<string, string> = {
-  yale: 'Yale', uconn: 'UConn', wesleyan: 'Wesleyan', trinity: 'Trinity', conncoll: 'Conn College',
-  quinnipiac: 'Quinnipiac', fairfield: 'Fairfield', sacredheart: 'Sacred Heart', hartford: 'UHart',
+  yale: 'Yale', uconn: 'UConn', wesleyan: 'Wesleyan', trinity: 'Trinity', conncoll: 'Conn',
+  quinnipiac: 'QU', fairfield: 'Fairfield', sacredheart: 'SHU', hartford: 'UHart',
   newhaven: 'UNH', scsu: 'SCSU', ccsu: 'CCSU', wcsu: 'WCSU', ecsu: 'ECSU', uscga: 'USCGA',
   bridgeport: 'UB', usj: 'USJ', statewide: 'Statewide', statewide_no_yale: 'Without Yale',
 };
 export function abbreviation(key: string): string {
   return ABBREVIATIONS[key] ?? shortName(key);
+}
+
+/** Display names for publishers. OpenAlex groups each journal under the top of
+ *  its publisher's ownership chain, which gives names readers may not know
+ *  (Taylor & Francis appears as its owner Informa; the university presses as
+ *  their universities). The site shows the familiar name; the downloadable
+ *  CSVs keep OpenAlex's names. */
+const PUBLISHER_NAMES: Record<string, string> = {
+  'Elsevier BV': 'Elsevier',
+  Informa: 'Taylor & Francis',
+  'University of Cambridge': 'Cambridge University Press',
+  'University of Oxford': 'Oxford University Press',
+  'Multidisciplinary Digital Publishing Institute': 'MDPI',
+  'Institute of Electrical and Electronics Engineers': 'IEEE',
+  'Emerald Publishing Limited': 'Emerald Publishing',
+  Unknown: 'Publisher not recorded',
+};
+export function publisherName(name: string): string {
+  return PUBLISHER_NAMES[name] ?? name;
 }

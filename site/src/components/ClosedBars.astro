@@ -2,7 +2,8 @@
 // For "which publishers / fields have the most closed articles": one bar per
 // row, length = all works (on a common scale), split into the closed part
 // (neutral, matches the Closed category) and the free-to-read part (blue).
-// Values are printed beside the bar; the table view has everything.
+// The value sits beside the bar in a reserved 16.5rem, so it never wraps under
+// a long bar. A part with no articles is not drawn (no stray sliver or gap).
 import { n, pct0 } from '../lib/format';
 interface Item { name: string; works: number; closed: number }
 interface Props { items: Item[]; label: string }
@@ -13,24 +14,33 @@ const max = Math.max(...items.map((i) => i.works));
   <li><span class="swatch" data-cat="closed" style="background: var(--c-closed)"></span>Closed</li>
   <li><span class="swatch" style="background: var(--s-a)"></span>Free to read</li>
 </ul>
-<ul class="bar-list" aria-label={label}>
-  {items.map((it) => (
-    <li class="bar-item">
-      <span class="bar-name">{it.name}</span>
-      <span class="bar-track">
-        <span class="cb" style={`width: calc((100% - 9.5rem) * ${(it.works / max).toFixed(4)})`} aria-hidden="true">
-          <span class="cb-closed" data-cat="closed" style={`flex: ${it.closed} 1 0`}></span>
-          <span class="cb-free" style={`flex: ${it.works - it.closed} 1 0`}></span>
+<ul class="bar-list closed-bars" aria-label={label}>
+  {items.map((it) => {
+    const free = it.works - it.closed;
+    return (
+      <li class="bar-item">
+        <span class="bar-name">{it.name}</span>
+        <span class="bar-track">
+          <span class="cb" style={`width: calc((100% - var(--val-w)) * ${(it.works / max).toFixed(4)})`} aria-hidden="true">
+            {it.closed > 0 && <span class:list={['cb-closed', { 'cb-end': free === 0 }]} data-cat="closed" style={`flex: ${it.closed} 1 0`}></span>}
+            {free > 0 && <span class="cb-free cb-end" style={`flex: ${free} 1 0`}></span>}
+          </span>
+          <span class="bar-val">{n(it.closed)} closed <span class="muted">of {n(it.works)} ({pct0(it.closed / it.works)})</span></span>
         </span>
-        <span class="bar-val">{n(it.closed)} closed <span class="muted">of {n(it.works)} ({pct0(it.closed / it.works)})</span></span>
-      </span>
-    </li>
-  ))}
+      </li>
+    );
+  })}
 </ul>
 <style>
-  .cb { display: flex; gap: 2px; height: 18px; flex: none; min-width: 6px; forced-color-adjust: none; }
-  .cb-closed { background: var(--c-closed); border-radius: 0; min-width: 0; }
-  .cb-free { background: var(--s-a); border-radius: 0 4px 4px 0; min-width: 0; }
+  .closed-bars { --val-w: 16.5rem; }
+  @media (max-width: 34rem) {
+    .closed-bars { --val-w: 0rem; }
+    .closed-bars .bar-track { flex-direction: column; align-items: flex-start; }
+  }
+  .cb { display: flex; gap: 2px; height: 20px; flex: none; min-width: 6px; forced-color-adjust: none; }
+  .cb-closed { background: var(--c-closed); min-width: 2px; }
+  .cb-free { background: var(--s-a); min-width: 2px; }
+  .cb-end { border-radius: 0 4px 4px 0; }
   @media (forced-colors: active) {
     .cb-closed { background-image: repeating-linear-gradient(45deg, transparent 0 4px, rgba(255,255,255,0.55) 4px 6px); outline: 1px solid CanvasText; }
     .cb-free { outline: 1px solid CanvasText; }

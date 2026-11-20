@@ -36,6 +36,7 @@ All nine phases approved (2026-11-17). Maintenance: monthly refresh on the 3rd.
 - 2026-11-17: First successful monthly refresh on GitHub (run 44108525935): new snapshot 2026-11-17, 2,129 credits, every check passed, refreshed data committed and deployed automatically through Vercel's GitHub app. Statewide 174,990 articles (+71), 67.3% free to read (unchanged). Earlier attempts: two stopped at the key check (secret first added to open-sun by mistake), one ran out of memory in the recompute (fixed, 21.8 GB to 2.7 GB). Failure issues #1 and #2 closed.
 - 2026-11-17: Phase 8 approved. Phase 9: docs/writeups.md (abstract, resume bullets, interview notes) from the 2026-11-17 figures; style scan clean; kept out of git.
 - 2026-11-17: Phase 9 approved. Project complete.
+- 2026-11-19: Pre-launch QA (DECISIONS.md): layout measured on 25 pages at 6 widths and fixed (line chart labels and hover box, bar value wrapping, spacing, empty bar parts); publisher display names; peak and tie wording; Methods dates the cross-checks and notes daily OpenAlex change; live OpenAlex check recorded in docs/verification.md. 0 axe violations in 100 runs.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|

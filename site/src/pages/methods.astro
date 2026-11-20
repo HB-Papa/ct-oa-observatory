@@ -27,6 +27,8 @@ const goldJ = openapc('same journals, gold');
 const scoap3 = checks.openapc.find((r) => String(r.comparison).startsWith('no-author-fee'))!;
 const c = (m: string) => check(m);
 const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
+const checksLong = new Date(checks.date + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const checksOlder = checks.date !== manifest.snapshot_date;
 ---
 <Base title="Methods and limitations" current="methods"
   description="How the Connecticut Open Access Observatory counts articles, classifies open access, estimates fees, and where the numbers fall short.">
@@ -76,6 +78,12 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
       <strong>Work types.</strong> Journal articles and reviews that are not retracted. Books and book chapters are
       counted separately on each profile and are not in any other figure. Editorials, letters, preprints, datasets and
       conference papers are not counted.
+    </p>
+    <p>
+      <strong>Publishers and subjects.</strong> Publishers are grouped under their parent company, as OpenAlex records
+      them. The site shows the familiar name where OpenAlex uses the owner’s: Taylor &amp; Francis appears in OpenAlex as
+      Informa, and Cambridge and Oxford University Presses as their universities. The data files keep OpenAlex’s names.
+      Fields and topics are OpenAlex’s subject labels, one main topic per article.
     </p>
     <p>
       <strong>Years.</strong> 2015 to 2025, the last complete year. 2026 is shown separately and labeled incomplete,
@@ -161,6 +169,7 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
     <p>
       So the listed-price estimates on this site are <strong>likely too high</strong>, especially for earlier years.
       Payments can also be lower through discounts, waivers and library agreements, which OpenAPC does not fully capture.
+      This comparison was run on the OpenAlex data of {checksLong}.
     </p>
     <p class="small muted">
       A special case: {n(scoap3.articles)} articles that charge authors nothing (mostly in physics journals funded by the
@@ -200,7 +209,7 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
     <p>
       A sample of {n(c('sample_size').numerator)} articles (30 per institution, spread over 2015–2025) was looked up in
       other sources. Because every institution has the same number, these are sample rates, not statewide estimates.
-      None of these sources changes a figure on the site.
+      None of these sources changes a figure on the site. The checks were run on the OpenAlex data of {checksLong}{checksOlder ? ` and are rerun by hand from time to time, so their counts can differ slightly from the figures elsewhere on this page, which use data as of ${snapshotLong}.` : '.'}
     </p>
     <ul>
       <li>
@@ -240,7 +249,7 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
     <h2 id="limitations">Limitations</h2>
     <ul class="spaced">
       <li>
-        <strong>OpenAlex misses some free copies in Connecticut’s own repositories.</strong> The cross-check found records in
+        <strong>OpenAlex misses some free copies in Connecticut’s own repositories.</strong> The cross-check of {checksLong} found records in
         Digital Commons repositories and in Yale’s EliScholar that offer a public download but are marked not free in
         OpenAlex. Up to 553 articles called closed have such a record (an upper bound, because some records hold no file).
         The Journal of Financial Crises, published by Yale on EliScholar, appears free to read but has 143 articles
@@ -261,6 +270,12 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
         <strong>Recent years are still moving.</strong> The share of articles free to read peaked in 2023 and is lower for
         2024 and 2025, mostly because of fewer bronze articles. Some publishers open articles a year or more after
         publication, so this is likely partly a timing effect. Later snapshots will show.
+      </li>
+      <li>
+        <strong>OpenAlex changes every day.</strong> Records are added, merged, corrected and reclassified continually, so
+        counting again on another day gives slightly different numbers, including for older years. Every figure on this
+        site reflects OpenAlex as of the download date shown at the top of each page, and the monthly refresh brings
+        them up to date.
       </li>
       <li>
         <strong>Fees are listed prices, not payments.</strong> See <a href="#fees">the comparison with OpenAPC</a>.
@@ -286,9 +301,11 @@ const report = `${REPO_URL}/blob/main/docs/crosschecks.md`;
       answers.
     </p>
     <p>
-      Two independent checks were run: a separate program, written without seeing the pipeline code, recomputed the key
-      figures from the raw data and matched every one; and a sample of counts was checked by hand against the OpenAlex
-      website.
+      A separate program, written without seeing the pipeline code, recomputes the published figures from the raw data,
+      and a sample of counts was checked by hand against the OpenAlex website. The data is refreshed monthly. Each
+      refresh downloads everything again, reruns the tests and the separate recomputation, and compares the results with
+      the previous month. It publishes only if every check passes, and each refresh is listed on the{" "}
+      <a href="/changelog/">Changelog</a>.
     </p>
     <p>All the tables behind the charts can be downloaded on the <a href="/downloads/">Downloads page</a>.</p>
   </section>

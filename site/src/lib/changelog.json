@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "Layout and wording fixes",
+    "items": [
+      "Charts have more space. Labels and the figures shown when you point at a year no longer get cut off, and bar values stay beside their bars.",
+      "Publishers appear under familiar names, such as Taylor & Francis (which OpenAlex lists as Informa) and Cambridge University Press.",
+      "The Methods page dates the checks against other sources and notes that OpenAlex changes daily. No figures changed."
+    ]
+  },
+  {
     "date": "2026-11-17",
     "snapshot": "2026-11-17",
     "title": "Monthly data refresh",

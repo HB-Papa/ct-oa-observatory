@@ -11,7 +11,7 @@ import {
   manifest, CATEGORIES, STATEWIDE, STATEWIDE_NO_YALE, PROFILE_KEYS, tables,
   freeFor, categoryMix, freeTrend, categoryTrend, institutionKeys, entityName, topBy, apcFor, greenFor,
 } from '../lib/data';
-import { n, pct, pct0, dollars, inWords, capitalize } from '../lib/format';
+import { n, pct, pct0, dollars, inWords, capitalize, mostClosedSentence } from '../lib/format';
 
 // ---- headline figures (all from free_to_read_2015_2025.csv) ----
 const all = freeFor(STATEWIDE);
@@ -21,6 +21,7 @@ const trendNoYale = freeTrend(STATEWIDE_NO_YALE);
 const complete = trendAll.filter((p) => !p.incomplete);
 const first = complete[0], lastC = complete.at(-1)!;
 const peak = complete.reduce((m, p) => (p.share > m.share ? p : m));
+const peakIsLast = peak.year === lastC.year;
 const y2026 = trendAll.find((p) => p.incomplete)!;
 
 // ---- category trend: which category drives the change after the peak ----
@@ -74,17 +75,16 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
         institution on {pct0(1 - noYale.works / all.works)} of these articles, so it shapes the statewide number.
       </li>
       <li>
-        The share rose from {pct(first.share)} in {first.year} to a peak of {pct(peak.share)} in {peak.year}, and was
-        {' '}{pct(lastC.share)} in {lastC.year}. The recent dip is mostly in {biggestDrop.label.toLowerCase()} articles, which
-        may still become free.
+        {peakIsLast
+          ? `The share went from ${pct(first.share)} in ${first.year} to ${pct(lastC.share)} in ${lastC.year}, its highest level in these years.`
+          : `The share went from ${pct(first.share)} in ${first.year} to a peak of ${pct(peak.share)} in ${peak.year}, and was ${pct(lastC.share)} in ${lastC.year}. The recent dip is mostly in ${biggestDrop.label.toLowerCase()} articles, which may still become free.`}
       </li>
       <li>
         Institutions range from {pct(inst.at(-1)!.free_to_read_share)} ({shortName(inst.at(-1)!.key)}) to
         {' '}{pct(inst[0].free_to_read_share)} ({shortName(inst[0].key)}).
       </li>
       <li>
-        {pubs[0].name} published the most closed articles: {n(pubs[0].closed)}, or {pct0(pubs[0].closed / pubs[0].works)} of
-        its Connecticut articles.
+        {mostClosedSentence(pubs, 'publisher', 'articles', { detail: true })}
       </li>
       <li>
         Authors may have paid about <strong>{dollars(apc.corresponding.estimated_usd)}</strong> in publishing fees, based on
@@ -119,17 +119,20 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
     <Figure num={1} id="fig-trend" title="Share of articles free to read, by year of publication" source="free_to_read_by_year.csv">
       <Fragment slot="summary">
         <p>
-          Statewide, the share of articles free to read rose from {pct(first.share)} in {first.year} to a peak of
-          {' '}{pct(peak.share)} in {peak.year}, then fell to {pct(lastC.share)} in {lastC.year}. Without Yale the
-          pattern is the same at a lower level: {pct(trendNoYale.find((p) => p.year === first.year)!.share)} in {first.year},
+          {peakIsLast
+            ? `Statewide, the share of articles free to read went from ${pct(first.share)} in ${first.year} to ${pct(lastC.share)} in ${lastC.year}, its highest level in these years.`
+            : `Statewide, the share of articles free to read rose from ${pct(first.share)} in ${first.year} to a peak of ${pct(peak.share)} in ${peak.year}, then fell to ${pct(lastC.share)} in ${lastC.year}.`}
+          {' '}Without Yale it went from {pct(trendNoYale.find((p) => p.year === first.year)!.share)} in {first.year} to
           {' '}{pct(trendNoYale.find((p) => p.year === lastC.year)!.share)} in {lastC.year}.
         </p>
-        <p>
-          The drop after {peak.year} is mostly in <strong>{biggestDrop.label.toLowerCase()}</strong> articles, which went
-          from {pct(biggestDrop.from)} to {pct(biggestDrop.to)} of the total. Some publishers make articles free to read
-          a year or more after publication, so recent years are likely to rise as the data updates. The next snapshot
-          will show whether that happens.
-        </p>
+        {!peakIsLast && (
+          <p>
+            The drop after {peak.year} is mostly in <strong>{biggestDrop.label.toLowerCase()}</strong> articles, which went
+            from {pct(biggestDrop.from)} to {pct(biggestDrop.to)} of the total. Some publishers make articles free to read
+            a year or more after publication, so recent years are likely to rise as the data updates. Later data refreshes
+            will show whether that happens.
+          </p>
+        )}
         <p class="small muted">
           {y2026.year} is shown on its own because the year is not over and indexing lags: {pct(y2026.share)} of the
           {' '}{n(y2026.works)} articles counted so far are free to read.
@@ -235,9 +238,8 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
       <Figure num={5} id="fig-pub" title="Publishers with the most closed articles, 2015–2025" source="publishers_2015_2025.csv">
         <Fragment slot="summary">
           <p>
-            {pubs[0].name} published the most closed articles: {n(pubs[0].closed)} of {n(pubs[0].works)}{' '}
-            ({pct0(pubs[0].closed / pubs[0].works)}). Next are {pubs[1].name} ({n(pubs[1].closed)}) and {pubs[2].name}
-            {' '}({n(pubs[2].closed)}). Imprints are grouped under their parent company.
+            {mostClosedSentence(pubs, 'publisher', 'articles', { detail: true, next: true })} Imprints are grouped under
+            their parent company.
           </p>
         </Fragment>
         <ClosedBars items={pubs} label="Publishers by number of closed articles" />
@@ -250,9 +252,8 @@ const snapshotLong = new Date(manifest.snapshot_date + 'T12:00:00Z').toLocaleDat
       <Figure num={6} id="fig-field" title="Fields with the most closed articles, 2015–2025" source="fields_2015_2025.csv">
         <Fragment slot="summary">
           <p>
-            {fields[0].name} has the most closed articles: {n(fields[0].closed)} of {n(fields[0].works)}{' '}
-            ({pct0(fields[0].closed / fields[0].works)}). Fields are OpenAlex’s broad subject groups, assigned to each
-            article’s main topic.
+            {mostClosedSentence(fields, 'field', 'articles', { detail: true })} Fields are OpenAlex’s broad subject
+            groups, assigned to each article’s main topic.
           </p>
         </Fragment>
         <ClosedBars items={fields} label="Fields by number of closed articles" />
