@@ -1,229 +1,229 @@
 entity,entity_name,publication_year,period,works,free_to_read,free_to_read_share
-bridgeport,University of Bridgeport,2015,complete,48,31,0.6458333333333334
-bridgeport,University of Bridgeport,2016,complete,87,65,0.7471264367816092
-bridgeport,University of Bridgeport,2017,complete,64,45,0.703125
-bridgeport,University of Bridgeport,2018,complete,99,78,0.7878787878787878
-bridgeport,University of Bridgeport,2019,complete,62,44,0.7096774193548387
-bridgeport,University of Bridgeport,2020,complete,67,45,0.6716417910447762
-bridgeport,University of Bridgeport,2021,complete,52,40,0.7692307692307693
-bridgeport,University of Bridgeport,2022,complete,48,36,0.75
+bridgeport,University of Bridgeport,2015,complete,48,32,0.6666666666666666
+bridgeport,University of Bridgeport,2016,complete,87,66,0.7586206896551724
+bridgeport,University of Bridgeport,2017,complete,67,49,0.7313432835820896
+bridgeport,University of Bridgeport,2018,complete,98,78,0.7959183673469388
+bridgeport,University of Bridgeport,2019,complete,62,46,0.7419354838709677
+bridgeport,University of Bridgeport,2020,complete,66,45,0.6818181818181818
+bridgeport,University of Bridgeport,2021,complete,53,40,0.7547169811320755
+bridgeport,University of Bridgeport,2022,complete,50,37,0.74
 bridgeport,University of Bridgeport,2023,complete,47,42,0.8936170212765957
-bridgeport,University of Bridgeport,2024,complete,60,53,0.8833333333333333
-bridgeport,University of Bridgeport,2025,complete,121,112,0.9256198347107438
-bridgeport,University of Bridgeport,2026,incomplete,69,57,0.8260869565217391
-ccsu,Central Connecticut State University,2015,complete,95,40,0.42105263157894735
-ccsu,Central Connecticut State University,2016,complete,95,34,0.35789473684210527
-ccsu,Central Connecticut State University,2017,complete,144,43,0.2986111111111111
-ccsu,Central Connecticut State University,2018,complete,124,53,0.4274193548387097
-ccsu,Central Connecticut State University,2019,complete,111,48,0.43243243243243246
-ccsu,Central Connecticut State University,2020,complete,122,59,0.48360655737704916
-ccsu,Central Connecticut State University,2021,complete,143,73,0.5104895104895105
-ccsu,Central Connecticut State University,2022,complete,143,83,0.5804195804195804
-ccsu,Central Connecticut State University,2023,complete,133,74,0.556390977443609
-ccsu,Central Connecticut State University,2024,complete,135,71,0.5259259259259259
-ccsu,Central Connecticut State University,2025,complete,149,86,0.5771812080536913
-ccsu,Central Connecticut State University,2026,incomplete,128,79,0.6171875
-conncoll,Connecticut College,2015,complete,45,21,0.4666666666666667
-conncoll,Connecticut College,2016,complete,67,27,0.40298507462686567
-conncoll,Connecticut College,2017,complete,63,30,0.47619047619047616
-conncoll,Connecticut College,2018,complete,66,38,0.5757575757575758
-conncoll,Connecticut College,2019,complete,73,33,0.4520547945205479
-conncoll,Connecticut College,2020,complete,72,35,0.4861111111111111
-conncoll,Connecticut College,2021,complete,66,31,0.4696969696969697
-conncoll,Connecticut College,2022,complete,61,31,0.5081967213114754
-conncoll,Connecticut College,2023,complete,67,44,0.6567164179104478
+bridgeport,University of Bridgeport,2024,complete,61,54,0.8852459016393442
+bridgeport,University of Bridgeport,2025,complete,121,113,0.9338842975206612
+bridgeport,University of Bridgeport,2026,incomplete,72,60,0.8333333333333334
+ccsu,Central Connecticut State University,2015,complete,93,38,0.40860215053763443
+ccsu,Central Connecticut State University,2016,complete,96,33,0.34375
+ccsu,Central Connecticut State University,2017,complete,143,43,0.3006993006993007
+ccsu,Central Connecticut State University,2018,complete,122,49,0.4016393442622951
+ccsu,Central Connecticut State University,2019,complete,113,50,0.4424778761061947
+ccsu,Central Connecticut State University,2020,complete,121,60,0.49586776859504134
+ccsu,Central Connecticut State University,2021,complete,144,73,0.5069444444444444
+ccsu,Central Connecticut State University,2022,complete,143,80,0.5594405594405595
+ccsu,Central Connecticut State University,2023,complete,136,77,0.5661764705882353
+ccsu,Central Connecticut State University,2024,complete,137,74,0.5401459854014599
+ccsu,Central Connecticut State University,2025,complete,154,86,0.5584415584415584
+ccsu,Central Connecticut State University,2026,incomplete,127,78,0.6141732283464567
+conncoll,Connecticut College,2015,complete,46,22,0.4782608695652174
+conncoll,Connecticut College,2016,complete,66,27,0.4090909090909091
+conncoll,Connecticut College,2017,complete,64,30,0.46875
+conncoll,Connecticut College,2018,complete,68,40,0.5882352941176471
+conncoll,Connecticut College,2019,complete,70,31,0.44285714285714284
+conncoll,Connecticut College,2020,complete,77,39,0.5064935064935064
+conncoll,Connecticut College,2021,complete,67,32,0.47761194029850745
+conncoll,Connecticut College,2022,complete,59,31,0.5254237288135594
+conncoll,Connecticut College,2023,complete,68,45,0.6617647058823529
 conncoll,Connecticut College,2024,complete,49,33,0.673469387755102
-conncoll,Connecticut College,2025,complete,56,39,0.6964285714285714
-conncoll,Connecticut College,2026,incomplete,40,25,0.625
-ecsu,Eastern Connecticut State University,2015,complete,48,12,0.25
-ecsu,Eastern Connecticut State University,2016,complete,52,22,0.4230769230769231
-ecsu,Eastern Connecticut State University,2017,complete,46,19,0.41304347826086957
-ecsu,Eastern Connecticut State University,2018,complete,62,39,0.6290322580645161
+conncoll,Connecticut College,2025,complete,56,38,0.6785714285714286
+conncoll,Connecticut College,2026,incomplete,41,26,0.6341463414634146
+ecsu,Eastern Connecticut State University,2015,complete,46,13,0.2826086956521739
+ecsu,Eastern Connecticut State University,2016,complete,52,21,0.40384615384615385
+ecsu,Eastern Connecticut State University,2017,complete,44,17,0.38636363636363635
+ecsu,Eastern Connecticut State University,2018,complete,65,42,0.6461538461538462
 ecsu,Eastern Connecticut State University,2019,complete,52,29,0.5576923076923077
-ecsu,Eastern Connecticut State University,2020,complete,60,30,0.5
-ecsu,Eastern Connecticut State University,2021,complete,66,38,0.5757575757575758
-ecsu,Eastern Connecticut State University,2022,complete,58,28,0.4827586206896552
-ecsu,Eastern Connecticut State University,2023,complete,49,30,0.6122448979591837
-ecsu,Eastern Connecticut State University,2024,complete,37,21,0.5675675675675675
-ecsu,Eastern Connecticut State University,2025,complete,45,25,0.5555555555555556
-ecsu,Eastern Connecticut State University,2026,incomplete,48,26,0.5416666666666666
-fairfield,Fairfield University,2015,complete,173,98,0.5664739884393064
-fairfield,Fairfield University,2016,complete,141,74,0.524822695035461
-fairfield,Fairfield University,2017,complete,215,142,0.6604651162790698
-fairfield,Fairfield University,2018,complete,149,79,0.5302013422818792
-fairfield,Fairfield University,2019,complete,140,54,0.38571428571428573
-fairfield,Fairfield University,2020,complete,149,67,0.44966442953020136
-fairfield,Fairfield University,2021,complete,153,71,0.46405228758169936
-fairfield,Fairfield University,2022,complete,142,67,0.47183098591549294
-fairfield,Fairfield University,2023,complete,140,85,0.6071428571428571
-fairfield,Fairfield University,2024,complete,167,101,0.6047904191616766
-fairfield,Fairfield University,2025,complete,183,109,0.5956284153005464
-fairfield,Fairfield University,2026,incomplete,160,91,0.56875
-hartford,University of Hartford,2015,complete,84,36,0.42857142857142855
-hartford,University of Hartford,2016,complete,117,45,0.38461538461538464
-hartford,University of Hartford,2017,complete,106,44,0.41509433962264153
-hartford,University of Hartford,2018,complete,112,43,0.38392857142857145
-hartford,University of Hartford,2019,complete,93,43,0.46236559139784944
-hartford,University of Hartford,2020,complete,139,64,0.460431654676259
-hartford,University of Hartford,2021,complete,108,53,0.49074074074074076
-hartford,University of Hartford,2022,complete,117,70,0.5982905982905983
-hartford,University of Hartford,2023,complete,92,61,0.6630434782608695
-hartford,University of Hartford,2024,complete,121,67,0.5537190082644629
-hartford,University of Hartford,2025,complete,116,65,0.5603448275862069
-hartford,University of Hartford,2026,incomplete,106,62,0.5849056603773585
-newhaven,University of New Haven,2015,complete,100,39,0.39
-newhaven,University of New Haven,2016,complete,114,51,0.4473684210526316
-newhaven,University of New Haven,2017,complete,104,38,0.36538461538461536
-newhaven,University of New Haven,2018,complete,110,44,0.4
-newhaven,University of New Haven,2019,complete,162,77,0.47530864197530864
-newhaven,University of New Haven,2020,complete,128,66,0.515625
-newhaven,University of New Haven,2021,complete,145,79,0.5448275862068965
-newhaven,University of New Haven,2022,complete,172,93,0.5406976744186046
-newhaven,University of New Haven,2023,complete,203,144,0.7093596059113301
-newhaven,University of New Haven,2024,complete,279,227,0.8136200716845878
-newhaven,University of New Haven,2025,complete,367,308,0.8392370572207084
-newhaven,University of New Haven,2026,incomplete,301,219,0.7275747508305648
-quinnipiac,Quinnipiac University,2015,complete,163,66,0.4049079754601227
-quinnipiac,Quinnipiac University,2016,complete,147,49,0.3333333333333333
-quinnipiac,Quinnipiac University,2017,complete,160,68,0.425
-quinnipiac,Quinnipiac University,2018,complete,176,70,0.3977272727272727
-quinnipiac,Quinnipiac University,2019,complete,232,92,0.39655172413793105
-quinnipiac,Quinnipiac University,2020,complete,227,107,0.4713656387665198
-quinnipiac,Quinnipiac University,2021,complete,252,143,0.5674603174603174
-quinnipiac,Quinnipiac University,2022,complete,218,122,0.5596330275229358
+ecsu,Eastern Connecticut State University,2020,complete,60,32,0.5333333333333333
+ecsu,Eastern Connecticut State University,2021,complete,66,37,0.5606060606060606
+ecsu,Eastern Connecticut State University,2022,complete,57,27,0.47368421052631576
+ecsu,Eastern Connecticut State University,2023,complete,49,31,0.6326530612244898
+ecsu,Eastern Connecticut State University,2024,complete,37,20,0.5405405405405406
+ecsu,Eastern Connecticut State University,2025,complete,49,29,0.5918367346938775
+ecsu,Eastern Connecticut State University,2026,incomplete,50,26,0.52
+fairfield,Fairfield University,2015,complete,171,102,0.5964912280701754
+fairfield,Fairfield University,2016,complete,142,82,0.5774647887323944
+fairfield,Fairfield University,2017,complete,214,146,0.6822429906542056
+fairfield,Fairfield University,2018,complete,148,85,0.5743243243243243
+fairfield,Fairfield University,2019,complete,141,59,0.41843971631205673
+fairfield,Fairfield University,2020,complete,149,69,0.46308724832214765
+fairfield,Fairfield University,2021,complete,154,75,0.487012987012987
+fairfield,Fairfield University,2022,complete,142,68,0.4788732394366197
+fairfield,Fairfield University,2023,complete,141,86,0.6099290780141844
+fairfield,Fairfield University,2024,complete,166,101,0.608433734939759
+fairfield,Fairfield University,2025,complete,191,116,0.6073298429319371
+fairfield,Fairfield University,2026,incomplete,166,98,0.5903614457831325
+hartford,University of Hartford,2015,complete,81,34,0.41975308641975306
+hartford,University of Hartford,2016,complete,119,47,0.3949579831932773
+hartford,University of Hartford,2017,complete,103,42,0.4077669902912621
+hartford,University of Hartford,2018,complete,111,41,0.36936936936936937
+hartford,University of Hartford,2019,complete,101,50,0.49504950495049505
+hartford,University of Hartford,2020,complete,135,61,0.45185185185185184
+hartford,University of Hartford,2021,complete,111,54,0.4864864864864865
+hartford,University of Hartford,2022,complete,114,69,0.6052631578947368
+hartford,University of Hartford,2023,complete,93,59,0.6344086021505376
+hartford,University of Hartford,2024,complete,123,69,0.5609756097560976
+hartford,University of Hartford,2025,complete,114,66,0.5789473684210527
+hartford,University of Hartford,2026,incomplete,110,63,0.5727272727272728
+newhaven,University of New Haven,2015,complete,100,47,0.47
+newhaven,University of New Haven,2016,complete,115,64,0.5565217391304348
+newhaven,University of New Haven,2017,complete,106,53,0.5
+newhaven,University of New Haven,2018,complete,109,57,0.5229357798165137
+newhaven,University of New Haven,2019,complete,164,83,0.5060975609756098
+newhaven,University of New Haven,2020,complete,128,65,0.5078125
+newhaven,University of New Haven,2021,complete,147,82,0.5578231292517006
+newhaven,University of New Haven,2022,complete,171,92,0.5380116959064327
+newhaven,University of New Haven,2023,complete,208,149,0.7163461538461539
+newhaven,University of New Haven,2024,complete,280,229,0.8178571428571428
+newhaven,University of New Haven,2025,complete,369,309,0.8373983739837398
+newhaven,University of New Haven,2026,incomplete,310,226,0.7290322580645161
+quinnipiac,Quinnipiac University,2015,complete,164,68,0.4146341463414634
+quinnipiac,Quinnipiac University,2016,complete,150,50,0.3333333333333333
+quinnipiac,Quinnipiac University,2017,complete,161,69,0.42857142857142855
+quinnipiac,Quinnipiac University,2018,complete,176,71,0.4034090909090909
+quinnipiac,Quinnipiac University,2019,complete,230,92,0.4
+quinnipiac,Quinnipiac University,2020,complete,228,109,0.4780701754385965
+quinnipiac,Quinnipiac University,2021,complete,255,144,0.5647058823529412
+quinnipiac,Quinnipiac University,2022,complete,217,124,0.5714285714285714
 quinnipiac,Quinnipiac University,2023,complete,237,128,0.540084388185654
-quinnipiac,Quinnipiac University,2024,complete,294,168,0.5714285714285714
-quinnipiac,Quinnipiac University,2025,complete,334,220,0.6586826347305389
-quinnipiac,Quinnipiac University,2026,incomplete,279,174,0.6236559139784946
-sacredheart,Sacred Heart University,2015,complete,83,19,0.2289156626506024
-sacredheart,Sacred Heart University,2016,complete,90,25,0.2777777777777778
-sacredheart,Sacred Heart University,2017,complete,92,25,0.2717391304347826
-sacredheart,Sacred Heart University,2018,complete,103,34,0.3300970873786408
-sacredheart,Sacred Heart University,2019,complete,82,28,0.34146341463414637
-sacredheart,Sacred Heart University,2020,complete,135,55,0.4074074074074074
-sacredheart,Sacred Heart University,2021,complete,134,63,0.4701492537313433
-sacredheart,Sacred Heart University,2022,complete,122,56,0.45901639344262296
-sacredheart,Sacred Heart University,2023,complete,122,58,0.47540983606557374
-sacredheart,Sacred Heart University,2024,complete,179,107,0.5977653631284916
-sacredheart,Sacred Heart University,2025,complete,204,125,0.6127450980392157
-sacredheart,Sacred Heart University,2026,incomplete,154,82,0.5324675324675324
-scsu,Southern Connecticut State University,2015,complete,117,57,0.48717948717948717
-scsu,Southern Connecticut State University,2016,complete,118,52,0.4406779661016949
+quinnipiac,Quinnipiac University,2024,complete,294,169,0.5748299319727891
+quinnipiac,Quinnipiac University,2025,complete,332,219,0.6596385542168675
+quinnipiac,Quinnipiac University,2026,incomplete,289,184,0.6366782006920415
+sacredheart,Sacred Heart University,2015,complete,84,19,0.2261904761904762
+sacredheart,Sacred Heart University,2016,complete,88,25,0.2840909090909091
+sacredheart,Sacred Heart University,2017,complete,94,25,0.26595744680851063
+sacredheart,Sacred Heart University,2018,complete,101,35,0.3465346534653465
+sacredheart,Sacred Heart University,2019,complete,84,32,0.38095238095238093
+sacredheart,Sacred Heart University,2020,complete,134,54,0.40298507462686567
+sacredheart,Sacred Heart University,2021,complete,133,62,0.46616541353383456
+sacredheart,Sacred Heart University,2022,complete,124,58,0.46774193548387094
+sacredheart,Sacred Heart University,2023,complete,122,57,0.4672131147540984
+sacredheart,Sacred Heart University,2024,complete,178,107,0.601123595505618
+sacredheart,Sacred Heart University,2025,complete,205,127,0.6195121951219512
+sacredheart,Sacred Heart University,2026,incomplete,159,85,0.5345911949685535
+scsu,Southern Connecticut State University,2015,complete,114,55,0.4824561403508772
+scsu,Southern Connecticut State University,2016,complete,119,52,0.4369747899159664
 scsu,Southern Connecticut State University,2017,complete,155,70,0.45161290322580644
-scsu,Southern Connecticut State University,2018,complete,130,69,0.5307692307692308
-scsu,Southern Connecticut State University,2019,complete,155,84,0.5419354838709678
-scsu,Southern Connecticut State University,2020,complete,150,79,0.5266666666666666
-scsu,Southern Connecticut State University,2021,complete,185,111,0.6
-scsu,Southern Connecticut State University,2022,complete,169,101,0.5976331360946746
-scsu,Southern Connecticut State University,2023,complete,166,105,0.6325301204819277
-scsu,Southern Connecticut State University,2024,complete,147,84,0.5714285714285714
-scsu,Southern Connecticut State University,2025,complete,169,93,0.5502958579881657
-scsu,Southern Connecticut State University,2026,incomplete,134,73,0.5447761194029851
-statewide,Connecticut (all 17 institutions),2015,complete,12878,7670,0.5955893772324895
-statewide,Connecticut (all 17 institutions),2016,complete,13371,8189,0.6124448433176277
-statewide,Connecticut (all 17 institutions),2017,complete,13717,8413,0.6133265291244441
-statewide,Connecticut (all 17 institutions),2018,complete,14049,8808,0.6269485372624386
-statewide,Connecticut (all 17 institutions),2019,complete,14876,9619,0.6466119924710944
-statewide,Connecticut (all 17 institutions),2020,complete,17217,11568,0.6718940581982924
-statewide,Connecticut (all 17 institutions),2021,complete,17437,11980,0.6870447898147617
-statewide,Connecticut (all 17 institutions),2022,complete,16928,12025,0.7103615311909263
-statewide,Connecticut (all 17 institutions),2023,complete,17044,12611,0.7399084721896269
-statewide,Connecticut (all 17 institutions),2024,complete,18167,13191,0.7260967688666263
-statewide,Connecticut (all 17 institutions),2025,complete,19306,13668,0.7079664353050865
-statewide,Connecticut (all 17 institutions),2026,incomplete,17435,11640,0.6676225982219673
-statewide_no_yale,Connecticut without Yale,2015,complete,4797,2414,0.5032311861580154
-statewide_no_yale,Connecticut without Yale,2016,complete,5004,2541,0.5077937649880095
-statewide_no_yale,Connecticut without Yale,2017,complete,5085,2693,0.5295968534906588
-statewide_no_yale,Connecticut without Yale,2018,complete,5187,2852,0.5498361287834972
-statewide_no_yale,Connecticut without Yale,2019,complete,5426,3127,0.5762992996682639
-statewide_no_yale,Connecticut without Yale,2020,complete,6086,3650,0.5997371015445284
-statewide_no_yale,Connecticut without Yale,2021,complete,6177,3787,0.613080783551886
-statewide_no_yale,Connecticut without Yale,2022,complete,5840,3674,0.6291095890410959
-statewide_no_yale,Connecticut without Yale,2023,complete,5792,3928,0.6781767955801105
-statewide_no_yale,Connecticut without Yale,2024,complete,6204,4116,0.6634429400386848
-statewide_no_yale,Connecticut without Yale,2025,complete,6550,4261,0.6505343511450382
-statewide_no_yale,Connecticut without Yale,2026,incomplete,5892,3668,0.6225390359809911
-trinity,Trinity College,2015,complete,70,39,0.5571428571428572
-trinity,Trinity College,2016,complete,73,43,0.589041095890411
-trinity,Trinity College,2017,complete,81,48,0.5925925925925926
-trinity,Trinity College,2018,complete,65,41,0.6307692307692307
-trinity,Trinity College,2019,complete,76,45,0.5921052631578947
-trinity,Trinity College,2020,complete,61,32,0.5245901639344263
-trinity,Trinity College,2021,complete,82,43,0.524390243902439
-trinity,Trinity College,2022,complete,79,45,0.569620253164557
-trinity,Trinity College,2023,complete,90,66,0.7333333333333333
-trinity,Trinity College,2024,complete,88,56,0.6363636363636364
-trinity,Trinity College,2025,complete,86,52,0.6046511627906976
-trinity,Trinity College,2026,incomplete,49,30,0.6122448979591837
-uconn,University of Connecticut (incl. UConn Health),2015,complete,3555,1829,0.5144866385372715
-uconn,University of Connecticut (incl. UConn Health),2016,complete,3636,1881,0.5173267326732673
-uconn,University of Connecticut (incl. UConn Health),2017,complete,3645,1989,0.5456790123456791
-uconn,University of Connecticut (incl. UConn Health),2018,complete,3779,2129,0.5633765546440858
-uconn,University of Connecticut (incl. UConn Health),2019,complete,3944,2388,0.6054766734279919
-uconn,University of Connecticut (incl. UConn Health),2020,complete,4543,2860,0.6295399515738499
-uconn,University of Connecticut (incl. UConn Health),2021,complete,4536,2865,0.6316137566137566
-uconn,University of Connecticut (incl. UConn Health),2022,complete,4328,2800,0.6469500924214417
-uconn,University of Connecticut (incl. UConn Health),2023,complete,4266,2950,0.6915142991092358
-uconn,University of Connecticut (incl. UConn Health),2024,complete,4457,2976,0.6677137087727171
-uconn,University of Connecticut (incl. UConn Health),2025,complete,4595,2925,0.6365614798694232
-uconn,University of Connecticut (incl. UConn Health),2026,incomplete,4187,2544,0.6075949367088608
+scsu,Southern Connecticut State University,2018,complete,126,66,0.5238095238095238
+scsu,Southern Connecticut State University,2019,complete,155,86,0.5548387096774193
+scsu,Southern Connecticut State University,2020,complete,149,79,0.5302013422818792
+scsu,Southern Connecticut State University,2021,complete,186,108,0.5806451612903226
+scsu,Southern Connecticut State University,2022,complete,171,101,0.5906432748538012
+scsu,Southern Connecticut State University,2023,complete,162,104,0.6419753086419753
+scsu,Southern Connecticut State University,2024,complete,154,89,0.577922077922078
+scsu,Southern Connecticut State University,2025,complete,169,92,0.5443786982248521
+scsu,Southern Connecticut State University,2026,incomplete,141,79,0.5602836879432624
+statewide,Connecticut (all 17 institutions),2015,complete,12711,7618,0.5993234206592715
+statewide,Connecticut (all 17 institutions),2016,complete,13324,8229,0.6176073251275893
+statewide,Connecticut (all 17 institutions),2017,complete,13604,8405,0.6178329902969715
+statewide,Connecticut (all 17 institutions),2018,complete,13938,8789,0.6305782752188263
+statewide,Connecticut (all 17 institutions),2019,complete,14806,9630,0.6504119951371066
+statewide,Connecticut (all 17 institutions),2020,complete,17069,11487,0.6729743980315191
+statewide,Connecticut (all 17 institutions),2021,complete,17336,11977,0.6908744808491002
+statewide,Connecticut (all 17 institutions),2022,complete,16805,12056,0.717405534067242
+statewide,Connecticut (all 17 institutions),2023,complete,17025,12605,0.7403817914831131
+statewide,Connecticut (all 17 institutions),2024,complete,18191,13245,0.7281073058105657
+statewide,Connecticut (all 17 institutions),2025,complete,19251,13673,0.7102488182432082
+statewide,Connecticut (all 17 institutions),2026,incomplete,17987,12033,0.6689831545004725
+statewide_no_yale,Connecticut without Yale,2015,complete,4769,2408,0.504927657789893
+statewide_no_yale,Connecticut without Yale,2016,complete,5016,2589,0.5161483253588517
+statewide_no_yale,Connecticut without Yale,2017,complete,5073,2714,0.5349891582889809
+statewide_no_yale,Connecticut without Yale,2018,complete,5191,2881,0.554999036794452
+statewide_no_yale,Connecticut without Yale,2019,complete,5429,3150,0.5802173512617425
+statewide_no_yale,Connecticut without Yale,2020,complete,6071,3642,0.5999011694943173
+statewide_no_yale,Connecticut without Yale,2021,complete,6177,3795,0.6143759106362312
+statewide_no_yale,Connecticut without Yale,2022,complete,5825,3693,0.6339914163090129
+statewide_no_yale,Connecticut without Yale,2023,complete,5837,3960,0.6784307007024156
+statewide_no_yale,Connecticut without Yale,2024,complete,6225,4155,0.6674698795180722
+statewide_no_yale,Connecticut without Yale,2025,complete,6611,4320,0.6534563606111027
+statewide_no_yale,Connecticut without Yale,2026,incomplete,6133,3810,0.6212294146421001
+trinity,Trinity College,2015,complete,68,39,0.5735294117647058
+trinity,Trinity College,2016,complete,76,44,0.5789473684210527
+trinity,Trinity College,2017,complete,79,46,0.5822784810126582
+trinity,Trinity College,2018,complete,66,43,0.6515151515151515
+trinity,Trinity College,2019,complete,79,47,0.5949367088607594
+trinity,Trinity College,2020,complete,62,32,0.5161290322580645
+trinity,Trinity College,2021,complete,81,43,0.5308641975308642
+trinity,Trinity College,2022,complete,80,45,0.5625
+trinity,Trinity College,2023,complete,87,63,0.7241379310344828
+trinity,Trinity College,2024,complete,89,58,0.651685393258427
+trinity,Trinity College,2025,complete,91,57,0.6263736263736264
+trinity,Trinity College,2026,incomplete,60,37,0.6166666666666667
+uconn,University of Connecticut (incl. UConn Health),2015,complete,3549,1814,0.5111298957452803
+uconn,University of Connecticut (incl. UConn Health),2016,complete,3632,1909,0.5256057268722467
+uconn,University of Connecticut (incl. UConn Health),2017,complete,3637,1997,0.5490789111905416
+uconn,University of Connecticut (incl. UConn Health),2018,complete,3785,2134,0.5638044914134742
+uconn,University of Connecticut (incl. UConn Health),2019,complete,3931,2386,0.6069702365810227
+uconn,University of Connecticut (incl. UConn Health),2020,complete,4531,2851,0.629220922533657
+uconn,University of Connecticut (incl. UConn Health),2021,complete,4528,2867,0.6331713780918727
+uconn,University of Connecticut (incl. UConn Health),2022,complete,4312,2810,0.6516697588126159
+uconn,University of Connecticut (incl. UConn Health),2023,complete,4305,2977,0.6915214866434378
+uconn,University of Connecticut (incl. UConn Health),2024,complete,4472,3000,0.6708407871198568
+uconn,University of Connecticut (incl. UConn Health),2025,complete,4620,2955,0.6396103896103896
+uconn,University of Connecticut (incl. UConn Health),2026,incomplete,4372,2643,0.6045288197621226
 uscga,United States Coast Guard Academy,2015,complete,12,6,0.5
-uscga,United States Coast Guard Academy,2016,complete,19,12,0.631578947368421
-uscga,United States Coast Guard Academy,2017,complete,22,11,0.5
-uscga,United States Coast Guard Academy,2018,complete,16,10,0.625
-uscga,United States Coast Guard Academy,2019,complete,22,10,0.45454545454545453
+uscga,United States Coast Guard Academy,2016,complete,19,11,0.5789473684210527
+uscga,United States Coast Guard Academy,2017,complete,19,10,0.5263157894736842
+uscga,United States Coast Guard Academy,2018,complete,17,11,0.6470588235294118
+uscga,United States Coast Guard Academy,2019,complete,23,10,0.43478260869565216
 uscga,United States Coast Guard Academy,2020,complete,17,12,0.7058823529411765
-uscga,United States Coast Guard Academy,2021,complete,14,9,0.6428571428571429
+uscga,United States Coast Guard Academy,2021,complete,13,9,0.6923076923076923
 uscga,United States Coast Guard Academy,2022,complete,18,12,0.6666666666666666
 uscga,United States Coast Guard Academy,2023,complete,13,6,0.46153846153846156
 uscga,United States Coast Guard Academy,2024,complete,26,20,0.7692307692307693
 uscga,United States Coast Guard Academy,2025,complete,15,9,0.6
-uscga,United States Coast Guard Academy,2026,incomplete,18,13,0.7222222222222222
-usj,University of Saint Joseph,2015,complete,36,16,0.4444444444444444
-usj,University of Saint Joseph,2016,complete,45,22,0.4888888888888889
-usj,University of Saint Joseph,2017,complete,55,24,0.43636363636363634
-usj,University of Saint Joseph,2018,complete,53,26,0.49056603773584906
-usj,University of Saint Joseph,2019,complete,48,26,0.5416666666666666
-usj,University of Saint Joseph,2020,complete,51,30,0.5882352941176471
+uscga,United States Coast Guard Academy,2026,incomplete,17,12,0.7058823529411765
+usj,University of Saint Joseph,2015,complete,37,17,0.4594594594594595
+usj,University of Saint Joseph,2016,complete,46,22,0.4782608695652174
+usj,University of Saint Joseph,2017,complete,51,22,0.43137254901960786
+usj,University of Saint Joseph,2018,complete,55,26,0.4727272727272727
+usj,University of Saint Joseph,2019,complete,49,26,0.5306122448979592
+usj,University of Saint Joseph,2020,complete,49,29,0.5918367346938775
 usj,University of Saint Joseph,2021,complete,52,24,0.46153846153846156
-usj,University of Saint Joseph,2022,complete,30,16,0.5333333333333333
+usj,University of Saint Joseph,2022,complete,31,17,0.5483870967741935
 usj,University of Saint Joseph,2023,complete,48,27,0.5625
-usj,University of Saint Joseph,2024,complete,56,35,0.625
-usj,University of Saint Joseph,2025,complete,35,22,0.6285714285714286
-usj,University of Saint Joseph,2026,incomplete,41,24,0.5853658536585366
+usj,University of Saint Joseph,2024,complete,55,36,0.6545454545454545
+usj,University of Saint Joseph,2025,complete,36,22,0.6111111111111112
+usj,University of Saint Joseph,2026,incomplete,40,25,0.625
 wcsu,Western Connecticut State University,2015,complete,26,10,0.38461538461538464
 wcsu,Western Connecticut State University,2016,complete,39,12,0.3076923076923077
 wcsu,Western Connecticut State University,2017,complete,41,19,0.4634146341463415
-wcsu,Western Connecticut State University,2018,complete,33,16,0.48484848484848486
-wcsu,Western Connecticut State University,2019,complete,48,18,0.375
-wcsu,Western Connecticut State University,2020,complete,46,28,0.6086956521739131
-wcsu,Western Connecticut State University,2021,complete,58,36,0.6206896551724138
-wcsu,Western Connecticut State University,2022,complete,34,19,0.5588235294117647
-wcsu,Western Connecticut State University,2023,complete,33,23,0.696969696969697
-wcsu,Western Connecticut State University,2024,complete,39,25,0.6410256410256411
+wcsu,Western Connecticut State University,2018,complete,31,15,0.4838709677419355
+wcsu,Western Connecticut State University,2019,complete,50,17,0.34
+wcsu,Western Connecticut State University,2020,complete,45,25,0.5555555555555556
+wcsu,Western Connecticut State University,2021,complete,59,37,0.6271186440677966
+wcsu,Western Connecticut State University,2022,complete,32,19,0.59375
+wcsu,Western Connecticut State University,2023,complete,33,22,0.6666666666666666
+wcsu,Western Connecticut State University,2024,complete,40,26,0.65
 wcsu,Western Connecticut State University,2025,complete,25,14,0.56
-wcsu,Western Connecticut State University,2026,incomplete,36,28,0.7777777777777778
-wesleyan,Wesleyan University,2015,complete,232,149,0.6422413793103449
-wesleyan,Wesleyan University,2016,complete,264,170,0.6439393939393939
-wesleyan,Wesleyan University,2017,complete,226,148,0.6548672566371682
-wesleyan,Wesleyan University,2018,complete,236,146,0.6186440677966102
-wesleyan,Wesleyan University,2019,complete,255,171,0.6705882352941176
-wesleyan,Wesleyan University,2020,complete,277,177,0.6389891696750902
-wesleyan,Wesleyan University,2021,complete,279,194,0.6953405017921147
-wesleyan,Wesleyan University,2022,complete,234,168,0.717948717948718
-wesleyan,Wesleyan University,2023,complete,234,172,0.7350427350427351
-wesleyan,Wesleyan University,2024,complete,231,174,0.7532467532467533
-wesleyan,Wesleyan University,2025,complete,248,189,0.7620967741935484
-wesleyan,Wesleyan University,2026,incomplete,282,218,0.7730496453900709
-yale,Yale University,2015,complete,8283,5387,0.6503682240734033
-yale,Yale University,2016,complete,8570,5788,0.6753792298716452
-yale,Yale University,2017,complete,8879,5888,0.6631377407365694
-yale,Yale University,2018,complete,9105,6120,0.6721581548599671
-yale,Yale University,2019,complete,9720,6687,0.687962962962963
-yale,Yale University,2020,complete,11428,8111,0.70974798739937
-yale,Yale University,2021,complete,11564,8394,0.7258734002075407
-yale,Yale University,2022,complete,11450,8621,0.7529257641921397
-yale,Yale University,2023,complete,11627,8959,0.7705341016599295
-yale,Yale University,2024,complete,12364,9365,0.7574409576188935
-yale,Yale University,2025,complete,13159,9703,0.7373660612508549
-yale,Yale University,2026,incomplete,11914,8220,0.6899446029880812
+wcsu,Western Connecticut State University,2026,incomplete,39,30,0.7692307692307693
+wesleyan,Wesleyan University,2015,complete,219,145,0.6621004566210046
+wesleyan,Wesleyan University,2016,complete,270,170,0.6296296296296297
+wesleyan,Wesleyan University,2017,complete,229,149,0.6506550218340611
+wesleyan,Wesleyan University,2018,complete,238,150,0.6302521008403361
+wesleyan,Wesleyan University,2019,complete,256,170,0.6640625
+wesleyan,Wesleyan University,2020,complete,277,179,0.6462093862815884
+wesleyan,Wesleyan University,2021,complete,277,194,0.7003610108303249
+wesleyan,Wesleyan University,2022,complete,236,176,0.7457627118644068
+wesleyan,Wesleyan University,2023,complete,235,173,0.7361702127659574
+wesleyan,Wesleyan University,2024,complete,227,174,0.7665198237885462
+wesleyan,Wesleyan University,2025,complete,259,198,0.7644787644787645
+wesleyan,Wesleyan University,2026,incomplete,288,224,0.7777777777777778
+yale,Yale University,2015,complete,8141,5344,0.6564304139540597
+yale,Yale University,2016,complete,8511,5778,0.6788861473387381
+yale,Yale University,2017,complete,8779,5859,0.6673880852033262
+yale,Yale University,2018,complete,8981,6066,0.6754258991203652
+yale,Yale University,2019,complete,9650,6678,0.692020725388601
+yale,Yale University,2020,complete,11291,8036,0.7117172969621822
+yale,Yale University,2021,complete,11458,8383,0.7316285564670972
+yale,Yale University,2022,complete,11331,8624,0.7610978730915189
+yale,Yale University,2023,complete,11565,8926,0.7718115002161695
+yale,Yale University,2024,complete,12367,9382,0.7586318428074715
+yale,Yale University,2025,complete,13043,9648,0.7397071225944951
+yale,Yale University,2026,incomplete,12237,8476,0.6926534281278091

@@ -1,7 +1,7 @@
 exclude_reason,period,works
-affiliation_correction_no_ct_institution,complete,14
+affiliation_correction_no_ct_institution,complete,17
 affiliation_correction_no_ct_institution,incomplete,3
-meeting_abstract,complete,1255
+meeting_abstract,complete,580
 meeting_abstract,incomplete,105
-repository_record_no_doi,complete,1342
-repository_record_no_doi,incomplete,412
+repository_record_no_doi,complete,1434
+repository_record_no_doi,incomplete,429

@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-11-17",
-  "generated_at": "2026-11-17T15:07:15+00:00",
-  "works_in_scope": 192425,
+  "snapshot_date": "2026-11-24",
+  "generated_at": "2026-11-24T23:38:58+00:00",
+  "works_in_scope": 192047,
   "tables": {
     "oa_category_by_year": {
       "rows": 1596,
@@ -24,15 +24,15 @@
       "note": "OpenAlex fields: top 10 by output and top 10 by closed works, 2015-2025."
     },
     "topics_2015_2025": {
-      "rows": 291,
+      "rows": 287,
       "note": "OpenAlex topics: top 10 by output and top 10 by closed works, 2015-2025."
     },
     "publishers_2015_2025": {
-      "rows": 225,
+      "rows": 230,
       "note": "Publishers (top of OpenAlex host organization lineage): top 10 by output and by closed works, 2015-2025."
     },
     "apc_estimates_by_year": {
-      "rows": 449,
+      "rows": 450,
       "note": "ESTIMATE. List-price APCs for gold and hybrid works (oa_fee_unconfirmed works are not counted). Two methods: upper bound (all authors) and corresponding-author attribution. Not actual payments."
     },
     "apc_estimates_2015_2025": {

@@ -1,226 +1,231 @@
 entity,entity_name,publisher_parent_name,works,closed,closed_share,rank_by_output,rank_by_closed
-bridgeport,University of Bridgeport,Unknown,228,14,0.06140350877192982,1,5
-bridgeport,University of Bridgeport,Multidisciplinary Digital Publishing Institute,98,0,0.0,2,66
-bridgeport,University of Bridgeport,Elsevier BV,60,32,0.5333333333333333,3,1
-bridgeport,University of Bridgeport,Institute of Electrical and Electronics Engineers,54,22,0.4074074074074074,4,2
+bridgeport,University of Bridgeport,Unknown,113,11,0.09734513274336283,1,5
+bridgeport,University of Bridgeport,Multidisciplinary Digital Publishing Institute,98,0,0.0,2,98
+bridgeport,University of Bridgeport,Institute of Electrical and Electronics Engineers,54,21,0.3888888888888889,3,2
+bridgeport,University of Bridgeport,Elsevier BV,53,32,0.6037735849056604,4,1
 bridgeport,University of Bridgeport,Springer Nature,53,21,0.39622641509433965,5,3
 bridgeport,University of Bridgeport,Informa,21,15,0.7142857142857143,6,4
-bridgeport,University of Bridgeport,Wiley,19,5,0.2631578947368421,7,8
-bridgeport,University of Bridgeport,Scientific Research Publishing,16,0,0.0,8,82
-bridgeport,University of Bridgeport,Al-Kindi Center for Research and Development,15,0,0.0,9,35
-bridgeport,University of Bridgeport,SAGE Publishing,14,10,0.7142857142857143,10,6
-bridgeport,University of Bridgeport,World Scientific,9,9,1.0,13,7
-bridgeport,University of Bridgeport,Wolters Kluwer,8,4,0.5,14,10
-bridgeport,University of Bridgeport,Emerald Publishing Limited,5,4,0.8,16,9
-ccsu,Central Connecticut State University,Informa,180,158,0.8777777777777778,1,1
-ccsu,Central Connecticut State University,Elsevier BV,170,95,0.5588235294117647,2,2
-ccsu,Central Connecticut State University,Unknown,127,25,0.1968503937007874,3,7
-ccsu,Central Connecticut State University,Springer Nature,125,74,0.592,4,4
-ccsu,Central Connecticut State University,SAGE Publishing,99,87,0.8787878787878788,5,3
-ccsu,Central Connecticut State University,Wiley,78,50,0.6410256410256411,6,5
-ccsu,Central Connecticut State University,Emerald Publishing Limited,43,36,0.8372093023255814,7,6
-ccsu,Central Connecticut State University,Multidisciplinary Digital Publishing Institute,43,0,0.0,8,123
+bridgeport,University of Bridgeport,European Open Science Publishing,20,0,0.0,7,64
+bridgeport,University of Bridgeport,Wiley,19,5,0.2631578947368421,8,8
+bridgeport,University of Bridgeport,Scientific Research Publishing,17,0,0.0,9,127
+bridgeport,University of Bridgeport,Al-Kindi Center for Research and Development,15,0,0.0,10,37
+bridgeport,University of Bridgeport,SAGE Publishing,14,10,0.7142857142857143,11,6
+bridgeport,University of Bridgeport,Wolters Kluwer,9,5,0.5555555555555556,14,9
+bridgeport,University of Bridgeport,World Scientific,9,9,1.0,15,7
+bridgeport,University of Bridgeport,Emerald Publishing Limited,5,4,0.8,20,10
+ccsu,Central Connecticut State University,Informa,180,157,0.8722222222222222,1,1
+ccsu,Central Connecticut State University,Elsevier BV,166,95,0.572289156626506,2,2
+ccsu,Central Connecticut State University,Springer Nature,125,74,0.592,3,4
+ccsu,Central Connecticut State University,SAGE Publishing,100,88,0.88,4,3
+ccsu,Central Connecticut State University,Wiley,79,49,0.620253164556962,5,5
+ccsu,Central Connecticut State University,Unknown,70,21,0.3,6,7
+ccsu,Central Connecticut State University,Emerald Publishing Limited,44,36,0.8181818181818182,7,6
+ccsu,Central Connecticut State University,Multidisciplinary Digital Publishing Institute,43,0,0.0,8,143
 ccsu,Central Connecticut State University,University of Oxford,34,14,0.4117647058823529,9,9
-ccsu,Central Connecticut State University,North American Business Press,27,2,0.07407407407407407,10,41
+ccsu,Central Connecticut State University,North American Business Press,27,2,0.07407407407407407,10,45
 ccsu,Central Connecticut State University,Wolters Kluwer,24,21,0.875,11,8
-ccsu,Central Connecticut State University,Inderscience Publishers,11,10,0.9090909090909091,16,10
-conncoll,Connecticut College,Informa,92,76,0.8260869565217391,1,1
-conncoll,Connecticut College,Elsevier BV,90,32,0.35555555555555557,2,4
-conncoll,Connecticut College,Springer Nature,76,37,0.4868421052631579,3,3
+ccsu,Central Connecticut State University,Inderscience Publishers,12,11,0.9166666666666666,14,10
+conncoll,Connecticut College,Informa,93,75,0.8064516129032258,1,1
+conncoll,Connecticut College,Elsevier BV,89,31,0.34831460674157305,2,4
+conncoll,Connecticut College,Springer Nature,77,37,0.4805194805194805,3,3
 conncoll,Connecticut College,Wiley,58,29,0.5,4,5
 conncoll,Connecticut College,SAGE Publishing,53,46,0.8679245283018868,5,2
 conncoll,Connecticut College,University of Oxford,29,17,0.5862068965517241,6,6
-conncoll,Connecticut College,Unknown,26,4,0.15384615384615385,7,14
-conncoll,Connecticut College,University of Cambridge,18,11,0.6111111111111112,8,7
-conncoll,Connecticut College,Multidisciplinary Digital Publishing Institute,16,0,0.0,9,85
-conncoll,Connecticut College,De Gruyter,14,6,0.42857142857142855,10,9
-conncoll,Connecticut College,American Psychological Association,9,6,0.6666666666666666,12,8
+conncoll,Connecticut College,University of Cambridge,18,11,0.6111111111111112,7,7
+conncoll,Connecticut College,Multidisciplinary Digital Publishing Institute,16,0,0.0,8,94
+conncoll,Connecticut College,De Gruyter,14,6,0.42857142857142855,9,9
+conncoll,Connecticut College,Frontiers Media,13,0,0.0,10,77
+conncoll,Connecticut College,American Psychological Association,10,7,0.7,12,8
 conncoll,Connecticut College,Penn State University Press,6,6,1.0,15,10
-ecsu,Eastern Connecticut State University,Springer Nature,78,38,0.48717948717948717,1,2
+ecsu,Eastern Connecticut State University,Springer Nature,78,39,0.5,1,2
 ecsu,Eastern Connecticut State University,Elsevier BV,66,34,0.5151515151515151,2,3
-ecsu,Eastern Connecticut State University,Informa,50,46,0.92,3,1
-ecsu,Eastern Connecticut State University,Wiley,48,29,0.6041666666666666,4,4
-ecsu,Eastern Connecticut State University,Unknown,46,18,0.391304347826087,5,6
-ecsu,Eastern Connecticut State University,Pennsylvania State University Libraries,28,0,0.0,6,85
+ecsu,Eastern Connecticut State University,Informa,50,45,0.9,3,1
+ecsu,Eastern Connecticut State University,Wiley,46,27,0.5869565217391305,4,4
+ecsu,Eastern Connecticut State University,Unknown,37,16,0.43243243243243246,5,6
+ecsu,Eastern Connecticut State University,Pennsylvania State University Libraries,28,0,0.0,6,88
 ecsu,Eastern Connecticut State University,SAGE Publishing,26,23,0.8846153846153846,7,5
-ecsu,Eastern Connecticut State University,Multidisciplinary Digital Publishing Institute,22,0,0.0,8,80
+ecsu,Eastern Connecticut State University,Multidisciplinary Digital Publishing Institute,22,0,0.0,8,84
 ecsu,Eastern Connecticut State University,University of Oxford,18,7,0.3888888888888889,9,9
-ecsu,Eastern Connecticut State University,Emerald Publishing Limited,12,11,0.9166666666666666,10,7
-ecsu,Eastern Connecticut State University,University of Cambridge,10,8,0.8,11,8
+ecsu,Eastern Connecticut State University,Emerald Publishing Limited,12,10,0.8333333333333334,10,7
+ecsu,Eastern Connecticut State University,University of Cambridge,10,9,0.9,11,8
 ecsu,Eastern Connecticut State University,World Scientific,6,6,1.0,14,10
-fairfield,Fairfield University,Elsevier BV,281,115,0.4092526690391459,1,2
-fairfield,Fairfield University,Springer Nature,215,55,0.2558139534883721,2,6
-fairfield,Fairfield University,Informa,160,127,0.79375,3,1
-fairfield,Fairfield University,Wiley,119,73,0.6134453781512605,4,5
+fairfield,Fairfield University,Elsevier BV,275,109,0.39636363636363636,1,2
+fairfield,Fairfield University,Springer Nature,213,51,0.23943661971830985,2,7
+fairfield,Fairfield University,Informa,162,122,0.7530864197530864,3,1
+fairfield,Fairfield University,Wiley,119,72,0.6050420168067226,4,5
 fairfield,Fairfield University,American Physical Society,110,1,0.00909090909090909,5,42
-fairfield,Fairfield University,Unknown,104,28,0.2692307692307692,6,8
-fairfield,Fairfield University,SAGE Publishing,103,76,0.7378640776699029,7,4
-fairfield,Fairfield University,Wolters Kluwer,79,78,0.9873417721518988,8,3
-fairfield,Fairfield University,Henry Stewart Talks,55,54,0.9818181818181818,9,7
-fairfield,Fairfield University,Institute of Physics,42,1,0.023809523809523808,10,54
-fairfield,Fairfield University,University of Cambridge,33,19,0.5757575757575758,12,10
-fairfield,Fairfield University,Emerald Publishing Limited,32,26,0.8125,13,9
-hartford,University of Hartford,Elsevier BV,174,97,0.5574712643678161,1,2
-hartford,University of Hartford,Informa,144,109,0.7569444444444444,2,1
-hartford,University of Hartford,Springer Nature,114,63,0.5526315789473685,3,4
-hartford,University of Hartford,Unknown,86,13,0.1511627906976744,4,8
-hartford,University of Hartford,Wolters Kluwer,75,68,0.9066666666666666,5,3
-hartford,University of Hartford,SAGE Publishing,73,49,0.6712328767123288,6,5
-hartford,University of Hartford,Wiley,71,42,0.5915492957746479,7,6
-hartford,University of Hartford,Multidisciplinary Digital Publishing Institute,41,0,0.0,8,115
+fairfield,Fairfield University,SAGE Publishing,104,77,0.7403846153846154,6,3
+fairfield,Fairfield University,Wolters Kluwer,79,74,0.9367088607594937,7,4
+fairfield,Fairfield University,Henry Stewart Talks,55,54,0.9818181818181818,8,6
+fairfield,Fairfield University,Unknown,49,16,0.32653061224489793,9,11
+fairfield,Fairfield University,Institute of Physics,45,1,0.022222222222222223,10,54
+fairfield,Fairfield University,University of Cambridge,33,19,0.5757575757575758,12,9
+fairfield,Fairfield University,Emerald Publishing Limited,32,21,0.65625,13,8
+fairfield,Fairfield University,University of Oxford,25,18,0.72,14,10
+hartford,University of Hartford,Elsevier BV,168,93,0.5535714285714286,1,2
+hartford,University of Hartford,Informa,145,110,0.7586206896551724,2,1
+hartford,University of Hartford,Springer Nature,114,62,0.543859649122807,3,4
+hartford,University of Hartford,SAGE Publishing,75,51,0.68,4,5
+hartford,University of Hartford,Wolters Kluwer,72,64,0.8888888888888888,5,3
+hartford,University of Hartford,Wiley,71,43,0.6056338028169014,6,6
+hartford,University of Hartford,Unknown,47,8,0.1702127659574468,7,12
+hartford,University of Hartford,Multidisciplinary Digital Publishing Institute,41,0,0.0,8,142
 hartford,University of Hartford,Emerald Publishing Limited,36,29,0.8055555555555556,9,7
-hartford,University of Hartford,Frontiers Media,30,0,0.0,10,95
-hartford,University of Hartford,University of Oxford,26,10,0.38461538461538464,11,10
-hartford,University of Hartford,World Scientific,12,12,1.0,14,9
-newhaven,University of New Haven,Elsevier BV,290,125,0.43103448275862066,1,1
-newhaven,University of New Haven,Unknown,248,14,0.056451612903225805,2,10
-newhaven,University of New Haven,Springer Nature,177,97,0.5480225988700564,3,3
-newhaven,University of New Haven,Informa,130,104,0.8,4,2
-newhaven,University of New Haven,Wiley,122,78,0.639344262295082,5,4
-newhaven,University of New Haven,Multidisciplinary Digital Publishing Institute,119,0,0.0,6,124
-newhaven,University of New Haven,SAGE Publishing,83,66,0.7951807228915663,7,5
-newhaven,University of New Haven,GSC Online Press,59,0,0.0,8,102
-newhaven,University of New Haven,Emerald Publishing Limited,54,42,0.7777777777777778,9,6
-newhaven,University of New Haven,Al-Kindi Center for Research and Development,51,0,0.0,10,60
-newhaven,University of New Haven,American Chemical Society,48,36,0.75,11,7
-newhaven,University of New Haven,Institute of Electrical and Electronics Engineers,43,25,0.5813953488372093,12,8
-newhaven,University of New Haven,Inderscience Publishers,20,19,0.95,14,9
-quinnipiac,Quinnipiac University,Elsevier BV,541,292,0.5397412199630314,1,1
-quinnipiac,Quinnipiac University,Wolters Kluwer,232,184,0.7931034482758621,2,2
-quinnipiac,Quinnipiac University,Springer Nature,197,89,0.4517766497461929,3,4
-quinnipiac,Quinnipiac University,Wiley,196,77,0.39285714285714285,4,7
-quinnipiac,Quinnipiac University,Informa,189,144,0.7619047619047619,5,3
-quinnipiac,Quinnipiac University,Unknown,174,78,0.4482758620689655,6,6
-quinnipiac,Quinnipiac University,SAGE Publishing,152,79,0.5197368421052632,7,5
-quinnipiac,Quinnipiac University,Emerald Publishing Limited,63,46,0.7301587301587301,8,9
-quinnipiac,Quinnipiac University,Multidisciplinary Digital Publishing Institute,63,0,0.0,9,141
-quinnipiac,Quinnipiac University,American Occupational Therapy Association,59,51,0.864406779661017,10,8
-quinnipiac,Quinnipiac University,University of Oxford,47,19,0.40425531914893614,11,10
-sacredheart,Sacred Heart University,Elsevier BV,195,122,0.6256410256410256,1,3
-sacredheart,Sacred Heart University,Informa,157,133,0.8471337579617835,2,1
-sacredheart,Sacred Heart University,Wolters Kluwer,138,130,0.9420289855072463,3,2
-sacredheart,Sacred Heart University,Unknown,126,35,0.2777777777777778,4,7
-sacredheart,Sacred Heart University,Springer Nature,98,57,0.5816326530612245,5,4
-sacredheart,Sacred Heart University,Wiley,83,46,0.5542168674698795,6,6
-sacredheart,Sacred Heart University,SAGE Publishing,67,53,0.7910447761194029,7,5
-sacredheart,Sacred Heart University,Emerald Publishing Limited,58,31,0.5344827586206896,8,8
-sacredheart,Sacred Heart University,Multidisciplinary Digital Publishing Institute,52,0,0.0,9,106
-sacredheart,Sacred Heart University,University of Oxford,38,14,0.3684210526315789,10,9
+hartford,University of Hartford,Frontiers Media,30,0,0.0,10,109
+hartford,University of Hartford,University of Oxford,26,10,0.38461538461538464,11,9
+hartford,University of Hartford,American Chemical Society,12,9,0.75,13,10
+hartford,University of Hartford,World Scientific,12,12,1.0,14,8
+newhaven,University of New Haven,Elsevier BV,291,122,0.41924398625429554,1,1
+newhaven,University of New Haven,Springer Nature,175,78,0.44571428571428573,2,3
+newhaven,University of New Haven,Unknown,150,13,0.08666666666666667,3,10
+newhaven,University of New Haven,Informa,130,94,0.7230769230769231,4,2
+newhaven,University of New Haven,Wiley,122,75,0.6147540983606558,5,4
+newhaven,University of New Haven,Multidisciplinary Digital Publishing Institute,119,0,0.0,6,153
+newhaven,University of New Haven,SAGE Publishing,83,68,0.8192771084337349,7,5
+newhaven,University of New Haven,GSC Online Press,60,0,0.0,8,115
+newhaven,University of New Haven,Emerald Publishing Limited,54,38,0.7037037037037037,9,6
+newhaven,University of New Haven,Al-Kindi Center for Research and Development,51,0,0.0,10,59
+newhaven,University of New Haven,American Chemical Society,48,33,0.6875,11,7
+newhaven,University of New Haven,Institute of Electrical and Electronics Engineers,43,24,0.5581395348837209,12,8
+newhaven,University of New Haven,Inderscience Publishers,20,17,0.85,14,9
+quinnipiac,Quinnipiac University,Elsevier BV,525,287,0.5466666666666666,1,1
+quinnipiac,Quinnipiac University,Wolters Kluwer,260,210,0.8076923076923077,2,2
+quinnipiac,Quinnipiac University,Wiley,200,78,0.39,3,6
+quinnipiac,Quinnipiac University,Springer Nature,196,89,0.45408163265306123,4,4
+quinnipiac,Quinnipiac University,Informa,189,142,0.7513227513227513,5,3
+quinnipiac,Quinnipiac University,SAGE Publishing,154,81,0.525974025974026,6,5
+quinnipiac,Quinnipiac University,Unknown,78,39,0.5,7,9
+quinnipiac,Quinnipiac University,Multidisciplinary Digital Publishing Institute,64,0,0.0,8,165
+quinnipiac,Quinnipiac University,Emerald Publishing Limited,63,46,0.7301587301587301,9,8
+quinnipiac,Quinnipiac University,American Occupational Therapy Association,59,51,0.864406779661017,10,7
+quinnipiac,Quinnipiac University,University of Oxford,51,20,0.39215686274509803,11,10
+sacredheart,Sacred Heart University,Elsevier BV,192,124,0.6458333333333334,1,3
+sacredheart,Sacred Heart University,Informa,157,133,0.8471337579617835,2,2
+sacredheart,Sacred Heart University,Wolters Kluwer,144,135,0.9375,3,1
+sacredheart,Sacred Heart University,Springer Nature,98,56,0.5714285714285714,4,4
+sacredheart,Sacred Heart University,Wiley,85,44,0.5176470588235295,5,6
+sacredheart,Sacred Heart University,SAGE Publishing,67,53,0.7910447761194029,6,5
+sacredheart,Sacred Heart University,Unknown,59,17,0.288135593220339,7,8
+sacredheart,Sacred Heart University,Emerald Publishing Limited,58,31,0.5344827586206896,8,7
+sacredheart,Sacred Heart University,Multidisciplinary Digital Publishing Institute,52,0,0.0,9,136
+sacredheart,Sacred Heart University,University of Oxford,38,13,0.34210526315789475,10,9
 sacredheart,Sacred Heart University,De Gruyter,16,11,0.6875,11,10
 scsu,Southern Connecticut State University,Informa,190,158,0.8315789473684211,1,1
-scsu,Southern Connecticut State University,Elsevier BV,167,79,0.47305389221556887,2,4
-scsu,Southern Connecticut State University,Springer Nature,145,83,0.5724137931034483,3,3
+scsu,Southern Connecticut State University,Elsevier BV,167,78,0.46706586826347307,2,4
+scsu,Southern Connecticut State University,Springer Nature,147,83,0.564625850340136,3,3
 scsu,Southern Connecticut State University,SAGE Publishing,115,91,0.7913043478260869,4,2
-scsu,Southern Connecticut State University,American Physical Society,112,2,0.017857142857142856,5,24
-scsu,Southern Connecticut State University,Unknown,110,31,0.2818181818181818,6,7
-scsu,Southern Connecticut State University,Wiley,101,51,0.504950495049505,7,6
-scsu,Southern Connecticut State University,Institute of Physics,83,0,0.0,8,116
-scsu,Southern Connecticut State University,Wolters Kluwer,67,58,0.8656716417910447,9,5
-scsu,Southern Connecticut State University,Multidisciplinary Digital Publishing Institute,58,0,0.0,10,135
+scsu,Southern Connecticut State University,American Physical Society,110,1,0.00909090909090909,5,45
+scsu,Southern Connecticut State University,Wiley,100,49,0.49,6,6
+scsu,Southern Connecticut State University,Institute of Physics,86,0,0.0,7,132
+scsu,Southern Connecticut State University,Wolters Kluwer,70,60,0.8571428571428571,8,5
+scsu,Southern Connecticut State University,Unknown,60,19,0.31666666666666665,9,9
+scsu,Southern Connecticut State University,Multidisciplinary Digital Publishing Institute,58,0,0.0,10,158
 scsu,Southern Connecticut State University,University of Oxford,39,25,0.6410256410256411,11,8
-scsu,Southern Connecticut State University,Emerald Publishing Limited,32,24,0.75,12,9
+scsu,Southern Connecticut State University,Emerald Publishing Limited,32,27,0.84375,12,7
 scsu,Southern Connecticut State University,World Scientific,16,15,0.9375,16,10
-statewide,Connecticut (all 17 institutions),Elsevier BV,42089,15664,0.3721637482477607,1,1
-statewide,Connecticut (all 17 institutions),Springer Nature,21946,6239,0.28428870864850087,2,2
-statewide,Connecticut (all 17 institutions),Wiley,16031,5670,0.3536897261555736,3,3
-statewide,Connecticut (all 17 institutions),Wolters Kluwer,9517,5240,0.5505936744772513,4,4
-statewide,Connecticut (all 17 institutions),University of Oxford,7959,1833,0.23030531473803242,5,7
-statewide,Connecticut (all 17 institutions),Informa,7161,4472,0.6244937857841084,6,5
-statewide,Connecticut (all 17 institutions),SAGE Publishing,6739,3478,0.5161003116189345,7,6
-statewide,Connecticut (all 17 institutions),Unknown,5193,1342,0.2584248026189101,8,9
-statewide,Connecticut (all 17 institutions),Multidisciplinary Digital Publishing Institute,3674,0,0.0,9,1177
-statewide,Connecticut (all 17 institutions),American Chemical Society,3228,1733,0.5368649318463445,10,8
-statewide,Connecticut (all 17 institutions),Institute of Electrical and Electronics Engineers,1586,872,0.5498108448928121,17,10
-statewide_no_yale,Connecticut without Yale,Elsevier BV,13094,5653,0.4317244539483733,1,1
-statewide_no_yale,Connecticut without Yale,Springer Nature,6826,2657,0.389246996777029,2,3
-statewide_no_yale,Connecticut without Yale,Wiley,5825,2588,0.4442918454935622,3,4
-statewide_no_yale,Connecticut without Yale,Informa,4063,2942,0.7240954959389614,4,2
-statewide_no_yale,Connecticut without Yale,SAGE Publishing,3145,1982,0.6302066772655008,5,5
-statewide_no_yale,Connecticut without Yale,Unknown,2863,690,0.24100593782745372,6,9
-statewide_no_yale,Connecticut without Yale,Wolters Kluwer,2474,1788,0.7227162489894907,7,6
-statewide_no_yale,Connecticut without Yale,University of Oxford,2280,707,0.31008771929824563,8,8
-statewide_no_yale,Connecticut without Yale,Multidisciplinary Digital Publishing Institute,1970,0,0.0,9,801
-statewide_no_yale,Connecticut without Yale,American Chemical Society,1228,767,0.6245928338762216,10,7
-statewide_no_yale,Connecticut without Yale,Institute of Electrical and Electronics Engineers,1056,646,0.6117424242424242,11,10
-trinity,Trinity College,Springer Nature,114,45,0.39473684210526316,1,3
-trinity,Trinity College,Elsevier BV,113,41,0.36283185840707965,2,4
-trinity,Trinity College,Informa,93,63,0.6774193548387096,3,1
-trinity,Trinity College,Wiley,93,59,0.6344086021505376,4,2
+statewide,Connecticut (all 17 institutions),Elsevier BV,41329,15367,0.37182123932347744,1,1
+statewide,Connecticut (all 17 institutions),Springer Nature,21865,6136,0.2806311456665904,2,2
+statewide,Connecticut (all 17 institutions),Wiley,15948,5546,0.34775520441434665,3,3
+statewide,Connecticut (all 17 institutions),Wolters Kluwer,9572,5284,0.5520267446719599,4,4
+statewide,Connecticut (all 17 institutions),University of Oxford,8090,1846,0.22818294190358468,5,7
+statewide,Connecticut (all 17 institutions),Informa,7234,4443,0.6141830246060271,6,5
+statewide,Connecticut (all 17 institutions),SAGE Publishing,6741,3473,0.5152054591306928,7,6
+statewide,Connecticut (all 17 institutions),Multidisciplinary Digital Publishing Institute,3649,0,0.0,8,1473
+statewide,Connecticut (all 17 institutions),American Chemical Society,3237,1727,0.5335186901451962,9,8
+statewide,Connecticut (all 17 institutions),Institute of Physics,2879,99,0.03438693990969086,10,34
+statewide,Connecticut (all 17 institutions),University of Cambridge,2258,797,0.35296722763507526,15,10
+statewide,Connecticut (all 17 institutions),Institute of Electrical and Electronics Engineers,1585,864,0.5451104100946372,17,9
+statewide_no_yale,Connecticut without Yale,Elsevier BV,12940,5561,0.42975270479134464,1,1
+statewide_no_yale,Connecticut without Yale,Springer Nature,6788,2608,0.3842074248674131,2,3
+statewide_no_yale,Connecticut without Yale,Wiley,5842,2586,0.44265662444368364,3,4
+statewide_no_yale,Connecticut without Yale,Informa,4092,2922,0.7140762463343109,4,2
+statewide_no_yale,Connecticut without Yale,SAGE Publishing,3172,2004,0.6317780580075663,5,5
+statewide_no_yale,Connecticut without Yale,Wolters Kluwer,2562,1846,0.7205308352849337,6,6
+statewide_no_yale,Connecticut without Yale,University of Oxford,2320,706,0.30431034482758623,7,8
+statewide_no_yale,Connecticut without Yale,Multidisciplinary Digital Publishing Institute,1971,0,0.0,8,1023
+statewide_no_yale,Connecticut without Yale,Unknown,1554,413,0.26576576576576577,9,10
+statewide_no_yale,Connecticut without Yale,American Chemical Society,1231,762,0.6190089358245329,10,7
+statewide_no_yale,Connecticut without Yale,Institute of Electrical and Electronics Engineers,1056,641,0.6070075757575758,11,9
+trinity,Trinity College,Springer Nature,115,44,0.3826086956521739,1,3
+trinity,Trinity College,Elsevier BV,113,40,0.35398230088495575,2,4
+trinity,Trinity College,Wiley,93,59,0.6344086021505376,3,2
+trinity,Trinity College,Informa,92,63,0.6847826086956522,4,1
 trinity,Trinity College,SAGE Publishing,56,36,0.6428571428571429,5,5
 trinity,Trinity College,University of Oxford,27,11,0.4074074074074074,6,7
-trinity,Trinity College,Multidisciplinary Digital Publishing Institute,24,0,0.0,7,69
-trinity,Trinity College,Unknown,24,5,0.20833333333333334,8,11
-trinity,Trinity College,Frontiers Media,22,0,0.0,9,60
-trinity,Trinity College,American Physical Society,21,0,0.0,10,41
+trinity,Trinity College,Multidisciplinary Digital Publishing Institute,24,0,0.0,7,75
+trinity,Trinity College,Frontiers Media,22,0,0.0,8,64
+trinity,Trinity College,American Physical Society,21,0,0.0,9,43
+trinity,Trinity College,American Chemical Society,20,9,0.45,10,8
 trinity,Trinity College,De Gruyter,20,18,0.9,11,6
-trinity,Trinity College,American Chemical Society,19,9,0.47368421052631576,12,8
 trinity,Trinity College,University of Cambridge,14,7,0.5,14,9
 trinity,Trinity College,Eagle Hill Institute,5,5,1.0,22,10
-uconn,University of Connecticut (incl. UConn Health),Elsevier BV,10759,4569,0.42466772004833164,1,1
-uconn,University of Connecticut (incl. UConn Health),Springer Nature,5256,1938,0.3687214611872146,2,2
-uconn,University of Connecticut (incl. UConn Health),Wiley,4563,1937,0.42450142450142453,3,3
-uconn,University of Connecticut (incl. UConn Health),Informa,2516,1710,0.6796502384737679,4,4
-uconn,University of Connecticut (incl. UConn Health),SAGE Publishing,2238,1319,0.5893655049151028,5,5
-uconn,University of Connecticut (incl. UConn Health),Wolters Kluwer,1844,1255,0.68058568329718,6,6
-uconn,University of Connecticut (incl. UConn Health),University of Oxford,1843,520,0.2821486706456864,7,9
-uconn,University of Connecticut (incl. UConn Health),Unknown,1389,387,0.2786177105831533,8,10
-uconn,University of Connecticut (incl. UConn Health),Multidisciplinary Digital Publishing Institute,1360,0,0.0,9,581
-uconn,University of Connecticut (incl. UConn Health),American Chemical Society,1002,624,0.6227544910179641,10,7
-uconn,University of Connecticut (incl. UConn Health),Institute of Electrical and Electronics Engineers,893,568,0.6360582306830908,11,8
+uconn,University of Connecticut (incl. UConn Health),Elsevier BV,10645,4494,0.42217003287928606,1,1
+uconn,University of Connecticut (incl. UConn Health),Springer Nature,5222,1917,0.36710072769054003,2,3
+uconn,University of Connecticut (incl. UConn Health),Wiley,4591,1955,0.42583315181877585,3,2
+uconn,University of Connecticut (incl. UConn Health),Informa,2543,1708,0.6716476602438065,4,4
+uconn,University of Connecticut (incl. UConn Health),SAGE Publishing,2258,1332,0.5899025686448184,5,5
+uconn,University of Connecticut (incl. UConn Health),Wolters Kluwer,1893,1284,0.6782884310618067,6,6
+uconn,University of Connecticut (incl. UConn Health),University of Oxford,1874,517,0.275880469583778,7,9
+uconn,University of Connecticut (incl. UConn Health),Multidisciplinary Digital Publishing Institute,1361,0,0.0,8,682
+uconn,University of Connecticut (incl. UConn Health),American Chemical Society,1004,624,0.6215139442231076,9,7
+uconn,University of Connecticut (incl. UConn Health),Institute of Electrical and Electronics Engineers,894,566,0.6331096196868009,10,8
+uconn,University of Connecticut (incl. UConn Health),Royal Society of Chemistry,399,230,0.5764411027568922,17,10
 uscga,United States Coast Guard Academy,Elsevier BV,27,8,0.2962962962962963,1,2
-uscga,United States Coast Guard Academy,Unknown,24,7,0.2916666666666667,2,3
-uscga,United States Coast Guard Academy,Informa,21,13,0.6190476190476191,3,1
-uscga,United States Coast Guard Academy,Springer Nature,10,2,0.2,4,14
-uscga,United States Coast Guard Academy,Wiley,10,6,0.6,5,4
-uscga,United States Coast Guard Academy,Frontiers Media,7,0,0.0,6,31
-uscga,United States Coast Guard Academy,SAGE Publishing,7,4,0.5714285714285714,7,9
-uscga,United States Coast Guard Academy,University of Oxford,7,4,0.5714285714285714,8,10
-uscga,United States Coast Guard Academy,Business Perspectives,6,0,0.0,9,28
-uscga,United States Coast Guard Academy,ASM International,5,4,0.8,10,5
-uscga,United States Coast Guard Academy,American Society of Civil Engineers,4,4,1.0,11,6
-uscga,United States Coast Guard Academy,IOS Press,4,4,1.0,13,7
-uscga,United States Coast Guard Academy,Institute of Electrical and Electronics Engineers,4,4,1.0,14,8
-usj,University of Saint Joseph,Elsevier BV,83,47,0.5662650602409639,1,1
-usj,University of Saint Joseph,Wiley,58,23,0.39655172413793105,2,5
-usj,University of Saint Joseph,Informa,57,47,0.8245614035087719,3,2
-usj,University of Saint Joseph,Springer Nature,52,24,0.46153846153846156,4,3
-usj,University of Saint Joseph,Unknown,45,14,0.3111111111111111,5,7
-usj,University of Saint Joseph,SAGE Publishing,29,23,0.7931034482758621,6,4
-usj,University of Saint Joseph,Wolters Kluwer,22,19,0.8636363636363636,7,6
-usj,University of Saint Joseph,University of Oxford,15,11,0.7333333333333333,8,8
-usj,University of Saint Joseph,Multidisciplinary Digital Publishing Institute,12,0,0.0,9,65
+uscga,United States Coast Guard Academy,Informa,21,13,0.6190476190476191,2,1
+uscga,United States Coast Guard Academy,Springer Nature,10,2,0.2,3,14
+uscga,United States Coast Guard Academy,Wiley,9,6,0.6666666666666666,4,3
+uscga,United States Coast Guard Academy,Frontiers Media,7,0,0.0,5,34
+uscga,United States Coast Guard Academy,SAGE Publishing,7,4,0.5714285714285714,6,8
+uscga,United States Coast Guard Academy,University of Oxford,7,4,0.5714285714285714,7,10
+uscga,United States Coast Guard Academy,Rivera Publications Inc.,6,0,0.0,8,48
+uscga,United States Coast Guard Academy,ASM International,5,4,0.8,9,4
+uscga,United States Coast Guard Academy,Business Perspectives,5,0,0.0,10,31
+uscga,United States Coast Guard Academy,American Society of Civil Engineers,4,4,1.0,11,5
+uscga,United States Coast Guard Academy,IOS Press,4,4,1.0,13,6
+uscga,United States Coast Guard Academy,Institute of Electrical and Electronics Engineers,4,4,1.0,14,7
+uscga,United States Coast Guard Academy,Society of Naval Architects and Marine Engineers,4,4,1.0,16,9
+usj,University of Saint Joseph,Elsevier BV,80,45,0.5625,1,1
+usj,University of Saint Joseph,Wiley,57,24,0.42105263157894735,2,4
+usj,University of Saint Joseph,Informa,54,45,0.8333333333333334,3,2
+usj,University of Saint Joseph,Springer Nature,50,23,0.46,4,5
+usj,University of Saint Joseph,SAGE Publishing,30,24,0.8,5,3
+usj,University of Saint Joseph,Unknown,28,8,0.2857142857142857,6,8
+usj,University of Saint Joseph,Wolters Kluwer,26,23,0.8846153846153846,7,6
+usj,University of Saint Joseph,University of Oxford,15,11,0.7333333333333333,8,7
+usj,University of Saint Joseph,Multidisciplinary Digital Publishing Institute,12,0,0.0,9,72
 usj,University of Saint Joseph,Bentham Science Publishers,8,6,0.75,10,9
 usj,University of Saint Joseph,American Chemical Society,6,4,0.6666666666666666,11,10
-wcsu,Western Connecticut State University,Informa,47,40,0.851063829787234,1,1
-wcsu,Western Connecticut State University,Unknown,45,11,0.24444444444444444,2,8
-wcsu,Western Connecticut State University,Wiley,45,24,0.5333333333333333,3,2
-wcsu,Western Connecticut State University,Elsevier BV,34,16,0.47058823529411764,4,5
-wcsu,Western Connecticut State University,Springer Nature,27,15,0.5555555555555556,5,6
-wcsu,Western Connecticut State University,Emerald Publishing Limited,22,18,0.8181818181818182,6,3
-wcsu,Western Connecticut State University,SAGE Publishing,22,18,0.8181818181818182,7,4
+wcsu,Western Connecticut State University,Informa,49,40,0.8163265306122449,1,1
+wcsu,Western Connecticut State University,Wiley,42,21,0.5,2,2
+wcsu,Western Connecticut State University,Elsevier BV,34,17,0.5,3,5
+wcsu,Western Connecticut State University,Springer Nature,26,14,0.5384615384615384,4,6
+wcsu,Western Connecticut State University,Emerald Publishing Limited,22,18,0.8181818181818182,5,3
+wcsu,Western Connecticut State University,SAGE Publishing,22,18,0.8181818181818182,6,4
+wcsu,Western Connecticut State University,Unknown,22,6,0.2727272727272727,7,9
 wcsu,Western Connecticut State University,North American Business Press,18,4,0.2222222222222222,8,11
-wcsu,Western Connecticut State University,University of Oxford,18,8,0.4444444444444444,9,9
-wcsu,Western Connecticut State University,Wolters Kluwer,15,13,0.8666666666666667,10,7
+wcsu,Western Connecticut State University,University of Oxford,18,8,0.4444444444444444,9,8
+wcsu,Western Connecticut State University,Wolters Kluwer,16,14,0.875,10,7
 wcsu,Western Connecticut State University,IGI Global,4,4,1.0,15,10
-wesleyan,Wesleyan University,Elsevier BV,394,118,0.29949238578680204,1,1
-wesleyan,Wesleyan University,Wiley,277,115,0.4151624548736462,2,2
-wesleyan,Wesleyan University,Springer Nature,232,79,0.34051724137931033,3,4
-wesleyan,Wesleyan University,Institute of Physics,197,4,0.02030456852791878,4,23
-wesleyan,Wesleyan University,Informa,143,98,0.6853146853146853,5,3
-wesleyan,Wesleyan University,University of Oxford,134,30,0.22388059701492538,6,8
-wesleyan,Wesleyan University,Unknown,129,19,0.14728682170542637,7,10
-wesleyan,Wesleyan University,SAGE Publishing,104,71,0.6826923076923077,8,5
-wesleyan,Wesleyan University,University of Cambridge,103,45,0.4368932038834951,9,7
+wesleyan,Wesleyan University,Elsevier BV,394,117,0.2969543147208122,1,1
+wesleyan,Wesleyan University,Wiley,268,106,0.39552238805970147,2,2
+wesleyan,Wesleyan University,Springer Nature,232,78,0.33620689655172414,3,4
+wesleyan,Wesleyan University,Institute of Physics,203,4,0.019704433497536946,4,24
+wesleyan,Wesleyan University,Informa,144,99,0.6875,5,3
+wesleyan,Wesleyan University,University of Oxford,135,30,0.2222222222222222,6,8
+wesleyan,Wesleyan University,SAGE Publishing,105,73,0.6952380952380952,7,5
+wesleyan,Wesleyan University,University of Cambridge,103,46,0.44660194174757284,8,7
+wesleyan,Wesleyan University,Unknown,102,15,0.14705882352941177,9,12
 wesleyan,Wesleyan University,American Chemical Society,88,52,0.5909090909090909,10,6
-wesleyan,Wesleyan University,American Institute of Physics,42,22,0.5238095238095238,14,9
-yale,Yale University,Elsevier BV,29800,10319,0.34627516778523487,1,1
-yale,Yale University,Springer Nature,15591,3711,0.23802193573215316,2,2
-yale,Yale University,Wiley,10525,3172,0.3013776722090261,3,4
-yale,Yale University,Wolters Kluwer,7250,3563,0.49144827586206896,4,3
-yale,Yale University,University of Oxford,5808,1154,0.1986914600550964,5,7
-yale,Yale University,SAGE Publishing,3753,1566,0.4172661870503597,6,6
-yale,Yale University,Informa,3230,1595,0.4938080495356037,7,5
-yale,Yale University,Unknown,2392,677,0.2830267558528428,8,9
-yale,Yale University,American Medical Association,2294,494,0.2153443766346992,9,11
-yale,Yale University,American Chemical Society,2043,993,0.48604992657856094,10,8
-yale,Yale University,University of Cambridge,1586,526,0.3316519546027743,16,10
+wesleyan,Wesleyan University,American Institute of Physics,42,21,0.5,14,9
+wesleyan,Wesleyan University,De Gruyter,35,18,0.5142857142857142,17,10
+yale,Yale University,Elsevier BV,29160,10092,0.3460905349794239,1,1
+yale,Yale University,Springer Nature,15549,3656,0.23512766094282592,2,2
+yale,Yale University,Wiley,10437,3059,0.2930918846411804,3,4
+yale,Yale University,Wolters Kluwer,7218,3548,0.4915489055139928,4,3
+yale,Yale University,University of Oxford,5902,1168,0.19789901728227718,5,7
+yale,Yale University,SAGE Publishing,3726,1538,0.4127750939345142,6,6
+yale,Yale University,Informa,3272,1587,0.4850244498777506,7,5
+yale,Yale University,American Medical Association,2270,490,0.21585903083700442,8,10
+yale,Yale University,American Chemical Society,2049,991,0.48365056124938993,9,8
+yale,Yale University,Institute of Physics,2025,29,0.014320987654320988,10,56
+yale,Yale University,University of Cambridge,1588,525,0.3306045340050378,15,9

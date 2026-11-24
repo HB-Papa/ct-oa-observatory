@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-24",
+    "snapshot": "2026-11-24",
+    "title": "Monthly data refresh",
+    "items": [
+      "Figures now use OpenAlex data downloaded on 2026-11-24.",
+      "Statewide share free to read, 2015 to 2025: 67.6% (was 67.3%). Articles counted: 174,060 (was 174,990).",
+      "Without Yale: 60.0% (was 59.6%)."
+    ]
+  },
+  {
     "date": "2026-11-19",
     "title": "Layout and wording fixes",
     "items": [

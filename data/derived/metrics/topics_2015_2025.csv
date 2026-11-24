@@ -1,292 +1,288 @@
 entity,entity_name,topic_name,works,closed,closed_share,rank_by_output,rank_by_closed
 bridgeport,University of Bridgeport,Big Data and Business Intelligence,15,2,0.13333333333333333,1,5
-bridgeport,University of Bridgeport,Network Security and Intrusion Detection,14,2,0.14285714285714285,2,23
-bridgeport,University of Bridgeport,Security in Wireless Sensor Networks,10,0,0.0,3,378
-bridgeport,University of Bridgeport,EEG and Brain-Computer Interfaces,9,1,0.1111111111111111,4,59
-bridgeport,University of Bridgeport,Robotic Mechanisms and Dynamics,9,2,0.2222222222222222,5,27
-bridgeport,University of Bridgeport,Energy Efficient Wireless Sensor Networks,8,2,0.25,6,12
-bridgeport,University of Bridgeport,Imbalanced Data Classification Techniques,8,0,0.0,7,280
-bridgeport,University of Bridgeport,Artificial Intelligence in Healthcare,7,0,0.0,8,159
-bridgeport,University of Bridgeport,Cloud Computing and Resource Management,7,1,0.14285714285714285,9,44
-bridgeport,University of Bridgeport,Musculoskeletal pain and rehabilitation,7,0,0.0,10,319
+bridgeport,University of Bridgeport,Network Security and Intrusion Detection,14,2,0.14285714285714285,2,20
+bridgeport,University of Bridgeport,Security in Wireless Sensor Networks,10,0,0.0,3,382
+bridgeport,University of Bridgeport,EEG and Brain-Computer Interfaces,9,1,0.1111111111111111,4,55
+bridgeport,University of Bridgeport,Robotic Mechanisms and Dynamics,9,2,0.2222222222222222,5,24
+bridgeport,University of Bridgeport,Energy Efficient Wireless Sensor Networks,8,2,0.25,6,10
+bridgeport,University of Bridgeport,Imbalanced Data Classification Techniques,8,0,0.0,7,282
+bridgeport,University of Bridgeport,Artificial Intelligence in Healthcare,7,0,0.0,8,158
+bridgeport,University of Bridgeport,Cloud Computing and Resource Management,7,1,0.14285714285714285,9,40
+bridgeport,University of Bridgeport,Musculoskeletal pain and rehabilitation,7,0,0.0,10,324
 bridgeport,University of Bridgeport,Multi-Criteria Decision Making,6,3,0.5,14,4
-bridgeport,University of Bridgeport,Advanced Steganography and Watermarking Techniques,5,3,0.6,17,2
-bridgeport,University of Bridgeport,Carbon Nanotubes in Composites,5,2,0.4,19,6
+bridgeport,University of Bridgeport,Advanced Steganography and Watermarking Techniques,5,3,0.6,16,2
 bridgeport,University of Bridgeport,Unknown,5,5,1.0,25,1
-bridgeport,University of Bridgeport,Digital Marketing and Social Media,4,2,0.5,30,8
-bridgeport,University of Bridgeport,ECG Monitoring and Analysis,4,2,0.5,32,10
-bridgeport,University of Bridgeport,Diverse Music Education Insights,3,2,0.6666666666666666,49,9
-bridgeport,University of Bridgeport,Fluid Dynamics and Thin Films,3,3,1.0,53,3
-bridgeport,University of Bridgeport,Chinese history and philosophy,2,2,1.0,83,7
+bridgeport,University of Bridgeport,Digital Marketing and Social Media,4,2,0.5,30,7
+bridgeport,University of Bridgeport,ECG Monitoring and Analysis,4,2,0.5,32,9
+bridgeport,University of Bridgeport,Diverse Music Education Insights,3,2,0.6666666666666666,50,8
+bridgeport,University of Bridgeport,Fluid Dynamics and Thin Films,3,3,1.0,54,3
+bridgeport,University of Bridgeport,Chinese history and philosophy,2,2,1.0,82,6
 ccsu,Central Connecticut State University,Teacher Education and Leadership Studies,24,16,0.6666666666666666,1,1
-ccsu,Central Connecticut State University,Crystal structures of chemical compounds,20,1,0.05,2,208
+ccsu,Central Connecticut State University,Crystal structures of chemical compounds,19,0,0.0,2,459
 ccsu,Central Connecticut State University,Digital Marketing and Social Media,15,13,0.8666666666666667,3,2
 ccsu,Central Connecticut State University,Liquid Crystal Research Advancements,15,5,0.3333333333333333,4,22
 ccsu,Central Connecticut State University,Physical Education and Pedagogy,15,12,0.8,5,3
-ccsu,Central Connecticut State University,Accounting Education and Careers,14,1,0.07142857142857142,6,150
+ccsu,Central Connecticut State University,Accounting Education and Careers,14,1,0.07142857142857142,6,149
 ccsu,Central Connecticut State University,Substance Abuse Treatment and Outcomes,14,6,0.42857142857142855,7,16
 ccsu,Central Connecticut State University,Geometric Analysis and Curvature Flows,13,3,0.23076923076923078,8,57
-ccsu,Central Connecticut State University,Microbial Fuel Cells and Bioremediation,12,3,0.25,9,60
-ccsu,Central Connecticut State University,Disability Rights and Representation,11,0,0.0,10,464
-ccsu,Central Connecticut State University,Job Satisfaction and Organizational Behavior,11,8,0.7272727272727273,11,4
-ccsu,Central Connecticut State University,Corporate Finance and Governance,10,7,0.7,12,9
+ccsu,Central Connecticut State University,Microbial Fuel Cells and Bioremediation,12,3,0.25,9,61
+ccsu,Central Connecticut State University,Corporate Finance and Governance,11,8,0.7272727272727273,10,6
+ccsu,Central Connecticut State University,Job Satisfaction and Organizational Behavior,11,8,0.7272727272727273,12,7
 ccsu,Central Connecticut State University,Criminal Justice and Corrections Analysis,10,7,0.7,13,10
-ccsu,Central Connecticut State University,"Auditing, Earnings Management, Governance",9,7,0.7777777777777778,20,8
-ccsu,Central Connecticut State University,News Media Framing and Political Communication,9,8,0.8888888888888888,21,5
-ccsu,Central Connecticut State University,School Leadership and Teacher Performance,8,8,1.0,25,6
-ccsu,Central Connecticut State University,Advanced Mathematical Modeling in Engineering,7,7,1.0,26,7
+ccsu,Central Connecticut State University,"Auditing, Earnings Management, Governance",9,7,0.7777777777777778,19,9
+ccsu,Central Connecticut State University,News Media Framing and Political Communication,9,8,0.8888888888888888,21,8
+ccsu,Central Connecticut State University,School Leadership and Teacher Performance,9,9,1.0,22,4
+ccsu,Central Connecticut State University,Advanced Mathematical Modeling in Engineering,8,8,1.0,23,5
 conncoll,Connecticut College,Spectroscopy and Laser Applications,21,13,0.6190476190476191,1,1
-conncoll,Connecticut College,bioluminescence and chemiluminescence research,20,5,0.25,2,7
-conncoll,Connecticut College,Protist diversity and phylogeny,18,7,0.3888888888888889,3,3
+conncoll,Connecticut College,bioluminescence and chemiluminescence research,20,4,0.2,2,12
+conncoll,Connecticut College,Protist diversity and phylogeny,19,7,0.3684210526315789,3,4
 conncoll,Connecticut College,Amphibian and Reptile Biology,12,2,0.16666666666666666,4,29
 conncoll,Connecticut College,Electoral Systems and Political Participation,11,11,1.0,5,2
-conncoll,Connecticut College,"Identity, Memory, and Therapy",10,4,0.4,6,11
+conncoll,Connecticut College,"Identity, Memory, and Therapy",10,4,0.4,6,9
 conncoll,Connecticut College,Paleontology and Stratigraphy of Fossils,9,1,0.1111111111111111,7,164
-conncoll,Connecticut College,Coastal wetland ecosystem dynamics,8,3,0.375,8,17
-conncoll,Connecticut College,Marine Bivalve and Aquaculture Studies,8,4,0.5,9,12
-conncoll,Connecticut College,Visual Attention and Saliency Detection,8,1,0.125,10,202
-conncoll,Connecticut College,Decolonial Thought and Epistemologies,7,6,0.8571428571428571,11,4
-conncoll,Connecticut College,Critical Race Theory in Education,6,4,0.6666666666666666,13,8
-conncoll,Connecticut College,Diatoms and Algae Research,6,4,0.6666666666666666,14,9
+conncoll,Connecticut College,Coastal wetland ecosystem dynamics,8,2,0.25,8,31
+conncoll,Connecticut College,Decolonial Thought and Epistemologies,8,7,0.875,9,3
+conncoll,Connecticut College,Marine Bivalve and Aquaculture Studies,8,4,0.5,10,10
+conncoll,Connecticut College,Critical Race Theory in Education,6,4,0.6666666666666666,13,7
+conncoll,Connecticut College,Diatoms and Algae Research,6,4,0.6666666666666666,14,8
 conncoll,Connecticut College,Classical Antiquity Studies,5,5,1.0,19,5
-conncoll,Connecticut College,Obesity and Health Practices,5,5,1.0,24,6
-conncoll,Connecticut College,Holomorphic and Operator Theory,4,4,1.0,35,10
-ecsu,Eastern Connecticut State University,Genetic diversity and population structure,15,8,0.5333333333333333,1,1
-ecsu,Eastern Connecticut State University,Spider Taxonomy and Behavior Studies,12,2,0.16666666666666666,2,49
-ecsu,Eastern Connecticut State University,Wine Industry and Tourism,11,7,0.6363636363636364,3,2
-ecsu,Eastern Connecticut State University,Coastal and Marine Dynamics,9,2,0.2222222222222222,4,30
+conncoll,Connecticut College,Obesity and Health Practices,5,5,1.0,23,6
+ecsu,Eastern Connecticut State University,Genetic diversity and population structure,15,9,0.6,1,1
+ecsu,Eastern Connecticut State University,Spider Taxonomy and Behavior Studies,12,3,0.25,2,23
+ecsu,Eastern Connecticut State University,Wine Industry and Tourism,11,5,0.45454545454545453,3,7
+ecsu,Eastern Connecticut State University,Coastal and Marine Dynamics,9,2,0.2222222222222222,4,31
 ecsu,Eastern Connecticut State University,Scheduling and Optimization Algorithms,9,3,0.3333333333333333,5,21
 ecsu,Eastern Connecticut State University,Behavioral and Psychological Studies,8,3,0.375,6,13
 ecsu,Eastern Connecticut State University,earthquake and tectonic studies,8,5,0.625,7,8
-ecsu,Eastern Connecticut State University,"Banking stability, regulation, efficiency",7,1,0.14285714285714285,8,70
+ecsu,Eastern Connecticut State University,"Banking stability, regulation, efficiency",7,1,0.14285714285714285,8,71
 ecsu,Eastern Connecticut State University,Venomous Animal Envenomation and Studies,7,2,0.2857142857142857,9,51
-ecsu,Eastern Connecticut State University,Acute Myeloid Leukemia Research,6,0,0.0,10,183
-ecsu,Eastern Connecticut State University,Evolutionary Psychology and Human Behavior,6,5,0.8333333333333334,12,4
-ecsu,Eastern Connecticut State University,Paleontology and Evolutionary Biology,6,5,0.8333333333333334,14,5
-ecsu,Eastern Connecticut State University,Early Childhood Education and Development,5,5,1.0,19,3
-ecsu,Eastern Connecticut State University,Software Engineering Research,5,5,1.0,23,6
-ecsu,Eastern Connecticut State University,Spacecraft Dynamics and Control,5,5,1.0,24,7
+ecsu,Eastern Connecticut State University,Acute Myeloid Leukemia Research,6,0,0.0,10,180
+ecsu,Eastern Connecticut State University,Evolutionary Psychology and Human Behavior,6,5,0.8333333333333334,11,3
+ecsu,Eastern Connecticut State University,Paleontology and Evolutionary Biology,6,5,0.8333333333333334,13,4
+ecsu,Eastern Connecticut State University,Early Childhood Education and Development,5,5,1.0,19,2
+ecsu,Eastern Connecticut State University,Software Engineering Research,5,5,1.0,23,5
+ecsu,Eastern Connecticut State University,Spacecraft Dynamics and Control,5,5,1.0,24,6
 ecsu,Eastern Connecticut State University,Advanced Statistical Process Monitoring,4,4,1.0,25,9
 ecsu,Eastern Connecticut State University,Gender and Feminist Studies,4,4,1.0,30,10
 fairfield,Fairfield University,Particle physics theoretical and experimental studies,131,0,0.0,1,571
-fairfield,Fairfield University,Quantum Chromodynamics and Particle Interactions,89,0,0.0,2,584
-fairfield,Fairfield University,Financial Markets and Investment Strategies,45,31,0.6888888888888889,3,1
-fairfield,Fairfield University,Astrophysical Phenomena and Observations,28,0,0.0,4,427
+fairfield,Fairfield University,Quantum Chromodynamics and Particle Interactions,89,0,0.0,2,586
+fairfield,Fairfield University,Financial Markets and Investment Strategies,45,30,0.6666666666666666,3,1
+fairfield,Fairfield University,Astrophysical Phenomena and Observations,30,0,0.0,4,422
 fairfield,Fairfield University,Economic and Environmental Valuation,22,19,0.8636363636363636,5,2
-fairfield,Fairfield University,Mathematical Dynamics and Fractals,19,0,0.0,6,542
-fairfield,Fairfield University,Corporate Finance and Governance,17,12,0.7058823529411765,7,4
-fairfield,Fairfield University,Nutritional Studies and Diet,16,1,0.0625,8,328
-fairfield,Fairfield University,Schizophrenia research and treatment,16,4,0.25,9,43
+fairfield,Fairfield University,Mathematical Dynamics and Fractals,19,0,0.0,6,541
+fairfield,Fairfield University,Corporate Finance and Governance,17,11,0.6470588235294118,7,3
+fairfield,Fairfield University,Nutritional Studies and Diet,16,1,0.0625,8,321
+fairfield,Fairfield University,Schizophrenia research and treatment,16,4,0.25,9,42
 fairfield,Fairfield University,High-Energy Particle Collisions Research,15,0,0.0,10,512
-fairfield,Fairfield University,Digital Marketing and Social Media,13,9,0.6923076923076923,11,7
-fairfield,Fairfield University,Simulation-Based Education in Healthcare,13,13,1.0,14,3
-fairfield,Fairfield University,Consumer Retail Behavior Studies,12,9,0.75,15,6
-fairfield,Fairfield University,Nursing education and management,11,11,1.0,17,5
-fairfield,Fairfield University,Attachment and Relationship Dynamics,10,8,0.8,18,9
-fairfield,Fairfield University,Financial Analysis and Corporate Governance,9,9,1.0,26,8
-fairfield,Fairfield University,Monetary Policy and Economic Impact,9,8,0.8888888888888888,27,10
-hartford,University of Hartford,Cerebral Palsy and Movement Disorders,40,23,0.575,1,1
+fairfield,Fairfield University,Digital Marketing and Social Media,13,9,0.6923076923076923,12,6
+fairfield,Fairfield University,Simulation-Based Education in Healthcare,12,11,0.9166666666666666,15,5
+fairfield,Fairfield University,Nursing education and management,11,11,1.0,18,4
+fairfield,Fairfield University,Attachment and Relationship Dynamics,10,8,0.8,19,8
+fairfield,Fairfield University,Financial Analysis and Corporate Governance,9,9,1.0,26,7
+fairfield,Fairfield University,Monetary Policy and Economic Impact,9,8,0.8888888888888888,28,9
+fairfield,Fairfield University,Palliative Care and End-of-Life Issues,8,7,0.875,33,10
+hartford,University of Hartford,Cerebral Palsy and Movement Disorders,41,23,0.5609756097560976,1,1
 hartford,University of Hartford,Diverse Music Education Insights,21,18,0.8571428571428571,2,2
-hartford,University of Hartford,"Balance, Gait, and Falls Prevention",18,10,0.5555555555555556,3,3
+hartford,University of Hartford,"Balance, Gait, and Falls Prevention",17,9,0.5294117647058824,3,4
 hartford,University of Hartford,Thermoregulation and physiological responses,15,4,0.26666666666666666,4,27
-hartford,University of Hartford,Musculoskeletal pain and rehabilitation,13,5,0.38461538461538464,5,20
-hartford,University of Hartford,Laser Applications in Dentistry and Medicine,12,10,0.8333333333333334,6,4
+hartford,University of Hartford,Laser Applications in Dentistry and Medicine,12,10,0.8333333333333334,5,3
+hartford,University of Hartford,Musculoskeletal pain and rehabilitation,12,5,0.4166666666666667,6,20
 hartford,University of Hartford,Building Energy and Comfort Optimization,11,7,0.6363636363636364,7,6
 hartford,University of Hartford,Higher Education Research Studies,10,6,0.6,8,10
-hartford,University of Hartford,"LGBTQ Health, Identity, and Policy",10,4,0.4,9,22
-hartford,University of Hartford,Muscle activation and electromyography studies,10,5,0.5,10,19
-hartford,University of Hartford,Racial and Ethnic Identity Research,8,7,0.875,15,8
-hartford,University of Hartford,Work-Family Balance Challenges,8,8,1.0,17,5
-hartford,University of Hartford,Pressure Ulcer Prevention and Management,7,7,1.0,25,7
-hartford,University of Hartford,Attachment and Relationship Dynamics,6,6,1.0,27,9
-newhaven,University of New Haven,Digital and Cyber Forensics,32,5,0.15625,1,22
-newhaven,University of New Haven,Forensic and Genetic Research,24,9,0.375,2,9
-newhaven,University of New Haven,Forensic Fingerprint Detection Methods,23,19,0.8260869565217391,3,1
-newhaven,University of New Haven,Advanced Differential Geometry Research,21,11,0.5238095238095238,4,3
-newhaven,University of New Haven,Vector-borne infectious diseases,20,1,0.05,5,349
+hartford,University of Hartford,Muscle activation and electromyography studies,10,5,0.5,9,19
+hartford,University of Hartford,Nonlinear Waves and Solitons,10,0,0.0,10,492
+hartford,University of Hartford,Work-Family Balance Challenges,9,9,1.0,12,5
+hartford,University of Hartford,Racial and Ethnic Identity Research,8,7,0.875,16,8
+hartford,University of Hartford,Pressure Ulcer Prevention and Management,7,7,1.0,26,7
+hartford,University of Hartford,Attachment and Relationship Dynamics,6,6,1.0,28,9
+newhaven,University of New Haven,Digital and Cyber Forensics,32,5,0.15625,1,20
+newhaven,University of New Haven,Forensic Fingerprint Detection Methods,24,19,0.7916666666666666,2,1
+newhaven,University of New Haven,Forensic and Genetic Research,24,9,0.375,3,8
+newhaven,University of New Haven,Advanced Differential Geometry Research,21,9,0.42857142857142855,4,5
+newhaven,University of New Haven,Vector-borne infectious diseases,19,0,0.0,5,769
 newhaven,University of New Haven,Criminal Justice and Corrections Analysis,17,13,0.7647058823529411,6,2
-newhaven,University of New Haven,Environmental Impact and Sustainability,17,8,0.47058823529411764,7,11
-newhaven,University of New Haven,Computational Drug Discovery Methods,16,5,0.3125,8,21
-newhaven,University of New Haven,Blockchain Technology Applications and Security,15,1,0.06666666666666667,9,159
+newhaven,University of New Haven,Environmental Impact and Sustainability,17,9,0.5294117647058824,7,7
+newhaven,University of New Haven,Computational Drug Discovery Methods,16,5,0.3125,8,19
+newhaven,University of New Haven,Blockchain Technology Applications and Security,15,1,0.06666666666666667,9,149
 newhaven,University of New Haven,Advanced Photocatalysis Techniques,14,9,0.6428571428571429,10,6
-newhaven,University of New Haven,Policing Practices and Perceptions,13,10,0.7692307692307693,14,5
-newhaven,University of New Haven,scientometrics and bibliometrics research,12,9,0.75,16,10
-newhaven,University of New Haven,Catalysis and Oxidation Reactions,11,9,0.8181818181818182,17,7
-newhaven,University of New Haven,Crime Patterns and Interventions,11,9,0.8181818181818182,19,8
+newhaven,University of New Haven,Policing Practices and Perceptions,14,11,0.7857142857142857,14,3
+newhaven,University of New Haven,scientometrics and bibliometrics research,12,9,0.75,16,9
+newhaven,University of New Haven,Catalysis and Oxidation Reactions,11,8,0.7272727272727273,17,10
 newhaven,University of New Haven,Intimate Partner and Family Violence,11,10,0.9090909090909091,22,4
 quinnipiac,Quinnipiac University,Innovations in Medical Education,69,34,0.4927536231884058,1,1
 quinnipiac,Quinnipiac University,Occupational Therapy Practice and Research,41,34,0.8292682926829268,2,2
 quinnipiac,Quinnipiac University,Multiple Sclerosis Research Studies,37,24,0.6486486486486487,3,3
-quinnipiac,Quinnipiac University,Substance Abuse Treatment and Outcomes,29,7,0.2413793103448276,4,19
-quinnipiac,Quinnipiac University,Knee injuries and reconstruction techniques,26,9,0.34615384615384615,5,14
+quinnipiac,Quinnipiac University,Substance Abuse Treatment and Outcomes,29,6,0.20689655172413793,4,26
+quinnipiac,Quinnipiac University,Knee injuries and reconstruction techniques,28,11,0.39285714285714285,5,11
 quinnipiac,Quinnipiac University,Opioid Use Disorder Treatment,24,16,0.6666666666666666,6,4
-quinnipiac,Quinnipiac University,Musculoskeletal pain and rehabilitation,22,0,0.0,7,792
+quinnipiac,Quinnipiac University,Musculoskeletal pain and rehabilitation,22,0,0.0,7,787
 quinnipiac,Quinnipiac University,Diversity and Career in Medicine,21,11,0.5238095238095238,8,10
 quinnipiac,Quinnipiac University,Healthcare Policy and Management,20,13,0.65,9,7
-quinnipiac,Quinnipiac University,Vector-borne infectious diseases,19,4,0.21052631578947367,10,74
+quinnipiac,Quinnipiac University,Vector-borne infectious diseases,19,4,0.21052631578947367,10,75
 quinnipiac,Quinnipiac University,Gun Ownership and Violence Research,18,13,0.7222222222222222,11,6
 quinnipiac,Quinnipiac University,Financial Markets and Investment Strategies,16,14,0.875,14,5
 quinnipiac,Quinnipiac University,Public Relations and Crisis Communication,16,13,0.8125,15,8
 quinnipiac,Quinnipiac University,Nursing Roles and Practices,14,12,0.8571428571428571,18,9
-sacredheart,Sacred Heart University,Sports Performance and Training,61,39,0.639344262295082,1,1
+sacredheart,Sacred Heart University,Sports Performance and Training,61,37,0.6065573770491803,1,1
 sacredheart,Sacred Heart University,Shoulder Injury and Treatment,20,17,0.85,2,2
 sacredheart,Sacred Heart University,Health Sciences Research and Education,18,16,0.8888888888888888,3,3
 sacredheart,Sacred Heart University,Musculoskeletal pain and rehabilitation,16,12,0.75,4,4
-sacredheart,Sacred Heart University,Social Work Education and Practice,16,8,0.5,5,9
-sacredheart,Sacred Heart University,Innovations in Medical Education,14,9,0.6428571428571429,6,7
-sacredheart,Sacred Heart University,Corporate Social Responsibility Reporting,13,5,0.38461538461538464,7,22
-sacredheart,Sacred Heart University,Nutritional Studies and Diet,12,2,0.16666666666666666,8,117
-sacredheart,Sacred Heart University,"Balance, Gait, and Falls Prevention",11,9,0.8181818181818182,9,5
-sacredheart,Sacred Heart University,Ethics and Social Impacts of AI,11,5,0.45454545454545453,10,24
-sacredheart,Sacred Heart University,Physical Activity and Health,11,8,0.7272727272727273,11,8
-sacredheart,Sacred Heart University,Digital Marketing and Social Media,10,9,0.9,12,6
-sacredheart,Sacred Heart University,Effects and risks of endocrine disrupting chemicals,7,7,1.0,33,10
-scsu,Southern Connecticut State University,High-Energy Particle Collisions Research,107,2,0.018691588785046728,1,98
-scsu,Southern Connecticut State University,"Stellar, planetary, and galactic studies",87,0,0.0,2,597
-scsu,Southern Connecticut State University,Quantum Chromodynamics and Particle Interactions,22,0,0.0,3,573
-scsu,Southern Connecticut State University,Social Work Education and Practice,17,9,0.5294117647058824,4,10
-scsu,Southern Connecticut State University,Autism Spectrum Disorder Research,16,9,0.5625,5,6
-scsu,Southern Connecticut State University,Reading and Literacy Development,15,10,0.6666666666666666,6,4
-scsu,Southern Connecticut State University,Criminal Justice and Corrections Analysis,14,10,0.7142857142857143,7,2
-scsu,Southern Connecticut State University,Dysphagia Assessment and Management,14,7,0.5,8,13
-scsu,Southern Connecticut State University,Physical Activity and Health,14,4,0.2857142857142857,9,46
-scsu,Southern Connecticut State University,Counseling Practices and Supervision,13,10,0.7692307692307693,10,1
-scsu,Southern Connecticut State University,Food Security and Health in Diverse Populations,11,9,0.8181818181818182,12,8
-scsu,Southern Connecticut State University,Library Science and Administration,11,9,0.8181818181818182,14,9
+sacredheart,Sacred Heart University,Social Work Education and Practice,16,8,0.5,5,8
+sacredheart,Sacred Heart University,Innovations in Medical Education,15,10,0.6666666666666666,6,5
+sacredheart,Sacred Heart University,Corporate Social Responsibility Reporting,13,6,0.46153846153846156,7,13
+sacredheart,Sacred Heart University,Ethics and Social Impacts of AI,12,5,0.4166666666666667,8,23
+sacredheart,Sacred Heart University,Nutritional Studies and Diet,12,2,0.16666666666666666,9,117
+sacredheart,Sacred Heart University,"Balance, Gait, and Falls Prevention",11,9,0.8181818181818182,10,6
+sacredheart,Sacred Heart University,Digital Marketing and Social Media,10,9,0.9,11,7
+sacredheart,Sacred Heart University,Physical Activity and Health,10,7,0.7,12,10
+sacredheart,Sacred Heart University,Effects and risks of endocrine disrupting chemicals,7,7,1.0,33,9
+scsu,Southern Connecticut State University,High-Energy Particle Collisions Research,104,2,0.019230769230769232,1,101
+scsu,Southern Connecticut State University,"Stellar, planetary, and galactic studies",87,0,0.0,2,594
+scsu,Southern Connecticut State University,Quantum Chromodynamics and Particle Interactions,22,0,0.0,3,570
+scsu,Southern Connecticut State University,Social Work Education and Practice,17,9,0.5294117647058824,4,8
+scsu,Southern Connecticut State University,Autism Spectrum Disorder Research,15,8,0.5333333333333333,5,9
+scsu,Southern Connecticut State University,Reading and Literacy Development,15,11,0.7333333333333333,6,2
+scsu,Southern Connecticut State University,Criminal Justice and Corrections Analysis,14,10,0.7142857142857143,7,3
+scsu,Southern Connecticut State University,Dysphagia Assessment and Management,14,7,0.5,8,12
+scsu,Southern Connecticut State University,Physical Activity and Health,14,4,0.2857142857142857,9,47
+scsu,Southern Connecticut State University,Counseling Practices and Supervision,13,11,0.8461538461538461,10,1
+scsu,Southern Connecticut State University,Food Security and Health in Diverse Populations,11,9,0.8181818181818182,12,6
+scsu,Southern Connecticut State University,Library Science and Administration,11,9,0.8181818181818182,14,7
 scsu,Southern Connecticut State University,Unknown,11,10,0.9090909090909091,17,5
-scsu,Southern Connecticut State University,Behavioral and Psychological Studies,10,9,0.9,18,7
-scsu,Southern Connecticut State University,Physical Education and Pedagogy,10,10,1.0,23,3
-statewide,Connecticut (all 17 institutions),Substance Abuse Treatment and Outcomes,1253,315,0.25139664804469275,1,5
-statewide,Connecticut (all 17 institutions),"Galaxies: Formation, Evolution, Phenomena",1182,5,0.004230118443316413,2,1966
-statewide,Connecticut (all 17 institutions),Opioid Use Disorder Treatment,1180,411,0.3483050847457627,3,2
-statewide,Connecticut (all 17 institutions),Schizophrenia research and treatment,1113,310,0.2785265049415993,4,6
-statewide,Connecticut (all 17 institutions),HIV/AIDS Research and Interventions,1108,195,0.1759927797833935,5,13
-statewide,Connecticut (all 17 institutions),Innovations in Medical Education,1037,514,0.4956605593056895,6,1
-statewide,Connecticut (all 17 institutions),Cancer Immunotherapy and Biomarkers,1017,165,0.16224188790560473,7,22
-statewide,Connecticut (all 17 institutions),Smoking Behavior and Cessation,996,182,0.1827309236947791,8,16
-statewide,Connecticut (all 17 institutions),Particle physics theoretical and experimental studies,949,4,0.004214963119072708,9,2258
-statewide,Connecticut (all 17 institutions),"LGBTQ Health, Identity, and Policy",806,321,0.39826302729528534,10,4
-statewide,Connecticut (all 17 institutions),Posttraumatic Stress Disorder Research,766,325,0.42428198433420367,11,3
-statewide,Connecticut (all 17 institutions),Autism Spectrum Disorder Research,710,226,0.3183098591549296,16,9
-statewide,Connecticut (all 17 institutions),Diversity and Career in Medicine,650,291,0.44769230769230767,17,7
+scsu,Southern Connecticut State University,Behavioral and Psychological Studies,10,8,0.8,18,10
+scsu,Southern Connecticut State University,Physical Education and Pedagogy,10,10,1.0,23,4
+statewide,Connecticut (all 17 institutions),Substance Abuse Treatment and Outcomes,1253,306,0.24421388667198723,1,6
+statewide,Connecticut (all 17 institutions),"Galaxies: Formation, Evolution, Phenomena",1230,3,0.0024390243902439024,2,2391
+statewide,Connecticut (all 17 institutions),Opioid Use Disorder Treatment,1180,416,0.3525423728813559,3,2
+statewide,Connecticut (all 17 institutions),Schizophrenia research and treatment,1107,310,0.2800361336946703,4,5
+statewide,Connecticut (all 17 institutions),HIV/AIDS Research and Interventions,1105,192,0.17375565610859728,5,12
+statewide,Connecticut (all 17 institutions),Innovations in Medical Education,1035,511,0.49371980676328503,6,1
+statewide,Connecticut (all 17 institutions),Smoking Behavior and Cessation,992,181,0.18245967741935484,7,16
+statewide,Connecticut (all 17 institutions),Particle physics theoretical and experimental studies,982,4,0.004073319755600814,8,2233
+statewide,Connecticut (all 17 institutions),Cancer Immunotherapy and Biomarkers,980,155,0.15816326530612246,9,26
+statewide,Connecticut (all 17 institutions),"LGBTQ Health, Identity, and Policy",799,318,0.3979974968710889,10,4
+statewide,Connecticut (all 17 institutions),Posttraumatic Stress Disorder Research,763,321,0.42070773263433814,11,3
+statewide,Connecticut (all 17 institutions),Diversity and Career in Medicine,643,286,0.4447900466562986,17,7
 statewide,Connecticut (all 17 institutions),Healthcare Policy and Management,526,230,0.4372623574144487,21,8
-statewide,Connecticut (all 17 institutions),Venous Thromboembolism Diagnosis and Management,488,211,0.4323770491803279,27,10
-statewide_no_yale,Connecticut without Yale,Substance Abuse Treatment and Outcomes,418,133,0.3181818181818182,1,3
-statewide_no_yale,Connecticut without Yale,HIV/AIDS Research and Interventions,318,92,0.2893081761006289,2,7
-statewide_no_yale,Connecticut without Yale,"LGBTQ Health, Identity, and Policy",313,156,0.4984025559105431,3,2
-statewide_no_yale,Connecticut without Yale,"Stellar, planetary, and galactic studies",297,2,0.006734006734006734,4,2257
-statewide_no_yale,Connecticut without Yale,Quantum Chromodynamics and Particle Interactions,293,6,0.020477815699658702,5,1142
-statewide_no_yale,Connecticut without Yale,Innovations in Medical Education,280,168,0.6,6,1
-statewide_no_yale,Connecticut without Yale,"Galaxies: Formation, Evolution, Phenomena",269,0,0.0,7,3165
-statewide_no_yale,Connecticut without Yale,Autism Spectrum Disorder Research,240,66,0.275,8,32
-statewide_no_yale,Connecticut without Yale,Ecology and Vegetation Dynamics Studies,229,71,0.31004366812227074,9,27
-statewide_no_yale,Connecticut without Yale,Thermoregulation and physiological responses,224,116,0.5178571428571429,10,4
-statewide_no_yale,Connecticut without Yale,Opioid Use Disorder Treatment,220,91,0.41363636363636364,11,9
-statewide_no_yale,Connecticut without Yale,Reading and Literacy Development,206,89,0.4320388349514563,13,10
-statewide_no_yale,Connecticut without Yale,Shoulder Injury and Treatment,206,110,0.5339805825242718,14,6
-statewide_no_yale,Connecticut without Yale,Behavioral and Psychological Studies,156,112,0.717948717948718,24,5
-statewide_no_yale,Connecticut without Yale,Electoral Systems and Political Participation,135,91,0.674074074074074,43,8
-trinity,Trinity College,Nonlinear Dynamics and Pattern Formation,34,0,0.0,1,339
-trinity,Trinity College,Marine and coastal plant biology,25,9,0.36,2,2
-trinity,Trinity College,Advanced Graph Theory Research,19,1,0.05263157894736842,3,60
-trinity,Trinity College,Developmental Biology and Gene Regulation,17,9,0.5294117647058824,4,1
-trinity,Trinity College,Diet and metabolism studies,17,1,0.058823529411764705,5,87
+statewide,Connecticut (all 17 institutions),Suicide and Self-Harm Studies,471,199,0.42250530785562634,28,10
+statewide,Connecticut (all 17 institutions),Social and Intergroup Psychology,396,205,0.5176767676767676,40,9
+statewide_no_yale,Connecticut without Yale,Substance Abuse Treatment and Outcomes,422,128,0.3033175355450237,1,3
+statewide_no_yale,Connecticut without Yale,HIV/AIDS Research and Interventions,316,91,0.2879746835443038,2,9
+statewide_no_yale,Connecticut without Yale,"LGBTQ Health, Identity, and Policy",305,150,0.4918032786885246,3,2
+statewide_no_yale,Connecticut without Yale,"Stellar, planetary, and galactic studies",297,2,0.006734006734006734,4,2249
+statewide_no_yale,Connecticut without Yale,Quantum Chromodynamics and Particle Interactions,293,6,0.020477815699658702,5,1135
+statewide_no_yale,Connecticut without Yale,Innovations in Medical Education,281,168,0.597864768683274,6,1
+statewide_no_yale,Connecticut without Yale,"Galaxies: Formation, Evolution, Phenomena",280,0,0.0,7,3176
+statewide_no_yale,Connecticut without Yale,Autism Spectrum Disorder Research,237,64,0.270042194092827,8,34
+statewide_no_yale,Connecticut without Yale,Ecology and Vegetation Dynamics Studies,228,73,0.3201754385964912,9,24
+statewide_no_yale,Connecticut without Yale,Thermoregulation and physiological responses,221,114,0.5158371040723982,10,4
+statewide_no_yale,Connecticut without Yale,Opioid Use Disorder Treatment,220,92,0.41818181818181815,11,8
+statewide_no_yale,Connecticut without Yale,Shoulder Injury and Treatment,207,110,0.5314009661835749,13,6
+statewide_no_yale,Connecticut without Yale,Behavioral and Psychological Studies,158,112,0.7088607594936709,24,5
+statewide_no_yale,Connecticut without Yale,Electoral Systems and Political Participation,136,92,0.6764705882352942,42,7
+statewide_no_yale,Connecticut without Yale,Teacher Education and Leadership Studies,127,86,0.6771653543307087,49,10
+trinity,Trinity College,Nonlinear Dynamics and Pattern Formation,34,0,0.0,1,341
+trinity,Trinity College,Marine and coastal plant biology,25,11,0.44,2,1
+trinity,Trinity College,Advanced Graph Theory Research,19,1,0.05263157894736842,3,59
+trinity,Trinity College,Developmental Biology and Gene Regulation,17,9,0.5294117647058824,4,2
+trinity,Trinity College,Diet and metabolism studies,17,1,0.058823529411764705,5,86
 trinity,Trinity College,Electoral Systems and Political Participation,12,7,0.5833333333333334,6,4
 trinity,Trinity College,Cognitive Functions and Memory,11,8,0.7272727272727273,7,3
-trinity,Trinity College,Autism Spectrum Disorder Research,9,5,0.5555555555555556,8,9
+trinity,Trinity College,Autism Spectrum Disorder Research,9,5,0.5555555555555556,8,10
 trinity,Trinity College,Avian ecology and behavior,9,6,0.6666666666666666,9,7
 trinity,Trinity College,Neurogenesis and neuroplasticity mechanisms,9,4,0.4444444444444444,10,16
-trinity,Trinity College,Comparative Animal Anatomy Studies,8,5,0.625,13,10
+trinity,Trinity College,Comparative Animal Anatomy Studies,8,6,0.75,13,8
 trinity,Trinity College,Phenomenology and Existential Philosophy,8,7,0.875,15,5
 trinity,Trinity College,Amphibian and Reptile Biology,7,6,0.8571428571428571,16,6
-trinity,Trinity College,Jewish Identity and Society,7,6,0.8571428571428571,18,8
-uconn,University of Connecticut (incl. UConn Health),Substance Abuse Treatment and Outcomes,358,109,0.30446927374301674,1,3
-uconn,University of Connecticut (incl. UConn Health),HIV/AIDS Research and Interventions,276,77,0.27898550724637683,2,8
-uconn,University of Connecticut (incl. UConn Health),Quantum Chromodynamics and Particle Interactions,266,6,0.022556390977443608,3,843
-uconn,University of Connecticut (incl. UConn Health),"Galaxies: Formation, Evolution, Phenomena",252,0,0.0,4,2745
-uconn,University of Connecticut (incl. UConn Health),"LGBTQ Health, Identity, and Policy",244,108,0.4426229508196721,5,4
-uconn,University of Connecticut (incl. UConn Health),Thermoregulation and physiological responses,211,114,0.5402843601895735,6,2
-uconn,University of Connecticut (incl. UConn Health),Ecology and Vegetation Dynamics Studies,203,62,0.3054187192118227,7,19
-uconn,University of Connecticut (incl. UConn Health),Autism Spectrum Disorder Research,194,42,0.21649484536082475,8,55
-uconn,University of Connecticut (incl. UConn Health),Innovations in Medical Education,181,115,0.6353591160220995,9,1
-uconn,University of Connecticut (incl. UConn Health),Child and Adolescent Psychosocial and Emotional Development,180,71,0.39444444444444443,10,11
-uconn,University of Connecticut (incl. UConn Health),Opioid Use Disorder Treatment,173,75,0.43352601156069365,12,10
-uconn,University of Connecticut (incl. UConn Health),Shoulder Injury and Treatment,173,89,0.5144508670520231,13,6
-uconn,University of Connecticut (incl. UConn Health),Atrial Fibrillation Management and Outcomes,169,81,0.47928994082840237,15,7
-uconn,University of Connecticut (incl. UConn Health),Creativity in Education and Neuroscience,129,76,0.5891472868217055,25,9
-uconn,University of Connecticut (incl. UConn Health),Behavioral and Psychological Studies,117,92,0.7863247863247863,34,5
+trinity,Trinity College,Jewish Identity and Society,7,6,0.8571428571428571,18,9
+uconn,University of Connecticut (incl. UConn Health),Substance Abuse Treatment and Outcomes,363,106,0.29201101928374656,1,3
+uconn,University of Connecticut (incl. UConn Health),HIV/AIDS Research and Interventions,275,76,0.27636363636363637,2,9
+uconn,University of Connecticut (incl. UConn Health),Quantum Chromodynamics and Particle Interactions,266,6,0.022556390977443608,3,844
+uconn,University of Connecticut (incl. UConn Health),"Galaxies: Formation, Evolution, Phenomena",260,0,0.0,4,2749
+uconn,University of Connecticut (incl. UConn Health),"LGBTQ Health, Identity, and Policy",239,105,0.4393305439330544,5,4
+uconn,University of Connecticut (incl. UConn Health),Thermoregulation and physiological responses,208,112,0.5384615384615384,6,2
+uconn,University of Connecticut (incl. UConn Health),Ecology and Vegetation Dynamics Studies,202,64,0.31683168316831684,7,17
+uconn,University of Connecticut (incl. UConn Health),Autism Spectrum Disorder Research,193,41,0.21243523316062177,8,57
+uconn,University of Connecticut (incl. UConn Health),Innovations in Medical Education,182,115,0.6318681318681318,9,1
+uconn,University of Connecticut (incl. UConn Health),Child and Adolescent Psychosocial and Emotional Development,180,68,0.37777777777777777,10,13
+uconn,University of Connecticut (incl. UConn Health),Shoulder Injury and Treatment,174,89,0.5114942528735632,12,6
+uconn,University of Connecticut (incl. UConn Health),Opioid Use Disorder Treatment,173,75,0.43352601156069365,13,10
+uconn,University of Connecticut (incl. UConn Health),Atrial Fibrillation Management and Outcomes,167,79,0.47305389221556887,15,7
+uconn,University of Connecticut (incl. UConn Health),Creativity in Education and Neuroscience,130,77,0.5923076923076923,25,8
+uconn,University of Connecticut (incl. UConn Health),Behavioral and Psychological Studies,119,92,0.773109243697479,34,5
 uscga,United States Coast Guard Academy,Traumatic Brain Injury Research,16,8,0.5,1,1
 uscga,United States Coast Guard Academy,Arctic and Russian Policy Studies,7,4,0.5714285714285714,2,2
-uscga,United States Coast Guard Academy,Social Acceptance of Renewable Energy,7,1,0.14285714285714285,3,48
-uscga,United States Coast Guard Academy,Coastal and Marine Management,6,2,0.3333333333333333,4,5
-uscga,United States Coast Guard Academy,Library Science and Information Literacy,6,1,0.16666666666666666,5,31
+uscga,United States Coast Guard Academy,Social Acceptance of Renewable Energy,7,1,0.14285714285714285,3,46
+uscga,United States Coast Guard Academy,Coastal and Marine Management,6,3,0.5,4,5
+uscga,United States Coast Guard Academy,Library Science and Information Literacy,6,1,0.16666666666666666,5,30
 uscga,United States Coast Guard Academy,"Education, Leadership, and Health Research",5,1,0.2,6,22
 uscga,United States Coast Guard Academy,Ship Hydrodynamics and Maneuverability,5,4,0.8,7,3
 uscga,United States Coast Guard Academy,Structural Engineering and Materials Analysis,5,4,0.8,8,4
-uscga,United States Coast Guard Academy,Education and Critical Thinking Development,4,0,0.0,9,66
-uscga,United States Coast Guard Academy,Entrepreneurship Studies and Influences,3,0,0.0,10,69
-uscga,United States Coast Guard Academy,Management and Marketing Education,3,2,0.6666666666666666,12,7
-uscga,United States Coast Guard Academy,Marine animal studies overview,3,2,0.6666666666666666,13,8
-uscga,United States Coast Guard Academy,Maritime Security and History,3,2,0.6666666666666666,14,9
-uscga,United States Coast Guard Academy,Control Systems and Identification,2,2,1.0,17,6
-uscga,United States Coast Guard Academy,Supply Chain and Inventory Management,2,2,1.0,30,10
+uscga,United States Coast Guard Academy,Education and Critical Thinking Development,4,0,0.0,9,63
+uscga,United States Coast Guard Academy,Diverse Aspects of Tourism Research,3,0,0.0,10,62
+uscga,United States Coast Guard Academy,Management and Marketing Education,3,2,0.6666666666666666,13,7
+uscga,United States Coast Guard Academy,Marine animal studies overview,3,2,0.6666666666666666,14,8
+uscga,United States Coast Guard Academy,Maritime Security and History,3,2,0.6666666666666666,15,9
+uscga,United States Coast Guard Academy,Control Systems and Identification,2,2,1.0,18,6
+uscga,United States Coast Guard Academy,Supply Chain and Inventory Management,2,2,1.0,28,10
 usj,University of Saint Joseph,Behavioral and Psychological Studies,17,6,0.35294117647058826,1,5
-usj,University of Saint Joseph,Venous Thromboembolism Diagnosis and Management,14,8,0.5714285714285714,2,4
+usj,University of Saint Joseph,Venous Thromboembolism Diagnosis and Management,13,7,0.5384615384615384,2,4
 usj,University of Saint Joseph,Cultural Competency in Health Care,9,8,0.8888888888888888,3,1
-usj,University of Saint Joseph,RNA Interference and Gene Delivery,9,2,0.2222222222222222,4,31
+usj,University of Saint Joseph,RNA Interference and Gene Delivery,9,2,0.2222222222222222,4,32
 usj,University of Saint Joseph,Reading and Literacy Development,9,8,0.8888888888888888,5,2
 usj,University of Saint Joseph,Social Work Education and Practice,9,8,0.8888888888888888,6,3
 usj,University of Saint Joseph,Food Security and Health in Diverse Populations,8,5,0.625,7,7
-usj,University of Saint Joseph,"Health Systems, Economic Evaluations, Quality of Life",8,1,0.125,8,92
-usj,University of Saint Joseph,Innovations in Medical Education,8,5,0.625,9,8
-usj,University of Saint Joseph,Autism Spectrum Disorder Research,7,5,0.7142857142857143,10,6
+usj,University of Saint Joseph,"Health Systems, Economic Evaluations, Quality of Life",8,1,0.125,8,91
+usj,University of Saint Joseph,Autism Spectrum Disorder Research,7,5,0.7142857142857143,9,6
+usj,University of Saint Joseph,Innovations in Medical Education,7,4,0.5714285714285714,10,11
 usj,University of Saint Joseph,Diabetes Treatment and Management,6,4,0.6666666666666666,13,10
-usj,University of Saint Joseph,Advancements in Transdermal Drug Delivery,5,4,0.8,17,9
+usj,University of Saint Joseph,Advancements in Transdermal Drug Delivery,5,4,0.8,17,8
+usj,University of Saint Joseph,Counseling Practices and Supervision,5,4,0.8,19,9
 wcsu,Western Connecticut State University,Vector-borne infectious diseases,16,2,0.125,1,33
 wcsu,Western Connecticut State University,Teacher Education and Leadership Studies,10,8,0.8,2,1
-wcsu,Western Connecticut State University,Plant Diversity and Evolution,9,4,0.4444444444444444,3,6
-wcsu,Western Connecticut State University,Financial Markets and Investment Strategies,7,2,0.2857142857142857,4,20
+wcsu,Western Connecticut State University,Plant Diversity and Evolution,9,5,0.5555555555555556,3,6
+wcsu,Western Connecticut State University,Financial Markets and Investment Strategies,7,4,0.5714285714285714,4,7
 wcsu,Western Connecticut State University,Turtle Biology and Conservation,7,2,0.2857142857142857,5,32
-wcsu,Western Connecticut State University,Behavioral and Psychological Studies,6,4,0.6666666666666666,6,5
-wcsu,Western Connecticut State University,Cooperative Studies and Economics,6,5,0.8333333333333334,7,2
-wcsu,Western Connecticut State University,Intimate Partner and Family Violence,6,5,0.8333333333333334,8,3
-wcsu,Western Connecticut State University,Kierkegaardian Philosophy and Influence,6,5,0.8333333333333334,9,4
-wcsu,Western Connecticut State University,"Auditing, Earnings Management, Governance",5,1,0.2,10,43
-wcsu,Western Connecticut State University,Vietnamese History and Culture Studies,4,3,0.75,17,9
-wcsu,Western Connecticut State University,Anthropological Studies and Insights,3,2,0.6666666666666666,18,10
-wcsu,Western Connecticut State University,Regulation of Appetite and Obesity,3,3,1.0,30,7
-wcsu,Western Connecticut State University,Unknown,3,3,1.0,33,8
-wesleyan,Wesleyan University,"Stellar, planetary, and galactic studies",193,2,0.010362694300518135,1,155
-wesleyan,Wesleyan University,Astrophysics and Star Formation Studies,97,1,0.010309278350515464,2,179
-wesleyan,Wesleyan University,DNA Repair Mechanisms,43,2,0.046511627906976744,3,98
-wesleyan,Wesleyan University,Paleontology and Stratigraphy of Fossils,41,10,0.24390243902439024,4,7
-wesleyan,Wesleyan University,Quantum Mechanics and Non-Hermitian Physics,38,8,0.21052631578947367,5,17
-wesleyan,Wesleyan University,Planetary Science and Exploration,37,10,0.2702702702702703,6,8
-wesleyan,Wesleyan University,Protein Structure and Dynamics,33,2,0.06060606060606061,7,147
+wcsu,Western Connecticut State University,Behavioral and Psychological Studies,6,5,0.8333333333333334,6,2
+wcsu,Western Connecticut State University,Cooperative Studies and Economics,6,5,0.8333333333333334,7,3
+wcsu,Western Connecticut State University,Intimate Partner and Family Violence,6,5,0.8333333333333334,8,4
+wcsu,Western Connecticut State University,Kierkegaardian Philosophy and Influence,6,5,0.8333333333333334,9,5
+wcsu,Western Connecticut State University,"Auditing, Earnings Management, Governance",5,1,0.2,10,42
+wcsu,Western Connecticut State University,Vietnamese History and Culture Studies,4,3,0.75,17,10
+wcsu,Western Connecticut State University,Regulation of Appetite and Obesity,3,3,1.0,31,8
+wcsu,Western Connecticut State University,Unknown,3,3,1.0,34,9
+wesleyan,Wesleyan University,"Stellar, planetary, and galactic studies",193,2,0.010362694300518135,1,153
+wesleyan,Wesleyan University,Astrophysics and Star Formation Studies,100,1,0.01,2,173
+wesleyan,Wesleyan University,DNA Repair Mechanisms,41,0,0.0,3,483
+wesleyan,Wesleyan University,Paleontology and Stratigraphy of Fossils,41,10,0.24390243902439024,4,8
+wesleyan,Wesleyan University,Quantum Mechanics and Non-Hermitian Physics,38,7,0.18421052631578946,5,22
+wesleyan,Wesleyan University,Planetary Science and Exploration,35,8,0.22857142857142856,6,14
+wesleyan,Wesleyan University,Protein Structure and Dynamics,33,3,0.09090909090909091,7,82
 wesleyan,Wesleyan University,Advanced Topology and Set Theory,32,8,0.25,8,11
-wesleyan,Wesleyan University,Geology and Paleoclimatology Research,31,8,0.25806451612903225,9,15
-wesleyan,Wesleyan University,Cognitive and developmental aspects of mathematical skills,29,8,0.27586206896551724,10,12
+wesleyan,Wesleyan University,Geology and Paleoclimatology Research,31,7,0.22580645161290322,9,19
+wesleyan,Wesleyan University,Cognitive and developmental aspects of mathematical skills,29,7,0.2413793103448276,10,17
 wesleyan,Wesleyan University,Electoral Systems and Political Participation,29,18,0.6206896551724138,11,2
 wesleyan,Wesleyan University,Material Dynamics and Properties,29,19,0.6551724137931034,12,1
-wesleyan,Wesleyan University,Molecular Spectroscopy and Structure,29,16,0.5517241379310345,13,4
-wesleyan,Wesleyan University,Schizophrenia research and treatment,29,10,0.3448275862068966,14,9
+wesleyan,Wesleyan University,Molecular Spectroscopy and Structure,29,14,0.4827586206896552,13,4
+wesleyan,Wesleyan University,Schizophrenia research and treatment,29,11,0.3793103448275862,14,7
 wesleyan,Wesleyan University,Advanced Algebra and Logic,24,16,0.6666666666666666,15,3
-wesleyan,Wesleyan University,Social and Intergroup Psychology,17,12,0.7058823529411765,24,6
-wesleyan,Wesleyan University,Cinema History and Criticism,16,14,0.875,25,5
-wesleyan,Wesleyan University,Advanced Chemical Physics Studies,15,8,0.5333333333333333,28,10
-yale,Yale University,Schizophrenia research and treatment,1052,290,0.27566539923954375,1,3
-yale,Yale University,Opioid Use Disorder Treatment,1016,341,0.33562992125984253,2,2
-yale,Yale University,"Galaxies: Formation, Evolution, Phenomena",948,5,0.005274261603375527,3,1225
-yale,Yale University,Cancer Immunotherapy and Biomarkers,936,147,0.15705128205128205,4,15
-yale,Yale University,Substance Abuse Treatment and Outcomes,899,203,0.22580645161290322,5,6
-yale,Yale University,Smoking Behavior and Cessation,854,151,0.17681498829039813,6,13
-yale,Yale University,HIV/AIDS Research and Interventions,842,109,0.12945368171021376,7,32
-yale,Yale University,Particle physics theoretical and experimental studies,800,4,0.005,8,1432
-yale,Yale University,Innovations in Medical Education,791,367,0.4639696586599241,9,1
-yale,Yale University,Functional Brain Connectivity Studies,721,118,0.1636615811373093,10,26
-yale,Yale University,Posttraumatic Stress Disorder Research,676,285,0.42159763313609466,12,4
-yale,Yale University,Diversity and Career in Medicine,540,242,0.44814814814814813,14,5
-yale,Yale University,"LGBTQ Health, Identity, and Policy",519,172,0.33140655105973027,17,8
-yale,Yale University,Autism Spectrum Disorder Research,501,169,0.3373253493013972,19,10
-yale,Yale University,Acute Myeloid Leukemia Research,447,178,0.3982102908277405,23,7
-yale,Yale University,Healthcare Policy and Management,424,171,0.4033018867924528,25,9
+wesleyan,Wesleyan University,Suicide and Self-Harm Studies,21,9,0.42857142857142855,17,9
+wesleyan,Wesleyan University,Social and Intergroup Psychology,17,12,0.7058823529411765,26,6
+wesleyan,Wesleyan University,Cinema History and Criticism,16,13,0.8125,27,5
+wesleyan,Wesleyan University,Advanced Chemical Physics Studies,15,8,0.5333333333333333,29,10
+yale,Yale University,Schizophrenia research and treatment,1046,290,0.27724665391969405,1,3
+yale,Yale University,Opioid Use Disorder Treatment,1016,345,0.3395669291338583,2,2
+yale,Yale University,"Galaxies: Formation, Evolution, Phenomena",985,3,0.003045685279187817,3,1568
+yale,Yale University,Cancer Immunotherapy and Biomarkers,900,137,0.15222222222222223,4,15
+yale,Yale University,Substance Abuse Treatment and Outcomes,896,198,0.22098214285714285,5,6
+yale,Yale University,Smoking Behavior and Cessation,850,150,0.17647058823529413,6,12
+yale,Yale University,HIV/AIDS Research and Interventions,841,107,0.1272294887039239,7,32
+yale,Yale University,Particle physics theoretical and experimental studies,833,4,0.004801920768307323,8,1411
+yale,Yale University,Innovations in Medical Education,788,364,0.4619289340101523,9,1
+yale,Yale University,Functional Brain Connectivity Studies,716,117,0.1634078212290503,10,26
+yale,Yale University,Posttraumatic Stress Disorder Research,672,281,0.4181547619047619,12,4
+yale,Yale University,Diversity and Career in Medicine,532,236,0.44360902255639095,15,5
+yale,Yale University,"LGBTQ Health, Identity, and Policy",520,175,0.33653846153846156,16,7
+yale,Yale University,Acute Ischemic Stroke Management,444,165,0.3716216216216216,22,9
+yale,Yale University,Acute Myeloid Leukemia Research,425,162,0.3811764705882353,24,10
+yale,Yale University,Healthcare Policy and Management,421,168,0.3990498812351544,25,8
