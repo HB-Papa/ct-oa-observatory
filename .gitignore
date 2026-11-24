@@ -23,3 +23,4 @@ docs/writeups.md
 .env*
 !.env.example
 site/public/data/
+verification/fairfield_affiliation_flags.csv

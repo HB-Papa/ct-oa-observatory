@@ -35,8 +35,13 @@ def inst_keys(inst: dict) -> set[str]:
 # that institution name the wrong place at least once and never name the right one.
 # Trinity College was founded as "Washington College" (1823); OpenAlex matches
 # authors at Washington College in Chestertown, Maryland, to Trinity.
+# Fairfield (added 2026-11-24 after a strict affiliation check): OpenAlex matches
+# the Fairfield Institute of Management and Technology (Delhi, India) and a
+# program in Fairfield, New Jersey, to Fairfield University (6 articles).
 AFFILIATION_CORRECTIONS = [
     ("trinity", r"washington college", r"trinity"),
+    ("fairfield", r"fairfield institute of management|fairfield,\s*(nj|new jersey)\b",
+     r"fairfield\s+univ|connecticut|\bct\b|0682[45]"),
 ]
 
 

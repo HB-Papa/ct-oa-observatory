@@ -132,3 +132,13 @@ def test_diamond_split():
     assert oa_category("diamond", None) == "oa_fee_unconfirmed"
     assert oa_category("diamond", 1500) == "oa_fee_unconfirmed"
     assert oa_category("gold", 0) == "gold" and oa_category("closed", None) == "closed"
+
+
+def test_fairfield_institute_and_new_jersey_credits_are_corrected():
+    from pipeline.s04_build_tables import corrected_out
+    assert corrected_out("fairfield", ["Fairfield Institute of Management and Technology"])
+    assert corrected_out("fairfield", ["MD1 Program, Fairfield, NJ"])
+    # Fairfield University itself, with or without the state, is kept
+    assert not corrected_out("fairfield", ["Fairfield University, Fairfield, CT 06824, USA"])
+    assert not corrected_out("fairfield", ["Fairfield University"])
+    assert not corrected_out("fairfield", ["Fairfield Institute of Management", "Fairfield University"])

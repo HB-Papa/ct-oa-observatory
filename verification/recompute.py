@@ -166,6 +166,21 @@ def trinity_is_washington_college(r):
     return any("washington college" in t for t in low) and not any("trinity" in t for t in low)
 
 
+def fairfield_is_other_fairfield(r):
+    """Definition added 2026-11-24 (strict Fairfield check): OpenAlex matches the
+    Fairfield Institute of Management and Technology (India) and a program in
+    Fairfield, New Jersey, to Fairfield University. Drop the Fairfield credit when
+    the matched authors' raw text names one of those and never Fairfield
+    University, Connecticut, CT or the 06824/06825 ZIP codes."""
+    texts = []
+    for a in r.get("authorships") or []:
+        if any("fairfield" in insts_of_aff(i) for i in a.get("institutions") or []):
+            texts += a.get("raw_affiliation_strings") or []
+    wrong = any(re.search(r"fairfield institute of management|fairfield,\s*(nj|new jersey)\b", t, re.I) for t in texts)
+    right = any(re.search(r"fairfield\s+univ|connecticut|\bct\b|0682[45]", t, re.I) for t in texts)
+    return wrong and not right
+
+
 def split_status(st, fee):
     if st != "diamond":
         return st
@@ -202,6 +217,11 @@ for w, r in works.items():
         insts, corr = insts - {"trinity"}, corr - {"trinity"}
         if not insts:
             excluded_trinity[y] += 1
+            continue
+    if "fairfield" in insts and fairfield_is_other_fairfield(r):
+        insts, corr = insts - {"fairfield"}, corr - {"fairfield"}
+        if not insts:
+            excluded_trinity[y] += 1  # counted with the other affiliation corrections
             continue
     rows.append(dict(
         id=w, year=y, status=split_status((r.get("open_access") or {}).get("oa_status"), apc),
