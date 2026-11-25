@@ -37,6 +37,7 @@ All nine phases approved (2026-11-17). Maintenance: monthly refresh on the 3rd.
 - 2026-11-17: Phase 8 approved. Phase 9: docs/writeups.md (abstract, resume bullets, interview notes) from the 2026-11-17 figures; style scan clean; kept out of git.
 - 2026-11-17: Phase 9 approved. Project complete.
 - 2026-11-19: Pre-launch QA (DECISIONS.md): layout measured on 25 pages at 6 widths and fixed (line chart labels and hover box, bar value wrapping, spacing, empty bar parts); publisher display names; peak and tie wording; Methods dates the cross-checks and notes daily OpenAlex change; live OpenAlex check recorded in docs/verification.md. 0 axe violations in 100 runs.
+- 2026-11-24: Fairfield accuracy review; manual refresh run (OpenAlex data as of 2026-11-24, Fairfield 56.2%). Strict affiliation check for all 17 institutions: corrections for Yale (LEAP, Biohub, Collegiate School, Yale-NUS, 10 one-offs), Netter credits moved Yale to Quinnipiac, Trinity (Cambridge), Saint Joseph (Beirut), UConn and Hartford one-offs. Pipeline and recompute agree; offline rehearsal passes. Takes effect 2026-12-03. 39 pytest tests pass.
 ## Environment (2026-11-15)
 | Tool | Status |
 |---|---|
@@ -51,7 +52,7 @@ All nine phases approved (2026-11-17). Maintenance: monthly refresh on the 3rd.
 ## Next
 
 - Optional: a short NVDA or VoiceOver pass by Chris.
-- Next scheduled refresh: 3 December 2026.
+- Next scheduled refresh: 3 December 2026 (applies the 2026-11-24 affiliation corrections). Afterwards: add a changelog line about the corrections, and update the Methods limitation that names Fairfield and New Haven for missed repository copies (OpenAlex has since recognized many).
 - Optional follow-ups: CORE cross-check if CORE replies; report missed Connecticut repository copies to OpenAlex; NVDA or VoiceOver pass; refresh docs/writeups.md figures before quoting them.
 
 ## Open questions

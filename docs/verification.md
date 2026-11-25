@@ -48,3 +48,40 @@ Published figures: OpenAlex as of 2026-11-17. Fairfield 2015-2025: 1,752 article
 - **Diamond share explained.** Fairfield's diamond share (7.6%, statewide 0.9%) comes from high-energy physics: 132 of its 134 diamond articles are in Journal of High Energy Physics, Physics Letters B and European Physical Journal C, which are free to authors through the SCOAP3 library consortium. 293 Fairfield articles (17%) have 100 or more authors, consistent with membership of a large physics collaboration. Most are from 2015 to 2017 (63 in 2017), which explains that year's spike (215 articles, 66% free to read).
 - **Digital Commons.** 108 closed Fairfield articles had a DigitalCommons@Fairfield record marked not free on 2026-11-15. Between 2026-11-17 and 2026-11-24, OpenAlex began treating 30 of them as free (green), plus 11 other Fairfield articles via other repositories (`verification/fairfield_newly_green.csv`). Six of the remaining 78 repository pages were checked: none offers a public full text (each links to the publisher or to Fairfield's library login), so OpenAlex is right to call them closed. The repository gap for Fairfield noted in the 2026-11-15 cross-check is now largely closed at the source and will show at the next refresh.
 - **Live OpenAlex today vs published:** green 225 vs 186, closed 776 vs 805, others within 8. The difference is the repository change above plus ordinary daily change.
+
+
+## Strict affiliation check, all 17 institutions (2026-11-24)
+
+`verification/strict_affiliations.py` reads the raw affiliation text of every author OpenAlex matched to each institution (2015-2025 articles and reviews, saved 2026-11-15 harvest) and requires text that names the institution specifically, rather than a short keyword. The flagged credits were reviewed by hand. The file of flagged affiliation text stays local (`verification/strict_affiliation_flags.csv`, gitignored), because raw affiliation text can include names and email addresses.
+
+| Institution | Credits | Confirmed by text | Notes on the rest |
+|---|---:|---:|---|
+| Yale | 117,816 | 99.8% | 38 with no text; errors below; Paul Mellon Centre (London) and Peabody Museum are Yale's and correct |
+| UConn | 45,991 | 99.8% | translations ("Universidad de Connecticut"); 1 error |
+| Wesleyan | 2,760 | 99.6% | typos ("Weslyan") |
+| Trinity | 866 | 93.1% | "Trinity College, USA" without a city (43, kept); 14 Washington College (already corrected); 3 Cambridge |
+| Connecticut College | 731 | 99.7% | one hyphenated "Connect-icut College" (correct) |
+| Quinnipiac | 2,507 | 99.5% | typos ("Qunnipiac") |
+| Fairfield | 1,790 | 99.3% | 6 errors (Fairfield review above) |
+| Sacred Heart | 1,353 | 99.3% | typos ("Sacredheart", "Scared Heart") |
+| Hartford | 1,217 | 98.4% | "Hartford University" and "Universite de Hartford" (correct); 1 error |
+| New Haven | 1,912 | 99.5% | "University of Newhaven", West Haven addresses (correct) |
+| SCSU | 1,668 | 99.8% | abbreviations |
+| CCSU | 1,408 | 97.2% | "Central. Connecticut State University" (32, correct) |
+| WCSU | 424 | 99.5% | "West Connecticut State University" |
+| ECSU | 577 | 99.5% | typos |
+| USCGA | 200 | 99.0% | "US Coast Guard, New London" |
+| Bridgeport | 763 | 99.5% | translations |
+| Saint Joseph | 545 | 98.3% | 3 errors |
+
+**Errors found and corrected** (`pipeline/s04_build_tables.py` rules and `pipeline/affiliation_corrections.csv`, restated independently in `verification/recompute.py`):
+
+- **Yale, systematic.** OpenAlex places two outside organizations under Yale in its institution hierarchy: Northwestern University's Center for Light Energy Activated Redox Processes (LEAP; 1 of 319 affiliation texts mentions Yale) and the Chan Zuckerberg Biohub New York (authors list Columbia). It also matches "Collegiate School" (Yale's founding name) for a New York City school, and Yale-NUS College (Singapore). A credit is removed when the matched authors' text names one of these and never Yale.
+- **Yale to Quinnipiac.** The Frank H. Netter MD School of Medicine is Quinnipiac's medical school; OpenAlex matches it to Yale. These credits now move to Quinnipiac (new `reassigned` flag in `work_institutions`), keeping corresponding-author status.
+- **Trinity.** Three Federal Reserve Bank of Dallas working papers by economists at USC and Cambridge (Trinity College, Cambridge).
+- **Saint Joseph.** Universite Saint-Joseph (Beirut) and two other "Saint Joseph" universities.
+- **One-offs, reviewed by hand (12):** ten Yale credits whose text names only another university (Fordham, Penn State, Hong Kong, Tufts, Arizona, Michigan, Washington, Montreal, and two colleges in India), one UConn credit (DePaul) and one Hartford credit (UConn's former West Hartford campus, where UConn is already credited).
+
+**Checks:** the rules removed no credit whose text names the right institution. Run over the saved 2026-11-15 data, the pipeline and the independent recompute agree on every institution's article and free-to-read counts. A full offline rehearsal (rebuild, quality report, metrics, recompute and comparison) passed all 12 groups, and the harvest check's worst gap stayed 0.0 because moved credits are not compared with OpenAlex's counts.
+
+**Effect on 2026-11-15 data, 2015-2025:** Yale 116,084 to 115,997 articles (share unchanged at 71.46%); Quinnipiac 2,440 to 2,467 (50.53% to 50.87%); Fairfield 1,751 to 1,745; Trinity 846 to 843 (60.05% to 59.91%); Saint Joseph 520 to 517 (52.50% to 52.22%); UConn and Hartford each -1. Others unchanged. Takes effect with the 2026-12-03 refresh.

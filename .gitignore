@@ -24,3 +24,4 @@ docs/writeups.md
 !.env.example
 site/public/data/
 verification/fairfield_affiliation_flags.csv
+verification/strict_affiliation_flags.csv

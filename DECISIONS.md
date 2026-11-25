@@ -232,3 +232,11 @@ Each entry: the choice, the alternatives, and why. Newest at the bottom.
 - **Why:** a strict affiliation check (docs/verification.md) found these six are not Fairfield University. The effect on Fairfield's share is 0.02 points, but the site should not count them.
 - **Also:** the original phase 3 affiliation check accepted any text containing "Fairfield" (and similarly broad words for other institutions). Institutions with common place names (Hartford, Bridgeport, New Haven, Sacred Heart) could have similar errors and have not had a strict check yet.
 - **Takes effect** at the next refresh (3 December 2026, or a manual run).
+
+
+## 2026-11-24 — Affiliation corrections for all institutions (Chris: "matched with the correct publication entity")
+- **Choice:** correct the errors found by the strict affiliation check (docs/verification.md): pattern rules for systematic errors (Yale: LEAP/Northwestern, Chan Zuckerberg Biohub New York, Collegiate School, Yale-NUS; Trinity: Cambridge; Saint Joseph: Beirut and other Saint Joseph universities), a reviewed list of 12 one-off errors by work ID (`pipeline/affiliation_corrections.csv`), and one **reassignment**: Netter School of Medicine credits move from Yale to Quinnipiac.
+- **Alternatives:** remove credits only (rejected for Netter: the article belongs to Quinnipiac, and Chris asked for the correct entity); correct every unconfirmed credit automatically (rejected: most are typos and translations of the right institution, and 43 "Trinity College, USA" credits are almost certainly Hartford).
+- **Not changed:** credits with no affiliation text, or with text too vague to tell (kept, as OpenAlex has them). OpenAlex has not been told of the errors; reporting them is a possible follow-up.
+- **Harvest check:** moved credits are excluded from the comparison with OpenAlex's own counts (s05), so the refresh gate still compares like with like.
+- **Timing:** published with the 2026-12-03 refresh, as Chris asked. The refresh adds its own changelog entry; a line about these corrections should be added afterwards.

@@ -153,32 +153,54 @@ def publisher(r):
     return src.get("host_organization_name") or "Unknown"
 
 
-def trinity_is_washington_college(r):
-    """Definition added 2026-11-16 (double-check): OpenAlex matches authors at
-    Washington College, Maryland, to Trinity College (whose founding name was
-    Washington College). Drop the Trinity credit when the raw affiliation text of
-    the authors matched to Trinity mentions "Washington College" and never "Trinity"."""
-    texts = []
-    for a in r.get("authorships") or []:
-        if any("trinity" in insts_of_aff(i) for i in a.get("institutions") or []):
-            texts += a.get("raw_affiliation_strings") or []
-    low = [t.lower() for t in texts]
-    return any("washington college" in t for t in low) and not any("trinity" in t for t in low)
+# Affiliation corrections, restated here from the decisions in DECISIONS.md and
+# docs/verification.md (2026-11-16 and 2026-11-24) rather than imported, so the
+# check stays independent. (key, wrong place, right place, credit moves to).
+# A credit is dropped when the raw text of the authors matched to that
+# institution names the wrong place and never the right one.
+CORRECTIONS = [
+    ("trinity", r"washington college", r"trinity", None),
+    ("fairfield", r"fairfield institute of management|fairfield,\s*(nj|new jersey)\b",
+     r"fairfield\s+univ|connecticut|\bct\b|0682[45]", None),
+    ("trinity", r"cambridge|girton|southern california", r"hartford|\bct\b|connecticut|trincoll", None),
+    ("yale", r"collegiate school|light energy[- ]activated|\bleap\b|northwestern|zuckerberg|biohub|columbia univ|yale[- ]?nus",
+     r"yale(?![- ]?nus)|йел", None),
+    ("yale", r"netter", r"yale(?![- ]?nus)|йел", "quinnipiac"),
+    ("usj", r"universit[eé] saint-joseph|saint joseph'?s university|saint joseph university, usj",
+     r"hartford|\bct\b|connecticut|0611\d", None),
+]
+# One-off corrections reviewed by hand (a data file, shared with the pipeline).
+MANUAL = {}
+_manual_path = os.path.join(HERE, "..", "pipeline", "affiliation_corrections.csv")
+if os.path.exists(_manual_path):
+    import csv as _csv
+    for _r in _csv.DictReader(open(_manual_path, encoding="utf-8")):
+        MANUAL[(_r["work_id"], _r["institution_key"])] = _r["reassign_to"] or None
 
 
-def fairfield_is_other_fairfield(r):
-    """Definition added 2026-11-24 (strict Fairfield check): OpenAlex matches the
-    Fairfield Institute of Management and Technology (India) and a program in
-    Fairfield, New Jersey, to Fairfield University. Drop the Fairfield credit when
-    the matched authors' raw text names one of those and never Fairfield
-    University, Connecticut, CT or the 06824/06825 ZIP codes."""
-    texts = []
-    for a in r.get("authorships") or []:
-        if any("fairfield" in insts_of_aff(i) for i in a.get("institutions") or []):
-            texts += a.get("raw_affiliation_strings") or []
-    wrong = any(re.search(r"fairfield institute of management|fairfield,\s*(nj|new jersey)\b", t, re.I) for t in texts)
-    right = any(re.search(r"fairfield\s+univ|connecticut|\bct\b|0682[45]", t, re.I) for t in texts)
-    return wrong and not right
+def apply_corrections(w, r, insts, corr):
+    """Return (insts, corr) after dropping or moving mistaken credits."""
+    out_i, out_c = set(insts), set(corr)
+    for key in sorted(insts):
+        texts = []
+        for a in r.get("authorships") or []:
+            if any(key in insts_of_aff(i) for i in a.get("institutions") or []):
+                texts += a.get("raw_affiliation_strings") or []
+        hit = (True, MANUAL[(w, key)]) if (w, key) in MANUAL else (False, None)
+        if not hit[0]:
+            for k, wrong, right, to in CORRECTIONS:
+                if k == key and any(re.search(wrong, t, re.I) for t in texts) and not any(re.search(right, t, re.I) for t in texts):
+                    hit = (True, to)
+                    break
+        if hit[0]:
+            out_i.discard(key)
+            was_corr = key in out_c
+            out_c.discard(key)
+            if hit[1]:
+                out_i.add(hit[1])
+                if was_corr:
+                    out_c.add(hit[1])
+    return out_i, out_c
 
 
 def split_status(st, fee):
@@ -213,16 +235,11 @@ for w, r in works.items():
         continue
     apc = (r.get("apc_list") or {}).get("value_usd")
     insts, corr = work_insts(r), corr_insts(r)
-    if "trinity" in insts and trinity_is_washington_college(r):
-        insts, corr = insts - {"trinity"}, corr - {"trinity"}
-        if not insts:
-            excluded_trinity[y] += 1
-            continue
-    if "fairfield" in insts and fairfield_is_other_fairfield(r):
-        insts, corr = insts - {"fairfield"}, corr - {"fairfield"}
-        if not insts:
-            excluded_trinity[y] += 1  # counted with the other affiliation corrections
-            continue
+    before = set(insts)
+    insts, corr = apply_corrections(w, r, insts, corr)
+    if before and not insts:
+        excluded_trinity[y] += 1  # affiliation corrections (all institutions)
+        continue
     rows.append(dict(
         id=w, year=y, status=split_status((r.get("open_access") or {}).get("oa_status"), apc),
         insts=insts, corr=corr,

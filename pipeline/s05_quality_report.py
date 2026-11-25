@@ -46,7 +46,9 @@ def main():
         SELECT e.institution_key, e.publication_year, e.group_by_count,
                COALESCE(h.n, 0) AS harvested, COALESCE(h.n, 0) - e.group_by_count AS diff
         FROM expected e LEFT JOIN (
-            SELECT institution_key, publication_year, COUNT(*) n FROM work_institutions GROUP BY ALL) h
+            -- credits OpenAlex made; credits moved by a correction are not in its counts
+            SELECT institution_key, publication_year, COUNT(*) n FROM work_institutions
+            WHERE NOT COALESCE(reassigned, FALSE) GROUP BY ALL) h
         USING (institution_key, publication_year)
         ORDER BY 1, 2""").df()
     comp.to_csv(Q / "completeness_by_institution_year.csv", index=False)
@@ -157,6 +159,10 @@ def main():
             "Connecticut credit was corrected is excluded.", "",
             md(con.execute("""SELECT institution_key, COUNT(*) corrected_credits FROM work_institutions
                               WHERE affiliation_corrected GROUP BY 1 ORDER BY 1""").df()), "",
+            "Credits moved to the right institution by a correction (for example, Frank H. Netter MD School of "
+            "Medicine from Yale to Quinnipiac):", "",
+            md(con.execute("""SELECT institution_key, COUNT(*) reassigned_credits FROM work_institutions
+                              WHERE COALESCE(reassigned, FALSE) GROUP BY 1 ORDER BY 1""").df()), "",
             md(con.execute("SELECT exclude_reason, COUNT(*) works FROM works WHERE NOT in_scope GROUP BY 1 ORDER BY 1").df()), "",
             f"Excluded: **{n_excl:,}** works. Counted in metrics: **{n_in:,}** works. "
             "The list is in `data/derived/quality/excluded_works.csv`.", "", md(excl), ""]

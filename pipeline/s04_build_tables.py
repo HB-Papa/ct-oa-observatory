@@ -9,7 +9,9 @@ No author names or author IDs are kept: the site reports institutions only.
 """
 from __future__ import annotations
 
+import csv
 import re
+from pathlib import Path
 
 import pandas as pd
 
@@ -29,29 +31,65 @@ def inst_keys(inst: dict) -> set[str]:
     return {ID_TO_KEY[i] for i in ids if i in ID_TO_KEY}
 
 
-# Known OpenAlex affiliation errors, corrected here (approved 2026-11-16).
-# (institution key, pattern for the wrong place, pattern for the right place).
+# Known OpenAlex affiliation errors, corrected here. Found by the strict
+# affiliation checks (verification/strict_affiliations.py, docs/verification.md).
+# (institution key, pattern for the wrong place, pattern for the right place,
+#  institution the credit belongs to instead, or None).
 # A credit is removed when the raw affiliation strings of the authors matched to
-# that institution name the wrong place at least once and never name the right one.
-# Trinity College was founded as "Washington College" (1823); OpenAlex matches
-# authors at Washington College in Chestertown, Maryland, to Trinity.
-# Fairfield (added 2026-11-24 after a strict affiliation check): OpenAlex matches
-# the Fairfield Institute of Management and Technology (Delhi, India) and a
-# program in Fairfield, New Jersey, to Fairfield University (6 articles).
+# that institution name the wrong place at least once and never name the right
+# one. If a fourth element is given, the credit moves to that institution.
 AFFILIATION_CORRECTIONS = [
-    ("trinity", r"washington college", r"trinity"),
+    # Trinity College was founded as "Washington College"; OpenAlex matches
+    # Washington College (Chestertown, Maryland) to Trinity. (2026-11-16)
+    ("trinity", r"washington college", r"trinity", None),
+    # Fairfield Institute of Management and Technology (Delhi) and a program in
+    # Fairfield, New Jersey. (2026-11-24)
     ("fairfield", r"fairfield institute of management|fairfield,\s*(nj|new jersey)\b",
-     r"fairfield\s+univ|connecticut|\bct\b|0682[45]"),
+     r"fairfield\s+univ|connecticut|\bct\b|0682[45]", None),
+    # Trinity College, Cambridge (economists at USC and Cambridge). (2026-11-24)
+    ("trinity", r"cambridge|girton|southern california", r"hartford|\bct\b|connecticut|trincoll", None),
+    # Yale (2026-11-24): "Collegiate School" (Yale's founding name) matched for a
+    # New York City school; OpenAlex places Northwestern's LEAP center and the
+    # Chan Zuckerberg Biohub New York under Yale; Yale-NUS College (Singapore) is
+    # a separate institution.
+    ("yale", r"collegiate school|light energy[- ]activated|\bleap\b|northwestern|zuckerberg|biohub|columbia univ|yale[- ]?nus",
+     r"yale(?![- ]?nus)|йел", None),
+    # Frank H. Netter MD School of Medicine is Quinnipiac's medical school; OpenAlex
+    # matches it to Yale. The credit moves to Quinnipiac. (2026-11-24)
+    ("yale", r"netter", r"yale(?![- ]?nus)|йел", "quinnipiac"),
+    # Université Saint-Joseph (Beirut) and other Saint Joseph's universities. (2026-11-24)
+    ("usj", r"universit[eé] saint-joseph|saint joseph'?s university|saint joseph university, usj",
+     r"hartford|\bct\b|connecticut|0611\d", None),
 ]
 
 
-def corrected_out(key: str, raw_strings: list[str]) -> bool:
-    """True if this institution credit is a known affiliation error."""
-    for k, wrong, right in AFFILIATION_CORRECTIONS:
+def _load_manual_corrections():
+    """One-off errors reviewed by hand: pipeline/affiliation_corrections.csv
+    (work_id, institution_key, reassign_to, reason)."""
+    path = Path(__file__).with_name("affiliation_corrections.csv")
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as f:
+        return {(r["work_id"], r["institution_key"]): (r["reassign_to"] or None) for r in csv.DictReader(f)}
+
+
+MANUAL_CORRECTIONS = _load_manual_corrections()
+
+
+def correction(key: str, raw_strings: list[str], work_id: str | None = None):
+    """(removed, reassign_to) for one institution credit on one work."""
+    if work_id is not None and (work_id, key) in MANUAL_CORRECTIONS:
+        return True, MANUAL_CORRECTIONS[(work_id, key)]
+    for k, wrong, right, to in AFFILIATION_CORRECTIONS:
         if (k == key and any(re.search(wrong, x, re.I) for x in raw_strings)
                 and not any(re.search(right, x, re.I) for x in raw_strings)):
-            return True
-    return False
+            return True, to
+    return False, None
+
+
+def corrected_out(key: str, raw_strings: list[str]) -> bool:
+    """True if this institution credit is a known affiliation error (pattern rules)."""
+    return correction(key, raw_strings)[0]
 
 
 def oa_category(oa_status: str | None, apc_list_usd) -> str | None:
@@ -126,10 +164,20 @@ def flatten(w: dict, snap: str):
             any_id_to_keys[short(inst.get("id"))] = k
             for key in k:
                 raw.setdefault(key, []).extend(a.get("raw_affiliation_strings") or [])
-    corrected = {k for k in keys if corrected_out(k, raw.get(k, []))}
-    valid_keys = keys - corrected
+    corrected, moved_to = set(), {}
+    for k in keys:
+        removed, to = correction(k, raw.get(k, []), wid)
+        if removed:
+            corrected.add(k)
+            if to:
+                moved_to[k] = to
+    reassigned = set(moved_to.values()) - keys
+    valid_keys = (keys - corrected) | set(moved_to.values())
     for cid in corr:
         corr_keys |= any_id_to_keys.get(cid, set()) | ({ID_TO_KEY[cid]} if cid in ID_TO_KEY else set())
+    for k, to in moved_to.items():  # a moved credit keeps its corresponding-author status
+        if k in corr_keys:
+            corr_keys.add(to)
 
     locs = []
     for i, loc in enumerate(w.get("locations") or []):
@@ -177,11 +225,14 @@ def flatten(w: dict, snap: str):
     work["in_scope"] = work["exclude_reason"] is None
     # Corrected credits keep their row (so counts can be reconciled with OpenAlex)
     # but are flagged and left out of every metric.
+    # A credit moved by a correction (e.g. Yale -> Quinnipiac) gets its own row,
+    # marked reassigned, so it can be traced back to the rule that added it.
     wi = [{"work_id": wid, "institution_key": k, "publication_year": work["publication_year"],
            "is_corresponding_institution": k in corr_keys,
            "affiliation_corrected": k in corrected,
+           "reassigned": k in reassigned,
            "in_scope": work["in_scope"] and k not in corrected}
-          for k in sorted(keys)]
+          for k in sorted(keys | reassigned)]
     return work, wi, locs
 
 

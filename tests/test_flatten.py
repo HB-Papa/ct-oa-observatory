@@ -142,3 +142,51 @@ def test_fairfield_institute_and_new_jersey_credits_are_corrected():
     assert not corrected_out("fairfield", ["Fairfield University, Fairfield, CT 06824, USA"])
     assert not corrected_out("fairfield", ["Fairfield University"])
     assert not corrected_out("fairfield", ["Fairfield Institute of Management", "Fairfield University"])
+
+
+def _credit(rows):
+    return {r["institution_key"]: r for r in rows}
+
+
+def test_yale_misattributions_removed_and_real_yale_kept():
+    for text in ["The Collegiate School, NY 10024", "Department of Chemistry, Center for Light Energy Activated Redox "
+                 "Processes (LEAP), Northwestern University", "Chan Zuckerberg Biohub New York | Columbia University",
+                 "Assistant Professor, Yale-NUS College"]:
+        _, wi, _ = flatten(work(authorships=[{"institutions": [inst("I32971472")], "raw_affiliation_strings": [text]}]), "s")
+        assert _credit(wi)["yale"]["in_scope"] is False, text
+    # Yale authors who also list a partner are kept
+    _, wi, _ = flatten(work(authorships=[{"institutions": [inst("I32971472")],
+                                          "raw_affiliation_strings": ["Yale University | Chan Zuckerberg Biohub New York"]}]), "s")
+    assert _credit(wi)["yale"]["in_scope"] is True
+
+
+def test_netter_school_of_medicine_moves_from_yale_to_quinnipiac():
+    a = {"institutions": [inst("I32971472")], "raw_affiliation_strings": ["Frank H. Netter MD School of Medicine, North Haven, CT"]}
+    w = work(authorships=[a], corresponding_institution_ids=[OA + "I32971472"])
+    row, wi, _ = flatten(w, "s")
+    c = _credit(wi)
+    assert c["yale"]["in_scope"] is False and c["yale"]["affiliation_corrected"] is True
+    assert c["quinnipiac"]["in_scope"] is True and c["quinnipiac"]["reassigned"] is True
+    assert c["quinnipiac"]["is_corresponding_institution"] is True  # corresponding status moves with the credit
+    assert row["in_scope"] is True
+
+
+def test_saint_joseph_beirut_removed_and_west_hartford_kept():
+    _, wi, _ = flatten(work(authorships=[{"institutions": [inst("I192633058")], "raw_affiliation_strings": ["Universite Saint-Joseph"]}]), "s")
+    assert _credit(wi)["usj"]["in_scope"] is False
+    _, wi, _ = flatten(work(authorships=[{"institutions": [inst("I192633058")],
+                                          "raw_affiliation_strings": ["Saint Joseph University, West Hartford, CT"]}]), "s")
+    assert _credit(wi)["usj"]["in_scope"] is True
+
+
+def test_trinity_cambridge_removed_and_hartford_kept():
+    from pipeline.s04_build_tables import corrected_out
+    assert corrected_out("trinity", ["USC Dornsife INET, University of Southern California and Trinity College"])
+    assert not corrected_out("trinity", ["Trinity College, Hartford, CT", "University of Cambridge"])
+
+
+def test_manual_corrections_file_is_applied():
+    from pipeline.s04_build_tables import MANUAL_CORRECTIONS, correction
+    assert ("W3122090893", "uconn") in MANUAL_CORRECTIONS
+    assert correction("uconn", ["anything"], "W3122090893") == (True, None)
+    assert correction("uconn", ["anything"], "W0000000000") == (False, None)
